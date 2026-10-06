@@ -62,6 +62,7 @@ export const say = (value, state, vars) => fill(pick(value, state), state, vars)
 export const T = story.text
 
 export function formatDate(iso) {
+  if (!iso) return '…'
   return new Date(iso + (iso.length === 10 ? 'T12:00:00' : '')).toLocaleDateString(LANG === 'fr' ? 'fr-FR' : undefined, {
     day: 'numeric', month: 'long', year: 'numeric',
   })

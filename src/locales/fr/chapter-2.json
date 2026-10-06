@@ -115,7 +115,7 @@
     },
     {
       "id": "2.12",
-      "image": "Après : Théo {assis|assise|assis·e} par terre dans la salle de bains, des traits plus légers autour de {lui|elle|ellui}.",
+      "image": "Après : Théo {assis|assise|assis·e} par terre dans la salle de bains, des traits plus légers autour {de lui|d'elle|d'iel}.",
       "art": "bathroom-floor",
       "words": [
         { "speaker": "narrator", "text": "Après, {il|elle|iel} se sent plus vide. Vide, c'est plus léger que plein." }
@@ -262,7 +262,7 @@
       "words": [
         {
           "speaker": "narrator",
-          "text": "Alors Théo cuisine. Pas pour {lui|elle|ellui}-même ; {il|elle|iel} n'y arrive pas encore. Pour Madame Roux. Une petite tarte aux pommes. Ses mains se souviennent des gestes, même quand tout le reste a oublié."
+          "text": "Alors Théo cuisine. Pas pour {lui|elle|iel}-même ; {il|elle|iel} n'y arrive pas encore. Pour Madame Roux. Une petite tarte aux pommes. Ses mains se souviennent des gestes, même quand tout le reste a oublié."
         }
       ],
       "interaction": {

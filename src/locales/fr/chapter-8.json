@@ -1,0 +1,534 @@
+{
+  "number": 8,
+  "title": "La fin du monde",
+  "summary": "Semaine treize. Un énorme orage, toute la ville privée de courant, et le narrateur raconte ça comme l'apocalypse. Tout redevient noir, exactement comme au chapitre 1. Mais cette fois, l'obscurité trouve Théo avec des outils, et entouré de gens. Se termine sur 12 lumières, et la ville qui brille sans électricité.",
+  "screens": [
+    {
+      "id": "8.1",
+      "image": "Les toits de la ville au crépuscule, un ciel immense couleur d'ecchymose, des nuages comme des montagnes. Toutes les lumières de Théo brillent à leurs fenêtres.",
+      "art": "skyline-dusk",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Semaine treize. Jeudi soir, le ciel prend une couleur que personne ne sait nommer."
+        }
+      ]
+    },
+    {
+      "id": "8.2",
+      "image": "Le vent arrache les arbres, la pluie tombe à l'horizontale, un volet s'envole. De grands traits d'encre pour l'orage.",
+      "art": "storm-wind",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "La radio dit : orage. Le vent dit quelque chose de plus ancien."
+        }
+      ]
+    },
+    {
+      "id": "8.3",
+      "image": "La cuisine de Théo. Un clignotement. Puis le noir complet.",
+      "art": "black",
+      "blackout": 2000,
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "À 20 h 14, c'est la fin du monde."
+        }
+      ]
+    },
+    {
+      "id": "8.4",
+      "image": "Noir. Une minuscule ligne crème : le téléphone de Théo, « Aucun réseau », batterie 3 %.",
+      "art": "black",
+      "caption": "Aucun réseau · 3 %",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Les lumières. Les téléphones. Les trams. Toute la ville, éteinte d'un coup. Des sirènes, quelque part. Puis même plus de sirènes."
+        }
+      ]
+    },
+    {
+      "id": "8.5",
+      "image": "Noir, la même composition qu'à l'écran 1.3 : Théo par terre dans la cuisine, le dos contre les placards.",
+      "art": "kitchen-floor",
+      "anchor": {
+        "x": 28,
+        "y": 66
+      },
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Théo est par terre dans la cuisine. Exactement là où {il|elle|iel} était, il y a treize semaines."
+        }
+      ]
+    },
+    {
+      "id": "8.6",
+      "image": "Le Critique, revenu à sa taille maximale, 5, immense dans le noir, les yeux luisants de gris.",
+      "art": "kitchen-floor",
+      "criticSet": 5,
+      "words": [
+        {
+          "speaker": "Critic",
+          "text": "Voilà. C'est la fin du monde. Et personne ne sait même que tu es là."
+        }
+      ]
+    },
+    {
+      "id": "8.7",
+      "image": "Théo regarde le Critique, calmement.",
+      "art": "kitchen-floor",
+      "critic": true,
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Théo a souvent entendu cette voix. {Il|Elle|Iel} la connaît, maintenant. Elle a peur. Elle a toujours eu peur."
+        }
+      ],
+      "interaction": {
+        "type": "critic-reply",
+        "options": [
+          {
+            "id": "gotus",
+            "label": "« Je sais que tu as peur. Je m'occupe de nous. »"
+          },
+          {
+            "id": "thanks",
+            "label": "« Merci d'essayer de me protéger. Je prends le relais. »"
+          },
+          {
+            "id": "knows",
+            "label": "« Théo a peur. Et Théo sait quoi faire. »"
+          }
+        ]
+      }
+    },
+    {
+      "id": "8.8",
+      "image": "Théo se relève dans le noir. La créature de la douleur du chapitre 2 apparaît sur l'étagère, minuscule, endormie.",
+      "art": {
+        "by": "choice:2.18",
+        "bear": "creature-bear",
+        "cat": "creature-cat",
+        "eel": "creature-eel",
+        "bird": "creature-bird"
+      },
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "{L'ancien|L'ancienne|L'ancien·ne} Théo serait {resté|restée|resté·e} par terre. Théo fait trois choses qu'{il|elle|iel} a apprises."
+        }
+      ]
+    },
+    {
+      "id": "8.9",
+      "image": "Trois petites icônes crème à la suite : un verre d'eau, de l'eau froide sur un visage, des pieds sur le sol.",
+      "art": "black",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "De l'eau froide sur le visage. Cinq choses qu'{il|elle|iel} peut voir, même dans le noir. Les pieds sur le sol."
+        }
+      ],
+      "interaction": {
+        "type": "timer",
+        "style": "grounding",
+        "seconds": 30,
+        "steps": [
+          "5 choses que tu peux voir",
+          "4 choses que tu peux entendre",
+          "3 choses que tu peux sentir"
+        ],
+        "doneText": "Les pieds sur le sol."
+      }
+    },
+    {
+      "id": "8.10",
+      "image": "Théo dans la cage d'escalier, un bout de bougie à la main, qui descend.",
+      "art": "stairwell-candle",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Puis {il|elle|iel} fait la quatrième chose. {Il|Elle|Iel} va voir comment vont les autres."
+        }
+      ],
+      "interaction": {
+        "type": "choice",
+        "options": [
+          {
+            "id": "roux",
+            "label": "Madame Roux d'abord",
+            "goto": "8.11"
+          },
+          {
+            "id": "yann",
+            "label": "Yann d'abord",
+            "goto": "8.12"
+          }
+        ]
+      }
+    },
+    {
+      "id": "8.11",
+      "image": "Madame Roux à sa porte avec une lampe torche, tout habillée, foulard noué. Sa lumière s'embrase.",
+      "art": "roux-torch",
+      "next": {
+        "by": "choice:8.10",
+        "roux": "8.12",
+        "yann": "8.13"
+      },
+      "words": [
+        {
+          "speaker": "Madame Roux",
+          "text": "Enfin ! J'allais justement monter voir comment VOUS alliez. J'ai connu la tempête de 1999, {jeune homme|jeune fille|jeune personne}. J'ai des bougies pour toute une guerre."
+        }
+      ]
+    },
+    {
+      "id": "8.12",
+      "image": "Yann ouvre sa porte, pâle, une radio à la main qui ne fait que grésiller. La lumière de Yann s'embrase.",
+      "art": "yann-radio",
+      "next": {
+        "by": "choice:8.10",
+        "roux": "8.13",
+        "yann": "8.11"
+      },
+      "words": [
+        {
+          "speaker": "Yann",
+          "text": "Je... je n'aime pas être seul dans le noir. Depuis le divorce. Pardon. C'est bête."
+        },
+        {
+          "speaker": "Théo",
+          "text": "Ce n'est pas bête. Venez avec nous."
+        }
+      ]
+    },
+    {
+      "id": "8.13",
+      "image": "Tous les trois dans la rue. Toute la ville est noire. La pluie. Un seul carré chaud, tout au bout de la rue : la vitrine du Café du Pont, éclairée aux bougies.",
+      "art": "street-one-window",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Toute la ville est dans le noir. Sauf une fenêtre."
+        }
+      ]
+    },
+    {
+      "id": "8.14",
+      "image": "Dans le café : des dizaines de bougies, une légère aquarelle sur tout ce que touche leur lueur. Nadia, Lucien, Sophie avec Trois-Pattes, Béa, Hugo, des inconnus.",
+      "art": "cafe-candles",
+      "showPeople": true,
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Quand le monde s'arrête, il paraît que les gens vont là où on les connaît. Et Théo a de ces endroits-là, maintenant."
+        }
+      ]
+    },
+    {
+      "id": "8.15",
+      "image": "Lucien lève sa tasse.",
+      "art": "cafe-candles",
+      "anchor": {
+        "x": 30,
+        "y": 50
+      },
+      "words": [
+        {
+          "speaker": "Lucien",
+          "text": "Ah, {le cuisinier|la cuisinière|la personne aux fourneaux} ! Quarante ans dans les trains, j'ai vu trois fins du monde. Elles ne durent jamais."
+        }
+      ]
+    },
+    {
+      "id": "8.16",
+      "image": "Nadia derrière le comptoir, inquiète, devant un frigo éteint.",
+      "art": "cafe-candles",
+      "anchor": {
+        "x": 70,
+        "y": 45
+      },
+      "words": [
+        {
+          "speaker": "Nadia",
+          "text": "Le frigo est en train de mourir. Demain matin, tout ce qu'il y a dedans finit à la poubelle."
+        }
+      ]
+    },
+    {
+      "id": "8.17",
+      "image": "Théo retrousse déjà ses manches, le gaz allumé, les poêles sorties. Sa silhouette brille.",
+      "art": "theo-cooking-gas",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Théo sait quoi faire d'un frigo qui meurt et d'une gazinière."
+        }
+      ],
+      "interaction": {
+        "type": "tap-objects",
+        "objects": [
+          {
+            "id": "eggs",
+            "label": "Œufs",
+            "line": "Vingt œufs, cassés d'une seule main."
+          },
+          {
+            "id": "cheese",
+            "label": "Fromage",
+            "line": "Le bout d'un comté, râpé en vitesse."
+          },
+          {
+            "id": "onions",
+            "label": "Oignons",
+            "line": "Des oignons, à feu doux, jusqu'à ce que le café sente la maison."
+          },
+          {
+            "id": "butter",
+            "label": "Beurre",
+            "line": "Du beurre dans chaque poêle."
+          },
+          {
+            "id": "bread",
+            "label": "Pain",
+            "line": "Le pain d'hier, trempé pour faire du pain perdu."
+          },
+          {
+            "id": "cream",
+            "label": "Reste de crème",
+            "line": "Le fond de crème. Rien ne se perd."
+          }
+        ]
+      }
+    },
+    {
+      "id": "8.18",
+      "image": "Théo distribue des assiettes d'omelette et de pain perdu à la lueur des bougies ; toute la salle brille ; la couleur se fait plus forte.",
+      "art": "plates-candlelight",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "À neuf heures, tout le monde au Café du Pont a une assiette chaude entre les mains. Personne ne le lui a demandé. Théo est comme ça, voilà tout."
+        }
+      ]
+    },
+    {
+      "id": "8.19",
+      "image": "Un jeune homme (Karim) dans un coin, un casque autour du cou, le souffle rapide, les mains tremblantes, le téléphone mort.",
+      "art": "karim-panic",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Dans le coin, un étudiant que personne ne connaît respire trop vite. Son téléphone est mort. Ses mains ne s'arrêtent pas."
+        }
+      ]
+    },
+    {
+      "id": "8.20",
+      "image": "Théo accroupi à côté de Karim.",
+      "art": "theo-karim",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Théo connaît ça. {Il|Elle|Iel} le connaît depuis le sol de la cuisine."
+        }
+      ],
+      "interaction": {
+        "type": "choice",
+        "prompt": "Aide Karim avec un outil que tu as appris :",
+        "options": [
+          {
+            "id": "cold",
+            "label": "De l'eau froide sur le visage"
+          },
+          {
+            "id": "five",
+            "label": "Cinq choses que tu peux voir"
+          },
+          {
+            "id": "breathe",
+            "label": "Respire avec moi : inspire sur 4, expire sur 6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "8.21",
+      "image": "Théo et Karim respirent ensemble, un cercle de respiration autour d'eux.",
+      "art": "theo-karim",
+      "words": [
+        {
+          "speaker": "Théo",
+          "text": "Ça va. On dirait la fin du monde. Ce n'est pas la fin du monde. Regarde-moi. Respire avec moi."
+        }
+      ],
+      "interaction": {
+        "type": "timer",
+        "style": "breath",
+        "seconds": 30,
+        "inhale": 4,
+        "exhale": 6,
+        "label": "Trois respirations lentes, ensemble."
+      }
+    },
+    {
+      "id": "8.22",
+      "image": "Karim, plus calme, une assiette à la main.",
+      "art": "theo-karim",
+      "anchor": {
+        "x": 60,
+        "y": 50
+      },
+      "light": "karim_corner",
+      "haptic": true,
+      "words": [
+        {
+          "speaker": "Karim",
+          "text": "Je viens d'emménager. Je ne connais personne. J'ai cru... je ne sais pas ce que j'ai cru."
+        },
+        {
+          "speaker": "Théo",
+          "text": "Maintenant, tu connais du monde. Mange. Après, je te présente un homme qui n'échange jamais ses moutons."
+        }
+      ],
+      "interaction": {
+        "type": "notebook",
+        "book": "people",
+        "person": "karim",
+        "text": "Karim : vient d'emménager. A paniqué pendant la panne. Nous connaît, maintenant."
+      }
+    },
+    {
+      "id": "8.23",
+      "image": "Tout le monde autour des bougies, tard. Béa, son sifflet au cou, lance une question.",
+      "art": "cafe-candles",
+      "words": [
+        {
+          "speaker": "Béa",
+          "text": "Bon. Jeu. Si c'était vraiment la dernière nuit sur Terre, vous en feriez quoi ?"
+        }
+      ]
+    },
+    {
+      "id": "8.24",
+      "image": "Des visages à la lueur des bougies, qui répondent un par un.",
+      "art": "cafe-candles",
+      "words": [
+        {
+          "speaker": "Lucien",
+          "text": "Finir mes mots croisés."
+        },
+        {
+          "speaker": "Sophie",
+          "text": "Le promener une dernière fois."
+        },
+        {
+          "speaker": "Yann",
+          "text": "Exactement ça, je crois."
+        }
+      ]
+    },
+    {
+      "id": "8.25",
+      "image": "Tout le monde se tourne vers Théo.",
+      "art": "cafe-candles",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Tout le monde regarde Théo."
+        }
+      ],
+      "interaction": {
+        "type": "write",
+        "key": "last-night",
+        "prompt": "La réponse de Théo (change-la si tu veux, puis dis-la) :",
+        "prefill": "Cuisiner pour tous ceux que j'aime, puis {map1}, puis {map2}.",
+        "max": 200,
+        "rows": 3
+      }
+    },
+    {
+      "id": "8.26",
+      "image": "Une seule bougie sur la table, entre Théo et les autres. Rappel de la bougie du chapitre 2, mais entourée de visages.",
+      "art": "candle-faces",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Théo regarde la flamme d'une bougie, comme les pires nuits. Cette fois, {il|elle|iel} n'est pas {seul|seule|seul·e} avec elle."
+        }
+      ]
+    },
+    {
+      "id": "8.27",
+      "image": "Le tableau des prédictions faites sur les écrans de notation, dessiné à la craie sur l'ardoise du café.",
+      "art": "black",
+      "showChart": "all",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Quelque part dans la nuit, Théo remarque quelque chose. Chaque fois, {il|elle|iel} a prédit le pire. Chaque fois, c'était mieux que prévu. Sans exception."
+        }
+      ]
+    },
+    {
+      "id": "8.28",
+      "image": "L'aube. L'orage est passé, le ciel est d'un or pâle. La porte du café ouverte, des gens sortent en clignant des yeux. Le courant revient : les réverbères se rallument en clignotant.",
+      "art": "dawn-cafe",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "À l'aube, le courant revient. Ce n'était pas la fin du monde, finalement."
+        }
+      ]
+    },
+    {
+      "id": "8.29",
+      "image": "Théo rentre chez {lui|elle|iel} par des rues mouillées et brillantes, la première trace d'une vraie couleur de matin.",
+      "art": "morning-streets",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Ou plutôt : elle avait déjà eu lieu. Il y a des mois, dans un appartement silencieux, sur le sol d'une cuisine. Ce monde-ci, Théo l'a construit après. Cette nuit, il a tenu."
+        }
+      ]
+    },
+    {
+      "id": "8.30",
+      "image": "Page noire, lettres crème.",
+      "art": "black",
+      "layout": "center",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Si un jour tu as senti ton monde s'arrêter : tu es toujours là. Tu as déjà survécu à une fin."
+        }
+      ]
+    },
+    {
+      "id": "8.31",
+      "image": "Carte de quête, dessinée comme une bougie.",
+      "words": [],
+      "interaction": [
+        {
+          "type": "quest",
+          "id": "q8",
+          "title": "La liste pour la panne",
+          "text": "Écris trois personnes chez qui tu pourrais frapper, que tu pourrais appeler ou rejoindre à pied si tout s'arrêtait ce soir. Si la liste est courte, ce n'est pas un échec. C'est une information. Ajoute un nom que tu aimerais y voir.",
+          "unlocks": 9
+        },
+        {
+          "type": "write",
+          "key": "lights-out",
+          "prompt": "Ta liste pour la panne :",
+          "placeholder": "1.\n2.\n3.\nUn nom que j'aimerais y voir :",
+          "max": 400,
+          "rows": 5
+        }
+      ]
+    }
+  ]
+}

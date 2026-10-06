@@ -9,7 +9,7 @@
       "art": "cafe-exterior",
       "caption": "Café du Pont",
       "words": [
-        { "speaker": "narrator", "text": "Café du Pont. Ce n'est pas le café de Lisa. C'est surtout ça que Théo aime ici." }
+        { "speaker": "narrator", "text": "Le Café du Pont. Ce n'est pas le café de Lisa. C'est surtout ça que Théo aime ici." }
       ]
     },
     {
@@ -52,7 +52,7 @@
     },
     {
       "id": "4.4",
-      "image": "Une fiche d'amitié glisse à l'écran : la silhouette de Nadia, une jauge avec des repères : inconnue / visage familier / connaissance / copine / amie.",
+      "image": "Une carte d'amitié glisse à l'écran : la silhouette de Nadia, une jauge avec des repères : inconnue / visage familier / connaissance / copine / amie.",
       "art": "cafe-interior",
       "unlock": "friends",
       "showFriend": "nadia",
@@ -361,7 +361,7 @@
     },
     {
       "id": "4.30",
-      "image": "Carte des lumières : la vitrine du café brille maintenant sur la ligne des toits, avec une aquarelle légère.",
+      "image": "La carte des lumières : la vitrine du café brille maintenant sur la ligne des toits, avec une aquarelle légère.",
       "art": "black",
       "showLightMap": true,
       "words": [

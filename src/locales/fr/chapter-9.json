@@ -1,0 +1,374 @@
+{
+  "number": 9,
+  "title": "Après",
+  "summary": "Le printemps, quelques mois plus tard. La soupe du dimanche est devenue une longue tablée. La lettre scellée s'ouvre. Le Critique est assis à côté de Théo, petit et tranquille. L'histoire passe la main à qui la lit. Le seul chapitre entièrement en couleur.",
+  "screens": [
+    {
+      "id": "9.1",
+      "image": "PREMIÈRE PAGE EN COULEUR. La cour au printemps : glycine, soleil, une longue table faite de trois tables mises bout à bout, des chaises dépareillées, des guirlandes de fanions.",
+      "art": "courtyard-spring",
+      "bloom": true,
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Le printemps."
+        }
+      ]
+    },
+    {
+      "id": "9.2",
+      "image": "Vue large : tout le monde à la longue table. Madame Roux en bout de table, Yann avec du pain, Sophie et Trois-Pattes, Lucien avec ses mots croisés, Nadia, Béa, Hugo, Karim.",
+      "art": "long-table",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "La soupe du dimanche a un peu grandi."
+        }
+      ],
+      "interaction": {
+        "type": "tap-objects",
+        "objects": [
+          {
+            "id": "roux",
+            "label": "Madame Roux",
+            "line": "A commencé à apprendre sa soupe à Karim."
+          },
+          {
+            "id": "yann",
+            "label": "Yann",
+            "line": "Apporte maintenant deux sortes de pain. Il frime."
+          },
+          {
+            "id": "lucien",
+            "label": "Lucien",
+            "line": "A fini toutes ses grilles de mots croisés depuis Noël, avec un peu d'aide."
+          },
+          {
+            "id": "nadia",
+            "label": "Nadia",
+            "line": "A signé le bail de son salon de tatouage. La pieuvre est en vitrine."
+          },
+          {
+            "id": "hugo",
+            "label": "Hugo",
+            "line": "Cinquième carrière. A toujours ses moutons."
+          },
+          {
+            "id": "karim",
+            "label": "Karim",
+            "line": "Vient toutes les semaines. A amené un ami."
+          }
+        ]
+      }
+    },
+    {
+      "id": "9.3",
+      "image": "Camille arrive sous le porche avec une bouteille de vin et une grande écharpe.",
+      "art": "camille-arrives",
+      "words": [
+        {
+          "speaker": "Camille",
+          "text": "Alors c'est ÇA, la fameuse soupe."
+        }
+      ]
+    },
+    {
+      "id": "9.4",
+      "image": "Théo et Camille se serrent dans les bras, tout le monde regarde en souriant.",
+      "art": "camille-hug",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Théo présente sa sœur à tout le monde. Ça prend un moment. {Il|Elle|Iel} a beaucoup de monde à présenter, maintenant."
+        }
+      ]
+    },
+    {
+      "id": "9.5",
+      "image": "Théo à la grande marmite, louche en main, tout en lumière ; Camille {le|la|le·a} regarde, fière.",
+      "art": "theo-ladle-spring",
+      "words": [
+        {
+          "speaker": "Camille",
+          "text": "Tu te ressembles de nouveau."
+        },
+        {
+          "speaker": "Théo",
+          "text": "Je crois que je ressemble plutôt à un nouveau moi. L'ancien ne savait pas faire ça."
+        }
+      ]
+    },
+    {
+      "id": "9.6",
+      "image": "Madame Roux prend Théo à part, le doigt levé, comme d'habitude.",
+      "art": "roux-spring",
+      "words": [
+        {
+          "speaker": "Madame Roux",
+          "text": "Vous savez, la boulangerie du coin cherche quelqu'un en cuisine. On commence tôt le matin. Je leur ai parlé de vous. Ne vous fâchez pas."
+        }
+      ],
+      "interaction": {
+        "type": "choice",
+        "options": [
+          {
+            "id": "go",
+            "label": "« J'irai les voir. »"
+          },
+          {
+            "id": "unsure",
+            "label": "« Je ne sais pas encore. »"
+          },
+          {
+            "id": "thanks",
+            "label": "« Pourquoi je me fâcherais ? Merci. »"
+          }
+        ]
+      }
+    },
+    {
+      "id": "9.7",
+      "image": "Théo regarde la longue table, l'air pensif.",
+      "art": "long-table",
+      "anchor": {
+        "x": 50,
+        "y": 40
+      },
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Théo ne sait pas encore ce qu'{il|elle|iel} fera de sa vie. Avant, il y avait {chased}. C'était un projet. Ceci n'est pas un projet. C'est une direction : vers les gens, avec à manger."
+        }
+      ]
+    },
+    {
+      "id": "9.8",
+      "image": "Le cabinet de Marie-Clo, la fenêtre ouverte, une lumière de printemps.",
+      "art": "marieclo-spring",
+      "words": [
+        {
+          "speaker": "Marie-Clo",
+          "text": "Et si on essayait une fois par mois, au lieu de toutes les deux semaines ?"
+        }
+      ]
+    },
+    {
+      "id": "9.9",
+      "image": "Théo dans le fauteuil, {détendu|détendue|détendu·e}.",
+      "art": "theo-chair-spring",
+      "words": [
+        {
+          "speaker": "Théo",
+          "text": "Oui. Je crois."
+        },
+        {
+          "speaker": "Marie-Clo",
+          "text": "Raconte-moi ce que tu as appris sur les gens ce mois-ci."
+        },
+        {
+          "speaker": "Théo",
+          "text": "Tu as combien de temps ?"
+        }
+      ]
+    },
+    {
+      "id": "9.10",
+      "image": "Le carnet des gens, bien épais maintenant, hérissé de marque-pages.",
+      "art": "notebook-full",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Le carnet des gens est plein. Pas de la douleur de Théo. De la vie des autres."
+        }
+      ],
+      "interaction": {
+        "type": "notebook-browse"
+      }
+    },
+    {
+      "id": "9.11",
+      "image": "Le tiroir du bureau de Théo, l'enveloppe scellée à la cire rouge.",
+      "art": "sealed-envelope",
+      "next": {
+        "by": "letter",
+        "ready": "9.12",
+        "waiting": "9.15"
+      },
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": {
+            "by": "letter",
+            "ready": "Et puis, un soir, la date arrive.",
+            "waiting": "La lettre n'est pas encore prête. Théo l'ouvrira à cette date : {letterDate}. Toi aussi."
+          }
+        }
+      ]
+    },
+    {
+      "id": "9.12",
+      "image": "Le sceau de cire qui se fend.",
+      "art": "sealed-envelope",
+      "anchor": {
+        "x": 55,
+        "y": 42
+      },
+      "words": [],
+      "interaction": {
+        "type": "hold",
+        "seconds": 3,
+        "button": "Maintenir pour briser le sceau"
+      }
+    },
+    {
+      "id": "9.13",
+      "image": "La lettre, avec tes propres mots, en écriture manuscrite, sur du papier crème.",
+      "art": "paper-pen",
+      "showLetter": true,
+      "words": []
+    },
+    {
+      "id": "9.14",
+      "image": "Théo lit à la fenêtre, le soleil se couche sur la ville tout en couleur.",
+      "art": "window-sunset",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "{Le|La|Le·a} Théo qui a écrit ça était par terre dans une cuisine. {Il|Elle|Iel} ne pouvait pas manger. {Il|Elle|Iel} ne savait pas s'il y aurait un après. Il y en a eu un. {Il|Elle|Iel} est en train de la lire."
+        }
+      ],
+      "interaction": {
+        "type": "write",
+        "key": "write-back",
+        "prompt": "Réponds à Théo, {tel|telle|tel·le} qu'{il|elle|iel} était alors. Que lui dirais-tu ? (facultatif)",
+        "max": 1500,
+        "rows": 5
+      }
+    },
+    {
+      "id": "9.15",
+      "image": "Le banc du parc sous les platanes. Théo {assis|assise|assis·e}. Le Critique assis à côté {de lui|d'elle|d'iel}, grand comme un galet, avec une minuscule écharpe.",
+      "art": "park-bench-spring",
+      "criticSet": 1,
+      "critic": true,
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Le Critique est toujours là. Il le sera sans doute toujours."
+        }
+      ]
+    },
+    {
+      "id": "9.16",
+      "image": "Gros plan : le Critique lève vers Théo des yeux inquiets.",
+      "art": "park-bench-spring",
+      "anchor": {
+        "x": 60,
+        "y": 60
+      },
+      "words": [
+        {
+          "speaker": "Critic",
+          "text": "Et si tout s'effondrait encore ?"
+        }
+      ]
+    },
+    {
+      "id": "9.17",
+      "image": "Théo tapote le banc à côté du Critique.",
+      "art": "park-bench-spring",
+      "critic": true,
+      "words": [
+        {
+          "speaker": "Théo",
+          "text": "Peut-être. Alors je saurai quoi faire. Et je saurai qui appeler."
+        }
+      ]
+    },
+    {
+      "id": "9.18",
+      "image": "Le Critique appuyé contre la jambe de Théo, les yeux qui se ferment. La créature de la douleur du chapitre 2, minuscule, roulée en boule de l'autre côté.",
+      "art": "park-bench-spring",
+      "critic": true,
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Le Critique ne dit rien d'autre. Pour une fois, il n'en a pas besoin."
+        }
+      ]
+    },
+    {
+      "id": "9.19",
+      "image": "La carte des lumières tout en couleur : toute la ville au crépuscule, des dizaines de fenêtres allumées, celle de Théo plus brillante que les autres.",
+      "art": "black",
+      "showLightMap": true,
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "La carte de Théo. Chaque fenêtre, une personne. La plupart étaient des inconnus, autrefois."
+        }
+      ]
+    },
+    {
+      "id": "9.20",
+      "image": "Le narrateur se tourne vers l'extérieur : un cadre dessiné à la main, pleine page, autour d'un espace vide, là où la caméra du téléphone verrait la personne qui lit (aucune caméra utilisée ; juste un cadre vide et chaleureux).",
+      "art": "empty-frame",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "C'était l'histoire de Théo. Mais toi aussi, tu as fait les quêtes. Les questions, les promenades, les portes devant lesquelles tu as attendu."
+        }
+      ]
+    },
+    {
+      "id": "9.21",
+      "image": "Le cadre vide, d'où déborde une lumière chaude.",
+      "art": "empty-frame",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Alors voici la dernière chose. C'est ton histoire, maintenant. Continue d'allumer la lampe. Les bateaux sont là, au large, même quand tu ne les vois pas."
+        }
+      ]
+    },
+    {
+      "id": "9.22",
+      "image": "Une longue table dans une cour, une chaise vide au bout, un bol posé devant.",
+      "art": "empty-chair",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Il y a une place pour toi à table."
+        }
+      ]
+    },
+    {
+      "id": "9.23",
+      "image": "Carte de fin : « Après » écrit à la main, un bol de soupe, la vapeur dessinée en petit cœur.",
+      "art": "end-card",
+      "layout": "title",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Fin. Ou plutôt : le début de l'après."
+        },
+        {
+          "speaker": "narrator",
+          "text": "{dedication}"
+        }
+      ]
+    },
+    {
+      "id": "9.24",
+      "image": "Carte permanente, dessinée comme une petite lampe.",
+      "words": [],
+      "interaction": {
+        "type": "quest",
+        "id": "q-lamp",
+        "weekly": true,
+        "title": "Garder la lampe allumée",
+        "text": "Désormais, une petite quête par semaine : retourner quelque part, poser une vraie question à quelqu'un, cuisiner pour quelqu'un, ou prendre des nouvelles de quelqu'un. Tous les chapitres restent ouverts, pour les relire."
+      }
+    }
+  ]
+}

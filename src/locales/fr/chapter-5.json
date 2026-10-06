@@ -1,7 +1,7 @@
 {
   "number": 5,
   "title": "L'échelle",
-  "summary": "Septième et huitième semaines. Une soirée jeux de société avec de parfaits inconnus : le Critique plus bruyant que jamais, l'échelle du courage, les phrases pour se lancer, et un premier coup d'œil derrière le rideau sur ce que les autres pensaient vraiment. Se termine avec 9 lumières.",
+  "summary": "Semaines sept et huit. Une soirée jeux de société avec de parfaits inconnus : le Critique plus bruyant que jamais, l'échelle du courage, les phrases pour se lancer, et un premier coup d'œil derrière le rideau sur ce que les autres pensaient vraiment. Se termine avec 9 lumières.",
   "screens": [
     {
       "id": "5.1",
@@ -500,7 +500,7 @@
     },
     {
       "id": "5.29",
-      "image": "La Carte des lumières : deux nouvelles lumières près de la rivière, du côté de la salle municipale.",
+      "image": "La carte des lumières : deux nouvelles lumières près de la rivière, du côté de la salle municipale.",
       "art": "black",
       "showLightMap": true,
       "words": [
@@ -525,7 +525,7 @@
           "type": "quest",
           "id": "q5",
           "title": "L'échelle",
-          "text": "Dans ton lieu (ou un nouveau), monte d'un barreau de plus que la dernière fois. Avant d'y aller, note à quel point tu penses que ce sera gênant. Après, note à quel point ça l'a vraiment été.",
+          "text": "Dans ton endroit (ou un nouveau), monte d'un barreau de plus que la dernière fois. Avant d'y aller, note à quel point tu penses que ce sera gênant. Après, note à quel point ça l'a vraiment été.",
           "unlocks": 6
         },
         {

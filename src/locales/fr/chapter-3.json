@@ -71,7 +71,7 @@
       "image": "Le cabinet de Marie-Clo, la lampe chaude.",
       "art": "marieclo",
       "words": [
-        { "speaker": "Marie-Clo", "text": "Qui étiez-vous avant elle ? Pas votre travail. Pas {chased}. Vous." }
+        { "speaker": "Marie-Clo", "text": "Qui étais-tu avant elle ? Pas ton travail. Pas {chased}. Toi." }
       ]
     },
     {
@@ -92,12 +92,12 @@
     },
     {
       "id": "3.10",
-      "image": "La carte Qui est Théo ? : une île dessinée à la main, avec quatre régions : Ce que j'aime / Ce que j'aimais / Ce qui m'intrigue / Ce que je sais bien faire.",
+      "image": "La carte « Qui est Théo ? » : une île dessinée à la main, avec quatre régions : Ce que j'aime / Ce que j'aimais / Ce qui m'intrigue / Ce que je sais bien faire.",
       "art": "who-map",
       "words": [
         {
           "speaker": "narrator",
-          "text": "La carte Qui est Théo ? Au début, elle est presque vide. C'est normal. Le visage de Lisa n'y est pas. Celle-ci n'est qu'{à lui|à elle|à iel}."
+          "text": "La carte « Qui est Théo ? » Au début, elle est presque vide. C'est normal. Le visage de Lisa n'y est pas. Celle-ci n'est qu'{à lui|à elle|à iel}."
         }
       ],
       "interaction": {
