@@ -39,6 +39,23 @@ for (const s of screens) {
   for (const t of targets) if (!ids.has(t)) problems.push(`${at}: goes to "${t}", which doesn't exist`)
 }
 
+// The toolkit and habits (src/toolkit/).
+const tk = (f) => { try { return JSON.parse(readFileSync(new URL(`../toolkit/${f}`, dir))) } catch (e) { problems.push(`toolkit/${f}: not valid JSON (${e.message})`); return null } }
+const toolkit = tk('toolkit.json')
+const habits = tk('habits.json')
+const seenIds = new Set()
+for (const c of toolkit?.cards || []) {
+  if (seenIds.has(c.id)) problems.push(`toolkit.json: card id "${c.id}" is used twice`)
+  seenIds.add(c.id)
+  if (!c.title || !Array.isArray(c.steps)) problems.push(`toolkit.json ${c.id}: needs a "title" and a list of "steps"`)
+  if (c.story && !ids.has(c.story)) problems.push(`toolkit.json ${c.id}: story screen "${c.story}" doesn't exist`)
+}
+for (const h of habits?.habits || []) {
+  if (seenIds.has(h.id)) problems.push(`habits.json: id "${h.id}" is used twice`)
+  seenIds.add(h.id)
+  if (!['day', 'week'].includes(h.every)) problems.push(`habits.json ${h.id}: "every" must be "day" or "week"`)
+}
+
 if (warnings.length) console.warn(`${warnings.length} warning(s):\n- ` + warnings.join('\n- '))
 if (problems.length) {
   console.error(`Found ${problems.length} problem(s):\n- ` + problems.join('\n- '))

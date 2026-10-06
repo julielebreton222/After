@@ -1,0 +1,60 @@
+{
+  "title": "Habits",
+  "intro": "[Julie: one or two lines introducing the habits.]",
+  "ui": {
+    "start": "Start this habit",
+    "stop": "Stop this habit",
+    "track": "Keep track",
+    "active": "Your habits",
+    "more": "More habits",
+    "none": "No habits yet. Pick one below — just one is plenty.",
+    "doneToday": "Done today",
+    "doneThisWeek": "Done this week",
+    "day": "every day",
+    "week": "every week"
+  },
+  "habits": [
+    {
+      "id": "meal",
+      "title": "Eat one real meal",
+      "why": "[Julie: why this helps]",
+      "how": "[Julie: how to do it]",
+      "every": "day"
+    },
+    {
+      "id": "walk",
+      "title": "Go outside for a walk",
+      "why": "[Julie: why this helps]",
+      "how": "[Julie: how to do it]",
+      "every": "day"
+    },
+    {
+      "id": "sleep",
+      "title": "Go to bed at the same time",
+      "why": "[Julie: why this helps]",
+      "how": "[Julie: how to do it]",
+      "every": "day"
+    },
+    {
+      "id": "question",
+      "title": "Ask someone a real question",
+      "why": "[Julie: why this helps]",
+      "how": "[Julie: how to do it]",
+      "every": "day"
+    },
+    {
+      "id": "go-back",
+      "title": "Go back to the same place",
+      "why": "[Julie: why this helps]",
+      "how": "[Julie: how to do it]",
+      "every": "week"
+    },
+    {
+      "id": "cook-for-someone",
+      "title": "Cook for someone",
+      "why": "[Julie: why this helps]",
+      "how": "[Julie: how to do it]",
+      "every": "week"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "title": "What to do when…",
+  "intro": "[Julie: one or two lines introducing the toolkit.]",
+  "ui": {
+    "theoDid": "Théo did this in Chapter {n}."
+  },
+  "cards": [
+    {
+      "id": "text-her",
+      "title": "I want to text her",
+      "steps": [
+        "[Julie: first step]",
+        "[Julie: second step]",
+        "[Julie: third step]"
+      ],
+      "story": "7.4"
+    },
+    {
+      "id": "cant-sleep",
+      "title": "I can't sleep",
+      "steps": [
+        "[Julie: first step]",
+        "[Julie: second step]"
+      ],
+      "story": null
+    },
+    {
+      "id": "too-much",
+      "title": "Everything feels like too much",
+      "steps": [
+        "[Julie: first step]",
+        "[Julie: second step]"
+      ],
+      "story": null
+    },
+    {
+      "id": "alone-evening",
+      "title": "It's evening and I'm alone",
+      "steps": [
+        "[Julie: first step]",
+        "[Julie: second step]"
+      ],
+      "story": null
+    },
+    {
+      "id": "scared-people",
+      "title": "I'm too scared to talk to people",
+      "steps": [
+        "[Julie: first step]",
+        "[Julie: second step]"
+      ],
+      "story": null
+    },
+    {
+      "id": "nowhere-to-go",
+      "title": "I don't know where to meet anyone",
+      "steps": [
+        "[Julie: first step]",
+        "[Julie: second step]"
+      ],
+      "story": null
+    },
+    {
+      "id": "her-things",
+      "title": "I keep finding her things",
+      "steps": [
+        "[Julie: first step]",
+        "[Julie: second step]"
+      ],
+      "story": "7.6"
+    }
+  ]
+}

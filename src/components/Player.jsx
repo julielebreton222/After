@@ -49,6 +49,9 @@ export default function Player({ state, update, openCrisis }) {
     speakLine(beatNow.text, beatNow.speaker, { onStart: () => duck(true), onEnd: () => duck(false) })
   }, [screen.id, cur.beat, state.settings.voice, dark]) // eslint-disable-line react-hooks/exhaustive-deps
 
+  // Leaving the story (another tab): stop reading aloud.
+  useEffect(() => stopSpeaking, [])
+
   // Things that happen on arriving at a screen.
   useEffect(() => {
     setToast(null)

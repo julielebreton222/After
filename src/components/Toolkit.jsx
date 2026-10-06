@@ -1,0 +1,38 @@
+import { useState } from 'react'
+import toolkit from '../toolkit/toolkit.json'
+import { byId, screens } from '../story'
+
+const order = Object.fromEntries(screens.map((s, i) => [s.id, i]))
+
+// "What to do when…": practical cards, all open from day one. A card whose
+// "story" screen the player has already reached says so ("Théo did this…").
+export default function Toolkit({ state }) {
+  const [open, setOpen] = useState(null)
+  const here = order[state.position] ?? 0
+  const reached = (id) => id && byId[id] && (state.done[id] || here >= order[id])
+
+  return (
+    <div className="tab-page toolkit">
+      <h1>{toolkit.title}</h1>
+      {toolkit.intro && <p className="note">{toolkit.intro}</p>}
+      {toolkit.cards.map((c) => (
+        <div key={c.id} className={`tool-card ${open === c.id ? 'open' : ''}`}>
+          <button className="tool-title" onClick={() => setOpen(open === c.id ? null : c.id)} aria-expanded={open === c.id}>
+            <span>{c.title}</span>
+            <span aria-hidden="true">{open === c.id ? '–' : '+'}</span>
+          </button>
+          {open === c.id && (
+            <div className="tool-body">
+              <ol>
+                {c.steps.map((s, i) => <li key={i}>{s}</li>)}
+              </ol>
+              {reached(c.story) && (
+                <p className="note theo-did">{toolkit.ui.theoDid.replace('{n}', byId[c.story].chapter)}</p>
+              )}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  )
+}

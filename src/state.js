@@ -29,6 +29,7 @@ export const initialState = {
   pocket: [],
   realPeople: {},
   applied: {},
+  habits: {},
   settings: { music: false, voice: false },
 }
 

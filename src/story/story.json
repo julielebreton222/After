@@ -350,7 +350,10 @@
       "guessed": "guessed",
       "really": "really",
       "mapPlaceholder": "Something of your own…",
-      "letterFrom": "Written on {date}."
+      "letterFrom": "Written on {date}.",
+      "tabStory": "Story",
+      "tabToolkit": "What to do when",
+      "tabHabits": "Habits"
     }
   },
   "lightMapArtFinal": "skyline-colour",

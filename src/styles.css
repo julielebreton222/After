@@ -415,3 +415,52 @@ textarea:focus, input:focus, select:focus { outline: 1.5px solid var(--cream); }
 
 .chip.selected { background: var(--cream); color: var(--black); }
 .zone.ready { border-color: var(--cream); background: rgba(243, 234, 211, 0.06); }
+
+/* ---------- The two parts: tab bar, toolkit, habits ---------- */
+:root { --tabs: calc(env(safe-area-inset-bottom, 0px) + 54px); }
+/* Everything that sat on the bottom edge now sits above the tab bar. */
+.app { --bottom: calc(var(--tabs) + 14px); }
+.tab-bar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 22; height: var(--tabs);
+  display: flex; justify-content: center; padding-bottom: env(safe-area-inset-bottom, 0px);
+  background: var(--ink); border-top: 1px solid var(--cream-faint);
+}
+.tab-bar button {
+  flex: 1; max-width: 180px; background: none; border: 0; color: var(--cream-dim);
+  font-size: 0.95rem; line-height: 1.1; padding: 4px 6px; border-top: 2px solid transparent;
+}
+.tab-bar button.on { color: var(--lamp); border-top-color: var(--lamp); }
+
+.tab-page {
+  position: fixed; inset: 0; overflow-y: auto; -webkit-overflow-scrolling: touch;
+  padding: calc(var(--top) + 48px) 20px calc(var(--bottom) + 12px);
+  animation: fadeIn 0.3s ease;
+}
+.tab-page > * { max-width: 480px; margin-left: auto; margin-right: auto; }
+.tab-page h1 { font-size: 1.9rem; font-weight: normal; margin-top: 0; margin-bottom: 6px; }
+.tab-page h2 { font-size: 1.2rem; font-weight: normal; color: var(--cream-dim); margin-top: 26px; margin-bottom: 8px; }
+.tab-page h3 { font-size: 1.15rem; font-weight: normal; margin: 0 0 4px; }
+
+.tool-card { border: 1.5px solid var(--cream-faint); border-radius: 14px; margin-top: 10px; }
+.tool-card.open { border-color: var(--cream); }
+.tool-title {
+  display: flex; width: 100%; justify-content: space-between; align-items: center; gap: 12px;
+  background: none; border: 0; padding: 14px 16px; text-align: left; font-size: 1.1rem;
+}
+.tool-body { padding: 0 16px 14px; }
+.tool-body ol { margin: 0; padding-left: 22px; line-height: 1.45; }
+.tool-body li + li { margin-top: 6px; }
+.theo-did { margin: 12px 0 0; color: var(--lamp); }
+
+.habit { border: 1.5px solid var(--cream-faint); border-radius: 14px; padding: 14px 16px; margin-top: 10px; }
+.habit.active { border-color: var(--cream); }
+.habit p { margin: 4px 0 10px; line-height: 1.4; }
+.habit .link { display: block; margin-top: 10px; padding: 0; font-size: 0.85rem; color: var(--cream-dim); }
+.switch-row { display: flex; align-items: center; gap: 10px; margin: 6px 0 10px; }
+.switch-row input { width: 20px; height: 20px; accent-color: var(--lamp); }
+.habit-days { display: flex; gap: 6px; margin-top: 10px; }
+.habit-days .day {
+  flex: 1; max-width: 42px; aspect-ratio: 1; border-radius: 50%; padding: 0; font-size: 0.85rem;
+  background: none; border: 1.5px solid var(--cream-faint); color: var(--cream-dim);
+}
+.habit-days .day.on { background: var(--lamp); border-color: var(--lamp); color: var(--black); }

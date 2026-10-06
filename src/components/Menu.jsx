@@ -6,9 +6,9 @@ import LightMap from './LightMap.jsx'
 
 // The menu: back to the story, chapters to reread, the Light Map and the
 // People notebook (once unlocked), quests, and start over.
-export default function Menu({ state, update, reset, close }) {
+export default function Menu({ state, update, reset, close, toStory }) {
   const [view, setView] = useState('home')
-  const go = (id) => { update((st) => ({ position: id, history: [...st.history, st.position] })); close() }
+  const go = (id) => { update((st) => ({ position: id, history: [...st.history, st.position] })); toStory(); close() }
 
   return (
     <div className="sheet menu" role="dialog" aria-modal="true">
@@ -19,12 +19,12 @@ export default function Menu({ state, update, reset, close }) {
 
       {view === 'home' && (
         <nav className="menu-list">
-          <button onClick={close}>{T.ui.resume}</button>
+          <button onClick={() => { toStory(); close() }}>{T.ui.resume}</button>
           <button onClick={() => setView('chapters')}>{T.ui.chapters}</button>
           {state.unlocked.lightMap && <button onClick={() => setView('map')}>{T.ui.lightMap}</button>}
           {state.unlocked.notebook && <button onClick={() => setView('people')}>{T.ui.notebook}</button>}
           <button onClick={() => setView('quests')}>{T.ui.quests}</button>
-          <button className="danger" onClick={() => { if (confirm(T.ui.startOverConfirm)) { reset(); close() } }}>{T.ui.startOver}</button>
+          <button className="danger" onClick={() => { if (confirm(T.ui.startOverConfirm)) { reset(); toStory(); close() } }}>{T.ui.startOver}</button>
           <p className="note version">Version {__BUILD__}</p>
         </nav>
       )}
