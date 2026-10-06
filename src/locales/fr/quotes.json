@@ -1,0 +1,35 @@
+{
+  "_note": "Three ways of grieving. On first launch the player picks the quote that speaks to them; from then on the app shows quotes in that style. 'for' lists the toolkit cards a quote fits best ('any' fits everywhere).",
+  "styles": [
+    { "id": "feel", "label": "Laisser la douleur passer", "description": "Les émotions passent quand on les laisse entrer." },
+    { "id": "hope", "label": "Ça ira mieux", "description": "Ce n'est pas pour toujours, et tu en sortiras plus fort." },
+    { "id": "strength", "label": "Continuer d'avancer", "description": "Se lever, faire un pas, puis le suivant." }
+  ],
+  "ui": {
+    "title": "Laquelle te parle ?",
+    "intro": "On ne vit pas tous un chagrin de la même façon. Choisis celle qui te semble juste aujourd'hui. L'appli t'en montrera d'autres du même genre, et tu pourras changer à tout moment dans le menu.",
+    "change": "Citations"
+  },
+  "quotes": [
+    { "style": "feel", "text": "Laisse tout t'arriver : la beauté et l'effroi. Va, simplement. Aucun sentiment n'est définitif.", "by": "Rainer Maria Rilke", "for": ["any", "sadness", "too-much"], "pick": true },
+    { "style": "feel", "text": "La meilleure façon d'en sortir, c'est toujours de traverser.", "by": "Robert Frost", "for": ["any", "sadness", "angry"] },
+    { "style": "feel", "text": "Le deuil, c'est seulement de l'amour qui n'a nulle part où aller.", "by": "Jamie Anderson", "for": ["over-it", "her-things", "text-her"] },
+    { "style": "feel", "text": "Ce dont nous avons joui un jour, nous ne pouvons jamais le perdre. Tout ce que nous aimons profondément devient une part de nous-mêmes.", "by": "Helen Keller", "for": ["her-things", "over-it", "checking"] },
+    { "style": "feel", "text": "Personne ne m'avait jamais dit que le chagrin ressemblait tant à la peur.", "by": "C. S. Lewis", "for": ["too-much", "cant-sleep", "cant-eat"] },
+    { "style": "feel", "text": "Il y a quelque chose de sacré dans les larmes. Elles ne sont pas la marque de la faiblesse, mais de la force.", "by": "Washington Irving", "for": ["man-feelings", "sadness", "man-friends"] },
+
+    { "style": "hope", "text": "Le monde brise tout le monde, et après, beaucoup sont forts aux endroits brisés.", "by": "Ernest Hemingway", "for": ["any", "over-it", "man-feelings"], "pick": true },
+    { "style": "hope", "text": "Il y a une fissure en toute chose. C'est ainsi qu'entre la lumière.", "by": "Leonard Cohen", "for": ["any", "critic", "nothing-enough"] },
+    { "style": "hope", "text": "Au milieu de l'hiver, j'ai découvert en moi un invincible été.", "by": "Albert Camus", "for": ["too-much", "alone-evening", "no-friends"] },
+    { "style": "hope", "text": "Cela aussi passera.", "by": "Persian proverb", "for": ["text-her", "checking", "cant-sleep", "cant-eat"] },
+    { "style": "hope", "text": "L'espoir, c'est être capable de voir qu'il y a de la lumière malgré toute l'obscurité.", "by": "Desmond Tutu", "for": ["alone-evening", "no-friends", "man-purpose"] },
+    { "style": "hope", "text": "Rien n'est permanent dans ce monde cruel, pas même nos ennuis.", "by": "Charlie Chaplin", "for": ["any", "angry", "no-energy"] },
+
+    { "style": "strength", "text": "Tombe sept fois, relève-toi huit.", "by": "Japanese proverb", "for": ["any", "scared-people", "no-energy"], "pick": true },
+    { "style": "strength", "text": "On ne peut pas arrêter les vagues, mais on peut apprendre à surfer.", "by": "Jon Kabat-Zinn", "for": ["sadness", "too-much", "text-her"] },
+    { "style": "strength", "text": "Nous souffrons plus souvent en imagination que dans la réalité.", "by": "Seneca", "for": ["critic", "cant-sleep", "scared-people"] },
+    { "style": "strength", "text": "L'obstacle à l'action fait avancer l'action. Ce qui barre la route devient la route.", "by": "Marcus Aurelius", "for": ["no-energy", "meet-people", "angry"] },
+    { "style": "strength", "text": "Celui qui a un pourquoi peut supporter presque n'importe quel comment.", "by": "Friedrich Nietzsche", "for": ["man-purpose", "nothing-enough", "over-it"] },
+    { "style": "strength", "text": "Un voyage de mille lieues commence toujours par un premier pas.", "by": "Lao Tzu", "for": ["meet-people", "no-friends", "cant-eat", "her-things"] }
+  ]
+}

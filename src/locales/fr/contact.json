@@ -1,0 +1,31 @@
+{
+  "_note": "Where notes and confessions are sent. Sending opens the phone's email app with this address and subject; the body starts with what kind of message it is.",
+  "email": "julie.motvivant@gmail.com",
+  "feedback": {
+    "menu": "Écrire un mot à Julie",
+    "title": "Aide à améliorer l'appli",
+    "intro": "Quelque chose qui t'a aidé, quelque chose qui n'a pas marché, quelque chose qui manque, une faute de frappe, une idée. Julie lit tout.",
+    "placeholder": "Qu'est-ce qui rendrait l'appli meilleure ?",
+    "send": "Envoyer à Julie",
+    "how": "Ça ouvre ton appli de mail avec ton mot dedans. Julie verra ton adresse e-mail.",
+    "subject": "['after' app]",
+    "notSetUp": "L'envoi n'est pas encore en place. Ton mot est toujours là ; réessaie après la prochaine mise à jour.",
+    "bodyStart": "Une note pour améliorer l'app :\n\n"
+  },
+  "confession": {
+    "menu": "Confession",
+    "title": "Confession",
+    "intro": "Dis la chose que tu n'as jamais dite à personne. Personne ne la lira, sauf si tu choisis de l'envoyer.",
+    "placeholder": "Je n'ai jamais dit à personne que…",
+    "letGo": "Laisser partir",
+    "letGoDone": "Partie. Tu l'as dit, et ça compte.",
+    "keep": "La garder ici, juste pour moi",
+    "kept": "Gardée sur ce téléphone",
+    "send": "L'envoyer à Julie",
+    "how": "L'envoi ouvre ton appli de mail. Julie verra ton adresse e-mail : ce n'est donc pas anonyme.",
+    "subject": "['after' app]",
+    "delete": "Supprimer",
+    "deleteConfirm": "Supprimer ceci pour de bon ?",
+    "bodyStart": "Confession :\n\n"
+  }
+}

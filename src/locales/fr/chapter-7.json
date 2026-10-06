@@ -1,0 +1,523 @@
+{
+  "number": 7,
+  "title": "Ses affaires à elle",
+  "summary": "Semaines onze et douze. Lisa demande à récupérer ses affaires. Théo fait son deuil exprès, avec des rituels : un carton, une lettre, un feu, une pierre. {Il|Elle|Iel} ne l'oublie pas ; {il|elle|iel} traverse. Pas de nouvelles lumières ; celles qui sont déjà là {le|la|le·a} portent.",
+  "screens": [
+    {
+      "id": "7.1",
+      "image": "Le téléphone de Théo sur le comptoir, l'aperçu d'un message, l'écran d'un bleu froid.",
+      "art": "phone-message-lisa",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Semaine onze. Un message de Lisa."
+        }
+      ]
+    },
+    {
+      "id": "7.2",
+      "image": "Le message à l'écran.",
+      "art": "phone-message-lisa",
+      "anchor": {
+        "x": 50,
+        "y": 40
+      },
+      "words": [
+        {
+          "speaker": "Lisa",
+          "text": "Coucou. J'espère que ça va. Je pourrais passer chercher le reste de mes affaires samedi ? Je peux juste prendre un carton devant la porte."
+        }
+      ]
+    },
+    {
+      "id": "7.3",
+      "image": "Théo {assis|assise|assis·e}, très immobile, les lumières chaudes à l'arrière-plan qui baissent un peu.",
+      "art": "theo-still-dim",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Douze semaines de lumière, et un seul message replonge l'appartement dans le noir."
+        }
+      ]
+    },
+    {
+      "id": "7.4",
+      "image": "Le Critique, soudain plus gros d'une taille.",
+      "art": "theo-still-dim",
+      "criticChange": 1,
+      "words": [
+        {
+          "speaker": "Critic",
+          "text": "Réponds un truc brillant. Qu'elle te regrette. Qu'elle s'en veuille."
+        }
+      ],
+      "interaction": {
+        "type": "critic-reply",
+        "options": [
+          {
+            "id": "critic",
+            "label": "« Ça, c'est le Critique qui parle. »"
+          },
+          {
+            "id": "back",
+            "label": "« Tu veux qu'elle revienne. Je sais. Moi aussi. »"
+          },
+          {
+            "id": "win",
+            "label": "« Je n'ai pas besoin de gagner. »"
+          }
+        ]
+      }
+    },
+    {
+      "id": "7.5",
+      "image": "Théo qui tape un message.",
+      "art": "phone-message-lisa",
+      "words": [],
+      "interaction": {
+        "type": "choice",
+        "prompt": "Sa réponse :",
+        "options": [
+          {
+            "id": "door",
+            "label": "« D'accord. Samedi à 11 h, je le laisse devant la porte. »"
+          },
+          {
+            "id": "fine",
+            "label": "« D'accord. Samedi, ça me va. »"
+          }
+        ]
+      }
+    },
+    {
+      "id": "7.6",
+      "image": "Un carton vide au milieu du sol. Des objets autour : sa tasse à elle, sa plante, une écharpe, une photo encadrée, un livre, un de ses sweats, un billet de concert, un dessin qu'elle lui a fait.",
+      "art": "box-objects",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Faire un carton, ça a l'air simple. Ça ne l'est pas. Chaque objet est une petite porte."
+        }
+      ],
+      "interaction": {
+        "type": "drag",
+        "mode": "sort",
+        "prompt": "Touche un objet, puis touche l'endroit où il va (ou fais-le glisser).",
+        "items": [
+          {
+            "id": "mug",
+            "label": "Sa tasse",
+            "line": "Elle buvait dedans tous les matins, pendant deux ans."
+          },
+          {
+            "id": "plant",
+            "label": "Sa plante",
+            "line": "Théo l'a gardée en vie. De justesse."
+          },
+          {
+            "id": "scarf",
+            "label": "Une écharpe",
+            "line": "Elle sent encore un peu son parfum à elle."
+          },
+          {
+            "id": "photo",
+            "label": "Une photo encadrée",
+            "line": "Eux deux, les yeux plissés face au soleil."
+          },
+          {
+            "id": "book",
+            "label": "Un livre",
+            "line": "Elle ne l'a jamais fini. Théo non plus."
+          },
+          {
+            "id": "hoodie",
+            "label": "Son sweat",
+            "line": "Techniquement, il était d'abord à Théo."
+          },
+          {
+            "id": "ticket",
+            "label": "Un billet de concert",
+            "line": "Le soir où ils ont raté le dernier train et sont rentrés à pied."
+          },
+          {
+            "id": "drawing",
+            "label": "Un dessin qu'elle lui a fait",
+            "line": "Un mauvais dessin d'une belle journée."
+          }
+        ],
+        "zones": [
+          {
+            "id": "give",
+            "label": "Rendre"
+          },
+          {
+            "id": "keep",
+            "label": "Garder"
+          },
+          {
+            "id": "let",
+            "label": "Laisser partir"
+          }
+        ]
+      }
+    },
+    {
+      "id": "7.7",
+      "image": "Le carton, scotché. L'étagère à garder, avec ce que le joueur a gardé.",
+      "art": "box-taped",
+      "showKept": "7.6",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Il n'y a pas de bonne réponse. Garder un souvenir, ce n'est pas s'accrocher. En rendre un, ce n'est pas oublier."
+        }
+      ]
+    },
+    {
+      "id": "7.8",
+      "image": "Le cabinet de Marie-Clo, lampe chaude.",
+      "art": "marieclo",
+      "words": [
+        {
+          "speaker": "Marie-Clo",
+          "text": "Tu n'as pas à l'oublier. Tu as à en faire le deuil. Ce n'est pas pareil. Le deuil, c'est une façon de dire merci pour ce qu'on a eu."
+        }
+      ]
+    },
+    {
+      "id": "7.9",
+      "image": "Marie-Clo qui lui tend trois petites fiches.",
+      "art": "marieclo",
+      "anchor": {
+        "x": 50,
+        "y": 60
+      },
+      "words": [
+        {
+          "speaker": "Marie-Clo",
+          "text": "Écris-lui. Tu ne l'enverras pas. Trois parties courtes. Courtes, Théo. Ce n'est pas un roman."
+        }
+      ]
+    },
+    {
+      "id": "7.10",
+      "image": "Théo à la table de la cuisine, la nuit, avec du papier et un stylo. Du noir, une bougie.",
+      "art": "letter-candle",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "{Il|Elle|Iel} va écrire à Lisa. {Il|Elle|Iel} ne va pas envoyer la lettre."
+        }
+      ]
+    },
+    {
+      "id": "7.11",
+      "image": "La lettre, première partie, avec un titre couleur crème.",
+      "art": "letter-candle",
+      "anchor": {
+        "x": 50,
+        "y": 65
+      },
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Première partie : trois choses que tu m'as données et que je garde."
+        }
+      ],
+      "interaction": {
+        "type": "write",
+        "key": "letter-1",
+        "placeholder": "Tu m'as appris à ralentir le dimanche.",
+        "max": 300,
+        "rows": 3
+      }
+    },
+    {
+      "id": "7.12",
+      "image": "La lettre, deuxième partie.",
+      "art": "letter-candle",
+      "anchor": {
+        "x": 50,
+        "y": 65
+      },
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Deuxième partie : une chose qui a fait mal. Une phrase. Elle n'a pas besoin d'être juste."
+        }
+      ],
+      "interaction": {
+        "type": "write",
+        "key": "letter-2",
+        "max": 200,
+        "rows": 2
+      }
+    },
+    {
+      "id": "7.13",
+      "image": "La lettre, troisième partie.",
+      "art": "letter-candle",
+      "anchor": {
+        "x": 50,
+        "y": 65
+      },
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Troisième partie : au revoir. Une ligne qui ferme la porte doucement. Comme elle l'a fait."
+        }
+      ],
+      "interaction": {
+        "type": "write",
+        "key": "letter-3",
+        "max": 150,
+        "rows": 2
+      }
+    },
+    {
+      "id": "7.14",
+      "image": "La lettre pliée, Théo la tient au-dessus de l'évier, une allumette dans l'autre main.",
+      "art": "letter-sink",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Certaines choses se disent en les disant. D'autres se disent en les laissant partir."
+        }
+      ],
+      "interaction": {
+        "type": "choice",
+        "options": [
+          {
+            "id": "burn",
+            "label": "La brûler (dans l'évier)",
+            "goto": "7.15a"
+          },
+          {
+            "id": "keep",
+            "label": "La garder dans une boîte",
+            "goto": "7.15b"
+          },
+          {
+            "id": "tear",
+            "label": "La déchirer",
+            "goto": "7.15c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "7.15a",
+      "image": "Le papier qui brûle dans l'évier : des flammes, les bords qui se recourbent, les mots qui partent en premier.",
+      "art": "burning-letter",
+      "next": "7.16",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Les mots partent en premier. Puis le papier. Puis juste un peu de fumée, et une odeur d'automne."
+        }
+      ],
+      "interaction": {
+        "type": "hold",
+        "seconds": 3,
+        "button": "Maintenir pour brûler",
+        "note": "Si tu le fais pour de vrai : dans un évier, loin de tout ce qui peut prendre feu."
+      }
+    },
+    {
+      "id": "7.15b",
+      "image": "Une petite boîte en fer, la lettre qui entre dedans, le couvercle qui se ferme.",
+      "art": "tin-box",
+      "next": "7.16",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Certaines lettres veulent être gardées. C'est permis aussi."
+        }
+      ]
+    },
+    {
+      "id": "7.15c",
+      "image": "Des morceaux de papier qui tombent comme de la neige.",
+      "art": "torn-paper",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Assez petits pour que les mots ne puissent plus se retrouver."
+        }
+      ]
+    },
+    {
+      "id": "7.16",
+      "image": "Samedi. La porte de Théo, le carton devant. Théo à l'intérieur, dos contre la porte.",
+      "art": "door-box",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Samedi, 11 h. Théo est {assis|assise|assis·e} par terre, de son côté de la porte. Comme le premier soir. Mais pas comme le premier soir."
+        }
+      ]
+    },
+    {
+      "id": "7.17",
+      "image": "Sous la porte : l'ombre de deux pieds, une main qui soulève le carton (on ne voit jamais son visage).",
+      "art": "under-door",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Des pas. Le carton se soulève. Un silence, comme si elle allait frapper."
+        }
+      ]
+    },
+    {
+      "id": "7.18",
+      "image": "La porte, fermée. Des pas qui descendent.",
+      "art": "door-box",
+      "anchor": {
+        "x": 50,
+        "y": 40
+      },
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Elle ne frappe pas. Théo n'ouvre pas. C'est juste, pour tous les deux."
+        }
+      ]
+    },
+    {
+      "id": "7.19",
+      "image": "Théo qui pleure doucement, mais {dessiné|dessinée|dessiné·e} en traits souples cette fois, avec autour {de lui|d'elle|d'iel} la lumière des lumières d'avant.",
+      "art": "theo-crying-soft",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Théo est triste. Vraiment triste. Et {il|elle|iel} remarque quelque chose de nouveau : {il|elle|iel} n'est pas {désespéré|désespérée|désespéré·e}. Triste et {désespéré|désespérée|désespéré·e}, ce n'est pas pareil. La tristesse, c'est juste de l'amour qui ne sait pas où aller, pour un temps."
+        }
+      ]
+    },
+    {
+      "id": "7.20",
+      "image": "Théo qui sort de la ville à pied, une pierre plate à la main. Le bord de la ville, puis un petit lac avec des roseaux. Aquarelle gris-vert.",
+      "art": "lake-walk",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "L'après-midi, {il|elle|iel} marche jusqu'au lac, au bord de la ville. L'idée de Marie-Clo. {Il|Elle|Iel} trouve une pierre plate."
+        }
+      ]
+    },
+    {
+      "id": "7.21",
+      "image": "Gros plan sur la pierre et un feutre.",
+      "art": "lake-walk",
+      "anchor": {
+        "x": 50,
+        "y": 75
+      },
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Quelle est la chose la plus lourde qu'{il|elle|iel} porte ? Un seul mot."
+        }
+      ],
+      "interaction": {
+        "type": "write",
+        "key": "stone-word",
+        "placeholder": "Un mot",
+        "max": 24,
+        "rows": 1
+      }
+    },
+    {
+      "id": "7.22",
+      "image": "Théo au bord de l'eau, le bras en arrière.",
+      "art": "lake-throw",
+      "words": [],
+      "interaction": {
+        "type": "drag",
+        "mode": "target",
+        "prompt": "Lance la pierre : fais-la glisser jusqu'au lac, ou envoie-la d'un coup vers le haut.",
+        "item": {
+          "id": "stone",
+          "label": "🪨 {w:stone-word}"
+        },
+        "target": {
+          "id": "lake",
+          "label": "Le lac"
+        }
+      }
+    },
+    {
+      "id": "7.23",
+      "image": "La pierre qui ricoche une fois, deux fois, et coule. Des ronds qui s'élargissent sur l'eau.",
+      "art": "lake-rings",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Deux ricochets. Puis plus rien. Les ronds mettent longtemps à s'apaiser. Ce n'est pas grave. Les ronds, c'est comme ça."
+        }
+      ]
+    },
+    {
+      "id": "7.24",
+      "image": "Le retour à pied, les lumières de la ville qui s'allument : chacune de ses fenêtres éclairées sur l'horizon.",
+      "art": "city-lights-evening",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Sur le chemin du retour, les lumières de la ville s'allument une à une. Théo sait derrière quelles fenêtres sont les siens."
+        }
+      ]
+    },
+    {
+      "id": "7.25",
+      "image": "Le Café du Pont. Nadia lui glisse une tasse ; sur la mousse, une petite pieuvre en latte art. La lumière de Nadia brille plus fort.",
+      "art": "octopus-latte",
+      "words": [
+        {
+          "speaker": "Nadia",
+          "text": "Dure journée ?"
+        },
+        {
+          "speaker": "Théo",
+          "text": "Dure journée."
+        },
+        {
+          "speaker": "Nadia",
+          "text": "C'est pour la maison. Pas de commentaire sur la pieuvre."
+        }
+      ]
+    },
+    {
+      "id": "7.26",
+      "image": "La carte Qui est Théo ? En bas, une phrase : « On allait… »",
+      "art": "who-map",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Une dernière chose. Théo a l'habitude des phrases qui commencent par « on ». Réécris-en une pour qu'elle commence par « je »."
+        }
+      ],
+      "interaction": {
+        "type": "write",
+        "key": "i-want",
+        "prompt": "« On allait… » devient :",
+        "prefill": "J'ai envie de ",
+        "max": 140,
+        "rows": 2,
+        "addToMap": "Things I'm curious about"
+      }
+    },
+    {
+      "id": "7.27",
+      "image": "Carte de quête.",
+      "words": [],
+      "interaction": {
+        "type": "quest",
+        "id": "q7",
+        "title": "Laisser partir une chose",
+        "text": "Choisis un rituel : écrire une courte lettre que tu n'enverras pas (trois parties, une ligne d'au revoir), lancer une pierre dans l'eau, ou donner un objet que tu gardes pour de mauvaises raisons.",
+        "unlocks": 8
+      }
+    }
+  ]
+}

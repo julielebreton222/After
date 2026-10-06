@@ -1,0 +1,457 @@
+{
+  "title": "Que faire quand…",
+  "intro": "De petites choses qui aident, pour les moments difficiles. Ouvre n'importe quelle carte, quand tu veux. Pas besoin de tout faire. Un seul pas, ça compte.",
+  "ui": {
+    "theoDid": "Théo l'a fait au chapitre {n}.",
+    "from": "Une idée de {name}",
+    "watch": "Des vidéos qui peuvent aider"
+  },
+  "cards": [
+    {
+      "id": "text-her",
+      "group": "Quand ça fait mal",
+      "title": "J'ai envie de lui écrire",
+      "steps": [
+        "Remarque l'envie. Elle a l'air d'une urgence, mais c'est plutôt un manque : ton cerveau est habitué à elle, et il réclame sa dose.",
+        "Attends 20 minutes. Une envie monte, atteint un pic, puis redescend, comme une vague. Pas besoin de lui obéir pour qu'elle passe.",
+        "Écris plutôt le message dans tes notes. Ne l'envoie pas. Relis-le demain.",
+        "Écris plutôt à un ami ou à ta sœur : « J'ai vraiment envie de lui écrire, là. » Le dire à voix haute lui enlève la moitié de sa force."
+      ],
+      "from": "Dr. K",
+      "story": "7.4",
+      "videos": [
+        {
+          "id": "GbvfZBHtGv8",
+          "title": "Why You Can't Get Over Your Ex",
+          "by": "Dr. K (HealthyGamerGG)"
+        },
+        {
+          "id": "922VVfq2Stk",
+          "title": "Why You're Still Heartbroken (And How to Fix It)",
+          "by": "Matthew Hussey"
+        }
+      ]
+    },
+    {
+      "id": "checking",
+      "group": "Quand ça fait mal",
+      "title": "Je n'arrête pas d'aller voir son profil",
+      "steps": [
+        "Chaque coup d'œil rouvre un peu la blessure. On croit s'informer ; c'est surtout de la douleur.",
+        "Mets-la en sourdine ou archive-la. Pas besoin de la bloquer ni de faire une déclaration. Juste ajouter une étape avant d'aller voir.",
+        "Enlève l'appli de ton écran d'accueil pendant un temps.",
+        "Quand tu te surprends à tendre la main vers elle, pose le téléphone et fais une seule chose physique : te lever, boire de l'eau, sortir un instant."
+      ],
+      "from": "Dr. K",
+      "videos": [
+        {
+          "id": "GbvfZBHtGv8",
+          "title": "Why You Can't Get Over Your Ex",
+          "by": "Dr. K (HealthyGamerGG)"
+        }
+      ]
+    },
+    {
+      "id": "sadness",
+      "group": "Quand ça fait mal",
+      "title": "Une vague de tristesse arrive",
+      "steps": [
+        "Ne la combats pas, ne cherche pas à la réparer. Laisse-la venir.",
+        "Trouve où elle est dans ton corps : la poitrine, la gorge, le ventre. Pose une main là.",
+        "Laisse-la être aussi grande qu'elle l'est. Pleure si ça vient. Les émotions qu'on ressent pleinement traversent ; celles qu'on repousse restent.",
+        "Quand elle passe (elle passera), bois un peu d'eau et fais pour toi quelque chose de petit et de doux."
+      ],
+      "from": "Joe Hudson",
+      "story": "3.16",
+      "videos": [
+        {
+          "id": "uu1gmUlb-kY",
+          "title": "4 Ways To Feel Your Emotions",
+          "by": "Joe Hudson"
+        },
+        {
+          "id": "mYnRHhSI-zw",
+          "title": "What Happens When You Finally Feel Everything?",
+          "by": "Joe Hudson"
+        }
+      ]
+    },
+    {
+      "id": "her-things",
+      "group": "Quand ça fait mal",
+      "title": "Je retombe sans arrêt sur ses affaires",
+      "steps": [
+        "Prends un carton.",
+        "Pour chaque objet, choisis : rendre, garder ou laisser partir. Il n'y a pas de bonne réponse.",
+        "Garder un souvenir, ce n'est pas s'accrocher. En donner un, ce n'est pas oublier.",
+        "Ferme le carton avec du scotch. Range-le hors de vue. Ça n'a pas besoin d'être aujourd'hui."
+      ],
+      "story": "7.6",
+      "videos": [
+        {
+          "id": "922VVfq2Stk",
+          "title": "Why You're Still Heartbroken (And How to Fix It)",
+          "by": "Matthew Hussey"
+        }
+      ]
+    },
+    {
+      "id": "over-it",
+      "group": "Quand ça fait mal",
+      "title": "Je devrais être passé à autre chose",
+      "steps": [
+        "Il n'y a pas de date limite. « Je devrais », c'est le Critique qui parle.",
+        "Tu n'as pas à l'oublier. Tu as à en faire le deuil. Le deuil, c'est de l'amour qui ne sait pas où aller, pour un temps.",
+        "Remarque si une part de toi se dépêche d'aller bien. Demande-lui, doucement : de quoi a-t-elle peur, si tu es encore triste ?",
+        "Triste et ça va, les deux peuvent être vrais le même jour."
+      ],
+      "from": "Joe Hudson",
+      "story": "7.8",
+      "videos": [
+        {
+          "id": "-cf78hK8Esc",
+          "title": "What Breakups ACTUALLY Do To Men",
+          "by": "Dr. K (HealthyGamerGG)"
+        },
+        {
+          "id": "dhlupWyTNYM",
+          "title": "How to Embrace the Emotions You Resist",
+          "by": "Joe Hudson with André Duqum"
+        }
+      ]
+    },
+    {
+      "id": "cant-eat",
+      "group": "Quand ça fait mal",
+      "title": "Je n'arrive pas à manger",
+      "steps": [
+        "C'est normal. Le stress met ton corps en mode alarme, et le mode alarme coupe l'appétit. Ce n'est pas un choix, et ça ne durera pas toujours.",
+        "N'attends pas d'avoir faim. Mange quelques bouchées toutes les deux ou trois heures, comme on prend un médicament.",
+        "Choisis des choses faciles : une soupe, une tartine, une banane, un yaourt, du riz, des noix, un smoothie. Les calories qu'on boit comptent aussi.",
+        "Mange avec quelqu'un, ou là où il y a du monde : un café, la cuisine d'un ami. C'est plus facile quand on n'est pas seul.",
+        "Si tu as à peine mangé depuis plusieurs jours, ou si tu perds du poids vite, va voir un médecin. C'est fait pour ça."
+      ],
+      "videos": [
+        {
+          "id": "TiQnjhXNjo4",
+          "title": "The gut-grief connection: eating after loss",
+          "by": "Untangle"
+        },
+        {
+          "id": "BDzWMXthXj0",
+          "title": "Break up diet: what happens to your body during a break up",
+          "by": "Nicole Hoskens, dietitian"
+        },
+        {
+          "id": "Gcp1G0eIUYk",
+          "title": "The Physical Symptoms of Grief",
+          "by": "Therapy in a Nutshell"
+        }
+      ]
+    },
+    {
+      "id": "too-much",
+      "group": "Quand ça se passe dans ta tête",
+      "title": "Tout me semble trop",
+      "steps": [
+        "De l'eau froide sur le visage, et retiens ta respiration quelques secondes. Ça dit à ton corps de ralentir.",
+        "Secoue-toi : les mains, les bras, les épaules, tout le corps, pendant trente secondes. Les animaux font ça après une frayeur.",
+        "Expire plus longtemps que tu n'inspires. Inspire sur 4, expire sur 6, cinq fois.",
+        "Choisis une toute petite chose : un verre d'eau, une douche, un tour du pâté de maisons. Juste ça.",
+        "Si c'est plus que tu ne peux porter, appuie sur « Ça ne va pas » en haut."
+      ],
+      "story": "2.16",
+      "videos": [
+        {
+          "id": "rBdhqBGqiMc",
+          "title": "Reduce Anxiety & Stress with the Physiological Sigh",
+          "by": "Andrew Huberman"
+        }
+      ]
+    },
+    {
+      "id": "critic",
+      "group": "Quand ça se passe dans ta tête",
+      "title": "La voix dans ma tête est méchante",
+      "steps": [
+        "Nomme-la : « Ça, c'est le Critique. » Ce n'est pas la vérité ; c'est une voix qui croit te protéger.",
+        "Sois curieux au lieu de discuter : de quoi a-t-elle peur ? En général, elle essaie de t'empêcher d'avoir mal à nouveau.",
+        "Demande-toi ce que tu dirais à un ami qui dirait ça de lui-même. Dis-toi ça.",
+        "Tu n'as pas besoin de gagner contre elle. Tu as juste à arrêter de lui obéir."
+      ],
+      "from": "Joe Hudson",
+      "videos": [
+        {
+          "id": "1gz4duPT5CY",
+          "title": "Overcoming Negative Self-Talk",
+          "by": "Dr. K (HealthyGamerGG)"
+        },
+        {
+          "id": "PMmObJYglbo",
+          "title": "How Shame-Based Motivation Backfires",
+          "by": "Dr. K with Chris Williamson"
+        }
+      ]
+    },
+    {
+      "id": "angry",
+      "group": "Quand ça se passe dans ta tête",
+      "title": "Je suis en colère (contre elle, contre moi)",
+      "steps": [
+        "La colère a le droit d'exister. Ce n'est pas elle, le problème ; c'est de la déverser sur quelqu'un.",
+        "Fais-la passer par ton corps, sans danger : marche vite, pousse fort contre un mur, frappe un coussin, crie dedans dans la voiture.",
+        "Laisse-la être bruyante une minute, seul. Une colère vécue franchement finit souvent par s'éteindre, et ce qu'il y a dessous apparaît.",
+        "Demande-toi : qu'est-ce que cette colère protège ? Souvent, une blessure, ou une limite qu'on a franchie."
+      ],
+      "from": "Joe Hudson",
+      "videos": [
+        {
+          "id": "wbSXl_SX2Vc",
+          "title": "How Anger Works (8-min Guide to Healthy Anger)",
+          "by": "Joe Hudson"
+        }
+      ]
+    },
+    {
+      "id": "cant-sleep",
+      "group": "Quand ça se passe dans ta tête",
+      "title": "Je n'arrive pas à dormir",
+      "steps": [
+        "Le téléphone hors de portée. Faire défiler l'écran ressemble à du repos ; ça garde ton cerveau allumé.",
+        "Écris tes soucis sur papier et donne-leur rendez-vous : « J'y penserai demain à 18 h. »",
+        "Si tu ne dors toujours pas au bout de 20 minutes environ, lève-toi, assieds-toi dans la pénombre et fais quelque chose d'ennuyeux, puis réessaie.",
+        "Lève-toi à la même heure demain, même après une mauvaise nuit. C'est ça qui remet le sommeil d'aplomb."
+      ],
+      "from": "Dr. K",
+      "story": "3.19",
+      "videos": [
+        {
+          "id": "b2RhXCugEW4",
+          "title": "Do This Meditation Before Bed",
+          "by": "Dr. K (HealthyGamerGG)"
+        },
+        {
+          "id": "SW-L6wVEHoY",
+          "title": "How To Actually Fix Your Sleep Schedule",
+          "by": "Dr. K (HealthyGamerGG)"
+        }
+      ]
+    },
+    {
+      "id": "no-energy",
+      "group": "Quand ça se passe dans ta tête",
+      "title": "Je n'ai envie de rien",
+      "steps": [
+        "Ce n'est pas de la paresse. Le manque d'énergie fait partie du chagrin d'amour.",
+        "N'attends pas la motivation. Elle vient en général après avoir commencé, pas avant.",
+        "Réduis ça à deux minutes : mettre tes chaussures, ouvrir la fenêtre, laver une assiette.",
+        "Fais-le pour quelqu'un d'autre : c'est plus facile de cuisiner pour quelqu'un que pour soi."
+      ],
+      "from": "Dr. K",
+      "videos": [
+        {
+          "id": "H_WJ5hgWLFo",
+          "title": "How to Get Motivated (Even When You Don't Feel Like It)",
+          "by": "Dr. K with Mel Robbins"
+        }
+      ]
+    },
+    {
+      "id": "nothing-enough",
+      "group": "Quand ça se passe dans ta tête",
+      "title": "Rien n'est jamais assez",
+      "steps": [
+        "Quand on a mal, le cerveau cherche de quoi boucher le trou : faire défiler, jouer, manger, boire, la prochaine réussite. Ça ne marche jamais tout à fait.",
+        "Le trou n'est pas un manque de choses, en général. Souvent, c'est une émotion qui attend d'être ressentie. Assieds-toi deux minutes et demande-toi : qu'est-ce que j'essaie de ne pas ressentir ?",
+        "Remarque les pensées « J'irai bien quand… ». Quand j'aurai une copine, quand j'aurai le poste. Tu as le droit d'aller bien avant.",
+        "Réduis les plaisirs rapides pendant quelques jours (le défilement sans fin, le porno, les jeux à outrance), pour que les choses normales recommencent à faire du bien.",
+        "Fais une chose juste pour elle-même : cuisiner, marcher, dessiner, jouer de la musique. Avant de dormir, note trois petites bonnes choses de la journée."
+      ],
+      "from": "Joe Hudson and Dr. K",
+      "videos": [
+        {
+          "id": "TH9dQJQmuls",
+          "title": "How To Get Out Of A Mental Rut",
+          "by": "Dr. K with Chris Williamson"
+        },
+        {
+          "id": "PZMWdRnm8Wg",
+          "title": "Anhedonia: why nothing feels fun anymore",
+          "by": "Dr. K (HealthyGamerGG)"
+        },
+        {
+          "id": "U0jyfgdrsmk",
+          "title": "Why You Can't Enjoy Anything Anymore",
+          "by": "Dr. K (HealthyGamerGG)"
+        },
+        {
+          "id": "mYnRHhSI-zw",
+          "title": "What Happens When You Finally Feel Everything?",
+          "by": "Joe Hudson"
+        }
+      ]
+    },
+    {
+      "id": "no-friends",
+      "group": "Quand tu es seul",
+      "title": "Je me sens seul, comme si je n'avais pas d'amis",
+      "steps": [
+        "La solitude est un signal, comme la faim : elle te dit que tu as besoin des autres. Ce n'est pas un verdict sur qui tu es.",
+        "Écris le nom de tout le monde, même les petits liens : le barista, un voisin, un cousin, quelqu'un de l'école. Les petits liens comptent, et ils peuvent grandir.",
+        "Écris à un vieil ami aujourd'hui. Reste simple : « Salut, je pensais à toi. Comment tu vas ? »",
+        "Inscris-toi à une chose qui revient chaque semaine, et continue d'y retourner.",
+        "Sois patient. D'après la recherche, il faut environ 50 heures passées ensemble pour passer de connaissance à copain, et environ 200 pour devenir proches. Chaque heure compte."
+      ],
+      "from": "Dr. K",
+      "story": "4.4",
+      "videos": [
+        {
+          "id": "dWS3A2EAwTk",
+          "title": "Loneliness: The Silent Struggle We All Feel",
+          "by": "Dr. K (HealthyGamerGG)"
+        },
+        {
+          "id": "kTrbGx6_xaU",
+          "title": "How To Make Friends As A Man",
+          "by": "Dr. K (HealthyGamerGG)"
+        }
+      ]
+    },
+    {
+      "id": "alone-evening",
+      "group": "Quand tu es seul",
+      "title": "C'est le soir et je suis seul",
+      "steps": [
+        "Va là où il y a du monde, même sans parler à personne : un café, une bibliothèque, un bar qui passe un match.",
+        "Appelle une personne, ou envoie-lui un message vocal. Pas pour parler d'elle : juste « Tu fais quoi ? »",
+        "Cuisine quelque chose de vrai, avec tes mains. Fais-en assez pour deux.",
+        "Si c'est une mauvaise soirée, ce n'est pas grave de juste la traverser. Demain arrive."
+      ],
+      "videos": [
+        {
+          "id": "dWS3A2EAwTk",
+          "title": "Loneliness: The Silent Struggle We All Feel",
+          "by": "Dr. K (HealthyGamerGG)"
+        }
+      ]
+    },
+    {
+      "id": "scared-people",
+      "group": "Quand tu es seul",
+      "title": "J'ai trop peur de parler aux gens",
+      "steps": [
+        "La peur n'est pas un panneau stop. Tout le monde dans la pièce en ressent un peu.",
+        "Prépare trois phrases dans ta poche, comme Théo : « C'est ma première fois ici. Comment ça se passe ? » marche presque partout.",
+        "Pose une vraie question, puis écoute. Les gens aiment ceux qui s'intéressent à eux.",
+        "Si ça se passe mal, c'est une information, pas un verdict. Tu as fait le plus dur : tu es venu."
+      ],
+      "from": "Dr. K",
+      "story": "5.4",
+      "videos": [
+        {
+          "id": "kTrbGx6_xaU",
+          "title": "How To Make Friends As A Man",
+          "by": "Dr. K (HealthyGamerGG)"
+        }
+      ]
+    },
+    {
+      "id": "meet-people",
+      "group": "Quand tu es seul",
+      "title": "Je ne sais pas où rencontrer des gens",
+      "steps": [
+        "L'amitié, c'est surtout revenir au même endroit, à la même heure, encore et encore.",
+        "Choisis quelque chose avec une activité : jeux de société, salle d'escalade, bénévolat, club de course, un cours. Faire quelque chose côte à côte, c'est plus facile que face à face.",
+        "Vas-y trois fois avant de décider que ce n'est pas pour toi. La première fois, tout le monde est inconnu ; la troisième, tu es un habitué.",
+        "Si rien n'existe, lance toi-même la petite chose : un mot sur la porte, une marmite de soupe."
+      ],
+      "from": "Dr. K",
+      "story": "4.4",
+      "videos": [
+        {
+          "id": "kTrbGx6_xaU",
+          "title": "How To Make Friends As A Man",
+          "by": "Dr. K (HealthyGamerGG)"
+        },
+        {
+          "id": "9DDJBEY6GGY",
+          "title": "How To Make Friends As An Adult",
+          "by": "Matthew Hussey"
+        }
+      ]
+    },
+    {
+      "id": "man-feelings",
+      "group": "Pour les hommes",
+      "title": "Un homme ne devrait pas ressentir ça",
+      "steps": [
+        "Beaucoup d'hommes grandissent avec une seule émotion autorisée : la colère. Tout le reste, on l'avale. Ça ne disparaît pas ; ça ressort de travers.",
+        "La tristesse, la peur, le manque de quelqu'un ne sont pas de la faiblesse. Ce sont des informations. Les ressentir, c'est ce qui les laisse passer.",
+        "La force, ce n'est pas ne rien ressentir. C'est ressentir, et quand même se lever, rester gentil, être là.",
+        "Essaie de dire l'émotion elle-même à voix haute, pour toi ou à quelqu'un : « Je suis triste. » « J'ai peur de finir seul. » Remarque que tu tiens encore debout."
+      ],
+      "from": "Joe Hudson",
+      "videos": [
+        {
+          "id": "y4ePjkg3SSY",
+          "title": "Watch him learn to feel his emotions in real time",
+          "by": "Joe Hudson"
+        },
+        {
+          "id": "-cf78hK8Esc",
+          "title": "What Breakups ACTUALLY Do To Men",
+          "by": "Dr. K (HealthyGamerGG)"
+        },
+        {
+          "id": "vpMNeCiKxSY",
+          "title": "The Art Of Mastering Your Emotions",
+          "by": "Joe Hudson with Chris Williamson"
+        }
+      ]
+    },
+    {
+      "id": "man-friends",
+      "group": "Pour les hommes",
+      "title": "Je n'ai personne à qui parler",
+      "steps": [
+        "C'est très courant chez les hommes, surtout après une rupture : c'était souvent elle, la personne à qui tu parlais le plus.",
+        "Les hommes se lient souvent côte à côte, en faisant quelque chose ensemble. Invite quelqu'un à faire un truc (une balade, un jeu, réparer quelque chose) plutôt qu'à « parler ».",
+        "Lance-toi le premier avec quelque chose de petit et de vrai : « Franchement, ce mois-ci a été dur. » La plupart des amis sont soulagés, et s'ouvrent à leur tour.",
+        "Un psy, ça compte. Parler à un professionnel, c'est de l'entraînement, pas un échec."
+      ],
+      "from": "Dr. K",
+      "videos": [
+        {
+          "id": "kTrbGx6_xaU",
+          "title": "How To Make Friends As A Man",
+          "by": "Dr. K (HealthyGamerGG)"
+        }
+      ]
+    },
+    {
+      "id": "man-purpose",
+      "group": "Pour les hommes",
+      "title": "Je ne sais pas qui je suis sans elle",
+      "steps": [
+        "Quand une relation se termine, le projet de ta vie part avec elle. Se sentir perdu, c'est normal ; ce n'est pas le signe que tu es cassé.",
+        "Demande-toi : qui étais-je avant elle ? Qu'est-ce que j'aimais quand personne ne regardait ?",
+        "Le sens vient souvent du fait d'être utile à quelqu'un. Aide un voisin, cuisine, fais du bénévolat, apprends à quelqu'un ce que tu sais.",
+        "Tu n'as pas encore besoin d'un plan. Une direction suffit : vers les gens, vers ce qui éveille ta curiosité."
+      ],
+      "from": "Dr. K",
+      "story": "3.7",
+      "videos": [
+        {
+          "id": "AiXiyLJz8-U",
+          "title": "Meaning, Purpose, and Motivation",
+          "by": "Dr. K (HealthyGamerGG)"
+        },
+        {
+          "id": "CjEz3b4XH7E",
+          "title": "Why You're Always Bored, Unhappy & Stuck",
+          "by": "Dr. K with Dr Rangan Chatterjee"
+        }
+      ]
+    }
+  ]
+}

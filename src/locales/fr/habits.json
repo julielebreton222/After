@@ -1,0 +1,113 @@
+{
+  "title": "Habitudes",
+  "intro": "De petites choses qui t'aident à tenir. Choisis-en une, pas dix. Commence-la et, si tu veux, garde une trace. Pas de séries, pas de scores.",
+  "ui": {
+    "start": "Commencer cette habitude",
+    "stop": "Arrêter cette habitude",
+    "track": "Garder une trace",
+    "active": "Tes habitudes",
+    "more": "Plus d'habitudes",
+    "none": "Pas encore d'habitude. Choisis-en une ci-dessous : une seule, c'est déjà beaucoup.",
+    "doneToday": "Fait aujourd'hui",
+    "doneThisWeek": "Fait cette semaine",
+    "day": "chaque jour",
+    "week": "chaque semaine",
+    "from": "Une idée de {name}",
+    "addTitle": "Ajoute ta propre habitude",
+    "addPlaceholder": "Par exemple : appeler maman le dimanche",
+    "addEvery": "À quelle fréquence",
+    "add": "Ajouter",
+    "delete": "Supprimer cette habitude",
+    "deleteConfirm": "Supprimer cette habitude et son historique ?",
+    "tipTitle": "Tu peux créer tes propres habitudes",
+    "tipText": "Choisis l'une des habitudes proposées ici, ou crée la tienne : une petite chose qui t'aide. Descends tout en bas, donne-lui un nom, et choisis chaque jour ou chaque semaine.",
+    "tipCreate": "Créer une habitude maintenant",
+    "tipOk": "Compris"
+  },
+  "habits": [
+    {
+      "id": "meal",
+      "title": "Manger un vrai repas",
+      "why": "Le chagrin d'amour coupe l'appétit. Un vrai repas, c'est le sol sur lequel tout le reste repose.",
+      "how": "Assis, une assiette, sans téléphone. Pas besoin que ce soit compliqué.",
+      "every": "day"
+    },
+    {
+      "id": "walk",
+      "title": "Sortir marcher",
+      "why": "Bouger son corps fait circuler les émotions, et la lumière du jour aide à dormir.",
+      "how": "Vingt minutes. Pas besoin de destination.",
+      "every": "day"
+    },
+    {
+      "id": "wake",
+      "title": "Se lever à la même heure",
+      "why": "Le sommeil se règle par le matin, pas par le soir. Une heure de lever fixe fait plus qu'un coucher tôt.",
+      "how": "La même heure tous les jours, le week-end aussi. De la lumière sur le visage peu après.",
+      "every": "day",
+      "from": "Dr. K"
+    },
+    {
+      "id": "phone-bed",
+      "title": "Le téléphone hors de la chambre",
+      "why": "Faire défiler l'écran au lit ressemble à du repos, mais ça garde ton cerveau allumé, et son profil est à un clic.",
+      "how": "Charge-le dans une autre pièce. Prends un petit réveil pas cher.",
+      "every": "day",
+      "from": "Dr. K"
+    },
+    {
+      "id": "feel",
+      "title": "Ressentir une émotion, pleinement",
+      "why": "Les émotions qu'on repousse s'installent ; celles qu'on laisse entrer traversent.",
+      "how": "Une fois par jour, assieds-toi deux minutes. Demande-toi : qu'est-ce que je ressens ? Où, dans mon corps ? Laisse-la être là sans chercher à la réparer.",
+      "every": "day",
+      "from": "Joe Hudson"
+    },
+    {
+      "id": "breathe",
+      "title": "Cinq minutes de calme",
+      "why": "Quelques minutes assis sans bouger t'apprennent à remarquer tes pensées sans leur obéir.",
+      "how": "Assieds-toi, respire, regarde une bougie ou ton souffle. Quand ton esprit s'égare, reviens. C'est tout l'exercice.",
+      "every": "day",
+      "from": "Dr. K"
+    },
+    {
+      "id": "question",
+      "title": "Poser une vraie question à quelqu'un",
+      "why": "S'intéresser aux autres, c'est le chemin le plus court pour sortir de sa tête, et le début de toutes les amitiés.",
+      "how": "Pas « ça va ? ». Quelque chose que tu as vraiment envie de savoir.",
+      "every": "day"
+    },
+    {
+      "id": "reach-out",
+      "title": "Faire signe à une personne",
+      "why": "Les amitiés s'effacent quand personne ne fait le premier pas. Sois celui qui le fait.",
+      "how": "Un message, un vocal, un appel. « J'ai vu ça et j'ai pensé à toi », ça compte.",
+      "every": "week",
+      "from": "Dr. K"
+    },
+    {
+      "id": "go-back",
+      "title": "Retourner au même endroit",
+      "why": "L'amitié, c'est surtout revenir au même endroit à la même heure, jusqu'à devenir un habitué.",
+      "how": "Le même café, le même club, la même soirée jeux ou le même cours, chaque semaine.",
+      "every": "week",
+      "from": "Dr. K"
+    },
+    {
+      "id": "cook-for-someone",
+      "title": "Cuisiner pour quelqu'un",
+      "why": "Donner, c'est l'un des chemins les plus rapides pour se sentir utile à nouveau, et la nourriture rassemble les gens autour d'une table.",
+      "how": "Un voisin, un ami, une marmite de soupe dans la cour.",
+      "every": "week"
+    },
+    {
+      "id": "say-it",
+      "title": "Dire une émotion vraie à voix haute",
+      "why": "Beaucoup d'hommes ne laissent sortir que la colère. Nommer les autres émotions les rend plus petites, et fait de toi quelqu'un dont on peut être proche plus facilement.",
+      "how": "À un ami, à ta sœur, à un psy ou au miroir : « Je suis triste », « J'ai peur », « Elle me manque ».",
+      "every": "week",
+      "from": "Joe Hudson"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "number": 7,
   "title": "Her Things",
-  "summary": "Weeks eleven and twelve. Lisa asks for her things back. Théo grieves on purpose, with rituals: a box, a letter, a fire, a stone. He doesn't get over her; he gets through. No new lights; the existing ones hold him up.",
+  "summary": "Weeks eleven and twelve. Lisa asks for her things back. Théo grieves on purpose, with rituals: a box, a letter, a fire, a stone. {He|She|They} {doesn't|doesn't|don't} get over her; {he|she|they} {gets|gets|get} through. No new lights; the existing ones hold him up.",
   "screens": [
     {
       "id": "7.1",
@@ -55,7 +55,7 @@
       "words": [],
       "interaction": {
         "type": "choice",
-        "prompt": "His reply:",
+        "prompt": "{His|Her|Their} reply:",
         "options": [
           { "id": "door", "label": "\"Sure. Saturday at 11, I'll leave it at the door.\"" },
           { "id": "fine", "label": "\"Sure. Saturday's fine.\"" }
@@ -64,7 +64,7 @@
     },
     {
       "id": "7.6",
-      "image": "An empty cardboard box in the middle of the floor. Objects around it: her mug, her plant, a scarf, a framed photo, a book, a hoodie of hers, a concert ticket, a drawing she made him.",
+      "image": "An empty cardboard box in the middle of the floor. Objects around it: her mug, her plant, a scarf, a framed photo, a book, a hoodie of hers, a concert ticket, a drawing she made {him|her|them}.",
       "art": "box-objects",
       "words": [
         { "speaker": "narrator", "text": "Packing a box sounds simple. It isn't. Every object is a small door." }
@@ -75,13 +75,13 @@
         "prompt": "Tap a thing, then tap where it goes (or drag it there).",
         "items": [
           { "id": "mug", "label": "Her mug", "line": "She drank from this every morning for two years." },
-          { "id": "plant", "label": "Her plant", "line": "He kept it alive. Just about." },
+          { "id": "plant", "label": "Her plant", "line": "{He|She|They} kept it alive. Just about." },
           { "id": "scarf", "label": "A scarf", "line": "It still smells a little of her." },
           { "id": "photo", "label": "A framed photo", "line": "The two of them, squinting into the sun." },
-          { "id": "book", "label": "A book", "line": "She never finished it. Neither did he." },
-          { "id": "hoodie", "label": "Her hoodie", "line": "Technically it was his first." },
+          { "id": "book", "label": "A book", "line": "She never finished it. Neither did {he|she|they}." },
+          { "id": "hoodie", "label": "Her hoodie", "line": "Technically it was {his|hers|theirs} first." },
           { "id": "ticket", "label": "A concert ticket", "line": "The night they missed the last train and walked home." },
-          { "id": "drawing", "label": "A drawing she made him", "line": "A bad drawing of a good day." }
+          { "id": "drawing", "label": "A drawing she made {him|her|them}", "line": "A bad drawing of a good day." }
         ],
         "zones": [
           { "id": "give", "label": "Give back" },
@@ -115,7 +115,7 @@
     },
     {
       "id": "7.9",
-      "image": "Marie-Clo handing him three small cards.",
+      "image": "Marie-Clo handing {him|her|them} three small cards.",
       "art": "marieclo",
       "anchor": { "x": 50, "y": 60 },
       "words": [
@@ -127,7 +127,7 @@
       "image": "Théo at the kitchen table at night with paper and pen. Black, one candle.",
       "art": "letter-candle",
       "words": [
-        { "speaker": "narrator", "text": "He is going to write to Lisa. He is not going to send it." }
+        { "speaker": "narrator", "text": "{He|She|They} {is|is|are} going to write to Lisa. {He|She|They} {is|is|are} not going to send it." }
       ]
     },
     {
@@ -162,7 +162,7 @@
     },
     {
       "id": "7.14",
-      "image": "The letter folded, Théo holding it over the kitchen sink, a match in his other hand.",
+      "image": "The letter folded, Théo holding it over the kitchen sink, a match in {his|her|their} other hand.",
       "art": "letter-sink",
       "words": [
         { "speaker": "narrator", "text": "Some things are said by saying them. Some things are said by letting them go." }
@@ -215,7 +215,7 @@
       "words": [
         {
           "speaker": "narrator",
-          "text": "Saturday, 11am. Théo sits on the floor on his side of the door. Like the first night. But not like the first night."
+          "text": "Saturday, 11am. Théo sits on the floor on {his|her|their} side of the door. Like the first night. But not like the first night."
         }
       ]
     },
@@ -233,28 +233,28 @@
       "art": "door-box",
       "anchor": { "x": 50, "y": 40 },
       "words": [
-        { "speaker": "narrator", "text": "She doesn't. He doesn't. That's right, for both of them." }
+        { "speaker": "narrator", "text": "She doesn't. {He|She|They} {doesn't|doesn't|don't}. That's right, for both of them." }
       ]
     },
     {
       "id": "7.19",
-      "image": "Théo crying quietly, but drawn with soft lines this time, light around him from the earlier lights.",
+      "image": "Théo crying quietly, but drawn with soft lines this time, light around {him|her|them} from the earlier lights.",
       "art": "theo-crying-soft",
       "words": [
         {
           "speaker": "narrator",
-          "text": "Théo is sad. Properly sad. And he notices something new: he isn't desperate. Sad and desperate are different. Sad is just love with nowhere to go for a while."
+          "text": "Théo is sad. Properly sad. And {he|she|they} {notices|notices|notice} something new: {he|she|they} {isn't|isn't|aren't} desperate. Sad and desperate are different. Sad is just love with nowhere to go for a while."
         }
       ]
     },
     {
       "id": "7.20",
-      "image": "Théo walking out of town, a flat stone in his hand. The edge of the city, then a small lake with reeds. Watercolour grey-green.",
+      "image": "Théo walking out of town, a flat stone in {his|her|their} hand. The edge of the city, then a small lake with reeds. Watercolour grey-green.",
       "art": "lake-walk",
       "words": [
         {
           "speaker": "narrator",
-          "text": "In the afternoon, he walks to the lake at the edge of town. Marie-Clo's idea. He finds a flat stone."
+          "text": "In the afternoon, {he|she|they} {walks|walks|walk} to the lake at the edge of town. Marie-Clo's idea. {He|She|They} {finds|finds|find} a flat stone."
         }
       ]
     },
@@ -264,7 +264,7 @@
       "art": "lake-walk",
       "anchor": { "x": 50, "y": 75 },
       "words": [
-        { "speaker": "narrator", "text": "What's the heaviest thing he's carrying? One word." }
+        { "speaker": "narrator", "text": "What's the heaviest thing {he's|she's|they're} carrying? One word." }
       ],
       "interaction": { "type": "write", "key": "stone-word", "placeholder": "One word", "max": 24, "rows": 1 }
     },
@@ -291,15 +291,15 @@
     },
     {
       "id": "7.24",
-      "image": "Walking back, the city lights coming on: every one of his lit windows on the skyline.",
+      "image": "Walking back, the city lights coming on: every one of {his|her|their} lit windows on the skyline.",
       "art": "city-lights-evening",
       "words": [
-        { "speaker": "narrator", "text": "On the way home, the city lights come on one by one. Théo knows which windows are his people." }
+        { "speaker": "narrator", "text": "On the way home, the city lights come on one by one. Théo knows which windows are {his|her|their} people." }
       ]
     },
     {
       "id": "7.25",
-      "image": "Café du Pont. Nadia sliding him a cup; on the foam, a little latte-art octopus. Nadia's light glows brighter.",
+      "image": "Café du Pont. Nadia sliding {him|her|them} a cup; on the foam, a little latte-art octopus. Nadia's light glows brighter.",
       "art": "octopus-latte",
       "words": [
         { "speaker": "Nadia", "text": "Rough day?" },

@@ -1,0 +1,541 @@
+{
+  "number": 5,
+  "title": "L'échelle",
+  "summary": "Septième et huitième semaines. Une soirée jeux de société avec de parfaits inconnus : le Critique plus bruyant que jamais, l'échelle du courage, les phrases pour se lancer, et un premier coup d'œil derrière le rideau sur ce que les autres pensaient vraiment. Se termine avec 9 lumières.",
+  "screens": [
+    {
+      "id": "5.1",
+      "image": "Le Café du Pont, chaleureux et légèrement coloré maintenant. Nadia tend un prospectus à Théo : des dés et des pions, « JEUX DE SOCIÉTÉ, MARDI, TOUT LE MONDE BIENVENU ».",
+      "art": "nadia-flyer",
+      "words": [
+        {
+          "speaker": "Nadia",
+          "text": "C'est mon amie Béa qui organise. Ça te plairait. Personne n'y est doué."
+        }
+      ]
+    },
+    {
+      "id": "5.2",
+      "image": "Théo regarde le prospectus, le Critique penché par-dessus son épaule.",
+      "art": "nadia-flyer",
+      "anchor": {
+        "x": 35,
+        "y": 50
+      },
+      "words": [
+        {
+          "speaker": "Critic",
+          "text": "Une salle pleine d'inconnus qui se connaissent tous. Excellente idée."
+        }
+      ]
+    },
+    {
+      "id": "5.3",
+      "image": "Une grande échelle dessinée à la main apparaît à côté de la page, dix barreaux, avec des étiquettes.",
+      "art": "black",
+      "ladder": [],
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Marie-Clo appelle ça l'échelle du courage. Chaque barreau est une victoire. Tu peux t'arrêter à n'importe quel barreau, et tu as quand même gagné."
+        }
+      ]
+    },
+    {
+      "id": "5.4",
+      "image": "Théo écrit sur de petites cartes et les glisse dans sa poche.",
+      "art": "theo-pocket-cards",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Théo prépare trois phrases à garder dans sa poche, au cas où son cerveau se viderait."
+        }
+      ],
+      "interaction": {
+        "type": "choice",
+        "prompt": "Choisis-en trois pour la poche, ou écris la tienne.",
+        "pick": 3,
+        "min": 1,
+        "allowWrite": true,
+        "writePlaceholder": "Ta propre phrase…",
+        "saveAs": "pocket",
+        "options": [
+          {
+            "id": "first",
+            "label": "C'est ma première fois ici. Comment ça marche ?"
+          },
+          {
+            "id": "favourite",
+            "label": "Quel est votre jeu préféré, ici ?"
+          },
+          {
+            "id": "join",
+            "label": "Je peux me joindre à vous ?"
+          },
+          {
+            "id": "howlong",
+            "label": "Ça fait longtemps que vous venez ?"
+          },
+          {
+            "id": "bye",
+            "label": "{Ravi|Ravie|Ravi·e} de vous avoir rencontrés. À la prochaine ?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5.5",
+      "image": "L'échelle : le barreau 1 s'allume.",
+      "art": "black",
+      "ladder": [
+        1
+      ],
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Barreau un : décider d'y aller. Fait. Celui-là compte."
+        }
+      ],
+      "interaction": {
+        "type": "rate",
+        "key": "ladder",
+        "kind": "before",
+        "prompt": "Mardi, ce sera gênant à quel point, de 1 à 10 ?"
+      }
+    },
+    {
+      "id": "5.6",
+      "image": "Mardi soir. Une fenêtre lumineuse de l'autre côté d'une rue sombre : une salle municipale, des gens attablés. La silhouette de Théo sur le trottoir d'en face, sous un réverbère qui n'est PAS allumé (les choses ne s'allument pas ; les gens, si).",
+      "art": "community-hall-street",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Ça fait neuf minutes que Théo est {planté|plantée|planté·e} de l'autre côté de la rue."
+        }
+      ]
+    },
+    {
+      "id": "5.7",
+      "image": "Le Critique, redevenu énorme, menaçant.",
+      "art": "community-hall-street",
+      "criticChange": 1,
+      "words": [
+        {
+          "speaker": "Critic",
+          "text": "Ils vont tous lever la tête quand tu vas entrer. Tu resteras {planté|plantée|planté·e} là comme une lampe. Rentre. Personne n'en saura rien."
+        }
+      ]
+    },
+    {
+      "id": "5.8",
+      "image": "Théo face au Critique.",
+      "art": "community-hall-street",
+      "critic": true,
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Le Critique crie toujours le plus fort juste avant la porte. C'est comme ça qu'on sait qu'on est devant la porte."
+        }
+      ],
+      "interaction": {
+        "type": "critic-reply",
+        "options": [
+          {
+            "id": "critic",
+            "label": "« C'est le Critique qui parle. »"
+          },
+          {
+            "id": "protect",
+            "label": "« Tu essaies de me protéger. Merci. »"
+          },
+          {
+            "id": "nervous",
+            "label": "« Théo est {nerveux|nerveuse|nerveux·se}. C'est permis. »"
+          },
+          {
+            "id": "evidence",
+            "label": "« Quelles sont les preuves ? »"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5.9",
+      "image": "Le Critique, une taille en dessous, qui boude.",
+      "art": "community-hall-street",
+      "critic": true,
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Plus petit."
+        }
+      ]
+    },
+    {
+      "id": "5.10",
+      "image": "Théo traverse la rue jusqu'à la porte. L'échelle : le barreau 2 s'allume.",
+      "art": "community-hall-street",
+      "anchor": {
+        "x": 60,
+        "y": 50
+      },
+      "ladder": [
+        2
+      ],
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Barreau deux."
+        }
+      ],
+      "interaction": {
+        "type": "choice",
+        "options": [
+          {
+            "id": "in",
+            "label": "Entrer",
+            "goto": "5.12"
+          },
+          {
+            "id": "home",
+            "label": "Rentrer. Le barreau deux suffit pour ce soir.",
+            "goto": "5.11a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5.11a",
+      "image": "Théo rentre chez {lui|elle|iel} le long de la rivière.",
+      "art": "walking-river",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Théo rentre. {Il|Elle|Iel} a marché jusqu'à la porte d'une salle pleine d'inconnus. Il y a un mois, {il|elle|iel} n'arrivait pas à manger. Le barreau deux compte."
+        }
+      ]
+    },
+    {
+      "id": "5.11b",
+      "image": "Une page de calendrier : le mardi suivant. Théo de nouveau de l'autre côté de la rue, une minute seulement cette fois.",
+      "art": "community-hall-street",
+      "caption": "Le mardi suivant",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Le mardi suivant, {il|elle|iel} reste une minute de l'autre côté de la rue. Puis {il|elle|iel} entre."
+        }
+      ]
+    },
+    {
+      "id": "5.12",
+      "image": "À l'intérieur : quatre tables couvertes de minuscules pièces en bois, de cartes, de dés. Des traits de bruit. Une grande femme aux lunettes rondes, un sifflet au cou, se retourne.",
+      "art": "board-game-hall",
+      "ladder": [
+        3
+      ],
+      "addHours": {
+        "bea": 3,
+        "hugo": 3
+      },
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "À l'intérieur : quatre tables, beaucoup de minuscules pièces en bois, et une femme avec un sifflet."
+        }
+      ]
+    },
+    {
+      "id": "5.13",
+      "image": "Théo plonge la main dans sa poche ; une de ses cartes brille.",
+      "art": "theo-pocket-cards",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Le cerveau de Théo se vide, exactement comme prévu. {Il|Elle|Iel} plonge la main dans sa poche."
+        },
+        {
+          "speaker": "Théo",
+          "text": "{pocket1}"
+        }
+      ]
+    },
+    {
+      "id": "5.14",
+      "image": "Béa, rayonnante, tire une chaise.",
+      "art": "bea-chair",
+      "light": "bea_table",
+      "haptic": true,
+      "ladder": [
+        4,
+        5
+      ],
+      "words": [
+        {
+          "speaker": "Béa",
+          "text": "PARFAIT. Il nous faut une cinquième personne. Tu aimes échanger des moutons ?"
+        }
+      ]
+    },
+    {
+      "id": "5.15",
+      "image": "Gros plan sur un jeu de plateau avec des moutons, du blé, des briques.",
+      "art": "sheep-board",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Théo ne sait pas {s'il|si elle|si iel} aime échanger des moutons. Il se trouve que oui."
+        }
+      ]
+    },
+    {
+      "id": "5.16",
+      "image": "Un type discret en face (Hugo, la trentaine, lunettes, gilet) qui amasse les moutons, pince-sans-rire.",
+      "art": "hugo-sheep",
+      "words": [
+        {
+          "speaker": "Hugo",
+          "text": "Je n'échangerai pas mes moutons. Que ce soit bien clair."
+        }
+      ]
+    },
+    {
+      "id": "5.17",
+      "image": "Théo rit aux éclats, {surpris de lui-même|surprise d'elle-même|surpris·e d'iel-même}. Une lueur chaude sur la table, un peu de couleur.",
+      "art": "theo-laughing",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Théo rit. À voix haute. Le son {le|la|le·a} surprend. Ça faisait longtemps."
+        }
+      ]
+    },
+    {
+      "id": "5.18",
+      "image": "Béa se penche au-dessus de la table vers Théo.",
+      "art": "bea-chair",
+      "words": [
+        {
+          "speaker": "Béa",
+          "text": "Et toi, Théo, tu fais quoi dans la vie ?"
+        }
+      ]
+    },
+    {
+      "id": "5.19",
+      "image": "Théo, {figé|figée|figé·e}, avec {chasedObject} dessiné en transparence derrière {lui|elle|iel}.",
+      "art": "theo-frozen",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "La question qu'{il|elle|iel} redoutait."
+        }
+      ],
+      "interaction": {
+        "type": "choice",
+        "options": [
+          {
+            "id": "temp",
+            "label": "« De l'intérim, pour l'instant. Je cherche encore ma voie. »"
+          },
+          {
+            "id": "used",
+            "label": "« Avant, je voulais {chasedVerb}. Ça n'a pas marché. »"
+          },
+          {
+            "id": "cook",
+            "label": "« Honnêtement ? Je cuisine. J'adore cuisiner. »"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5.20",
+      "image": "Béa hoche la tête, chaleureuse.",
+      "art": "bea-chair",
+      "ladder": [
+        7
+      ],
+      "words": [
+        {
+          "speaker": "Béa",
+          "text": "Ha. Bienvenue au club. La moitié de cette table cherche encore sa voie. Hugo en est à sa troisième carrière."
+        },
+        {
+          "speaker": "Hugo",
+          "text": "Quatrième."
+        }
+      ]
+    },
+    {
+      "id": "5.21",
+      "image": "Hugo et Théo se serrent la main par-dessus les moutons.",
+      "art": "hugo-handshake",
+      "light": "hugo_sheep",
+      "haptic": true,
+      "ladder": [
+        6,
+        7
+      ],
+      "words": [
+        {
+          "speaker": "Hugo",
+          "text": "Hugo. Passionné de moutons."
+        },
+        {
+          "speaker": "Théo",
+          "text": "Théo."
+        }
+      ],
+      "interaction": [
+        {
+          "type": "notebook",
+          "book": "people",
+          "person": "hugo",
+          "text": "Hugo : quatrième carrière. N'échange pas ses moutons."
+        },
+        {
+          "type": "notebook",
+          "book": "people",
+          "person": "bea",
+          "text": "Béa : organise les mardis. A un sifflet, et s'en sert."
+        }
+      ]
+    },
+    {
+      "id": "5.22",
+      "image": "Une horloge : trois heures plus tard. Théo enfile son manteau à la porte.",
+      "art": "board-game-hall",
+      "caption": "Trois heures plus tard",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Trois heures. Théo n'a pas regardé son téléphone une seule fois."
+        }
+      ]
+    },
+    {
+      "id": "5.23",
+      "image": "Théo rentre dans le noir, le Critique trottinant à côté de {lui|elle|iel}.",
+      "art": "walking-river",
+      "words": [
+        {
+          "speaker": "Critic",
+          "text": "Ils étaient juste polis. Personne ne t'a vraiment {apprécié|appréciée|apprécié·e}."
+        }
+      ]
+    },
+    {
+      "id": "5.24",
+      "image": "LA RÉVÉLATION. La page se replie comme un rideau ; derrière, la salle après le départ de Théo, dessinée en couleurs chaudes. Béa et Hugo rangent.",
+      "art": "hall-after",
+      "reveal": true,
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Voici une chose que Théo n'entendra jamais."
+        }
+      ]
+    },
+    {
+      "id": "5.25",
+      "image": "Béa et Hugo discutent en rangeant les moutons.",
+      "art": "hall-after",
+      "words": [
+        {
+          "speaker": "Béa",
+          "text": "{Le nouveau|La nouvelle|La nouvelle recrue} était drôle. {Celui|Celle|Cellui} qui cuisine. J'espère qu'{il|elle|iel} reviendra."
+        },
+        {
+          "speaker": "Hugo",
+          "text": "{Il|Elle|Iel} m'a laissé garder mes moutons. Je {le|la|le·a} respecte."
+        }
+      ]
+    },
+    {
+      "id": "5.26",
+      "image": "La page se replie sur Théo qui rentre à pied.",
+      "art": "walking-river",
+      "reveal": true,
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "La plupart d'entre nous n'entendent jamais cette partie-là. Après une rencontre, on sous-estime presque toujours à quel point on a plu à l'autre. Les timides plus que tout le monde."
+        }
+      ]
+    },
+    {
+      "id": "5.27",
+      "image": "Théo chez {lui|elle|iel}, qui écrit un chiffre sur un post-it.",
+      "art": "black",
+      "showChart": "all",
+      "words": [],
+      "interaction": {
+        "type": "rate",
+        "key": "ladder",
+        "kind": "after",
+        "compare": true,
+        "prompt": "C'était gênant à quel point, en vrai ?"
+      }
+    },
+    {
+      "id": "5.28",
+      "image": "L'échelle, barreaux 1 à 7 allumés.",
+      "art": "black",
+      "ladder": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Sept barreaux en une soirée. Le barreau huit, c'est mardi prochain : y retourner."
+        }
+      ]
+    },
+    {
+      "id": "5.29",
+      "image": "La Carte des lumières : deux nouvelles lumières près de la rivière, du côté de la salle municipale.",
+      "art": "black",
+      "showLightMap": true,
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Neuf lumières."
+        }
+      ]
+    },
+    {
+      "id": "5.30",
+      "image": "Carte de quête.",
+      "words": [],
+      "interaction": [
+        {
+          "type": "rate",
+          "key": "ladder-quest",
+          "kind": "before",
+          "prompt": "Avant d'y aller : ce sera gênant à quel point, à ton avis ?"
+        },
+        {
+          "type": "quest",
+          "id": "q5",
+          "title": "L'échelle",
+          "text": "Dans ton lieu (ou un nouveau), monte d'un barreau de plus que la dernière fois. Avant d'y aller, note à quel point tu penses que ce sera gênant. Après, note à quel point ça l'a vraiment été.",
+          "unlocks": 6
+        },
+        {
+          "type": "rate",
+          "key": "ladder-quest",
+          "kind": "after",
+          "compare": true,
+          "prompt": "Et en vrai, c'était comment ?"
+        }
+      ]
+    }
+  ]
+}

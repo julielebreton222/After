@@ -13,7 +13,7 @@
     },
     {
       "id": "5.2",
-      "image": "Théo looking at the flyer, the Critic peering over his shoulder.",
+      "image": "Théo looking at the flyer, the Critic peering over {his|her|their} shoulder.",
       "art": "nadia-flyer",
       "anchor": { "x": 35, "y": 50 },
       "words": [
@@ -34,10 +34,10 @@
     },
     {
       "id": "5.4",
-      "image": "Théo writing on small cards and putting them in his pocket.",
+      "image": "Théo writing on small cards and putting them in {his|her|their} pocket.",
       "art": "theo-pocket-cards",
       "words": [
-        { "speaker": "narrator", "text": "Théo prepares three lines to carry in his pocket, just in case his brain empties." }
+        { "speaker": "narrator", "text": "Théo prepares three lines to carry in {his|her|their} pocket, just in case {his|her|their} brain empties." }
       ],
       "interaction": {
         "type": "choice",
@@ -134,7 +134,7 @@
       "words": [
         {
           "speaker": "narrator",
-          "text": "Théo goes home. He walked to the door of a room full of strangers. A month ago he couldn't eat. Rung two counts."
+          "text": "Théo goes home. {He|She|They} walked to the door of a room full of strangers. A month ago {he|she|they} couldn't eat. Rung two counts."
         }
       ]
     },
@@ -144,7 +144,7 @@
       "art": "community-hall-street",
       "caption": "Next Tuesday",
       "words": [
-        { "speaker": "narrator", "text": "The next Tuesday, he stands across the street for one minute. Then he goes in." }
+        { "speaker": "narrator", "text": "The next Tuesday, {he|she|they} {stands|stands|stand} across the street for one minute. Then {he|she|they} {goes|goes|go} in." }
       ]
     },
     {
@@ -159,10 +159,10 @@
     },
     {
       "id": "5.13",
-      "image": "Théo reaching into his pocket; one of his pocket cards glows.",
+      "image": "Théo reaching into his pocket; one of {his|her|their} pocket cards glows.",
       "art": "theo-pocket-cards",
       "words": [
-        { "speaker": "narrator", "text": "Théo's brain empties, exactly as predicted. He reaches into his pocket." },
+        { "speaker": "narrator", "text": "Théo's brain empties, exactly as predicted. {He|She|They} {reaches|reaches|reach} into {his|her|their} pocket." },
         { "speaker": "Théo", "text": "{pocket1}" }
       ]
     },
@@ -182,7 +182,7 @@
       "image": "Close-up of a board game with sheep, wheat, bricks.",
       "art": "sheep-board",
       "words": [
-        { "speaker": "narrator", "text": "Théo does not know if he likes trading sheep. It turns out he does." }
+        { "speaker": "narrator", "text": "Théo does not know if he likes trading sheep. It turns out {he|she|they} {does|does|do}." }
       ]
     },
     {
@@ -195,10 +195,10 @@
     },
     {
       "id": "5.17",
-      "image": "Théo laughing out loud, surprised at himself. A warm glow at the table, faint colour.",
+      "image": "Théo laughing out loud, surprised at {himself|herself|themselves}. A warm glow at the table, faint colour.",
       "art": "theo-laughing",
       "words": [
-        { "speaker": "narrator", "text": "Théo laughs. Out loud. He's surprised by the sound. It's been a while." }
+        { "speaker": "narrator", "text": "Théo laughs. Out loud. {He's|She's|They're} surprised by the sound. It's been a while." }
       ]
     },
     {
@@ -211,10 +211,10 @@
     },
     {
       "id": "5.19",
-      "image": "Théo frozen, the {chasedObject} faintly drawn behind him.",
+      "image": "Théo frozen, the {chasedObject} faintly drawn behind {him|her|them}.",
       "art": "theo-frozen",
       "words": [
-        { "speaker": "narrator", "text": "The question he has been dreading." }
+        { "speaker": "narrator", "text": "The question {he|she|they} {has|has|have} been dreading." }
       ],
       "interaction": {
         "type": "choice",
@@ -253,16 +253,16 @@
     },
     {
       "id": "5.22",
-      "image": "A clock: three hours later. Théo putting on his coat at the door.",
+      "image": "A clock: three hours later. Théo putting on {his|her|their} coat at the door.",
       "art": "board-game-hall",
       "caption": "Three hours later",
       "words": [
-        { "speaker": "narrator", "text": "Three hours. Théo didn't check his phone once." }
+        { "speaker": "narrator", "text": "Three hours. Théo didn't check {his|her|their} phone once." }
       ]
     },
     {
       "id": "5.23",
-      "image": "Théo walking home in the dark, the Critic trotting beside him.",
+      "image": "Théo walking home in the dark, the Critic trotting beside {him|her|them}.",
       "art": "walking-river",
       "words": [
         { "speaker": "Critic", "text": "They were just being polite. Nobody actually liked you." }
@@ -282,8 +282,8 @@
       "image": "Béa and Hugo talking, putting away sheep.",
       "art": "hall-after",
       "words": [
-        { "speaker": "Béa", "text": "The new one was funny. The cook. I hope he comes back." },
-        { "speaker": "Hugo", "text": "He let me keep my sheep. I respect him." }
+        { "speaker": "Béa", "text": "The new one was funny. The cook. I hope {he|she|they} {comes|comes|come} back." },
+        { "speaker": "Hugo", "text": "{He|She|They} let me keep my sheep. I respect {him|her|them}." }
       ]
     },
     {

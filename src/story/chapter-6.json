@@ -1,14 +1,14 @@
 {
   "number": 6,
   "title": "Sunday Soup",
-  "summary": "Weeks nine and ten. Théo wants something that doesn't exist, so he makes it. He finally tells his sister the truth. And for the first time, Théo himself starts to glow. Ends with 11 lights.",
+  "summary": "Weeks nine and ten. Théo wants something that doesn't exist, so {he|she|they} {makes|makes|make} it. {He|She|They} finally {tells|tells|tell} {his|her|their} sister the truth. And for the first time, Théo {himself|herself|themselves} starts to glow. Ends with 11 lights.",
   "screens": [
     {
       "id": "6.1",
       "image": "Théo's kitchen, grey-cream now, the Who Is Théo? map pinned on the fridge with the player's items drawn on it.",
       "art": "kitchen-map-fridge",
       "words": [
-        { "speaker": "narrator", "text": "Week nine. Théo looks at his map. The biggest landmark on it, by far, is a pan." }
+        { "speaker": "narrator", "text": "Week nine. Théo looks at {his|her|their} map. The biggest landmark on it, by far, is a pan." }
       ]
     },
     {
@@ -18,18 +18,18 @@
       "words": [
         {
           "speaker": "narrator",
-          "text": "It's not cooking he misses, exactly. It's cooking for people. A full table. Somebody saying \"ah, c'est bon, ça\" with their mouth full."
+          "text": "It's not cooking {he|she|they} {misses|misses|miss}, exactly. It's cooking for people. A full table. Somebody saying \"ah, c'est bon, ça\" with their mouth full."
         }
       ]
     },
     {
       "id": "6.3",
-      "image": "Théo on his phone, searching; the screen cold blue. Search results drawn as cards: \"Cuisine solidaire du quartier: FERMÉ\".",
+      "image": "Théo on {his|her|their} phone, searching; the screen cold blue. Search results drawn as cards: \"Cuisine solidaire du quartier: FERMÉ\".",
       "art": "phone-search",
       "words": [
         {
           "speaker": "narrator",
-          "text": "He looks for somewhere to cook for people. A community kitchen: closed last year. A supper club: forty euros a seat, fully booked until spring."
+          "text": "{He|She|They} {looks|looks|look} for somewhere to cook for people. A community kitchen: closed last year. A supper club: forty euros a seat, fully booked until spring."
         }
       ]
     },
@@ -72,7 +72,7 @@
       "art": "roux-finger",
       "anchor": { "x": 40, "y": 50 },
       "words": [
-        { "speaker": "narrator", "text": "Théo tries door three first. He asks Madame Roux." }
+        { "speaker": "narrator", "text": "Théo tries door three first. {He|She|They} {asks|asks|ask} Madame Roux." }
       ]
     },
     {
@@ -88,7 +88,7 @@
     },
     {
       "id": "6.8",
-      "image": "Théo at his table writing a note in big hand lettering.",
+      "image": "Théo at {his|her|their} table writing a note in big hand lettering.",
       "art": "paper-pen",
       "words": [
         { "speaker": "narrator", "text": "So it's door four." }
@@ -107,7 +107,7 @@
       "image": "The note taped to the building's front door, among other notices.",
       "art": "note-on-door",
       "words": [
-        { "speaker": "narrator", "text": "He tapes it to the front door. Then takes it down. Then tapes it back up." }
+        { "speaker": "narrator", "text": "{He|She|They} {tapes|tapes|tape} it to the front door. Then {takes|takes|take} it down. Then {tapes|tapes|tape} it back up." }
       ]
     },
     {
@@ -115,7 +115,7 @@
       "image": "Saturday night: Théo cooking a huge pot. Steam drawn warm. Onions, carrots, a bouquet garni.",
       "art": "big-pot",
       "words": [
-        { "speaker": "narrator", "text": "Saturday night he cooks enough soup for twenty people. Just in case. Also because he panicked." }
+        { "speaker": "narrator", "text": "Saturday night {he|she|they} {cooks|cooks|cook} enough soup for twenty people. Just in case. Also because {he|she|they} panicked." }
       ],
       "interaction": {
         "type": "tap-objects",
@@ -148,7 +148,7 @@
     },
     {
       "id": "6.13",
-      "image": "Théo ladling himself a bowl, sitting down.",
+      "image": "Théo ladling {himself|herself|themselves} a bowl, sitting down.",
       "art": "courtyard-empty",
       "anchor": { "x": 50, "y": 65 },
       "words": [
@@ -218,7 +218,7 @@
     },
     {
       "id": "6.19",
-      "image": "Four people and a dog around the pot. And Théo, ladling, his outline glowing for the first time. Théo's own outline gains a permanent soft glow.",
+      "image": "Four people and a dog around the pot. And Théo, ladling, {his|her|their} outline glowing for the first time. Théo's own outline gains a permanent soft glow.",
       "art": "soup-gathering",
       "light": "theo_glow",
       "haptic": "big",
@@ -234,7 +234,7 @@
       "words": [
         {
           "speaker": "narrator",
-          "text": "Not because someone gave him something. Because he gave something. Some people light up when they're loved. Théo lights up when he's loving."
+          "text": "Not because someone gave {him|her|them} something. Because {he|she|they} gave something. Some people light up when they're loved. Théo lights up when {he's|she's|they're} loving."
         }
       ]
     },
@@ -245,21 +245,21 @@
       "words": [
         {
           "speaker": "narrator",
-          "text": "Four people. Twenty portions of soup. Théo is going to be eating soup until Thursday. He doesn't mind."
+          "text": "Four people. Twenty portions of soup. Théo is going to be eating soup until Thursday. {He|She|They} {doesn't|doesn't|don't} mind."
         }
       ]
     },
     {
       "id": "6.22",
-      "image": "Théo on his sofa, phone in hand, Camille's name on the screen.",
+      "image": "Théo on {his|her|their} sofa, phone in hand, Camille's name on the screen.",
       "art": "sofa-phone",
       "words": [
-        { "speaker": "narrator", "text": "That night, he calls Camille. Not a text. A call." }
+        { "speaker": "narrator", "text": "That night, {he|she|they} {calls|calls|call} Camille. Not a text. A call." }
       ]
     },
     {
       "id": "6.23",
-      "image": "Split panel: Théo on his sofa; Camille in her kitchen, phone at her ear, big scarf.",
+      "image": "Split panel: Théo on {his|her|their} sofa; Camille in her kitchen, phone at her ear, big scarf.",
       "art": "split-call",
       "words": [
         { "speaker": "Camille", "text": "Hey! You called! Are you okay?" }

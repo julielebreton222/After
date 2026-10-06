@@ -17,7 +17,7 @@
       "image": "Inside: a zinc counter, a barista with tattooed forearms (Nadia), an old man in a beret doing a crossword (Lucien).",
       "art": "cafe-interior",
       "words": [
-        { "speaker": "narrator", "text": "Visit one. Théo orders, sits by the window, and looks at his phone the whole time." }
+        { "speaker": "narrator", "text": "Visit one. Théo orders, sits by the window, and looks at {his|her|their} phone the whole time." }
       ],
       "interaction": {
         "type": "choice",
@@ -37,16 +37,16 @@
     },
     {
       "id": "4.3",
-      "image": "Théo walking home, the café behind him.",
+      "image": "Théo walking home, the café behind {him|her|them}.",
       "art": "walking-river",
       "words": [
         {
           "speaker": "narrator",
-          "text": { "by": "choice:4.2", "counter": "Nadia says \"bonne journée\" when he leaves.", "window": "" }
+          "text": { "by": "choice:4.2", "counter": "Nadia says \"bonne journée\" when {he|she|they} {leaves|leaves|leave}.", "window": "" }
         },
         {
           "speaker": "narrator",
-          "text": "Nobody talked to him. That's fine. That's not what visit one is for. Visit one is for being seen once."
+          "text": "Nobody talked to {him|her|them}. That's fine. That's not what visit one is for. Visit one is for being seen once."
         }
       ]
     },
@@ -80,7 +80,7 @@
       "image": "Lucien holding up his newspaper, pointing at a clue with a pencil.",
       "art": "lucien-crossword",
       "words": [
-        { "speaker": "Lucien", "text": "Young man. Seven letters. 'What remains after the fire.' I have been stuck since Tuesday." }
+        { "speaker": "Lucien", "text": "{Young man|Young lady|Young person}. Seven letters. 'What remains after the fire.' I have been stuck since Tuesday." }
       ]
     },
     {
@@ -203,8 +203,8 @@
           "speaker": "narrator",
           "text": {
             "by": "choice:4.13",
-            "how": "He laughs at the octopus.",
-            "drawing": "He laughs at the octopus.",
+            "how": "{He|She|They} {laughs|laughs|laugh} at the octopus.",
+            "drawing": "{He|She|They} {laughs|laughs|laugh} at the octopus.",
             "thanks": "Nadia smiles. Théo smiles back, and sits down."
           }
         }
@@ -308,7 +308,7 @@
     },
     {
       "id": "4.25",
-      "image": "Back in the café. Théo wiping his eyes. Two rows ahead, Lucien wiping his too.",
+      "image": "Back in the café. Théo wiping {his|her|their} eyes. Two rows ahead, Lucien wiping his too.",
       "art": "cafe-crying",
       "words": [
         { "speaker": "narrator", "text": "Théo cries at the part with the boats. So does Lucien. Neither mentions it." }
@@ -342,7 +342,7 @@
     },
     {
       "id": "4.28",
-      "image": "Théo walking home along the river. Two small warm lights behind him in the café window.",
+      "image": "Théo walking home along the river. Two small warm lights behind {him|her|them} in the café window.",
       "art": "walking-river",
       "words": [],
       "interaction": { "type": "rate", "key": "film", "kind": "after", "compare": true, "prompt": "How awkward was it really?" }

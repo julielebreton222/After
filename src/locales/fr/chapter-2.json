@@ -1,0 +1,334 @@
+{
+  "number": 2,
+  "title": "La salle des larmes",
+  "summary": "La deuxième semaine. Presque tout est encore noir. Théo tient bon en public et s'effondre en privé, et le jeu lui en donne pleinement la permission. On apprend les outils du corps. Se termine sur 4 lumières.",
+  "screens": [
+    {
+      "id": "2.1",
+      "image": "Noir. Les trois lumières du chapitre 1 brillent, toutes petites, dans les coins de l'image.",
+      "art": "black",
+      "dots": [
+        [10,10],
+        [90,12],
+        [86,88]
+      ],
+      "words": [
+        { "speaker": "narrator", "text": "Deuxième semaine. On dit que la première semaine est la pire. On dit beaucoup de choses." }
+      ]
+    },
+    {
+      "id": "2.2",
+      "image": "La quête du chapitre 1 présentée comme une page de carnet, avec la note du joueur en écriture manuscrite.",
+      "art": "notebook",
+      "showNotebook": "q1",
+      "words": [
+        { "speaker": "narrator", "text": "Est-ce que Théo a posé sa vraie question ?" },
+        {
+          "speaker": "narrator",
+          "text": { "by": "quest:q1", "done": "", "notyet": "Pas encore. Ce n'est pas grave. Le carnet attendra." }
+        }
+      ]
+    },
+    {
+      "id": "2.3",
+      "image": "Un entrepôt à l'aube, de hautes étagères, la silhouette de Théo qui scanne des cartons. Noir, gris seulement.",
+      "art": "warehouse",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Ce mois-ci, Théo a un boulot d'intérim : scanner des cartons de six heures à quatorze heures. C'est le genre de travail qui laisse beaucoup de place pour penser. Trop de place."
+        }
+      ]
+    },
+    {
+      "id": "2.4",
+      "image": "Le dos d'un collègue, qui dit quelque chose. Théo hoche la tête, un sourire raide.",
+      "art": "warehouse-colleague",
+      "words": [
+        { "speaker": "narrator", "text": "{Il|Elle|Iel} hoche la tête aux bons moments. {Il|Elle|Iel} rit une fois, au bon moment. Personne ne se douterait de rien." }
+      ]
+    },
+    {
+      "id": "2.5",
+      "image": "Une bulle de paroles qui s'échappe d'une radio (pas de vraies paroles : juste des notes de musique et un cœur).",
+      "art": "radio",
+      "words": [
+        { "speaker": "narrator", "text": "Puis la radio passe leur chanson." }
+      ]
+    },
+    {
+      "id": "2.6",
+      "image": "Une cage d'escalier, béton, noir. Théo {assis|assise|assis·e} sur les marches, {plié|pliée|plié·e} en deux.",
+      "art": "stairwell",
+      "words": [
+        { "speaker": "narrator", "text": "Théo arrive jusqu'à la cage d'escalier avant que ça déborde." }
+      ]
+    },
+    {
+      "id": "2.7",
+      "image": "Gros plan : ses mains, dessinées au trait, sur son visage, les épaules qui tremblent. Tracé à grands coups d'encre mouillée.",
+      "art": "crying-hands",
+      "words": [
+        { "speaker": "narrator", "text": "Ce ne sont pas des larmes très dignes. C'est le genre de pleurs qui viennent du ventre." }
+      ]
+    },
+    {
+      "id": "2.8",
+      "image": "Le Critique qui jette un œil depuis le coin de l'escalier.",
+      "art": "stairwell",
+      "words": [
+        { "speaker": "Critic", "text": "Ressaisis-toi. {Un homme|Une femme|Une grande personne} ne fait pas ça au travail." }
+      ]
+    },
+    {
+      "id": "2.9",
+      "image": "Page noire, lettres crème, en grand.",
+      "art": "black",
+      "layout": "center",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Voici une chose que personne n'a dite à Théo : pleurer, ce n'est pas s'effondrer. C'est le chagrin qui bouge. Il est fait pour bouger."
+        }
+      ]
+    },
+    {
+      "id": "2.10",
+      "image": "La cage d'escalier, Théo qui respire, un peu plus calme.",
+      "art": "stairwell",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Pas besoin que ça arrive devant quelqu'un. {Seul|Seule|Seul·e}, c'est permis. Une cage d'escalier, une douche, une voiture, une balade en forêt. Il faut juste que ça ait le droit d'arriver."
+        }
+      ]
+    },
+    {
+      "id": "2.11",
+      "image": "L'appartement de Théo, la nuit. Une porte avec une inscription à la craie : « La salle des larmes » (c'est sa salle de bains).",
+      "art": "cry-room-door",
+      "caption": "La salle des larmes",
+      "words": [
+        { "speaker": "narrator", "text": "Ce soir-là, Théo lui donne une pièce. Dix minutes, porte fermée, rien à réparer." }
+      ],
+      "interaction": { "type": "timer", "style": "plain", "seconds": 600, "label": "Dix minutes pour ça. Tu peux arrêter avant, quand tu veux." }
+    },
+    {
+      "id": "2.12",
+      "image": "Après : Théo {assis|assise|assis·e} par terre dans la salle de bains, des traits plus légers autour de {lui|elle|ellui}.",
+      "art": "bathroom-floor",
+      "words": [
+        { "speaker": "narrator", "text": "Après, {il|elle|iel} se sent plus vide. Vide, c'est plus léger que plein." }
+      ]
+    },
+    {
+      "id": "2.13",
+      "image": "Cuisine noire, une seule bougie sur la table, éteinte.",
+      "art": "candle-unlit",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Certains soirs, le chagrin ne sort pas en larmes. Il sort en cœur qui s'emballe et en tête qui ne s'arrête plus. Pour ces soirs-là, il y a des outils."
+        }
+      ]
+    },
+    {
+      "id": "2.14",
+      "image": "Quatre cartes en éventail : une bougie, un robinet d'eau froide, une silhouette qui tremble, une petite créature.",
+      "art": "four-cards",
+      "words": [
+        { "speaker": "narrator", "text": "Quatre expériences. Essaie-en une ce soir, ou aucune. Ce ne sont pas des examens." }
+      ],
+      "interaction": {
+        "type": "choice",
+        "continueTo": "2.20",
+        "options": [
+          { "id": "candle", "label": "La bougie", "goto": "2.15" },
+          { "id": "cold", "label": "L'eau froide", "goto": "2.16" },
+          { "id": "shake", "label": "Se secouer", "goto": "2.17" },
+          { "id": "creature", "label": "Nommer la créature", "goto": "2.18" }
+        ]
+      }
+    },
+    {
+      "id": "2.15",
+      "image": "Une flamme de bougie en gros plan, la seule lumière crème sur une page noire. (Pas une LUMIÈRE+ : les choses ne font pas de lumière durable, seulement les gens.)",
+      "art": "candle-flame",
+      "next": "2.14",
+      "words": [
+        { "speaker": "narrator", "text": "Regarde la flamme. Juste la flamme. Quand ton esprit s'égare, reviens à la flamme." }
+      ],
+      "interaction": { "type": "timer", "style": "candle", "seconds": 120, "doneText": "Retour aux quatre cartes." }
+    },
+    {
+      "id": "2.16",
+      "image": "Un évier, un robinet d'eau froide, de l'eau qui éclabousse un visage.",
+      "art": "cold-tap",
+      "next": "2.14",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Quand la panique monte fort : de l'eau froide sur le visage, et retiens ta respiration quelques secondes. Ça dit à ton corps de ralentir ton cœur. Ça marche parce que les corps sont anciens et simples."
+        }
+      ],
+      "interaction": {
+        "type": "quest",
+        "id": "q2-cold",
+        "optional": true,
+        "title": "L'eau froide, une fois.",
+        "text": "La prochaine fois que la panique monte : de l'eau froide sur le visage, et retiens ta respiration quelques secondes."
+      }
+    },
+    {
+      "id": "2.17",
+      "image": "La silhouette de Théo qui tremble de partout, des traits de mouvement.",
+      "art": "shaking",
+      "next": "2.14",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Les animaux se secouent après une frayeur. Lève-toi, secoue tes mains, tes bras, tes épaules, tes jambes, tout, pendant une minute. Sens-toi ridicule. Continue."
+        }
+      ],
+      "interaction": { "type": "timer", "style": "shake", "seconds": 60 }
+    },
+    {
+      "id": "2.18",
+      "image": "Une forme vide sur la page, qui attend d'être nommée.",
+      "art": "black",
+      "words": [
+        { "speaker": "narrator", "text": "Si la douleur était une créature, à quoi ressemblerait-elle ? Elle serait grande comment ? Où vit-elle, en toi ?" }
+      ],
+      "interaction": [
+        {
+          "type": "choice",
+          "options": [
+            { "id": "bear", "label": "Un lourd ours de pierre" },
+            { "id": "cat", "label": "Un chat de brume glacé" },
+            { "id": "eel", "label": "Une anguille pleine de nœuds" },
+            { "id": "bird", "label": "Un minuscule oiseau bruyant" }
+          ]
+        },
+        { "type": "write", "key": "creature", "prompt": "Comment s'appelle-t-elle ?", "placeholder": "Son nom…", "max": 30, "rows": 1 }
+      ]
+    },
+    {
+      "id": "2.19",
+      "image": "La créature choisie, dessinée petite et endormie sur une étagère, chez Théo.",
+      "art": { "by": "choice:2.18", "bear": "creature-bear", "cat": "creature-cat", "eel": "creature-eel", "bird": "creature-bird" },
+      "next": "2.14",
+      "words": [
+        { "speaker": "narrator", "text": "Bonjour, {w:creature}. Tu peux rester. Mais ce n'est pas toi qui diriges l'appartement." }
+      ]
+    },
+    {
+      "id": "2.20",
+      "image": "Théo au lit, noir. Une petite liste « Corps » en crème sur le côté.",
+      "art": "black",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Le chagrin vit aussi dans le corps. Cette semaine, les besoins du corps sont modestes : de l'eau, quelque chose de chaud, la même heure de réveil, quelques minutes dehors."
+        }
+      ],
+      "interaction": {
+        "type": "choice",
+        "prompt": "Coche ce qui est fait aujourd'hui. Zéro, c'est permis.",
+        "pick": "any",
+        "min": 0,
+        "options": [
+          { "id": "water", "label": "De l'eau" },
+          { "id": "warm", "label": "Quelque chose de chaud" },
+          { "id": "wake", "label": "La même heure de réveil" },
+          { "id": "outside", "label": "Quelques minutes dehors" }
+        ]
+      }
+    },
+    {
+      "id": "2.21",
+      "image": "La boîte vide de Madame Roux sur le plan de travail de Théo, lavée.",
+      "art": "container-washed",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Dimanche, Théo regarde la boîte de Madame Roux. On ne rend pas une boîte vide. Ce n'est pas comme ça que Théo a été {élevé|élevée|élevé·e}."
+        }
+      ]
+    },
+    {
+      "id": "2.22",
+      "image": "La première fois qu'on voit Théo cuisiner : seulement les mains, qui coupent, une poêle. Toujours noir et crème, mais la vapeur est dessinée chaude.",
+      "art": "cooking-tart",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Alors Théo cuisine. Pas pour {lui|elle|ellui}-même ; {il|elle|iel} n'y arrive pas encore. Pour Madame Roux. Une petite tarte aux pommes. Ses mains se souviennent des gestes, même quand tout le reste a oublié."
+        }
+      ],
+      "interaction": {
+        "type": "tap-objects",
+        "objects": [
+          { "id": "apples", "label": "Les pommes", "line": "Les pommes, en tranches fines, posées comme des tuiles sur un toit." },
+          { "id": "butter", "label": "Le beurre", "line": "Le beurre froid, en petits morceaux." },
+          { "id": "dough", "label": "La pâte", "line": "La pâte, étalée comme le faisait sa grand-mère." }
+        ]
+      }
+    },
+    {
+      "id": "2.23",
+      "image": "Le pas de la porte de Madame Roux, lumière chaude ; elle tient la tarte, ravie.",
+      "art": "roux-tart",
+      "light": "roux_tart",
+      "haptic": true,
+      "words": [
+        { "speaker": "Madame Roux", "text": "Ah ! Vous êtes donc encore {vivant|vivante|vivant·e}, là-dedans." }
+      ]
+    },
+    {
+      "id": "2.24",
+      "image": "Madame Roux montre une photo sur son mur : un homme en costume des années 1970.",
+      "art": "roux-henri",
+      "words": [
+        {
+          "speaker": "Madame Roux",
+          "text": "Mon Henri est parti, lui aussi. Pas de la même façon. Il y a quarante ans. J'ai pleuré dans la salle de bains pendant un mois. Puis j'ai appris à faire de la soupe pour une personne, et ensuite pour beaucoup."
+        }
+      ]
+    },
+    {
+      "id": "2.25",
+      "image": "Théo qui remonte l'escalier, une lueur chaude sur le visage, cette fois.",
+      "art": "stairs-up",
+      "words": [
+        { "speaker": "narrator", "text": "Théo a appris quelque chose sur Madame Roux. {Il|Elle|Iel} n'a même pas eu à demander." }
+      ],
+      "interaction": {
+        "type": "notebook",
+        "book": "people",
+        "person": "roux",
+        "text": "Madame Roux : son Henri, il y a quarante ans. Elle aussi a pleuré dans la salle de bains."
+      }
+    },
+    {
+      "id": "2.26",
+      "image": "La carte des lumières, quatre lumières maintenant, la fenêtre de Madame Roux plus brillante.",
+      "showLightMap": true,
+      "art": "black",
+      "words": [
+        { "speaker": "narrator", "text": "Remarque : la lumière est revenue quand Théo a donné quelque chose. Souviens-t'en." }
+      ]
+    },
+    {
+      "id": "2.27",
+      "image": "Carte de quête.",
+      "words": [],
+      "interaction": {
+        "type": "quest",
+        "id": "q2",
+        "title": "La semaine du corps",
+        "text": "Trois jours cette semaine, fais une chose pour ton corps : de l'eau, quelque chose de chaud à manger, une marche dehors, ou la même heure de réveil.",
+        "unlocks": 3
+      }
+    }
+  ]
+}

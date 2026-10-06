@@ -17,7 +17,7 @@
       "image": "Black.",
       "art": "black",
       "words": [
-        { "speaker": "narrator", "text": "This is Théo. You can't see him yet. That's how it is right now." }
+        { "speaker": "narrator", "text": "This is Théo. You can't see {him|her|them} yet. That's how it is right now." }
       ]
     },
     {
@@ -25,7 +25,7 @@
       "image": "A thin pale outline fades in: Théo sitting on a kitchen floor, back against the cupboards.",
       "art": "kitchen-floor",
       "words": [
-        { "speaker": "narrator", "text": "Théo is twenty-six. He is sitting on the kitchen floor, which is not where people usually sit." }
+        { "speaker": "narrator", "text": "Théo is twenty-six. {He|She|They} {is|is|are} sitting on the kitchen floor, which is not where people usually sit." }
       ],
       "anchor": { "x": 28, "y": 66 }
     },
@@ -48,7 +48,7 @@
       "words": [
         {
           "speaker": "narrator",
-          "text": "It's the second thing to end this year. Since he was fifteen, Théo had one plan. This spring, it quietly stopped being possible."
+          "text": "It's the second thing to end this year. Since {he|she|they} {was|was|were} fifteen, Théo had one plan. This spring, it quietly stopped being possible."
         }
       ],
       "interaction": {
@@ -72,7 +72,7 @@
           },
           {
             "id": "business",
-            "label": "His own business",
+            "label": "{His|Her|Their} own business",
             "set": { "chased": "business" }
           }
         ]
@@ -93,7 +93,7 @@
             "business": "Years of saving."
           }
         },
-        { "speaker": "narrator", "text": "And now: a shelf, and a man on a kitchen floor who doesn't know what comes next." }
+        { "speaker": "narrator", "text": "And now: a shelf, and {a man|a woman|a person} on a kitchen floor who doesn't know what comes next." }
       ]
     },
     {
@@ -110,8 +110,8 @@
         "type": "tap-objects",
         "objects": [
           { "id": "mug", "label": "Mug", "line": "Her mug. Théo leaves it exactly where it is." },
-          { "id": "plant", "label": "Plant", "line": "Her plant. He doesn't know how often it needs water. She always knew." },
-          { "id": "note", "label": "Fridge note", "line": "\"Buy oat milk.\" He will not be buying oat milk." },
+          { "id": "plant", "label": "Plant", "line": "Her plant. {He|She|They} {doesn't|doesn't|don't} know how often it needs water. She always knew." },
+          { "id": "note", "label": "Fridge note", "line": "\"Buy oat milk.\" {He|She|They} will not be buying oat milk." },
           { "id": "pot", "label": "Pot", "line": "Soup. The one she liked. Made for two." }
         ]
       }
@@ -161,7 +161,7 @@
       "art": "black",
       "caption": "Day two",
       "words": [
-        { "speaker": "narrator", "text": "Day two. Théo doesn't eat. He isn't refusing to. His body has simply stopped being hungry." }
+        { "speaker": "narrator", "text": "Day two. Théo doesn't eat. {He|She|They} {isn't|isn't|aren't} refusing to. {His|Her|Their} body has simply stopped being hungry." }
       ]
     },
     {
@@ -175,10 +175,10 @@
     },
     {
       "id": "1.13",
-      "image": "Théo in bed in the dark, his face lit cold blue by his phone. Nothing else in the room is lit.",
+      "image": "Théo in bed in the dark, {his|her|their} face lit cold blue by {his|her|their} phone. Nothing else in the room is lit.",
       "art": "bed-phone",
       "words": [
-        { "speaker": "narrator", "text": "He looks at her photos. The screen is very bright and lights nothing at all." }
+        { "speaker": "narrator", "text": "{He|She|They} {looks|looks|look} at her photos. The screen is very bright and lights nothing at all." }
       ],
       "interaction": {
         "type": "choice",
@@ -194,7 +194,7 @@
       "image": "Same, the blue glow larger, Théo smaller.",
       "art": "bed-phone",
       "words": [
-        { "speaker": "narrator", "text": "Théo feels worse. He knew he would. That's not a crime." }
+        { "speaker": "narrator", "text": "Théo feels worse. {He|She|They} knew {he|she|they} would. That's not a crime." }
       ],
       "next": "1.15"
     },
@@ -203,7 +203,7 @@
       "image": "Phone face down. Total black.",
       "art": "black",
       "words": [
-        { "speaker": "narrator", "text": "The dark is very dark. But it's his own." }
+        { "speaker": "narrator", "text": "The dark is very dark. But it's {his|her|their} own." }
       ],
       "next": "1.15"
     },
@@ -258,7 +258,7 @@
     },
     {
       "id": "1.19",
-      "image": "Théo standing at the counter, eating from the container. The glow on his face now.",
+      "image": "Théo standing at the counter, eating from the container. The glow on {his|her|their} face now.",
       "art": "eating",
       "words": [
         { "speaker": "narrator", "text": "Théo eats three spoons standing up. Then four. It's the first warm thing in two days." }
@@ -283,7 +283,7 @@
       "art": "phone-counter",
       "caption": "Day three",
       "words": [
-        { "speaker": "narrator", "text": "Day three. His phone buzzes." }
+        { "speaker": "narrator", "text": "Day three. {His|Her|Their} phone buzzes." }
       ],
       "anchor": { "x": 50, "y": 62 }
     },
@@ -319,7 +319,7 @@
       "words": [
         {
           "speaker": "narrator",
-          "text": "Before his appointment, Théo does something odd. He writes to someone who doesn't exist yet: the Théo of later."
+          "text": "Before {his|her|their} appointment, Théo does something odd. {He|She|They} {writes|writes|write} to someone who doesn't exist yet: the Théo of later."
         }
       ],
       "anchor": { "x": 55, "y": 40 }
@@ -344,12 +344,12 @@
     },
     {
       "id": "1.27",
-      "image": "A street at morning, everything black, Théo's outline walking with his hood up.",
+      "image": "A street at morning, everything black, Théo's outline walking with {his|her|their} hood up.",
       "art": "street-hood",
       "words": [
         {
           "speaker": "narrator",
-          "text": "He almost cancels his appointment. He types the message twice and deletes it twice. Cancelling would mean explaining."
+          "text": "{He|She|They} almost {cancels|cancels|cancel} {his|her|their} appointment. {He|She|They} {types|types|type} the message twice and {deletes|deletes|delete} it twice. Cancelling would mean explaining."
         }
       ],
       "anchor": { "x": 38, "y": 62 }
@@ -430,13 +430,13 @@
       "image": "Théo looking unconvinced.",
       "art": "theo-chair",
       "words": [
-        { "speaker": "narrator", "text": "Théo thinks this is a bit simple. He doesn't say so." }
+        { "speaker": "narrator", "text": "Théo thinks this is a bit simple. {He|She|They} {doesn't|doesn't|don't} say so." }
       ],
       "anchor": { "x": 30, "y": 35 }
     },
     {
       "id": "1.35",
-      "image": "Théo on the street again; the street still black, but the lamp glow from Marie-Clo's window behind him.",
+      "image": "Théo on the street again; the street still black, but the lamp glow from Marie-Clo's window behind {him|her|them}.",
       "art": "street-lamp-window",
       "words": [
         { "speaker": "narrator", "text": "It was simple. Simple and easy aren't the same thing." }
@@ -454,7 +454,7 @@
     },
     {
       "id": "1.37",
-      "image": "Black skyline from Théo's window. Three tiny warm points: Madame Roux's window, his phone, Marie-Clo's window.",
+      "image": "Black skyline from Théo's window. Three tiny warm points: Madame Roux's window, {his|her|their} phone, Marie-Clo's window.",
       "art": "skyline",
       "unlock": "lightMap",
       "points": ["roux_door", "camille_text", "marieclo_lamp"],

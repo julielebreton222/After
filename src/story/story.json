@@ -173,7 +173,7 @@
     },
     "theo": {
       "name": "Théo",
-      "about": "His own window",
+      "about": "{His|Her|Their} own window",
       "window": {
         "x": 50,
         "y": 88

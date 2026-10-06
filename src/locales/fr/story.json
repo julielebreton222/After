@@ -1,0 +1,608 @@
+{
+  "title": "Après",
+  "beatChars": 80,
+  "voices": {
+    "narrator": {
+      "rate": 0.9,
+      "pitch": 1
+    },
+    "Critic": {
+      "rate": 0.95,
+      "pitch": 0.6
+    },
+    "Madame Roux": {
+      "rate": 0.85,
+      "pitch": 1.3
+    },
+    "Camille": {
+      "rate": 0.95,
+      "pitch": 1.2
+    },
+    "Marie-Clo": {
+      "rate": 0.88,
+      "pitch": 1.15
+    },
+    "Théo": {
+      "rate": 0.95,
+      "pitch": 0.9
+    },
+    "Nadia": {
+      "rate": 1,
+      "pitch": 1.15
+    },
+    "Lucien": {
+      "rate": 0.8,
+      "pitch": 0.75
+    },
+    "Sophie": {
+      "rate": 1,
+      "pitch": 1.2
+    },
+    "Béa": {
+      "rate": 1.05,
+      "pitch": 1.1
+    },
+    "Hugo": {
+      "rate": 0.85,
+      "pitch": 0.8
+    },
+    "Yann": {
+      "rate": 0.85,
+      "pitch": 0.9
+    },
+    "Karim": {
+      "rate": 1.05,
+      "pitch": 1
+    },
+    "Lisa": {
+      "rate": 0.9,
+      "pitch": 1.15
+    }
+  },
+  "voicePreference": [
+    "Daniel",
+    "Google UK English Male",
+    "Arthur",
+    "Serena",
+    "Samantha"
+  ],
+  "tokens": {
+    "chased": {
+      "sport": "le sport",
+      "music": "la musique",
+      "degree": "le diplôme",
+      "business": "l'entreprise",
+      "default": "le projet"
+    },
+    "chasedObject": {
+      "sport": "le trophée",
+      "music": "la guitare",
+      "degree": "le diplôme",
+      "business": "l'enseigne",
+      "default": "le projet"
+    },
+    "chasedVerb": {
+      "sport": "m'entraîner",
+      "music": "faire de la musique",
+      "degree": "étudier",
+      "business": "avoir ma propre boîte",
+      "default": "avoir un projet"
+    },
+    "pocketDefault": "C'est la première fois que je viens. Comment ça marche ?"
+  },
+  "people": {
+    "roux": {
+      "name": "Madame Roux",
+      "about": "Voisine du rez-de-chaussée",
+      "window": {
+        "x": 27,
+        "y": 76
+      }
+    },
+    "camille": {
+      "name": "Camille",
+      "about": "La grande sœur de Théo",
+      "window": {
+        "x": 42,
+        "y": 53
+      }
+    },
+    "marieclo": {
+      "name": "Marie-Clo",
+      "about": "La psy de Théo",
+      "window": {
+        "x": 63,
+        "y": 69
+      }
+    },
+    "sophie": {
+      "name": "Sophie",
+      "about": "Promène Trois-Pattes au parc",
+      "window": {
+        "x": 80,
+        "y": 52
+      }
+    },
+    "lucien": {
+      "name": "Lucien",
+      "about": "Habitué du café, mots croisés du jeudi",
+      "window": {
+        "x": 70,
+        "y": 48
+      }
+    },
+    "nadia": {
+      "name": "Nadia",
+      "about": "Barista au Café du Pont",
+      "window": {
+        "x": 48,
+        "y": 60
+      }
+    },
+    "bea": {
+      "name": "Béa",
+      "about": "Anime les jeux de société du mardi",
+      "window": {
+        "x": 16,
+        "y": 57
+      }
+    },
+    "hugo": {
+      "name": "Hugo",
+      "about": "Jeux de société. N'échange pas ses moutons.",
+      "window": {
+        "x": 35,
+        "y": 58
+      }
+    },
+    "yann": {
+      "name": "Yann",
+      "about": "Deuxième étage. Apporte le pain.",
+      "window": {
+        "x": 63,
+        "y": 80
+      }
+    },
+    "karim": {
+      "name": "Karim",
+      "about": "Étudiant, nouveau en ville",
+      "window": {
+        "x": 88,
+        "y": 62
+      }
+    },
+    "theo": {
+      "name": "Théo",
+      "about": "Sa propre fenêtre",
+      "window": {
+        "x": 50,
+        "y": 88
+      }
+    }
+  },
+  "lightMapArt": "skyline",
+  "lights": {
+    "roux_door": {
+      "person": "roux",
+      "label": "La porte de Madame Roux"
+    },
+    "camille_text": {
+      "person": "camille",
+      "label": "Le message de Camille"
+    },
+    "marieclo_lamp": {
+      "person": "marieclo",
+      "label": "La lampe de Marie-Clo"
+    },
+    "roux_tart": {
+      "person": "roux",
+      "label": "La tarte"
+    },
+    "sophie_park": {
+      "person": "sophie",
+      "label": "Le ciré jaune"
+    },
+    "lucien_corner": {
+      "person": "lucien",
+      "label": "Le coin de Lucien"
+    },
+    "nadia_window": {
+      "person": "nadia",
+      "label": "La vitrine du café"
+    },
+    "bea_table": {
+      "person": "bea",
+      "label": "La table de Béa"
+    },
+    "hugo_sheep": {
+      "person": "hugo",
+      "label": "Les moutons d'Hugo"
+    },
+    "roux_soup": {
+      "person": "roux",
+      "label": "La soupe du dimanche"
+    },
+    "yann_bread": {
+      "person": "yann",
+      "label": "Le pain de Yann"
+    },
+    "theo_glow": {
+      "person": "theo",
+      "label": "Théo"
+    },
+    "camille_call": {
+      "person": "camille",
+      "label": "L'appel"
+    },
+    "karim_corner": {
+      "person": "karim",
+      "label": "Le coin de Karim"
+    }
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "title": "L'appartement silencieux"
+    },
+    {
+      "number": 2,
+      "title": "La salle des larmes"
+    },
+    {
+      "number": 3,
+      "title": "Qui est Théo ?"
+    },
+    {
+      "number": 4,
+      "title": "Des visages familiers"
+    },
+    {
+      "number": 5,
+      "title": "L'échelle"
+    },
+    {
+      "number": 6,
+      "title": "La soupe du dimanche"
+    },
+    {
+      "number": 7,
+      "title": "Ses affaires à elle"
+    },
+    {
+      "number": 8,
+      "title": "La fin du monde"
+    },
+    {
+      "number": 9,
+      "title": "Après"
+    }
+  ],
+  "text": {
+    "firstLaunch": {
+      "title": "Avant de commencer",
+      "body": [
+        "Après est une histoire qu'on lit et qu'on joue, un écran à la fois, avec de petites choses à essayer dans la vraie vie.",
+        "C'est un compagnon pour les moments difficiles. Ce n'est pas une thérapie, et ça ne remplace ni un médecin, ni un ou une psy, ni les gens qui t'aiment.",
+        "Tout ce que tu écris reste sur ce téléphone. Personne d'autre ne peut le lire.",
+        "Si un jour c'est trop lourd, touche « Ça ne va pas » en haut de n'importe quel écran."
+      ],
+      "personTitle": "Une personne à qui tu pourrais écrire un mauvais jour",
+      "personHint": "Facultatif. Tu pourras changer ça plus tard.",
+      "namePlaceholder": "Son prénom",
+      "phonePlaceholder": "Son numéro de téléphone",
+      "start": "Commencer",
+      "skip": "Plus tard"
+    },
+    "notOkay": {
+      "button": "Ça ne va pas",
+      "title": "Tu as le droit de ne pas aller bien.",
+      "intro": "Voici trois choses que tu peux faire tout de suite. Une seule suffit.",
+      "callLabel": "Parler à quelqu'un maintenant",
+      "emergencyLabel": "Urgences :",
+      "messageLabel": "Écrire à {name}",
+      "messageBody": "Coucou, ça va vraiment pas fort. Tu peux m'appeler ?",
+      "noPerson": "Enregistre une personne à qui tu pourrais écrire",
+      "savePerson": "Enregistrer",
+      "breatheLabel": "Respire avec moi",
+      "countryLabel": "Tu n'es pas dans ce pays ?",
+      "back": "Revenir à l'histoire",
+      "crisisIntro": "Ce que tu as écrit avait l'air très lourd. Avant de continuer, voici de l'aide disponible tout de suite."
+    },
+    "ui": {
+      "continue": "Continuer",
+      "skip": "Passer",
+      "save": "Enregistrer",
+      "begin": "Commencer",
+      "iDidIt": "Je l'ai fait",
+      "notYet": "Pas encore",
+      "notice": "Qu'as-tu remarqué ? (facultatif)",
+      "menu": "Menu",
+      "chapters": "Chapitres",
+      "lightMap": "Carte des lumières",
+      "notebook": "Les gens",
+      "quests": "Quêtes",
+      "resume": "Revenir à l'histoire",
+      "startOver": "Tout recommencer (efface tout)",
+      "startOverConfirm": "Effacer tout ce que tu as écrit et reprendre depuis le début ?",
+      "comingSoon": "Bientôt",
+      "locked": "S'ouvre après la quête",
+      "chapterUnlocked": "Le chapitre {n} est débloqué.",
+      "questWaiting": "Rien ne presse. Cette carte t'attendra.",
+      "sealTitle": "À ouvrir le",
+      "sealButton": "Sceller",
+      "sealDone": "Scellé jusqu'au {date}.",
+      "notebookUnlocked": "Nouveau : le carnet des gens",
+      "lightMapUnlocked": "Nouveau : la Carte des lumières",
+      "emptyNotebook": "Personne pour l'instant. Chaque page sera la vie de quelqu'un d'autre.",
+      "hours": "{n} heures ensemble",
+      "sound": "Son",
+      "music": "Musique : pluie et piano",
+      "voice": "Lecture à voix haute",
+      "voiceUnsupported": "Ce téléphone ne sait pas lire à voix haute.",
+      "silentNote": "Sur iPhone, désactive le mode silencieux pour entendre la musique.",
+      "friendsUnlocked": "Nouveau : les cartes d'amitié",
+      "quest": "Quête",
+      "optionalQuest": "Quête facultative",
+      "iWent": "J'y suis allé·e",
+      "realPersonPrompt": "Quelqu'un que tu as vu là-bas (facultatif)",
+      "realPeople": "Tes vraies personnes",
+      "noPredictions": "Pas encore de prédictions.",
+      "guessed": "prévu",
+      "really": "en vrai",
+      "mapPlaceholder": "Quelque chose à toi…",
+      "letterFrom": "Écrit le {date}.",
+      "tabStory": "Histoire",
+      "tabToolkit": "Que faire quand",
+      "tabHabits": "Habitudes",
+      "intro": "À propos de l'appli"
+    },
+    "intro": {
+      "next": "Suivant",
+      "back": "Retour",
+      "done": "Commencer",
+      "why": {
+        "title": "Pourquoi cette appli",
+        "body": [
+          "Je l'ai faite pour mon frère, après son premier chagrin d'amour.",
+          "Je ne pouvais pas être là tous les soirs, et je ne savais pas toujours quoi dire. Alors j'ai fait quelque chose qui, lui, pourrait être là : une histoire sur quelqu'un qui traverse la même chose, et les petites choses qui aident vraiment.",
+          "Si quelqu'un t'a envoyé ce lien, c'est que cette personne tient à toi, elle aussi."
+        ],
+        "sign": "Julie"
+      },
+      "name": {
+        "title": "Qui est le personnage ?",
+        "body": "L'histoire suit quelqu'un qui vient d'arriver dans une nouvelle ville, la semaine où sa copine s'en va. Dans l'histoire, ce personnage s'appelle {default}, mais tu peux lui donner ton prénom, ou n'importe quel prénom.",
+        "placeholder": "{default}",
+        "hint": "Tu pourras le changer plus tard depuis le menu."
+      },
+      "tour": {
+        "title": "Comment ça marche",
+        "items": [
+          {
+            "icon": "📖",
+            "title": "Histoire",
+            "text": "Touche l'écran pour lire, une ligne à la fois. Glisse vers la droite pour revenir en arrière. Parfois, c'est toi qui choisis ce qui se passe, ou tu essaies une petite chose pour de vrai. Chaque chapitre se termine par une quête dans la vraie vie, et le chapitre suivant s'ouvre quand tu l'as faite."
+          },
+          {
+            "icon": "🧭",
+            "title": "Que faire quand",
+            "text": "De l'aide pour les moments durs : quand tu as envie de lui écrire, quand tu n'arrives pas à dormir ou à manger, quand la solitude pèse. Avec des vidéos qui peuvent aider."
+          },
+          {
+            "icon": "🌱",
+            "title": "Habitudes",
+            "text": "De petites choses qui t'aident à tenir. Commence celles que tu veux, suis-les si ça te dit, ou ajoute les tiennes."
+          },
+          {
+            "icon": "🤍",
+            "title": "Ça ne va pas",
+            "text": "En haut à droite, sur chaque écran. Une ligne d'écoute, un message à quelqu'un de confiance, et un exercice de respiration."
+          },
+          {
+            "icon": "🔈",
+            "title": "Son",
+            "text": "La musique et la lecture à voix haute, coupées toutes les deux tant que tu ne les actives pas."
+          }
+        ]
+      },
+      "facts": {
+        "title": "Pourquoi c'est important",
+        "items": [
+          {
+            "text": "Plus de 720 000 personnes meurent par suicide chaque année dans le monde.",
+            "source": "Organisation mondiale de la santé"
+          },
+          {
+            "text": "C'est la troisième cause de décès chez les 15 à 29 ans.",
+            "source": "Organisation mondiale de la santé"
+          },
+          {
+            "text": "En France, 9 300 personnes sont mortes par suicide en 2016. Trois sur quatre étaient des hommes.",
+            "source": "Santé publique France"
+          }
+        ],
+        "after": [
+          "Les hommes demandent moins souvent de l'aide, et les spécialistes y voient l'une des raisons pour lesquelles ils meurent bien plus souvent par suicide. C'est aussi pour ça que cette appli te pousse sans arrêt vers les autres.",
+          "Le suicide n'est pas une fatalité. Parler aide, et de l'aide existe, à toute heure :"
+        ],
+        "line": "{number} : {name}. {hours}."
+      },
+      "pronoun": {
+        "title": "Et ses pronoms ?",
+        "body": "Comment l'histoire doit-elle parler de ce personnage ?",
+        "options": [
+          {
+            "id": "he",
+            "label": "il",
+            "example": "Il ouvre la fenêtre."
+          },
+          {
+            "id": "she",
+            "label": "elle",
+            "example": "Elle ouvre la fenêtre."
+          },
+          {
+            "id": "they",
+            "label": "iel",
+            "example": "Iel ouvre la fenêtre."
+          }
+        ]
+      }
+    }
+  },
+  "lightMapArtFinal": "skyline-colour",
+  "ladder": [
+    "Décider d'y aller",
+    "Marcher jusqu'à la porte",
+    "Entrer, rester 10 minutes",
+    "Un regard et un signe de tête",
+    "Une question simple",
+    "Échanger vos prénoms",
+    "Dire une chose vraie sur toi",
+    "Revenir la fois suivante",
+    "Utiliser son prénom",
+    "Proposer quelque chose ailleurs"
+  ],
+  "friendLevels": [
+    {
+      "name": "inconnu·e",
+      "hours": 0
+    },
+    {
+      "name": "visage familier",
+      "hours": 1
+    },
+    {
+      "name": "connaissance",
+      "hours": 10
+    },
+    {
+      "name": "copain ou copine",
+      "hours": 50
+    },
+    {
+      "name": "ami·e",
+      "hours": 200
+    }
+  ],
+  "mapRegions": [
+    "Ce que j'aime",
+    "Ce que j'aimais",
+    "Ce qui m'intrigue",
+    "Ce que je fais bien"
+  ],
+  "predictionLabels": {
+    "film": "Soirée film",
+    "ladder": "Soirée jeux",
+    "ladder-quest": "Ton échelle"
+  },
+  "places": {
+    "_note": "DRAFT, please edit: suggestions shown at 3.30, by energy (low/some/high) and talk (near/little/talk).",
+    "low-near": [
+      {
+        "name": "Une salle de lecture de bibliothèque",
+        "why": "Du monde autour de toi, et personne n'attend que tu parles."
+      },
+      {
+        "name": "Le même café, la même table",
+        "why": "Qu'on te voie, ça compte. Prends un livre."
+      },
+      {
+        "name": "Un banc de parc, à la même heure",
+        "why": "Les habitués vont commencer à te reconnaître."
+      }
+    ],
+    "low-little": [
+      {
+        "name": "Le comptoir d'un café",
+        "why": "Quelques mots avec le barista, et tu peux partir quand tu veux."
+      },
+      {
+        "name": "La nocturne gratuite d'un musée",
+        "why": "Quelque chose à regarder ensemble, et à commenter si tu en as envie."
+      }
+    ],
+    "low-talk": [
+      {
+        "name": "Un groupe de parole ou de deuil",
+        "why": "Tout le monde sait ce qui t'amène."
+      },
+      {
+        "name": "Un petit cours du soir",
+        "why": "Les mêmes personnes chaque semaine, avec une tâche à partager."
+      }
+    ],
+    "some-near": [
+      {
+        "name": "Un cours de yoga ou d'étirements",
+        "why": "Côte à côte, pas besoin de parler."
+      },
+      {
+        "name": "Une piscine",
+        "why": "Même ligne d'eau, même heure, mêmes visages."
+      },
+      {
+        "name": "Un marché du samedi",
+        "why": "Animé et sympathique, à ton rythme."
+      }
+    ],
+    "some-little": [
+      {
+        "name": "Une mission de bénévolat",
+        "why": "Travailler côte à côte rend la conversation facile."
+      },
+      {
+        "name": "Une salle d'escalade ou de bloc",
+        "why": "On discute entre deux voies, et on s'entraide."
+      },
+      {
+        "name": "Un cours de cuisine ou de poterie",
+        "why": "Les mains occupées, les mots viennent tout seuls."
+      }
+    ],
+    "some-talk": [
+      {
+        "name": "Un échange linguistique",
+        "why": "Tout le monde est là pour parler, et tout le monde est un peu gauche."
+      },
+      {
+        "name": "Un club de lecture",
+        "why": "Le livre te donne quelque chose à dire."
+      }
+    ],
+    "high-near": [
+      {
+        "name": "Un club de course à pied",
+        "why": "On court ensemble, et un café après si tu veux."
+      },
+      {
+        "name": "Une chorale",
+        "why": "Chanter avec d'autres, sans avoir à faire la conversation."
+      }
+    ],
+    "high-little": [
+      {
+        "name": "Une soirée jeux de société",
+        "why": "Le jeu fait la conversation."
+      },
+      {
+        "name": "Un foot à cinq ou un sport d'équipe",
+        "why": "La même équipe chaque semaine."
+      }
+    ],
+    "high-talk": [
+      {
+        "name": "Une cuisine solidaire ou une table d'hôtes",
+        "why": "Cuisiner et manger avec des inconnus."
+      },
+      {
+        "name": "Lancer quelque chose toi-même",
+        "why": "Une balade, une soirée jeux, une soupe. Invite une personne."
+      }
+    ]
+  },
+  "dedication": "Fait pour mon frère, avec amour. — Julie",
+  "speakerNames": {
+    "Critic": "Le Critique"
+  }
+}

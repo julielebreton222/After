@@ -1,7 +1,7 @@
 {
   "number": 3,
   "title": "Who Is Théo?",
-  "summary": "Weeks three and four. Learning to be alone without being lonely, and finding the man underneath \"we\". The second half unlocks after a real walk somewhere new. Ends with 5 lights.",
+  "summary": "Weeks three and four. Learning to be alone without being lonely, and finding the {man|woman|person} underneath \"we\". The second half unlocks after a real walk somewhere new. Ends with 5 lights.",
   "screens": [
     {
       "id": "3.1",
@@ -28,7 +28,7 @@
       "image": "Théo standing alone, holding a pan.",
       "art": "theo-pan",
       "words": [
-        { "speaker": "narrator", "text": "He realises he doesn't know what he likes to cook anymore. Or what he likes at all." }
+        { "speaker": "narrator", "text": "{He|She|They} {realises|realises|realise} {he|she|they} {doesn't|doesn't|don't} know what {he|she|they} {likes|likes|like} to cook anymore. Or what {he|she|they} {likes|likes|like} at all." }
       ]
     },
     {
@@ -84,7 +84,7 @@
     },
     {
       "id": "3.9",
-      "image": "Marie-Clo handing him a big sheet of paper: a hand-drawn map with an empty centre labelled \"Théo\".",
+      "image": "Marie-Clo handing {him|her|them} a big sheet of paper: a hand-drawn map with an empty centre labelled \"Théo\".",
       "art": "map-handover",
       "words": [
         { "speaker": "Marie-Clo", "text": "Then let's find out. A little each week." }
@@ -97,7 +97,7 @@
       "words": [
         {
           "speaker": "narrator",
-          "text": "The Who Is Théo? map. It starts almost empty. That's normal. Lisa's face isn't on it. This one is only his."
+          "text": "The Who Is Théo? map. It starts almost empty. That's normal. Lisa's face isn't on it. This one is only {his|hers|theirs}."
         }
       ],
       "interaction": {
@@ -122,7 +122,7 @@
       "words": [
         {
           "speaker": "narrator",
-          "text": "Marie-Clo gave him one more experiment. Write five sentences about this month, but not with \"I\". With his own name."
+          "text": "Marie-Clo gave {him|her|them} one more experiment. Write five sentences about this month, but not with \"I\". With {his|her|their} own name."
         }
       ]
     },
@@ -131,7 +131,7 @@
       "image": "Same paper, an example in cream handwriting.",
       "art": "paper-pen",
       "words": [
-        { "speaker": "narrator", "text": "\"Théo is having a hard month. Théo is sad, and he's also still cooking. Théo is...\"" }
+        { "speaker": "narrator", "text": "\"Théo is having a hard month. Théo is sad, and {he's|she's|they're} also still cooking. Théo is...\"" }
       ],
       "interaction": {
         "type": "write",
@@ -198,7 +198,7 @@
       "words": [
         {
           "speaker": "narrator",
-          "text": "He checks. She looks fine. That's the worst and best news at once. Théo feels worse. That's allowed. Tomorrow is a new night."
+          "text": "{He|She|They} {checks|checks|check}. She looks fine. That's the worst and best news at once. Théo feels worse. That's allowed. Tomorrow is a new night."
         }
       ]
     },
@@ -207,7 +207,7 @@
       "image": "Phone on the kitchen counter, Théo asleep.",
       "art": "phone-counter",
       "words": [
-        { "speaker": "narrator", "text": "He sleeps badly. But he sleeps." }
+        { "speaker": "narrator", "text": "{He|She|They} {sleeps|sleeps|sleep} badly. But {he|she|they} {sleeps|sleeps|sleep}." }
       ]
     },
     {
@@ -257,7 +257,7 @@
       "words": [
         {
           "speaker": "narrator",
-          "text": "Théo walks to the park on the other side of the river. He has never been here. Nobody here has ever seen him with Lisa."
+          "text": "Théo walks to the park on the other side of the river. {He|She|They} {has|has|have} never been here. Nobody here has ever seen {him|her|them} with Lisa."
         }
       ]
     },
@@ -268,7 +268,7 @@
       "words": [
         {
           "speaker": "narrator",
-          "text": "He looks up. The trees are two hundred years old. They have seen a lot of people walk under them with a broken heart. They are still here."
+          "text": "{He|She|They} {looks|looks|look} up. The trees are two hundred years old. They have seen a lot of people walk under them with a broken heart. They are still here."
         }
       ]
     },
@@ -348,7 +348,7 @@
       "words": [
         {
           "speaker": "narrator",
-          "text": "Marie-Clo asks him to choose one place to go back to, again and again. Two questions help: How much energy does Théo have? And does he want to talk, or just be near people?"
+          "text": "Marie-Clo asks {him|her|them} to choose one place to go back to, again and again. Two questions help: How much energy does Théo have? And {does|does|do} {he|she|they} want to talk, or just be near people?"
         }
       ],
       "interaction": [

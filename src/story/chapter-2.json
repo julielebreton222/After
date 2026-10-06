@@ -1,7 +1,7 @@
 {
   "number": 2,
   "title": "The Cry Room",
-  "summary": "The second week. Still almost all black. Théo holds it together in public and falls apart in private, and the game gives him full permission. Teaches the body tools. Ends with 4 lights.",
+  "summary": "The second week. Still almost all black. Théo holds it together in public and falls apart in private, and the game gives {him|her|them} full permission. Teaches the body tools. Ends with 4 lights.",
   "screens": [
     {
       "id": "2.1",
@@ -22,7 +22,7 @@
       "art": "notebook",
       "showNotebook": "q1",
       "words": [
-        { "speaker": "narrator", "text": "Did Théo ask his real question?" },
+        { "speaker": "narrator", "text": "Did Théo ask {his|her|their} real question?" },
         {
           "speaker": "narrator",
           "text": { "by": "quest:q1", "done": "", "notyet": "Not yet. That's fine. The notebook will wait." }
@@ -45,7 +45,7 @@
       "image": "A colleague's back, saying something. Théo nodding, a stiff smile.",
       "art": "warehouse-colleague",
       "words": [
-        { "speaker": "narrator", "text": "He nods at the right moments. He laughs once, at the right moment. Nobody would know." }
+        { "speaker": "narrator", "text": "{He|She|They} {nods|nods|nod} at the right moments. {He|She|They} {laughs|laughs|laugh} once, at the right moment. Nobody would know." }
       ]
     },
     {
@@ -66,7 +66,7 @@
     },
     {
       "id": "2.7",
-      "image": "Close-up: his outlined hands over his face, shoulders shaking. Drawn in heavy wet ink strokes.",
+      "image": "Close-up: {his|her|their} outlined hands over his face, shoulders shaking. Drawn in heavy wet ink strokes.",
       "art": "crying-hands",
       "words": [
         { "speaker": "narrator", "text": "It is not a dignified cry. It is the kind of crying that comes from the stomach." }
@@ -77,7 +77,7 @@
       "image": "The Critic peering round the stairwell corner.",
       "art": "stairwell",
       "words": [
-        { "speaker": "Critic", "text": "Pull yourself together. Men don't do this at work." }
+        { "speaker": "Critic", "text": "Pull yourself together. {Men|Women|Grown-ups} don't do this at work." }
       ]
     },
     {
@@ -105,7 +105,7 @@
     },
     {
       "id": "2.11",
-      "image": "Théo's flat at night. A door labelled in chalk: \"The cry room\" (it's his bathroom).",
+      "image": "Théo's flat at night. A door labelled in chalk: \"The cry room\" (it's {his|her|their} bathroom).",
       "art": "cry-room-door",
       "caption": "The cry room",
       "words": [
@@ -115,10 +115,10 @@
     },
     {
       "id": "2.12",
-      "image": "After: Théo sitting on the bathroom floor, lighter lines around him.",
+      "image": "After: Théo sitting on the bathroom floor, lighter lines around {him|her|them}.",
       "art": "bathroom-floor",
       "words": [
-        { "speaker": "narrator", "text": "Afterwards, he feels emptier. Emptier is lighter than full." }
+        { "speaker": "narrator", "text": "Afterwards, {he|she|they} {feels|feels|feel} emptier. Emptier is lighter than full." }
       ]
     },
     {
@@ -262,7 +262,7 @@
       "words": [
         {
           "speaker": "narrator",
-          "text": "So Théo cooks. Not for himself; he can't yet. For her. A small tarte aux pommes. His hands remember what to do even when the rest of him doesn't."
+          "text": "So Théo cooks. Not for {himself|herself|themselves}; {he|she|they} can't yet. For her. A small tarte aux pommes. {His|Her|Their} hands remember what to do even when the rest of {him|her|them} doesn't."
         }
       ],
       "interaction": {
@@ -270,7 +270,7 @@
         "objects": [
           { "id": "apples", "label": "Apples", "line": "Apples, sliced thin, laid like roof tiles." },
           { "id": "butter", "label": "Butter", "line": "Cold butter, in little pieces." },
-          { "id": "dough", "label": "Dough", "line": "The dough, rolled out the way his grandmother did it." }
+          { "id": "dough", "label": "Dough", "line": "The dough, rolled out the way {his|her|their} grandmother did it." }
         ]
       }
     },
@@ -297,10 +297,10 @@
     },
     {
       "id": "2.25",
-      "image": "Théo on the stairs going back up, a warm glow on his face this time.",
+      "image": "Théo on the stairs going back up, a warm glow on {his|her|their} face this time.",
       "art": "stairs-up",
       "words": [
-        { "speaker": "narrator", "text": "Théo has learned something about Madame Roux. He didn't even have to ask." }
+        { "speaker": "narrator", "text": "Théo has learned something about Madame Roux. {He|She|They} didn't even have to ask." }
       ],
       "interaction": {
         "type": "notebook",

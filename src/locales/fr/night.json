@@ -1,0 +1,91 @@
+{
+  "title": "Histoires du soir",
+  "question": "Ce soir, je me sens…",
+  "intro": "De courts contes pour l'heure avant de dormir, lus par Julie.",
+  "ui": {
+    "button": "Histoires du soir",
+    "back": "Retour",
+    "close": "Fermer",
+    "comingSoon": "Julie est encore en train d'écrire celle-ci. Bientôt.",
+    "play": "Lecture",
+    "pause": "Pause",
+    "readAlong": "Lire en même temps",
+    "hideText": "Masquer le texte",
+    "timer": "Minuteur de sommeil",
+    "endOfStory": "Fin de l'histoire",
+    "minutes": "{n} min",
+    "nightMode": "Assombrir l'écran",
+    "nightModeHint": "Touche l'écran n'importe où pour revenir.",
+    "favourite": "Garder celle-ci",
+    "favourited": "Gardée",
+    "favourites": "Les histoires que tu as gardées",
+    "lastPlayed": "La dernière fois",
+    "stories": "{n} histoires",
+    "story": "1 histoire",
+    "notOkayEnd": "Si ce soir tu as l'impression que personne ne remarquerait ton absence, s'il te plaît, parles-en à quelqu'un maintenant. Quelqu'un le remarquerait. Quelqu'un serait content que tu appelles.",
+    "notOkayButton": "Ça ne va pas"
+  },
+  "feelings": [
+    {
+      "slug": "alone",
+      "label": "Seul",
+      "line": "Quelqu'un, quelque part, garde une lumière allumée pour toi."
+    },
+    {
+      "slug": "cant-be-myself",
+      "label": "Comme si je ne pouvais pas être moi-même",
+      "line": "Le vrai toi n'est ni trop, ni trop peu."
+    },
+    {
+      "slug": "feel-too-much",
+      "label": "Comme si je ressentais trop",
+      "line": "Les grandes émotions sont une force, pas un défaut."
+    },
+    {
+      "slug": "not-enough",
+      "label": "Pas à la hauteur",
+      "line": "Tu n'as pas à mériter ta place à table."
+    },
+    {
+      "slug": "lost-who-i-was",
+      "label": "Comme si j'avais perdu celui que j'étais",
+      "line": "On peut perdre son chemin et rester celui qui marche."
+    },
+    {
+      "slug": "angry",
+      "label": "En colère contre tout",
+      "line": "La colère garde souvent quelque chose de tendre."
+    },
+    {
+      "slug": "numb",
+      "label": "Engourdi, comme vide",
+      "line": "Les sensations peuvent revenir lentement, comme le printemps."
+    },
+    {
+      "slug": "scared-of-tomorrow",
+      "label": "Inquiet pour demain",
+      "line": "Ce soir te demande seulement de te reposer."
+    },
+    {
+      "slug": "nobody-would-notice",
+      "label": "Comme si personne ne remarquerait que j'ai disparu",
+      "line": "Tu es tissé dans plus de vies que tu ne le vois.",
+      "safety": true
+    },
+    {
+      "slug": "missing-someone",
+      "label": "En manque de quelqu'un",
+      "line": "Le manque, c'est de l'amour qui n'a pas encore trouvé où aller."
+    },
+    {
+      "slug": "failed",
+      "label": "Comme si j'avais échoué",
+      "line": "Finir, ce n'est pas la même chose qu'échouer."
+    },
+    {
+      "slug": "homesick",
+      "label": "Loin de chez moi, dans un endroit nouveau",
+      "line": "Un chez-soi, ça se reconstruit, une personne à la fois."
+    }
+  ]
+}

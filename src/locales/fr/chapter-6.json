@@ -1,0 +1,355 @@
+{
+  "number": 6,
+  "title": "La soupe du dimanche",
+  "summary": "Semaines neuf et dix. Théo veut quelque chose qui n'existe pas, alors {il|elle|iel} le crée. {Il|Elle|Iel} dit enfin la vérité à sa sœur. Et pour la première fois, c'est Théo qui se met à briller. Se termine avec 11 lumières.",
+  "screens": [
+    {
+      "id": "6.1",
+      "image": "La cuisine de Théo, gris crème maintenant, la carte « Qui est Théo ? » punaisée sur le frigo, avec les objets du joueur dessinés dessus.",
+      "art": "kitchen-map-fridge",
+      "words": [
+        { "speaker": "narrator", "text": "Semaine neuf. Théo regarde sa carte. Le plus grand repère, de loin, c'est une casserole." }
+      ]
+    },
+    {
+      "id": "6.2",
+      "image": "Gros plan sur le repère de la casserole. De petits personnages dessinés autour, en train de manger.",
+      "art": "pan-landmark",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Ce n'est pas vraiment la cuisine qui lui manque. C'est cuisiner pour les autres. Une table pleine. Quelqu'un qui dit « ah, c'est bon, ça » la bouche pleine."
+        }
+      ]
+    },
+    {
+      "id": "6.3",
+      "image": "Théo sur son téléphone, en pleine recherche ; l'écran d'un bleu froid. Les résultats dessinés comme des cartes : « Cuisine solidaire du quartier : FERMÉ ».",
+      "art": "phone-search",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "{Il|Elle|Iel} cherche un endroit où cuisiner pour les autres. Une cuisine solidaire : fermée l'an dernier. Un dîner chez l'habitant : quarante euros la place, complet jusqu'au printemps."
+        }
+      ]
+    },
+    {
+      "id": "6.4",
+      "image": "Le Critique, vautré sur l'écran du téléphone.",
+      "art": "phone-search",
+      "words": [
+        { "speaker": "Critic", "text": "Tu vois ? Ça n'existe pas. Rien n'existe jamais pour les gens comme toi." }
+      ],
+      "interaction": {
+        "type": "critic-reply",
+        "options": [
+          { "id": "make", "label": "« Alors peut-être que je vais le créer. »" },
+          { "id": "critic", "label": "« Ça, c'est le Critique qui parle. »" },
+          { "id": "true", "label": "« Est-ce que c'est vraiment vrai ? »" }
+        ]
+      }
+    },
+    {
+      "id": "6.5",
+      "image": "Quatre cartes crème sur une page noire : une loupe, un panneau indicateur, une bulle de dialogue, une graine.",
+      "art": "four-doors",
+      "words": [
+        { "speaker": "narrator", "text": "Quand la chose dont tu as besoin n'existe pas, il y a quatre portes." }
+      ],
+      "interaction": {
+        "type": "tap-objects",
+        "objects": [
+          { "id": "glass", "label": "Loupe", "line": "Cherche plus loin : la ville d'à côté, un groupe en ligne, quelque chose qui ressemble." },
+          { "id": "sign", "label": "Panneau", "line": "Rejoins quelque chose de voisin : une soirée à la bibliothèque, une salle de quartier, un cours." },
+          { "id": "bubble", "label": "Bulle", "line": "Demande à une seule personne : « Tu sais où les gens vont pour… ? »" },
+          { "id": "seed", "label": "Graine", "line": "Lance-en un tout petit, toi-même." }
+        ]
+      }
+    },
+    {
+      "id": "6.6",
+      "image": "Théo qui frappe à la porte de Madame Roux, lumière chaude.",
+      "art": "roux-finger",
+      "anchor": { "x": 40, "y": 50 },
+      "words": [
+        { "speaker": "narrator", "text": "Théo essaie d'abord la porte trois. {Il|Elle|Iel} demande à Madame Roux." }
+      ]
+    },
+    {
+      "id": "6.7",
+      "image": "Madame Roux sur le pas de sa porte, le doigt levé.",
+      "art": "roux-finger",
+      "words": [
+        {
+          "speaker": "Madame Roux",
+          "text": "De mon temps, on faisait une grande marmite et on frappait aux portes. La cour est vide le dimanche. Personne ne vous en empêchera. J'apporterai les chaises."
+        }
+      ]
+    },
+    {
+      "id": "6.8",
+      "image": "Théo à sa table, en train d'écrire un mot en grosses lettres.",
+      "art": "paper-pen",
+      "words": [
+        { "speaker": "narrator", "text": "Ce sera donc la porte quatre." }
+      ],
+      "interaction": {
+        "type": "write",
+        "key": "soup-note",
+        "prompt": "Écris le mot.",
+        "prefill": "SOUPE DU DIMANCHE. Dans la cour, dimanche 13 h. Gratuit. Apportez un bol. — Théo, 3e étage",
+        "max": 200,
+        "rows": 4
+      }
+    },
+    {
+      "id": "6.9",
+      "image": "Le mot scotché sur la porte d'entrée de l'immeuble, parmi d'autres affichettes.",
+      "art": "note-on-door",
+      "words": [
+        { "speaker": "narrator", "text": "{Il|Elle|Iel} le scotche sur la porte d'entrée. Puis l'enlève. Puis le remet." }
+      ]
+    },
+    {
+      "id": "6.10",
+      "image": "Samedi soir : Théo qui cuisine une énorme marmite. Une vapeur dessinée toute chaude. Des oignons, des carottes, un bouquet garni.",
+      "art": "big-pot",
+      "words": [
+        { "speaker": "narrator", "text": "Samedi soir, {il|elle|iel} fait de la soupe pour vingt personnes. Au cas où. Et aussi parce qu'{il|elle|iel} a paniqué." }
+      ],
+      "interaction": {
+        "type": "tap-objects",
+        "objects": [
+          { "id": "leeks", "label": "Poireaux", "line": "Des poireaux, lavés deux fois, parce que le sable, c'est impardonnable." },
+          { "id": "potatoes", "label": "Pommes de terre", "line": "Des pommes de terre, pour le corps." },
+          { "id": "carrots", "label": "Carottes", "line": "Des carottes, pour la couleur. La première couleur dans la marmite." },
+          { "id": "herbs", "label": "Herbes", "line": "Un bouquet garni : thym, laurier, queues de persil, noués avec de la ficelle." },
+          { "id": "salt", "label": "Sel", "line": "Du sel. On goûte. Du sel. On goûte. C'est bon." }
+        ]
+      }
+    },
+    {
+      "id": "6.11",
+      "image": "Dimanche, 13 h. La cour : pierre grise, une marmite sur un réchaud de camping, cinq chaises pliantes, Théo {seul|seule|seul·e}.",
+      "art": "courtyard-empty",
+      "caption": "13 h 00",
+      "words": [
+        { "speaker": "narrator", "text": "Dimanche, 13 h. Personne." }
+      ]
+    },
+    {
+      "id": "6.12",
+      "image": "13 h 10. Toujours {seul|seule|seul·e}. Le Critique assis sur une des chaises.",
+      "art": "courtyard-empty",
+      "caption": "13 h 10",
+      "words": [
+        { "speaker": "Critic", "text": "Je te l'avais dit." }
+      ]
+    },
+    {
+      "id": "6.13",
+      "image": "Théo qui se sert un bol et s'assoit.",
+      "art": "courtyard-empty",
+      "anchor": { "x": 50, "y": 65 },
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Marie-Clo l'a dit : si personne ne vient, tu fais quand même la chose. Théo mange un bol de soupe dans une cour. C'est une bonne soupe."
+        }
+      ]
+    },
+    {
+      "id": "6.14",
+      "image": "13 h 20. Madame Roux arrive avec une chaise pliante et une boîte à gâteau. La lumière de Madame Roux devient plus vive.",
+      "art": "roux-courtyard",
+      "caption": "13 h 20",
+      "light": "roux_soup",
+      "haptic": true,
+      "addHours": { "roux": 3 },
+      "words": [
+        { "speaker": "Madame Roux", "text": "Pardon, je me coiffais. Pour une fête, il faut se coiffer." }
+      ]
+    },
+    {
+      "id": "6.15",
+      "image": "Un homme timide d'une quarantaine d'années sous le porche, une baguette à la main, à moitié caché.",
+      "art": "yann-archway",
+      "caption": "13 h 25",
+      "words": [
+        { "speaker": "narrator", "text": "13 h 25. Un homme que Théo a croisé cent fois dans l'escalier, sans jamais lui parler." }
+      ]
+    },
+    {
+      "id": "6.16",
+      "image": "Yann qui tend le pain, maladroitement.",
+      "art": "yann-bread",
+      "light": "yann_bread",
+      "haptic": true,
+      "addHours": { "yann": 3 },
+      "words": [
+        { "speaker": "Yann", "text": "J'ai vu le mot. Je ne savais pas si… J'ai apporté du pain. Est-ce que… le pain, ça va ?" }
+      ],
+      "interaction": {
+        "type": "choice",
+        "options": [
+          { "id": "perfect", "label": "« Le pain, c'est parfait. »" },
+          { "id": "sit", "label": "« Asseyez-vous, asseyez-vous, j'en ai fait pour vingt. »" }
+        ]
+      }
+    },
+    {
+      "id": "6.17",
+      "image": "Yann assis, en train de manger, les yeux qui se ferment au premier goût.",
+      "art": "yann-bread",
+      "anchor": { "x": 45, "y": 55 },
+      "words": [
+        { "speaker": "Yann", "text": "Je vis seul depuis mon divorce. Ça fait… deux ans que je n'ai pas mangé une soupe faite par quelqu'un d'autre ? Peut-être." }
+      ],
+      "interaction": { "type": "notebook", "book": "people", "person": "yann", "text": "Yann, 2e étage : vit seul depuis son divorce. Apporte le pain." }
+    },
+    {
+      "id": "6.18",
+      "image": "Trois-Pattes qui déboule dans la cour, Sophie derrière dans son ciré jaune.",
+      "art": "dog-courtyard",
+      "addHours": { "sophie": 3 },
+      "words": [
+        { "speaker": "Sophie", "text": "Il l'a sentie depuis la rue. Je suis vraiment désolée. Il y en a assez pour un chien très mal élevé ?" }
+      ]
+    },
+    {
+      "id": "6.19",
+      "image": "Quatre personnes et un chien autour de la marmite. Et Théo, la louche à la main, dont le contour brille pour la première fois. Le contour de Théo gagne une douce lueur permanente.",
+      "art": "soup-gathering",
+      "light": "theo_glow",
+      "haptic": "big",
+      "words": [
+        { "speaker": "narrator", "text": "Et puis il se passe quelque chose qui n'était encore jamais arrivé dans cette histoire. Théo se met à briller." }
+      ]
+    },
+    {
+      "id": "6.20",
+      "image": "Gros plan sur Théo qui sert un deuxième bol à Yann, lumière chaude sur les deux visages.",
+      "art": "soup-gathering",
+      "anchor": { "x": 55, "y": 45 },
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Pas parce qu'on lui a donné quelque chose. Parce qu'{il|elle|iel} a donné quelque chose. Certaines personnes s'illuminent quand on les aime. Théo s'illumine quand {il|elle|iel} aime."
+        }
+      ]
+    },
+    {
+      "id": "6.21",
+      "image": "Le soir. Théo qui lave une montagne de bols, en souriant.",
+      "art": "washing-bowls",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Quatre personnes. Vingt portions de soupe. Théo va manger de la soupe jusqu'à jeudi. Ça ne {le|la|le·a} dérange pas."
+        }
+      ]
+    },
+    {
+      "id": "6.22",
+      "image": "Théo sur son canapé, le téléphone à la main, le nom de Camille à l'écran.",
+      "art": "sofa-phone",
+      "words": [
+        { "speaker": "narrator", "text": "Ce soir-là, {il|elle|iel} appelle Camille. Pas un message. Un appel." }
+      ]
+    },
+    {
+      "id": "6.23",
+      "image": "Case partagée en deux : Théo sur son canapé ; Camille dans sa cuisine, le téléphone à l'oreille, une grosse écharpe.",
+      "art": "split-call",
+      "words": [
+        { "speaker": "Camille", "text": "Coucou ! Tu m'appelles ! Ça va ?" }
+      ],
+      "interaction": {
+        "type": "choice",
+        "options": [
+          { "id": "fine", "label": "« Ça va. »", "goto": "6.24a" },
+          { "id": "honest", "label": "« Franchement ? C'est vraiment dur. »", "goto": "6.24b" }
+        ]
+      }
+    },
+    {
+      "id": "6.24a",
+      "image": "La même case partagée, le visage de Camille qui a compris.",
+      "art": "split-call",
+      "words": [
+        { "speaker": "Camille", "text": "Théo. C'est moi." }
+      ],
+      "interaction": {
+        "type": "choice",
+        "options": [
+          { "id": "honest", "label": "« Franchement ? C'est vraiment dur. »", "goto": "6.24b" }
+        ]
+      }
+    },
+    {
+      "id": "6.24b",
+      "image": "La case partagée, la ligne qui les sépare se brise : une lumière chaude passe d'un côté à l'autre. La lumière de Camille grandit.",
+      "art": "split-call",
+      "light": "camille_call",
+      "haptic": true,
+      "words": [
+        {
+          "speaker": "Théo",
+          "text": "Franchement ? C'est vraiment dur. Je n'ai rien pu manger pendant deux jours. Et {chased}… c'est fini. Je ne l'ai dit à personne."
+        }
+      ]
+    },
+    {
+      "id": "6.25",
+      "image": "Camille, les yeux mouillés, qui sourit.",
+      "art": "camille-smiling",
+      "words": [
+        {
+          "speaker": "Camille",
+          "text": "Merci de me le dire. Je m'inquiétais tellement. Je peux venir te voir ? J'apporte le vin. Toi, tu apportes la soupe. Évidemment."
+        }
+      ]
+    },
+    {
+      "id": "6.26",
+      "image": "Théo après l'appel, allongé sur le canapé, plus léger.",
+      "art": "sofa-phone",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Il se trouve que dire la vérité à voix haute la rend un peu plus petite. Et que ça rapproche un peu les gens qui t'aiment."
+        }
+      ]
+    },
+    {
+      "id": "6.27",
+      "image": "La carte des lumières : toute une cour de lumières, et la fenêtre de Théo qui brille.",
+      "art": "black",
+      "showLightMap": true,
+      "words": [
+        { "speaker": "narrator", "text": "Onze lumières. L'une d'elles est celle de Théo." }
+      ]
+    },
+    {
+      "id": "6.28",
+      "image": "Carte de quête.",
+      "words": [],
+      "interaction": [
+        {
+          "type": "quest",
+          "id": "q6",
+          "title": "Dire la vérité à une personne",
+          "text": "Écris ou appelle quelqu'un qui tient à toi, et dis-lui honnêtement comment ça se passe. Une phrase suffit : « Franchement, c'est dur en ce moment. »",
+          "unlocks": 7
+        },
+        {
+          "type": "quest",
+          "id": "q6-cook",
+          "optional": true,
+          "title": "Cuisiner pour quelqu'un",
+          "text": "Cuisine pour quelqu'un, ou apporte-lui quelque chose."
+        }
+      ]
+    }
+  ]
+}

@@ -28,6 +28,15 @@ A card can also have a `group` (consecutive cards with the same group share a he
 
 **How habits work:** they're all off at first. He taps **Start this habit** to add one to his list. Then **Keep track** is his choice: if it's on, he gets a "Done today" (or "Done this week") button and the last 7 days (or 4 weeks) as dots he can tap to fix. If it's off, the habit just sits on his list as a reminder. There are no streaks and no scores.
 
+## Languages, the hero's name and pronouns
+
+The introduction first asks for a language: **English** or **Français**. It then asks for the hero's name and pronouns: *he / she / they* in English, *il / elle / iel* in French. Changing any of these from ☰ → About this app reloads the app.
+
+- **English** texts are where they always were. **French** texts are in `src/locales/fr/`, one file per English file, with the same structure. A file missing there falls back to English.
+- **Pronoun forms.** Words that depend on the hero's gender are written with three forms: `{he|she|they}`, `{his|her|their}`, `{walks|walks|walk}`, `{fatigué|fatiguée|fatigué·e}`. The app picks one when it loads. Use these forms in any new line about the hero.
+- **The name.** "Théo" in any text is replaced by the hero's name.
+- **Checking.** After editing, run `npm run check-locale`. It checks that every form has three parts, and that each French file has the same structure, ids and placeholders as its English file.
+
 ## Night stories
 
 The ☾ button at the top opens **Night stories**: "Tonight I feel…", a list of feelings, and short fairy tales read by Julie. Each story plays with a sleep timer (10, 20 or 30 minutes, or to the end, fading out), a "dim the screen" night mode, and its text for reading along. Favourites and the last story played stay on the phone. A feeling with no story yet shows "coming soon". The app's music stops while a story is open.

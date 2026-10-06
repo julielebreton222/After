@@ -1,0 +1,757 @@
+{
+  "number": 1,
+  "title": "L'appartement silencieux",
+  "summary": "Les trois premiers jours après le départ de Lisa. Tout commence dans le noir complet ; à la fin, 3 lumières. Débloque le chapitre 2 après la quête de l'écran 1.40.",
+  "screens": [
+    {
+      "id": "1.1",
+      "image": "Noir complet. Un seul titre crème, écrit à la main.",
+      "art": "black",
+      "layout": "title",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Après."
+        }
+      ]
+    },
+    {
+      "id": "1.2",
+      "image": "Noir.",
+      "art": "black",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Voici Théo. Tu ne {le|la|le·a} vois pas encore. C'est comme ça, en ce moment."
+        }
+      ]
+    },
+    {
+      "id": "1.3",
+      "image": "Un fin contour pâle apparaît en fondu : Théo {assis|assise|assis·e} par terre dans la cuisine, le dos contre les placards.",
+      "art": "kitchen-floor",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Théo a vingt-six ans. {Il|Elle|Iel} est {assis|assise|assis·e} par terre dans la cuisine, ce qui n'est pas l'endroit où l'on s'assoit d'habitude."
+        }
+      ],
+      "anchor": {
+        "x": 28,
+        "y": 66
+      }
+    },
+    {
+      "id": "1.4",
+      "image": "Gros plan : une porte, fermée. Au sol, la trace d'une roulette de valise bleue.",
+      "art": "closed-door",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Il y a une heure, Lisa a pris sa valise bleue et elle a refermé la porte très doucement. C'était le pire. La douceur."
+        }
+      ],
+      "anchor": {
+        "x": 36,
+        "y": 42
+      }
+    },
+    {
+      "id": "1.5",
+      "image": "Sur une étagère, le contour pâle d'un trophée, d'une guitare, d'un diplôme et d'une enseigne, le tout dans l'ombre.",
+      "art": "shelf",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "C'est la deuxième chose qui se termine cette année. Depuis ses quinze ans, Théo n'avait qu'un projet. Ce printemps, sans bruit, ce projet est devenu impossible."
+        }
+      ],
+      "interaction": {
+        "type": "choice",
+        "prompt": "Quel était le rêve de Théo ?",
+        "options": [
+          {
+            "id": "sport",
+            "label": "Un sport",
+            "set": {
+              "chased": "sport"
+            }
+          },
+          {
+            "id": "music",
+            "label": "La musique",
+            "set": {
+              "chased": "music"
+            }
+          },
+          {
+            "id": "degree",
+            "label": "Un diplôme",
+            "set": {
+              "chased": "degree"
+            }
+          },
+          {
+            "id": "business",
+            "label": "Sa propre entreprise",
+            "set": {
+              "chased": "business"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "1.6",
+      "image": "L'étagère, encore. On distingue mieux {chasedObject} ; le reste a disparu.",
+      "art": "shelf",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": {
+            "by": "chased",
+            "sport": "Des années d'entraînement.",
+            "music": "Des années de répétitions.",
+            "degree": "Des années d'études.",
+            "business": "Des années d'économies."
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Et maintenant : une étagère, et {un homme|une femme|une personne} par terre dans une cuisine, qui ne sait pas ce qui vient après."
+        }
+      ]
+    },
+    {
+      "id": "1.7",
+      "image": "La cuisine dans le noir, des contours : une tasse, une plante, un mot sur le frigo, une casserole sur la gazinière.",
+      "art": "kitchen-objects",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "L'appartement est le même appartement. Même bouilloire. Même fissure au plafond en forme d'Italie. Mais le son s'en est allé."
+        }
+      ],
+      "interaction": {
+        "type": "tap-objects",
+        "objects": [
+          {
+            "id": "mug",
+            "label": "Tasse",
+            "line": "La tasse de Lisa. Théo la laisse exactement où elle est."
+          },
+          {
+            "id": "plant",
+            "label": "Plante",
+            "line": "La plante de Lisa. {Il|Elle|Iel} ne sait pas tous les combien il faut l'arroser. Lisa, elle, savait toujours."
+          },
+          {
+            "id": "note",
+            "label": "Mot sur le frigo",
+            "line": "« Acheter du lait d'avoine. » {Il|Elle|Iel} n'achètera pas de lait d'avoine."
+          },
+          {
+            "id": "pot",
+            "label": "Casserole",
+            "line": "De la soupe. Celle qu'elle aimait. Faite pour deux."
+          }
+        ]
+      }
+    },
+    {
+      "id": "1.8",
+      "image": "Le Critique apparaît pour la première fois, dans le coin, taille 5.",
+      "art": "kitchen-floor",
+      "words": [
+        {
+          "speaker": "Critic",
+          "text": "Évidemment qu'elle est partie. Et le projet, envolé lui aussi. Il reste quoi, au juste ?"
+        }
+      ],
+      "anchor": {
+        "x": 62,
+        "y": 66
+      }
+    },
+    {
+      "id": "1.9",
+      "image": "Le contour de Théo, la tête sur les genoux.",
+      "art": "head-on-knees",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Rien n'a besoin de réponse ce soir. Ce soir, Théo doit seulement traverser l'heure qui vient."
+        }
+      ],
+      "interaction": {
+        "type": "choice",
+        "options": [
+          {
+            "id": "water",
+            "label": "Boire un verre d'eau"
+          },
+          {
+            "id": "window",
+            "label": "Ouvrir la fenêtre"
+          },
+          {
+            "id": "floor",
+            "label": "S'allonger par terre et respirer"
+          }
+        ]
+      },
+      "anchor": {
+        "x": 50,
+        "y": 55
+      }
+    },
+    {
+      "id": "1.10",
+      "image": {
+        "by": "choice:1.9",
+        "water": "L'action choisie, en contour : un verre d'eau.",
+        "window": "L'action choisie, en contour : une fenêtre et des traits d'air froid.",
+        "floor": "L'action choisie, en contour : Théo à plat sur le sol."
+      },
+      "art": {
+        "by": "choice:1.9",
+        "water": "glass-of-water",
+        "window": "open-window",
+        "floor": "lying-on-floor"
+      },
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Ça compte. C'est tout ce que ce soir demande."
+        }
+      ]
+    },
+    {
+      "id": "1.11",
+      "image": "Noir, avec un petit « Jour deux » crème dans le coin. Gouttières épaisses entre les cases.",
+      "art": "black",
+      "caption": "Jour deux",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Jour deux. Théo ne mange pas. Ce n'est pas un refus. Son corps a simplement cessé d'avoir faim."
+        }
+      ]
+    },
+    {
+      "id": "1.12",
+      "image": "La casserole sur la gazinière, une peau sur la soupe.",
+      "art": "soup-pot",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Ça arrive, les premiers jours d'un deuil. Le corps se tait. Ça passe."
+        }
+      ],
+      "anchor": {
+        "x": 45,
+        "y": 40
+      }
+    },
+    {
+      "id": "1.13",
+      "image": "Théo au lit dans le noir, le visage éclairé d'un bleu froid par son téléphone. Rien d'autre n'est éclairé dans la pièce.",
+      "art": "bed-phone",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "{Il|Elle|Iel} regarde les photos de Lisa. L'écran est très lumineux et n'éclaire rien du tout."
+        }
+      ],
+      "interaction": {
+        "type": "choice",
+        "options": [
+          {
+            "id": "scroll",
+            "label": "Continuer à faire défiler",
+            "goto": "1.14a"
+          },
+          {
+            "id": "facedown",
+            "label": "Retourner le téléphone",
+            "goto": "1.14b"
+          }
+        ]
+      },
+      "anchor": {
+        "x": 35,
+        "y": 38
+      }
+    },
+    {
+      "id": "1.14a",
+      "image": "Pareil, la lueur bleue plus grande, Théo plus {petit|petite|petit·e}.",
+      "art": "bed-phone",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Théo se sent plus mal. {Il|Elle|Iel} le savait. Ce n'est pas un crime."
+        }
+      ],
+      "next": "1.15"
+    },
+    {
+      "id": "1.14b",
+      "image": "Téléphone retourné. Noir total.",
+      "art": "black",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Le noir est très noir. Mais c'est le sien."
+        }
+      ],
+      "next": "1.15"
+    },
+    {
+      "id": "1.15",
+      "image": "Le soir. Appartement noir. Un bruitage en lettres crème : toc.",
+      "art": "hallway-door",
+      "sfx": "toc toc",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "On frappe. Théo ne bouge pas. On frappe encore."
+        }
+      ],
+      "interaction": {
+        "type": "tap-objects",
+        "advanceOnTap": true,
+        "objects": [
+          {
+            "id": "door",
+            "label": "Ouvrir la porte"
+          }
+        ]
+      },
+      "anchor": {
+        "x": 50,
+        "y": 58
+      }
+    },
+    {
+      "id": "1.16",
+      "image": "Porte ouverte. Une lumière jaune et chaude venue de la cage d'escalier se répand sur le sol noir. Madame Roux en chaussons, une boîte entre les mains.",
+      "art": "roux-door",
+      "light": "roux_door",
+      "haptic": true,
+      "words": [
+        {
+          "speaker": "Madame Roux",
+          "text": "J'ai vu sa valise dans l'escalier."
+        }
+      ],
+      "anchor": {
+        "x": 48,
+        "y": 48
+      }
+    },
+    {
+      "id": "1.17",
+      "image": "Gros plan sur la boîte entre ses mains, qui luit doucement.",
+      "art": "container",
+      "words": [
+        {
+          "speaker": "Madame Roux",
+          "text": "Soupe de légumes, faite ce matin. Vous m'apportez toujours des choses. Trois cuillères. Pas pour vous. Pour moi."
+        }
+      ],
+      "anchor": {
+        "x": 50,
+        "y": 48
+      }
+    },
+    {
+      "id": "1.18",
+      "image": "La porte se referme, mais la boîte entre les mains de Théo garde une petite lueur.",
+      "art": "container-glow",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Elle ne demande rien d'autre. Elle redescend, c'est tout."
+        }
+      ],
+      "anchor": {
+        "x": 50,
+        "y": 72
+      }
+    },
+    {
+      "id": "1.19",
+      "image": "Théo debout au comptoir, qui mange dans la boîte. La lueur est sur son visage, maintenant.",
+      "art": "eating",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Théo mange trois cuillères, debout. Puis quatre. C'est la première chose chaude depuis deux jours."
+        }
+      ],
+      "anchor": {
+        "x": 42,
+        "y": 28
+      }
+    },
+    {
+      "id": "1.20",
+      "image": "Page noire, un seul point chaud : la boîte.",
+      "art": "container-glow",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "C'était la première lumière. Remarque : elle n'est pas venue de l'intérieur de Théo. Pas encore. Elle a monté l'escalier en chaussons."
+        }
+      ],
+      "anchor": {
+        "x": 50,
+        "y": 72
+      }
+    },
+    {
+      "id": "1.21",
+      "image": "Noir. « Jour trois » dans le coin. Un téléphone vibre sur le comptoir.",
+      "art": "phone-counter",
+      "caption": "Jour trois",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Jour trois. Son téléphone vibre."
+        }
+      ],
+      "anchor": {
+        "x": 50,
+        "y": 62
+      }
+    },
+    {
+      "id": "1.22",
+      "image": "L'écran du téléphone, jaune et chaud cette fois : un message de Camille.",
+      "art": "phone-warm",
+      "light": "camille_text",
+      "words": [
+        {
+          "speaker": "Camille",
+          "text": "je pense à toi. pas besoin de répondre."
+        }
+      ],
+      "anchor": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "id": "1.23",
+      "image": "Théo tient le téléphone, tout chaud.",
+      "art": "holding-phone",
+      "words": [],
+      "interaction": {
+        "type": "choice",
+        "options": [
+          {
+            "id": "none",
+            "label": "Ne pas répondre"
+          },
+          {
+            "id": "heart",
+            "label": "Envoyer un cœur"
+          },
+          {
+            "id": "honest",
+            "label": "« merci. ça va mal. »"
+          }
+        ]
+      },
+      "anchor": {
+        "x": 36,
+        "y": 40
+      }
+    },
+    {
+      "id": "1.24",
+      "image": "Un tiroir de bureau qui s'ouvre : du papier, une enveloppe, un bâton de cire rouge.",
+      "art": "drawer",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Avant son rendez-vous, Théo fait une chose étrange. {Il|Elle|Iel} écrit à quelqu'un qui n'existe pas encore : {le|la|le·a} Théo de plus tard."
+        }
+      ],
+      "anchor": {
+        "x": 55,
+        "y": 40
+      }
+    },
+    {
+      "id": "1.25",
+      "image": "Du papier sur la table, un stylo.",
+      "art": "paper-pen",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Qu'est-ce que {le|la|le·a} Théo d'aujourd'hui veut que {le|la|le·a} Théo de plus tard sache ?"
+        }
+      ],
+      "interaction": {
+        "type": "seal",
+        "minWeeks": 8,
+        "placeholder": "{Cher|Chère|Cher·e} Théo de plus tard…"
+      }
+    },
+    {
+      "id": "1.26",
+      "image": "L'enveloppe scellée dans un tiroir, le tiroir qui se ferme.",
+      "art": "sealed-envelope",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Scellée. {Le|La|Le·a} Théo de plus tard la lira. {Le|La|Le·a} Théo d'aujourd'hui doit juste arriver jusque-là."
+        }
+      ],
+      "anchor": {
+        "x": 55,
+        "y": 42
+      }
+    },
+    {
+      "id": "1.27",
+      "image": "Une rue le matin, tout est noir, le contour de Théo qui marche, capuche sur la tête.",
+      "art": "street-hood",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "{Il|Elle|Iel} a bien failli annuler son rendez-vous. {Il|Elle|Iel} tape le message deux fois, l'efface deux fois. Annuler, ce serait devoir s'expliquer."
+        }
+      ],
+      "anchor": {
+        "x": 38,
+        "y": 62
+      }
+    },
+    {
+      "id": "1.28",
+      "image": "Le cabinet de Marie-Clo : deux fauteuils, une plante, une boîte de mouchoirs sur une table basse. Une petite lampe de bureau donne une lueur chaude.",
+      "art": "marieclo-office",
+      "light": "marieclo_lamp",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Le cabinet de Marie-Clo, c'est une plante, deux fauteuils, et une boîte de mouchoirs que Théo est bien {décidé|décidée|décidé·e} à ne pas toucher."
+        }
+      ]
+    },
+    {
+      "id": "1.29",
+      "image": "Marie-Clo dans son fauteuil, une tasse de thé.",
+      "art": "marieclo",
+      "words": [
+        {
+          "speaker": "Marie-Clo",
+          "text": "Alors. Raconte-moi ta semaine."
+        }
+      ],
+      "anchor": {
+        "x": 50,
+        "y": 35
+      }
+    },
+    {
+      "id": "1.30",
+      "image": "Une horloge au mur : quatre minutes.",
+      "art": "marieclo-office",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Théo lui raconte. Ça prend quatre minutes. {Il|Elle|Iel} aurait cru que ça prendrait plus longtemps."
+        }
+      ],
+      "anchor": {
+        "x": 77,
+        "y": 12
+      }
+    },
+    {
+      "id": "1.31",
+      "image": "Marie-Clo, légèrement penchée en avant.",
+      "art": "marieclo",
+      "words": [
+        {
+          "speaker": "Marie-Clo",
+          "text": "Je peux te donner un devoir que tu vas sûrement détester ?"
+        }
+      ],
+      "interaction": {
+        "type": "choice",
+        "options": [
+          {
+            "id": "goon",
+            "label": "« Vas-y. »"
+          },
+          {
+            "id": "choice",
+            "label": "« J'ai le choix ? »"
+          },
+          {
+            "id": "shrug",
+            "label": "Hausser les épaules"
+          }
+        ]
+      },
+      "anchor": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "id": "1.32",
+      "image": "Les mains de Marie-Clo dessinent un petit cercle dans l'air ; dedans, Théo en tout petit, dans un tout petit appartement.",
+      "art": "marieclo-circle",
+      "words": [
+        {
+          "speaker": "Marie-Clo",
+          "text": "En ce moment, ton monde entier a la taille de ton appartement et de ta tête. Intéresse-toi aux autres. Pas pour te réparer. Juste pour voir ce qu'il y a dehors."
+        }
+      ],
+      "anchor": {
+        "x": 33,
+        "y": 30
+      }
+    },
+    {
+      "id": "1.33",
+      "image": "Marie-Clo, avec un léger sourire.",
+      "art": "marieclo",
+      "words": [
+        {
+          "speaker": "Marie-Clo",
+          "text": "Une personne. Une vraie question. Ensuite, tu reviens me dire ce que tu as appris sur elle. Pas sur toi."
+        }
+      ],
+      "anchor": {
+        "x": 50,
+        "y": 30
+      }
+    },
+    {
+      "id": "1.34",
+      "image": "Théo, pas très {convaincu|convaincue|convaincu·e}.",
+      "art": "theo-chair",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Théo trouve ça un peu simple. {Il|Elle|Iel} ne le dit pas."
+        }
+      ],
+      "anchor": {
+        "x": 30,
+        "y": 35
+      }
+    },
+    {
+      "id": "1.35",
+      "image": "Théo de nouveau dans la rue ; la rue est toujours noire, mais derrière {lui|elle|iel} luit la lampe à la fenêtre de Marie-Clo.",
+      "art": "street-lamp-window",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "C'était simple. Simple et facile, ce n'est pas la même chose."
+        }
+      ],
+      "anchor": {
+        "x": 30,
+        "y": 25
+      }
+    },
+    {
+      "id": "1.36",
+      "image": "Un petit carnet apparaît, couverture crème, titre « Les gens ».",
+      "art": "notebook",
+      "unlock": "notebook",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Le carnet de curiosité. Chaque page est pour la vie de quelqu'un d'autre."
+        }
+      ]
+    },
+    {
+      "id": "1.37",
+      "image": "Les toits noirs, vus de la fenêtre de Théo. Trois minuscules points chauds : la fenêtre de Madame Roux, son téléphone, la fenêtre de Marie-Clo.",
+      "art": "skyline",
+      "unlock": "lightMap",
+      "points": [
+        "roux_door",
+        "camille_text",
+        "marieclo_lamp"
+      ],
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Trois lumières. Ça n'a pas l'air de grand-chose. Il y a quelques jours, il n'y en avait aucune."
+        }
+      ],
+      "anchor": {
+        "x": 50,
+        "y": 62
+      }
+    },
+    {
+      "id": "1.38",
+      "image": "Le Critique, toujours grand, assis sur le rebord de la fenêtre.",
+      "art": "skyline",
+      "words": [
+        {
+          "speaker": "Critic",
+          "text": "Trois lumières. Pathétique."
+        },
+        {
+          "speaker": "narrator",
+          "text": "Le Critique va beaucoup parler dans cette histoire. Théo n'est pas {obligé|obligée|obligé·e} de le croire."
+        }
+      ],
+      "anchor": {
+        "x": 50,
+        "y": 80
+      }
+    },
+    {
+      "id": "1.39",
+      "image": "Carte de fin de chapitre : un bol de soupe dessiné à la main.",
+      "art": "soup-bowl",
+      "layout": "title",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Fin du chapitre 1."
+        }
+      ]
+    },
+    {
+      "id": "1.40",
+      "image": "Carte de quête.",
+      "words": [],
+      "interaction": {
+        "type": "quest",
+        "id": "q1",
+        "title": "Une vraie question",
+        "text": "Cette semaine, pose une vraie question à une personne (un caissier, une collègue, un voisin, quelqu'un de ta famille). Puis note une chose que tu as apprise sur elle.",
+        "notebook": {
+          "book": "people",
+          "namePrompt": "À qui as-tu posé ta question ?",
+          "textPrompt": "Une chose que tu as apprise sur elle"
+        },
+        "unlocks": 2,
+        "tonight": {
+          "title": "Ce soir",
+          "items": [
+            "Boire de l'eau",
+            "Ouvrir une fenêtre",
+            "Répondre à un message"
+          ]
+        }
+      }
+    }
+  ]
+}

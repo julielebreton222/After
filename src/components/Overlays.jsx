@@ -1,3 +1,4 @@
+import { mapRegionKeys, regionLabel } from '../data'
 import { story } from '../story'
 import { formatDate, T } from '../text'
 
@@ -78,11 +79,11 @@ export function Chart({ which, state }) {
 export function MapItems({ state }) {
   return (
     <div className="map-items">
-      {story.mapRegions.map((r) => {
+      {mapRegionKeys.map((r) => {
         const items = state.who_is_theo.filter((e) => e.region === r)
         return (
           <div key={r} className="map-region">
-            <span className="region-name">{r}</span>
+            <span className="region-name">{regionLabel(r)}</span>
             {items.map((e, i) => <span key={i} className="hand map-item">{e.text}</span>)}
           </div>
         )

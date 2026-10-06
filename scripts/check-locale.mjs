@@ -26,12 +26,12 @@ for (let n = 1; n <= 9; n++) FILES[`chapter-${n}.json`] = `src/story/chapter-${n
 // Values under these keys are not words to translate: they must stay identical.
 const FIXED = new Set([
   'id', 'art', 'next', 'goto', 'type', 'key', 'by', 'saveAs', 'continueTo', 'light', 'haptic', 'layout',
-  'unlock', 'unlocks', 'story', 'slug', 'style', 'for', 'every', 'email', 'glow', 'when', 'in', 'mode',
+  'unlock', 'unlocks', 'story', 'slug', 'style', 'for', 'every', 'email', 'glow', 'when', 'in', 'mode', 'subject',
   'speaker', 'number', 'showKept', 'showLightMap', 'showNotebook', 'showMap', 'showFriend', 'showChart',
   'showPeople', 'region', 'person', 'people', 'icon', 'beatChars', 'voicePreference', 'lightMapArt',
   'lightMapArtFinal', 'pick', 'safety', 'weekly', 'optional', 'checkins', 'hoursPerVisit', 'addToMap',
-  'criticChange', 'criticSet', 'addHours', 'blackout', 'bloom', 'critic', 'ladder', 'anchor', 'x', 'y',
-  'max', 'rows', 'seconds', 'from', 'videos', '_note', 'zone', 'correct', 'target', 'item',
+  'criticChange', 'criticSet', 'addHours', 'blackout', 'bloom', 'critic', 'anchor', 'x', 'y',
+  'max', 'rows', 'seconds', 'from', 'videos', '_note', 'kind', 'book', 'frame', 'points', 'set', 'zone', 'correct', 'target', 'item',
 ])
 // ...except these text fields, which can sit inside a fixed object.
 const TEXT_INSIDE = new Set(['label', 'text', 'line', 'title', 'prompt', 'name', 'about', 'note'])
@@ -74,7 +74,9 @@ function compare(en, fr, path, file, fixed) {
     const b = Object.keys(fr).sort().join(',')
     if (a !== b) return problems.push(`${at}: keys differ (English: ${a} / French: ${b})`)
     for (const k of Object.keys(en)) {
-      compare(en[k], fr[k], [...path, k], file, FIXED.has(k) || (fixed && !TEXT_INSIDE.has(k)))
+      // story.json's interface texts ("text": the Next button…) are all words.
+      const words = (file.endsWith('story.json') && ['text', 'predictionLabels'].includes(path[0] ?? k)) || path.includes('ui')
+      compare(en[k], fr[k], [...path, k], file, !words && (FIXED.has(k) || (fixed && !TEXT_INSIDE.has(k))))
     }
     return
   }

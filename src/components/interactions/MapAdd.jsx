@@ -1,12 +1,12 @@
 import { useState } from 'react'
-import { story } from '../../story'
+import { mapRegionKeys, regionLabel } from '../../data'
 import { say, T, todayISO } from '../../text'
 import { MapItems } from '../Overlays.jsx'
 
 // MAP: add things to the Who Is Théo? map. Pick a region, then tap a
 // suggestion or write your own. Done after one item.
 export default function MapAdd({ cfg, state, update, markDone }) {
-  const [region, setRegion] = useState(cfg.region || story.mapRegions[0])
+  const [region, setRegion] = useState(cfg.region || mapRegionKeys[0])
   const [text, setText] = useState('')
   const add = (t) => {
     const item = t.trim()
@@ -21,8 +21,8 @@ export default function MapAdd({ cfg, state, update, markDone }) {
       {cfg.prompt && <p className="prompt">{say(cfg.prompt, state)}</p>}
       {!cfg.region && (
         <div className="choices row-wrap">
-          {story.mapRegions.map((r) => (
-            <button key={r} className={`chip-btn ${r === region ? 'chosen' : ''}`} onClick={() => setRegion(r)}>{r}</button>
+          {mapRegionKeys.map((r) => (
+            <button key={r} className={`chip-btn ${r === region ? 'chosen' : ''}`} onClick={() => setRegion(r)}>{regionLabel(r)}</button>
           ))}
         </div>
       )}
