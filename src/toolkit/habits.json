@@ -1,60 +1,30 @@
 {
   "title": "Habits",
-  "intro": "[Julie: one or two lines introducing the habits.]",
+  "intro": "Small things that keep you steady. Pick one, not ten. Start it, and if you like, keep track. No streaks, no scores.",
   "ui": {
     "start": "Start this habit",
     "stop": "Stop this habit",
     "track": "Keep track",
     "active": "Your habits",
     "more": "More habits",
-    "none": "No habits yet. Pick one below — just one is plenty.",
+    "none": "No habits yet. Pick one below: just one is plenty.",
     "doneToday": "Done today",
     "doneThisWeek": "Done this week",
     "day": "every day",
-    "week": "every week"
+    "week": "every week",
+    "from": "Idea from {name}"
   },
   "habits": [
-    {
-      "id": "meal",
-      "title": "Eat one real meal",
-      "why": "[Julie: why this helps]",
-      "how": "[Julie: how to do it]",
-      "every": "day"
-    },
-    {
-      "id": "walk",
-      "title": "Go outside for a walk",
-      "why": "[Julie: why this helps]",
-      "how": "[Julie: how to do it]",
-      "every": "day"
-    },
-    {
-      "id": "sleep",
-      "title": "Go to bed at the same time",
-      "why": "[Julie: why this helps]",
-      "how": "[Julie: how to do it]",
-      "every": "day"
-    },
-    {
-      "id": "question",
-      "title": "Ask someone a real question",
-      "why": "[Julie: why this helps]",
-      "how": "[Julie: how to do it]",
-      "every": "day"
-    },
-    {
-      "id": "go-back",
-      "title": "Go back to the same place",
-      "why": "[Julie: why this helps]",
-      "how": "[Julie: how to do it]",
-      "every": "week"
-    },
-    {
-      "id": "cook-for-someone",
-      "title": "Cook for someone",
-      "why": "[Julie: why this helps]",
-      "how": "[Julie: how to do it]",
-      "every": "week"
-    }
+    { "id": "meal", "title": "Eat one real meal", "why": "Heartbreak kills appetite. A real meal is the floor everything else stands on.", "how": "Sit down, plate, no phone. It doesn't need to be fancy.", "every": "day" },
+    { "id": "walk", "title": "Go outside for a walk", "why": "Moving your body moves feelings through it, and daylight helps sleep.", "how": "Twenty minutes. No destination needed.", "every": "day" },
+    { "id": "wake", "title": "Wake up at the same time", "why": "Sleep resets from the morning end, not the night end. A fixed wake-up time does more than an early bedtime.", "how": "Same time every day, weekends too. Light on your face soon after.", "every": "day", "from": "Dr. K" },
+    { "id": "phone-bed", "title": "Phone out of the bedroom", "why": "Scrolling in bed feels like rest, but it keeps your brain switched on, and her profile is one tap away.", "how": "Charge it in another room. Use a cheap alarm clock.", "every": "day", "from": "Dr. K" },
+    { "id": "feel", "title": "Feel one feeling, fully", "why": "Feelings you push away stick around; feelings you let in move through.", "how": "Once a day, sit for two minutes. Ask: what am I feeling? Where in my body? Let it be there without fixing it.", "every": "day", "from": "Joe Hudson" },
+    { "id": "breathe", "title": "Five minutes of quiet", "why": "A few minutes of sitting still trains you to notice thoughts without obeying them.", "how": "Sit, breathe, watch a candle or your breath. When your mind wanders, come back. That's the whole practice.", "every": "day", "from": "Dr. K" },
+    { "id": "question", "title": "Ask someone a real question", "why": "Curiosity about other people is the quickest way out of your own head, and the start of every friendship.", "how": "Not \"how are you\". Something you actually want to know.", "every": "day" },
+    { "id": "reach-out", "title": "Reach out to one person", "why": "Friendships fade when nobody goes first. Be the one who goes first.", "how": "A message, a voice note, a call. \"Saw this and thought of you\" counts.", "every": "week", "from": "Dr. K" },
+    { "id": "go-back", "title": "Go back to the same place", "why": "Friendship is mostly showing up to the same place at the same time until you're a regular.", "how": "The same café, club, game night or class, each week.", "every": "week", "from": "Dr. K" },
+    { "id": "cook-for-someone", "title": "Cook for someone", "why": "Giving is one of the fastest ways back to feeling useful, and food brings people to a table.", "how": "A neighbour, a friend, a pot of soup in the courtyard.", "every": "week" },
+    { "id": "say-it", "title": "Say one true feeling out loud", "why": "Many men only let anger out. Naming the other feelings makes them smaller, and makes you easier to be close to.", "how": "To a friend, your sister, a therapist, or the mirror: \"I'm sad\", \"I'm scared\", \"I miss her\".", "every": "week", "from": "Joe Hudson" }
   ]
 }

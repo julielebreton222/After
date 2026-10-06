@@ -464,3 +464,5 @@ textarea:focus, input:focus, select:focus { outline: 1.5px solid var(--cream); }
   background: none; border: 1.5px solid var(--cream-faint); color: var(--cream-dim);
 }
 .habit-days .day.on { background: var(--lamp); border-color: var(--lamp); color: var(--black); }
+.source { margin: 10px 0 0; font-size: 0.8rem; }
+.habit .source { margin: -4px 0 10px; }

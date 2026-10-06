@@ -75,6 +75,7 @@ export default function Habits({ state, update }) {
         <div key={h.id} className="habit">
           <h3>{h.title} <span className="note">· {U[h.every]}</span></h3>
           <p>{h.why}</p>
+          {h.from && <p className="note source">{U.from.replace('{name}', h.from)}</p>}
           <button className="chip" onClick={() => set(h.id, { active: true })}>{U.start}</button>
         </div>
       ))}

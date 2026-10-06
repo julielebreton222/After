@@ -15,22 +15,26 @@ export default function Toolkit({ state }) {
     <div className="tab-page toolkit">
       <h1>{toolkit.title}</h1>
       {toolkit.intro && <p className="note">{toolkit.intro}</p>}
-      {toolkit.cards.map((c) => (
-        <div key={c.id} className={`tool-card ${open === c.id ? 'open' : ''}`}>
-          <button className="tool-title" onClick={() => setOpen(open === c.id ? null : c.id)} aria-expanded={open === c.id}>
-            <span>{c.title}</span>
-            <span aria-hidden="true">{open === c.id ? '–' : '+'}</span>
-          </button>
-          {open === c.id && (
-            <div className="tool-body">
-              <ol>
-                {c.steps.map((s, i) => <li key={i}>{s}</li>)}
-              </ol>
-              {reached(c.story) && (
-                <p className="note theo-did">{toolkit.ui.theoDid.replace('{n}', byId[c.story].chapter)}</p>
-              )}
-            </div>
-          )}
+      {toolkit.cards.map((c, i) => (
+        <div key={c.id} className="tool-group">
+          {c.group && c.group !== toolkit.cards[i - 1]?.group && <h2>{c.group}</h2>}
+          <div className={`tool-card ${open === c.id ? 'open' : ''}`}>
+            <button className="tool-title" onClick={() => setOpen(open === c.id ? null : c.id)} aria-expanded={open === c.id}>
+              <span>{c.title}</span>
+              <span aria-hidden="true">{open === c.id ? '–' : '+'}</span>
+            </button>
+            {open === c.id && (
+              <div className="tool-body">
+                <ol>
+                  {c.steps.map((s, i) => <li key={i}>{s}</li>)}
+                </ol>
+                {c.from && <p className="note source">{toolkit.ui.from.replace('{name}', c.from)}</p>}
+                {reached(c.story) && (
+                  <p className="note theo-did">{toolkit.ui.theoDid.replace('{n}', byId[c.story].chapter)}</p>
+                )}
+              </div>
+            )}
+          </div>
         </div>
       ))}
     </div>

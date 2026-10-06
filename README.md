@@ -24,7 +24,7 @@ The app has two parts, switched with the tabs at the bottom: **Story**, and the 
 | `toolkit.json` | The "What to do when…" cards. Each card has a `title`, a list of `steps`, and optionally `story`, the id of a screen where Théo does this. Once the player has reached that screen, the card says "Théo did this in Chapter N." |
 | `habits.json` | The habits. Each has a `title`, `why` (shown before he starts it), `how` (shown once it's his), and `every`: `"day"` or `"week"`. |
 
-Everything in `[Julie: …]` brackets is a placeholder to replace. Add, remove or reorder cards and habits freely, but keep each `id` unique.
+A card can also have a `group` (consecutive cards with the same group share a heading) and `from` (shown as "Idea from …"). The current cards and habits are a first draft by Claude, written in its own words from ideas by Joe Hudson and Dr. K (Alok Kanojia): no direct quotes. Rewrite anything. Add, remove or reorder cards and habits freely, but keep each `id` unique.
 
 **How habits work:** they're all off at first. He taps **Start this habit** to add one to his list. Then **Keep track** is his choice: if it's on, he gets a "Done today" (or "Done this week") button and the last 7 days (or 4 weeks) as dots he can tap to fix. If it's off, the habit just sits on his list as a reminder. There are no streaks and no scores.
 

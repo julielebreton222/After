@@ -1,73 +1,209 @@
 {
   "title": "What to do when…",
-  "intro": "[Julie: one or two lines introducing the toolkit.]",
+  "intro": "Small things that help, for the moments that are hard. Open any card, any time. You don't have to do all of it. One step counts.",
   "ui": {
-    "theoDid": "Théo did this in Chapter {n}."
+    "theoDid": "Théo did this in Chapter {n}.",
+    "from": "Idea from {name}"
   },
   "cards": [
     {
       "id": "text-her",
+      "group": "When it hurts",
       "title": "I want to text her",
       "steps": [
-        "[Julie: first step]",
-        "[Julie: second step]",
-        "[Julie: third step]"
+        "Notice the urge. It feels like an emergency, but it's closer to withdrawal: your brain is used to her, and it wants its hit.",
+        "Wait 20 minutes. Urges rise, peak and fall, like a wave. You don't have to obey it to make it pass.",
+        "Write the message in your notes instead. Don't send it. Read it again tomorrow.",
+        "Text a friend or your sister instead: \"I really want to text her right now.\" Saying it out loud takes half its power."
       ],
+      "from": "Dr. K",
       "story": "7.4"
     },
     {
-      "id": "cant-sleep",
-      "title": "I can't sleep",
+      "id": "checking",
+      "group": "When it hurts",
+      "title": "I keep checking her profile",
       "steps": [
-        "[Julie: first step]",
-        "[Julie: second step]"
+        "Every check reopens the wound a little. It feels like information; it's mostly pain.",
+        "Mute or archive her. You don't have to block or make a statement. Just make checking take one more step.",
+        "Move the app off your home screen for a while.",
+        "When you catch yourself reaching for it, put the phone down and do one physical thing: stand up, drink water, step outside."
       ],
-      "story": null
+      "from": "Dr. K"
     },
     {
-      "id": "too-much",
-      "title": "Everything feels like too much",
+      "id": "sadness",
+      "group": "When it hurts",
+      "title": "A wave of sadness hits",
       "steps": [
-        "[Julie: first step]",
-        "[Julie: second step]"
+        "Don't fight it, don't fix it. Let it come.",
+        "Find where it is in your body: chest, throat, stomach. Put a hand there.",
+        "Let it be as big as it is. Cry if it comes. Feelings that are fully felt move through; feelings that are pushed away stay.",
+        "When it passes (it will), drink some water and do something small and kind for yourself."
       ],
-      "story": null
-    },
-    {
-      "id": "alone-evening",
-      "title": "It's evening and I'm alone",
-      "steps": [
-        "[Julie: first step]",
-        "[Julie: second step]"
-      ],
-      "story": null
-    },
-    {
-      "id": "scared-people",
-      "title": "I'm too scared to talk to people",
-      "steps": [
-        "[Julie: first step]",
-        "[Julie: second step]"
-      ],
-      "story": null
-    },
-    {
-      "id": "nowhere-to-go",
-      "title": "I don't know where to meet anyone",
-      "steps": [
-        "[Julie: first step]",
-        "[Julie: second step]"
-      ],
-      "story": null
+      "from": "Joe Hudson",
+      "story": "3.16"
     },
     {
       "id": "her-things",
+      "group": "When it hurts",
       "title": "I keep finding her things",
       "steps": [
-        "[Julie: first step]",
-        "[Julie: second step]"
+        "Get a box.",
+        "For each thing, choose: give back, keep, or let go. There's no right answer.",
+        "Keeping a memory isn't holding on. Giving one away isn't forgetting.",
+        "Tape the box. Put it out of sight. It doesn't have to be today."
       ],
       "story": "7.6"
+    },
+    {
+      "id": "over-it",
+      "group": "When it hurts",
+      "title": "I should be over it by now",
+      "steps": [
+        "There is no deadline. \"Should\" is the Critic talking.",
+        "You don't have to get over her. You have to grieve her. Grief is love with nowhere to go for a while.",
+        "Notice if part of you is rushing to feel fine. Ask it, gently: what is it scared will happen if you're still sad?",
+        "Sad and okay can be true on the same day."
+      ],
+      "from": "Joe Hudson",
+      "story": "7.8"
+    },
+    {
+      "id": "too-much",
+      "group": "When it's in your head",
+      "title": "Everything feels like too much",
+      "steps": [
+        "Cold water on your face, and hold your breath for a few seconds. It tells your body to slow down.",
+        "Shake it out: hands, arms, shoulders, the whole body, for thirty seconds. Animals do this after a fright.",
+        "Breathe out longer than you breathe in. In for 4, out for 6, five times.",
+        "Pick one tiny thing: a glass of water, a shower, a walk round the block. Just that.",
+        "If it's more than you can carry, tap \"I'm not okay\" at the top."
+      ],
+      "story": "2.16"
+    },
+    {
+      "id": "critic",
+      "group": "When it's in your head",
+      "title": "The voice in my head is mean",
+      "steps": [
+        "Name it: \"That's the Critic.\" It isn't the truth; it's a voice that thinks it's protecting you.",
+        "Get curious instead of arguing: what is it afraid of? Usually it's trying to stop you getting hurt again.",
+        "Ask yourself what you'd say to a friend who said this about himself. Say that.",
+        "You don't have to win against it. You just have to stop taking orders from it."
+      ],
+      "from": "Joe Hudson"
+    },
+    {
+      "id": "angry",
+      "group": "When it's in your head",
+      "title": "I'm angry (at her, at myself)",
+      "steps": [
+        "Anger is allowed. It's not the problem; acting on it at someone is.",
+        "Move it through your body, safely: walk fast, push hard against a wall, punch a pillow, shout into it in the car.",
+        "Let it be loud for a minute, alone. Anger that's felt cleanly tends to burn out, and what's under it shows up.",
+        "Ask: what is this anger protecting? Often it's hurt, or a line that got crossed."
+      ],
+      "from": "Joe Hudson"
+    },
+    {
+      "id": "cant-sleep",
+      "group": "When it's in your head",
+      "title": "I can't sleep",
+      "steps": [
+        "Phone out of reach. The scrolling feels like rest; it keeps your brain switched on.",
+        "Write down the worries on paper and give them an appointment: \"I'll think about this tomorrow at 6.\"",
+        "If you're still awake after about 20 minutes, get up, sit somewhere dim and do something boring, then try again.",
+        "Get up at the same time tomorrow, even after a bad night. That's what resets sleep."
+      ],
+      "from": "Dr. K",
+      "story": "3.19"
+    },
+    {
+      "id": "no-energy",
+      "group": "When it's in your head",
+      "title": "I don't feel like doing anything",
+      "steps": [
+        "You're not lazy. Low energy is part of heartbreak.",
+        "Don't wait for motivation. Motivation usually comes after you start, not before.",
+        "Make it two minutes: put shoes on, open the window, wash one plate.",
+        "Make it about someone else: it's easier to cook for someone than for yourself."
+      ],
+      "from": "Dr. K"
+    },
+    {
+      "id": "alone-evening",
+      "group": "When you're alone",
+      "title": "It's evening and I'm alone",
+      "steps": [
+        "Go where people are, even without talking to anyone: a café, a library, a bar with a match on.",
+        "Call or voice-message one person. Not to talk about her: just \"what are you up to?\"",
+        "Cook something real, with your hands. Make enough for two.",
+        "If it's a bad night, it's okay to just get through it. Tomorrow comes."
+      ]
+    },
+    {
+      "id": "scared-people",
+      "group": "When you're alone",
+      "title": "I'm too scared to talk to people",
+      "steps": [
+        "Fear isn't a stop sign. Everyone in the room feels some of it.",
+        "Prepare three lines in your pocket, like Théo: \"First time here. How does this work?\" works almost anywhere.",
+        "Ask one real question, then listen. People like the person who's curious about them.",
+        "If it goes badly, it's information, not a verdict. You did the hard part: you showed up."
+      ],
+      "from": "Dr. K",
+      "story": "5.4"
+    },
+    {
+      "id": "meet-people",
+      "group": "When you're alone",
+      "title": "I don't know where to meet anyone",
+      "steps": [
+        "Friendship is mostly showing up to the same place, at the same time, again and again.",
+        "Pick something with an activity: board games, a climbing gym, volunteering, a running club, a class. Doing something side by side is easier than face to face.",
+        "Go three times before you decide it's not for you. The first time everyone's a stranger; the third time you're a regular.",
+        "If nothing exists, start the small thing yourself: a note on the door, a pot of soup."
+      ],
+      "from": "Dr. K",
+      "story": "4.4"
+    },
+    {
+      "id": "man-feelings",
+      "group": "For men",
+      "title": "A man shouldn't feel like this",
+      "steps": [
+        "A lot of men grow up with one allowed feeling: anger. Everything else gets swallowed. It doesn't go away; it comes out sideways.",
+        "Sadness, fear and missing someone aren't weakness. They're information. Feeling them is what lets them pass.",
+        "Strength isn't not feeling it. It's feeling it, and still getting up, still being kind, still showing up.",
+        "Try saying the actual feeling out loud, to yourself or someone: \"I'm sad.\" \"I'm scared I'll be alone.\" Notice you're still standing."
+      ],
+      "from": "Joe Hudson"
+    },
+    {
+      "id": "man-friends",
+      "group": "For men",
+      "title": "I don't have anyone to talk to",
+      "steps": [
+        "This is really common for men, especially after a breakup: she was often the main person you talked to.",
+        "Men often bond side by side, doing something together. Invite someone to do a thing (a walk, a game, fixing something) rather than \"to talk\".",
+        "Go first with something small and true: \"Honestly, it's been a rough month.\" Most friends are relieved, and open up too.",
+        "A therapist counts. Talking to a professional is training, not failure."
+      ],
+      "from": "Dr. K"
+    },
+    {
+      "id": "man-purpose",
+      "group": "For men",
+      "title": "I don't know who I am without her",
+      "steps": [
+        "When a relationship ends, the plan for your life goes with it. Feeling lost is normal; it's not a sign you're broken.",
+        "Ask: who was I before her? What did I like when nobody was watching?",
+        "Purpose often comes from being useful to someone. Help a neighbour, cook, volunteer, teach something you know.",
+        "You don't need a plan yet. A direction is enough: towards people, towards things that make you curious."
+      ],
+      "from": "Dr. K",
+      "story": "3.7"
     }
   ]
 }
