@@ -30,6 +30,12 @@ export const initialState = {
   realPeople: {},
   applied: {},
   habits: {},
+  customHabits: [],
+  introDone: false,
+  heroName: '',
+  quoteStyle: null,
+  night: {},
+  confessions: [],
   settings: { music: false, voice: false },
 }
 

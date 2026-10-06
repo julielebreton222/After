@@ -1,0 +1,42 @@
+{
+  "title": "Night stories",
+  "question": "Tonight I feel…",
+  "intro": "Short fairy tales for the hour before sleep, read by Julie.",
+  "ui": {
+    "button": "Night stories",
+    "back": "Back",
+    "close": "Close",
+    "comingSoon": "Julie is still writing this one. Coming soon.",
+    "play": "Play",
+    "pause": "Pause",
+    "readAlong": "Read along",
+    "hideText": "Hide the text",
+    "timer": "Sleep timer",
+    "endOfStory": "End of story",
+    "minutes": "{n} min",
+    "nightMode": "Dim the screen",
+    "nightModeHint": "Tap anywhere to come back.",
+    "favourite": "Keep this one",
+    "favourited": "Kept",
+    "favourites": "Stories you kept",
+    "lastPlayed": "Last time",
+    "stories": "{n} stories",
+    "story": "1 story",
+    "notOkayEnd": "If tonight you feel like nobody would notice you were gone, please talk to someone now. Someone would notice. Someone would be glad you called.",
+    "notOkayButton": "I'm not okay"
+  },
+  "feelings": [
+    { "slug": "alone", "label": "Alone", "line": "Someone, somewhere, is keeping a light on for you." },
+    { "slug": "cant-be-myself", "label": "Like I can't be myself", "line": "The real you is not too much and not too little." },
+    { "slug": "feel-too-much", "label": "Like I feel too much", "line": "Big feelings are a kind of strength, not a flaw." },
+    { "slug": "not-enough", "label": "Like I'm not enough", "line": "You don't have to earn your place at the table." },
+    { "slug": "lost-who-i-was", "label": "Like I've lost who I was", "line": "You can lose a path and still be the one walking." },
+    { "slug": "angry", "label": "Angry at everything", "line": "Anger often guards something tender." },
+    { "slug": "numb", "label": "Numb, like nothing", "line": "Feeling can come back slowly, like spring." },
+    { "slug": "scared-of-tomorrow", "label": "Scared of tomorrow", "line": "Tonight only asks you to rest." },
+    { "slug": "nobody-would-notice", "label": "Like nobody would notice if I disappeared", "line": "You are woven into more lives than you can see.", "safety": true },
+    { "slug": "missing-someone", "label": "Missing someone", "line": "Missing someone is love that hasn't found where to go yet." },
+    { "slug": "failed", "label": "Like I failed", "line": "Ending is not the same as failing." },
+    { "slug": "homesick", "label": "Homesick, in a new place", "line": "Home can be built again, one person at a time." }
+  ]
+}

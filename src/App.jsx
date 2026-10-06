@@ -1,14 +1,17 @@
 import { useEffect, useState } from 'react'
 import { useGame } from './state'
 import Player from './components/Player.jsx'
-import FirstLaunch from './components/FirstLaunch.jsx'
+import Intro from './components/Intro.jsx'
 import NotOkay from './components/NotOkay.jsx'
 import Menu from './components/Menu.jsx'
 import SoundMenu from './components/SoundMenu.jsx'
 import Toolkit from './components/Toolkit.jsx'
 import Habits from './components/Habits.jsx'
+import NightStories from './components/NightStories.jsx'
+import { night } from './night'
 import { startMusic, stopMusic } from './audio/music'
 import { T } from './text'
+import { HERO, DEFAULT_HERO } from './hero'
 
 export default function App() {
   const [state, update, reset] = useGame()
@@ -17,6 +20,7 @@ export default function App() {
   const [menu, setMenu] = useState(false)
   // The two parts of the app: the story, and the toolkit (what to do when, habits).
   const [tab, setTab] = useState('story')
+  const [nightOpen, setNightOpen] = useState(false)
 
   // Music that was on last time comes back after the first tap
   // (phones don't allow sound before one).
@@ -34,7 +38,12 @@ export default function App() {
     then?.()
   }
 
-  if (!state.firstLaunchDone) return <FirstLaunch update={update} />
+  // A new hero name is swapped into the texts when the app loads: reload.
+  useEffect(() => {
+    if ((state.heroName?.trim() || DEFAULT_HERO) !== HERO) location.reload()
+  }, [state.heroName])
+
+  if (!state.introDone) return <Intro state={state} update={update} />
 
   return (
     <div className="app">
@@ -50,10 +59,12 @@ export default function App() {
       </nav>
       <button className="top-btn menu-btn" onClick={() => setMenu(true)} aria-label={T.ui.menu}>☰</button>
       <SoundMenu state={state} update={update} />
+      <button className="top-btn night-btn" onClick={() => setNightOpen(true)} aria-label={night.ui.button}>☾</button>
       <button className="top-btn not-okay-btn" onClick={() => setNotOkay({ crisis: false })}>
         {T.notOkay.button}
       </button>
-      {menu && <Menu state={state} update={update} reset={reset} close={() => setMenu(false)} toStory={() => setTab('story')} />}
+      {menu && <Menu state={state} update={update} reset={reset} close={() => setMenu(false)} toStory={() => setTab('story')} openCrisis={() => openCrisis()} />}
+      {nightOpen && <NightStories state={state} update={update} close={() => setNightOpen(false)} openNotOkay={() => setNotOkay({ crisis: false })} />}
       {notOkay && <NotOkay state={state} update={update} crisis={notOkay.crisis} close={closeNotOkay} />}
     </div>
   )

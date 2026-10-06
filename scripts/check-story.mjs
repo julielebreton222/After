@@ -50,6 +50,16 @@ for (const c of toolkit?.cards || []) {
   if (!c.title || !Array.isArray(c.steps)) problems.push(`toolkit.json ${c.id}: needs a "title" and a list of "steps"`)
   if (c.story && !ids.has(c.story)) problems.push(`toolkit.json ${c.id}: story screen "${c.story}" doesn't exist`)
 }
+for (const c of toolkit?.cards || []) for (const v of c.videos || []) {
+  if (!/^[\w-]{11}$/.test(v.id)) problems.push(`toolkit.json ${c.id}: "${v.id}" doesn't look like a YouTube video id`)
+}
+const quotes = tk('quotes.json')
+const styles = new Set((quotes?.styles || []).map((s) => s.id))
+for (const q of quotes?.quotes || []) {
+  if (!styles.has(q.style)) problems.push(`quotes.json: "${q.text.slice(0, 30)}…" has unknown style "${q.style}"`)
+  for (const f of q.for || []) if (f !== 'any' && !seenIds.has(f)) problems.push(`quotes.json: "${q.text.slice(0, 30)}…" is for "${f}", which isn't a card id`)
+}
+for (const s of styles) if (!quotes.quotes.some((q) => q.style === s && q.pick)) problems.push(`quotes.json: style "${s}" needs one quote with "pick": true`)
 for (const h of habits?.habits || []) {
   if (seenIds.has(h.id)) problems.push(`habits.json: id "${h.id}" is used twice`)
   seenIds.add(h.id)

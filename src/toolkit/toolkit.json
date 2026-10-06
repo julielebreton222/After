@@ -3,7 +3,8 @@
   "intro": "Small things that help, for the moments that are hard. Open any card, any time. You don't have to do all of it. One step counts.",
   "ui": {
     "theoDid": "Théo did this in Chapter {n}.",
-    "from": "Idea from {name}"
+    "from": "Idea from {name}",
+    "watch": "Videos that may help"
   },
   "cards": [
     {
@@ -17,7 +18,19 @@
         "Text a friend or your sister instead: \"I really want to text her right now.\" Saying it out loud takes half its power."
       ],
       "from": "Dr. K",
-      "story": "7.4"
+      "story": "7.4",
+      "videos": [
+        {
+          "id": "GbvfZBHtGv8",
+          "title": "Why You Can't Get Over Your Ex",
+          "by": "Dr. K (HealthyGamerGG)"
+        },
+        {
+          "id": "922VVfq2Stk",
+          "title": "Why You're Still Heartbroken (And How to Fix It)",
+          "by": "Matthew Hussey"
+        }
+      ]
     },
     {
       "id": "checking",
@@ -29,7 +42,14 @@
         "Move the app off your home screen for a while.",
         "When you catch yourself reaching for it, put the phone down and do one physical thing: stand up, drink water, step outside."
       ],
-      "from": "Dr. K"
+      "from": "Dr. K",
+      "videos": [
+        {
+          "id": "GbvfZBHtGv8",
+          "title": "Why You Can't Get Over Your Ex",
+          "by": "Dr. K (HealthyGamerGG)"
+        }
+      ]
     },
     {
       "id": "sadness",
@@ -42,7 +62,19 @@
         "When it passes (it will), drink some water and do something small and kind for yourself."
       ],
       "from": "Joe Hudson",
-      "story": "3.16"
+      "story": "3.16",
+      "videos": [
+        {
+          "id": "uu1gmUlb-kY",
+          "title": "4 Ways To Feel Your Emotions",
+          "by": "Joe Hudson"
+        },
+        {
+          "id": "mYnRHhSI-zw",
+          "title": "What Happens When You Finally Feel Everything?",
+          "by": "Joe Hudson"
+        }
+      ]
     },
     {
       "id": "her-things",
@@ -54,7 +86,14 @@
         "Keeping a memory isn't holding on. Giving one away isn't forgetting.",
         "Tape the box. Put it out of sight. It doesn't have to be today."
       ],
-      "story": "7.6"
+      "story": "7.6",
+      "videos": [
+        {
+          "id": "922VVfq2Stk",
+          "title": "Why You're Still Heartbroken (And How to Fix It)",
+          "by": "Matthew Hussey"
+        }
+      ]
     },
     {
       "id": "over-it",
@@ -67,7 +106,48 @@
         "Sad and okay can be true on the same day."
       ],
       "from": "Joe Hudson",
-      "story": "7.8"
+      "story": "7.8",
+      "videos": [
+        {
+          "id": "-cf78hK8Esc",
+          "title": "What Breakups ACTUALLY Do To Men",
+          "by": "Dr. K (HealthyGamerGG)"
+        },
+        {
+          "id": "dhlupWyTNYM",
+          "title": "How to Embrace the Emotions You Resist",
+          "by": "Joe Hudson with André Duqum"
+        }
+      ]
+    },
+    {
+      "id": "cant-eat",
+      "group": "When it hurts",
+      "title": "I can't eat",
+      "steps": [
+        "It's normal. Stress switches your body into alarm mode, and alarm mode shuts appetite down. It's not a choice, and it's not forever.",
+        "Don't wait to feel hungry. Eat a few bites every two or three hours, like taking medicine.",
+        "Pick easy food: soup, toast, a banana, yoghurt, rice, nuts, a smoothie. Drinking calories counts.",
+        "Eat with someone, or somewhere with people: a café, a friend's kitchen. It's easier not alone.",
+        "If you've barely eaten for several days, or you're losing weight fast, see a doctor. That's what they're for."
+      ],
+      "videos": [
+        {
+          "id": "TiQnjhXNjo4",
+          "title": "The gut-grief connection: eating after loss",
+          "by": "Untangle"
+        },
+        {
+          "id": "BDzWMXthXj0",
+          "title": "Break up diet: what happens to your body during a break up",
+          "by": "Nicole Hoskens, dietitian"
+        },
+        {
+          "id": "Gcp1G0eIUYk",
+          "title": "The Physical Symptoms of Grief",
+          "by": "Therapy in a Nutshell"
+        }
+      ]
     },
     {
       "id": "too-much",
@@ -80,7 +160,14 @@
         "Pick one tiny thing: a glass of water, a shower, a walk round the block. Just that.",
         "If it's more than you can carry, tap \"I'm not okay\" at the top."
       ],
-      "story": "2.16"
+      "story": "2.16",
+      "videos": [
+        {
+          "id": "rBdhqBGqiMc",
+          "title": "Reduce Anxiety & Stress with the Physiological Sigh",
+          "by": "Andrew Huberman"
+        }
+      ]
     },
     {
       "id": "critic",
@@ -92,7 +179,19 @@
         "Ask yourself what you'd say to a friend who said this about himself. Say that.",
         "You don't have to win against it. You just have to stop taking orders from it."
       ],
-      "from": "Joe Hudson"
+      "from": "Joe Hudson",
+      "videos": [
+        {
+          "id": "1gz4duPT5CY",
+          "title": "Overcoming Negative Self-Talk",
+          "by": "Dr. K (HealthyGamerGG)"
+        },
+        {
+          "id": "PMmObJYglbo",
+          "title": "How Shame-Based Motivation Backfires",
+          "by": "Dr. K with Chris Williamson"
+        }
+      ]
     },
     {
       "id": "angry",
@@ -104,7 +203,14 @@
         "Let it be loud for a minute, alone. Anger that's felt cleanly tends to burn out, and what's under it shows up.",
         "Ask: what is this anger protecting? Often it's hurt, or a line that got crossed."
       ],
-      "from": "Joe Hudson"
+      "from": "Joe Hudson",
+      "videos": [
+        {
+          "id": "wbSXl_SX2Vc",
+          "title": "How Anger Works (8-min Guide to Healthy Anger)",
+          "by": "Joe Hudson"
+        }
+      ]
     },
     {
       "id": "cant-sleep",
@@ -117,7 +223,19 @@
         "Get up at the same time tomorrow, even after a bad night. That's what resets sleep."
       ],
       "from": "Dr. K",
-      "story": "3.19"
+      "story": "3.19",
+      "videos": [
+        {
+          "id": "b2RhXCugEW4",
+          "title": "Do This Meditation Before Bed",
+          "by": "Dr. K (HealthyGamerGG)"
+        },
+        {
+          "id": "SW-L6wVEHoY",
+          "title": "How To Actually Fix Your Sleep Schedule",
+          "by": "Dr. K (HealthyGamerGG)"
+        }
+      ]
     },
     {
       "id": "no-energy",
@@ -129,7 +247,75 @@
         "Make it two minutes: put shoes on, open the window, wash one plate.",
         "Make it about someone else: it's easier to cook for someone than for yourself."
       ],
-      "from": "Dr. K"
+      "from": "Dr. K",
+      "videos": [
+        {
+          "id": "H_WJ5hgWLFo",
+          "title": "How to Get Motivated (Even When You Don't Feel Like It)",
+          "by": "Dr. K with Mel Robbins"
+        }
+      ]
+    },
+    {
+      "id": "nothing-enough",
+      "group": "When it's in your head",
+      "title": "Nothing is ever enough",
+      "steps": [
+        "When you're hurting, your brain hunts for something to fill the hole: scrolling, games, food, drink, the next achievement. It never quite works.",
+        "The hole usually isn't a lack of things. Often it's a feeling waiting to be felt. Sit for two minutes and ask: what am I trying not to feel?",
+        "Notice the \"I'll be okay when…\" thoughts. When I have a girlfriend, when I get the job. Okay is allowed before then.",
+        "Cut down the quick hits for a few days (endless scrolling, porn, binge gaming), so normal things can start to feel good again.",
+        "Do one thing just for itself: cook, walk, draw, play music. Before sleep, write down three small good things from the day."
+      ],
+      "from": "Joe Hudson and Dr. K",
+      "videos": [
+        {
+          "id": "TH9dQJQmuls",
+          "title": "How To Get Out Of A Mental Rut",
+          "by": "Dr. K with Chris Williamson"
+        },
+        {
+          "id": "PZMWdRnm8Wg",
+          "title": "Anhedonia: why nothing feels fun anymore",
+          "by": "Dr. K (HealthyGamerGG)"
+        },
+        {
+          "id": "U0jyfgdrsmk",
+          "title": "Why You Can't Enjoy Anything Anymore",
+          "by": "Dr. K (HealthyGamerGG)"
+        },
+        {
+          "id": "mYnRHhSI-zw",
+          "title": "What Happens When You Finally Feel Everything?",
+          "by": "Joe Hudson"
+        }
+      ]
+    },
+    {
+      "id": "no-friends",
+      "group": "When you're alone",
+      "title": "I feel alone, like I have no friends",
+      "steps": [
+        "Loneliness is a signal, like hunger: it tells you that you need people. It isn't a verdict on who you are.",
+        "Write down everyone, even the small ones: the barista, a neighbour, a cousin, someone from school. Small connections count, and they can grow.",
+        "Message one old friend today. Keep it simple: \"Hey, I was thinking of you. How are you doing?\"",
+        "Join one thing that repeats every week, and keep going back.",
+        "Be patient with it. Research suggests it takes around 50 hours together to go from acquaintance to casual friend, and around 200 to become close friends. Every hour counts."
+      ],
+      "from": "Dr. K",
+      "story": "4.4",
+      "videos": [
+        {
+          "id": "dWS3A2EAwTk",
+          "title": "Loneliness: The Silent Struggle We All Feel",
+          "by": "Dr. K (HealthyGamerGG)"
+        },
+        {
+          "id": "kTrbGx6_xaU",
+          "title": "How To Make Friends As A Man",
+          "by": "Dr. K (HealthyGamerGG)"
+        }
+      ]
     },
     {
       "id": "alone-evening",
@@ -140,6 +326,13 @@
         "Call or voice-message one person. Not to talk about her: just \"what are you up to?\"",
         "Cook something real, with your hands. Make enough for two.",
         "If it's a bad night, it's okay to just get through it. Tomorrow comes."
+      ],
+      "videos": [
+        {
+          "id": "dWS3A2EAwTk",
+          "title": "Loneliness: The Silent Struggle We All Feel",
+          "by": "Dr. K (HealthyGamerGG)"
+        }
       ]
     },
     {
@@ -153,7 +346,14 @@
         "If it goes badly, it's information, not a verdict. You did the hard part: you showed up."
       ],
       "from": "Dr. K",
-      "story": "5.4"
+      "story": "5.4",
+      "videos": [
+        {
+          "id": "kTrbGx6_xaU",
+          "title": "How To Make Friends As A Man",
+          "by": "Dr. K (HealthyGamerGG)"
+        }
+      ]
     },
     {
       "id": "meet-people",
@@ -166,7 +366,19 @@
         "If nothing exists, start the small thing yourself: a note on the door, a pot of soup."
       ],
       "from": "Dr. K",
-      "story": "4.4"
+      "story": "4.4",
+      "videos": [
+        {
+          "id": "kTrbGx6_xaU",
+          "title": "How To Make Friends As A Man",
+          "by": "Dr. K (HealthyGamerGG)"
+        },
+        {
+          "id": "9DDJBEY6GGY",
+          "title": "How To Make Friends As An Adult",
+          "by": "Matthew Hussey"
+        }
+      ]
     },
     {
       "id": "man-feelings",
@@ -178,7 +390,24 @@
         "Strength isn't not feeling it. It's feeling it, and still getting up, still being kind, still showing up.",
         "Try saying the actual feeling out loud, to yourself or someone: \"I'm sad.\" \"I'm scared I'll be alone.\" Notice you're still standing."
       ],
-      "from": "Joe Hudson"
+      "from": "Joe Hudson",
+      "videos": [
+        {
+          "id": "y4ePjkg3SSY",
+          "title": "Watch him learn to feel his emotions in real time",
+          "by": "Joe Hudson"
+        },
+        {
+          "id": "-cf78hK8Esc",
+          "title": "What Breakups ACTUALLY Do To Men",
+          "by": "Dr. K (HealthyGamerGG)"
+        },
+        {
+          "id": "vpMNeCiKxSY",
+          "title": "The Art Of Mastering Your Emotions",
+          "by": "Joe Hudson with Chris Williamson"
+        }
+      ]
     },
     {
       "id": "man-friends",
@@ -190,7 +419,14 @@
         "Go first with something small and true: \"Honestly, it's been a rough month.\" Most friends are relieved, and open up too.",
         "A therapist counts. Talking to a professional is training, not failure."
       ],
-      "from": "Dr. K"
+      "from": "Dr. K",
+      "videos": [
+        {
+          "id": "kTrbGx6_xaU",
+          "title": "How To Make Friends As A Man",
+          "by": "Dr. K (HealthyGamerGG)"
+        }
+      ]
     },
     {
       "id": "man-purpose",
@@ -203,7 +439,19 @@
         "You don't need a plan yet. A direction is enough: towards people, towards things that make you curious."
       ],
       "from": "Dr. K",
-      "story": "3.7"
+      "story": "3.7",
+      "videos": [
+        {
+          "id": "AiXiyLJz8-U",
+          "title": "Meaning, Purpose, and Motivation",
+          "by": "Dr. K (HealthyGamerGG)"
+        },
+        {
+          "id": "CjEz3b4XH7E",
+          "title": "Why You're Always Bored, Unhappy & Stuck",
+          "by": "Dr. K with Dr Rangan Chatterjee"
+        }
+      ]
     }
   ]
 }

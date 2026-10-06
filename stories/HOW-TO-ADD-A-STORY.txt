@@ -1,0 +1,26 @@
+Night stories: how to add one
+=============================
+
+Drop the files for a story into this folder, named <feeling>-<title>:
+
+  alone-the-lighthouse.m4a   the recording (.m4a or .mp3)        required
+  alone-the-lighthouse.png   one illustration (.png or .jpg)     optional
+  alone-the-lighthouse.md    the text, for reading along         optional
+
+The first line of the .md file can be the title, like "# The Lighthouse".
+Without it, the title comes from the file name ("the-lighthouse" becomes
+"The lighthouse").
+
+Feelings (the first part of the name):
+  alone, cant-be-myself, feel-too-much, not-enough, lost-who-i-was, angry,
+  numb, scared-of-tomorrow, nobody-would-notice, missing-someone, failed,
+  homesick
+
+A feeling can hold several stories. A feeling with no recording shows a
+"coming soon" card. The feelings' names and description lines are in
+src/night/night.json.
+
+Recording: a quiet room, the phone or microphone close, the same set-up for
+every story so they sound like one voice. Export as .m4a or .mp3.
+
+After adding files, commit and push: the app updates itself.

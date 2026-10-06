@@ -1,0 +1,29 @@
+{
+  "_note": "Where notes and confessions are sent. 'email' is left empty until Julie chooses an address; until then the send buttons explain that it isn't set up yet.",
+  "email": "",
+  "feedback": {
+    "menu": "Send Julie a note",
+    "title": "Help make this better",
+    "intro": "Something that helped, something that didn't, something missing, a typo, an idea. Julie reads everything.",
+    "placeholder": "What would make this better?",
+    "send": "Send to Julie",
+    "how": "This opens your email app with your note in it. Julie will see your email address.",
+    "subject": "After: a note",
+    "notSetUp": "Sending isn't set up yet. Your note is still here; try again after the next update."
+  },
+  "confession": {
+    "menu": "Confession",
+    "title": "Confession",
+    "intro": "Say the thing you haven't said to anyone. No one reads this unless you choose to send it.",
+    "placeholder": "I've never told anyone that…",
+    "letGo": "Let it go",
+    "letGoDone": "Gone. You said it, and that counts.",
+    "keep": "Keep it here, just for me",
+    "kept": "Kept on this phone",
+    "send": "Send it to Julie",
+    "how": "Sending opens your email app. Julie will see your email address, so it isn't anonymous.",
+    "subject": "After: a confession",
+    "delete": "Delete",
+    "deleteConfirm": "Delete this for good?"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "_note": "Three ways of grieving. On first launch the player picks the quote that speaks to them; from then on the app shows quotes in that style. 'for' lists the toolkit cards a quote fits best ('any' fits everywhere).",
+  "styles": [
+    { "id": "feel", "label": "Let it hurt", "description": "Feelings pass when you let them in." },
+    { "id": "hope", "label": "It gets better", "description": "This isn't forever, and you'll come out stronger." },
+    { "id": "strength", "label": "Keep walking", "description": "Get up, take one step, then the next." }
+  ],
+  "ui": {
+    "title": "Which one speaks to you?",
+    "intro": "Not everyone grieves the same way. Pick the one that feels right today. The app will show you more like it, and you can change it any time in the menu.",
+    "change": "Quotes"
+  },
+  "quotes": [
+    { "style": "feel", "text": "Let everything happen to you: beauty and terror. Just keep going. No feeling is final.", "by": "Rainer Maria Rilke", "for": ["any", "sadness", "too-much"], "pick": true },
+    { "style": "feel", "text": "The best way out is always through.", "by": "Robert Frost", "for": ["any", "sadness", "angry"] },
+    { "style": "feel", "text": "Grief is just love with no place to go.", "by": "Jamie Anderson", "for": ["over-it", "her-things", "text-her"] },
+    { "style": "feel", "text": "What we have once enjoyed we can never lose. All that we love deeply becomes a part of us.", "by": "Helen Keller", "for": ["her-things", "over-it", "checking"] },
+    { "style": "feel", "text": "No one ever told me that grief felt so like fear.", "by": "C. S. Lewis", "for": ["too-much", "cant-sleep", "cant-eat"] },
+    { "style": "feel", "text": "There is a sacredness in tears. They are not the mark of weakness, but of power.", "by": "Washington Irving", "for": ["man-feelings", "sadness", "man-friends"] },
+
+    { "style": "hope", "text": "The world breaks everyone and afterward many are strong at the broken places.", "by": "Ernest Hemingway", "for": ["any", "over-it", "man-feelings"], "pick": true },
+    { "style": "hope", "text": "There is a crack in everything. That's how the light gets in.", "by": "Leonard Cohen", "for": ["any", "critic", "nothing-enough"] },
+    { "style": "hope", "text": "In the depth of winter, I finally learned that within me there lay an invincible summer.", "by": "Albert Camus", "for": ["too-much", "alone-evening", "no-friends"] },
+    { "style": "hope", "text": "This too shall pass.", "by": "Persian proverb", "for": ["text-her", "checking", "cant-sleep", "cant-eat"] },
+    { "style": "hope", "text": "Hope is being able to see that there is light despite all of the darkness.", "by": "Desmond Tutu", "for": ["alone-evening", "no-friends", "man-purpose"] },
+    { "style": "hope", "text": "Nothing is permanent in this wicked world, not even our troubles.", "by": "Charlie Chaplin", "for": ["any", "angry", "no-energy"] },
+
+    { "style": "strength", "text": "Fall seven times, stand up eight.", "by": "Japanese proverb", "for": ["any", "scared-people", "no-energy"], "pick": true },
+    { "style": "strength", "text": "You can't stop the waves, but you can learn to surf.", "by": "Jon Kabat-Zinn", "for": ["sadness", "too-much", "text-her"] },
+    { "style": "strength", "text": "We suffer more often in imagination than in reality.", "by": "Seneca", "for": ["critic", "cant-sleep", "scared-people"] },
+    { "style": "strength", "text": "The impediment to action advances action. What stands in the way becomes the way.", "by": "Marcus Aurelius", "for": ["no-energy", "meet-people", "angry"] },
+    { "style": "strength", "text": "He who has a why to live can bear almost any how.", "by": "Friedrich Nietzsche", "for": ["man-purpose", "nothing-enough", "over-it"] },
+    { "style": "strength", "text": "The journey of a thousand miles begins with a single step.", "by": "Lao Tzu", "for": ["meet-people", "no-friends", "cant-eat", "her-things"] }
+  ]
+}

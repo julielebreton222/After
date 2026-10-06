@@ -3,10 +3,12 @@ import { story, chapterData, isChapterUnlocked, questScreens, screens } from '..
 import { T, formatDate } from '../text'
 import Quest from './interactions/Quest.jsx'
 import LightMap from './LightMap.jsx'
+import contact from '../contact.json'
+import { Feedback, Confession } from './Confide.jsx'
 
 // The menu: back to the story, chapters to reread, the Light Map and the
 // People notebook (once unlocked), quests, and start over.
-export default function Menu({ state, update, reset, close, toStory }) {
+export default function Menu({ state, update, reset, close, toStory, openCrisis }) {
   const [view, setView] = useState('home')
   const go = (id) => { update((st) => ({ position: id, history: [...st.history, st.position] })); toStory(); close() }
 
@@ -24,6 +26,9 @@ export default function Menu({ state, update, reset, close, toStory }) {
           {state.unlocked.lightMap && <button onClick={() => setView('map')}>{T.ui.lightMap}</button>}
           {state.unlocked.notebook && <button onClick={() => setView('people')}>{T.ui.notebook}</button>}
           <button onClick={() => setView('quests')}>{T.ui.quests}</button>
+          <button onClick={() => setView('confession')}>{contact.confession.menu}</button>
+          <button onClick={() => setView('feedback')}>{contact.feedback.menu}</button>
+          <button onClick={() => { update({ introDone: false }); close() }}>{T.ui.intro}</button>
           <button className="danger" onClick={() => { if (confirm(T.ui.startOverConfirm)) { reset(); toStory(); close() } }}>{T.ui.startOver}</button>
           <p className="note version">Version {__BUILD__}</p>
         </nav>
@@ -45,6 +50,8 @@ export default function Menu({ state, update, reset, close, toStory }) {
         </nav>
       )}
 
+      {view === 'feedback' && <Feedback openCrisis={openCrisis} />}
+      {view === 'confession' && <Confession state={state} update={update} openCrisis={openCrisis} />}
       {view === 'map' && (<><h2>{T.ui.lightMap}</h2><LightMap state={state} /></>)}
       {view === 'people' && <People state={state} />}
 

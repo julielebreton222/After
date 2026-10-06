@@ -353,7 +353,80 @@
       "letterFrom": "Written on {date}.",
       "tabStory": "Story",
       "tabToolkit": "What to do when",
-      "tabHabits": "Habits"
+      "tabHabits": "Habits",
+      "intro": "About this app"
+    },
+    "intro": {
+      "next": "Next",
+      "back": "Back",
+      "done": "Start",
+      "why": {
+        "title": "Why this exists",
+        "body": [
+          "I made this for my brother, after his first heartbreak.",
+          "I couldn't be there every night, and I didn't always know what to say. So I made something that could be: a story about someone going through the same thing, and the small things that actually help.",
+          "If someone gave you this link, it's because they care about you, too."
+        ],
+        "sign": "Julie"
+      },
+      "name": {
+        "title": "Who is the hero?",
+        "body": "The story follows a young man in a new city, the week after his girlfriend leaves. In the story he's called {default}, but you can give him your own name, or any name you like.",
+        "placeholder": "{default}",
+        "hint": "You can change it later from the menu."
+      },
+      "tour": {
+        "title": "How it works",
+        "items": [
+          {
+            "icon": "📖",
+            "title": "Story",
+            "text": "Tap to read, one line at a time. Swipe right to go back. Sometimes you choose what happens, or try something small for real. Each chapter ends with a quest in real life, and the next chapter opens when you've done it."
+          },
+          {
+            "icon": "🧭",
+            "title": "What to do when",
+            "text": "Help for hard moments: when you want to text her, can't sleep, can't eat, feel alone. With videos that may help."
+          },
+          {
+            "icon": "🌱",
+            "title": "Habits",
+            "text": "Small things that keep you steady. Start the ones you want, track them if you like, or add your own."
+          },
+          {
+            "icon": "🤍",
+            "title": "I'm not okay",
+            "text": "Top right, on every screen. A helpline, a message to someone you trust, and a breathing exercise."
+          },
+          {
+            "icon": "🔈",
+            "title": "Sound",
+            "text": "Music and read-aloud, both off unless you turn them on."
+          }
+        ]
+      },
+      "facts": {
+        "title": "Why this matters",
+        "items": [
+          {
+            "text": "More than 720,000 people die by suicide every year around the world.",
+            "source": "World Health Organization"
+          },
+          {
+            "text": "It's the third leading cause of death for people aged 15 to 29.",
+            "source": "World Health Organization"
+          },
+          {
+            "text": "In France, 9,300 people died by suicide in 2016. Three out of four were men.",
+            "source": "Santé publique France"
+          }
+        ],
+        "after": [
+          "Men are less likely to ask for help, and experts see that as one of the reasons so many more men die by suicide. It's also why this app keeps nudging you towards people.",
+          "Suicide can be prevented. Talking helps, and help is there, any time:"
+        ],
+        "line": "{number}: {name}. {hours}."
+      }
     }
   },
   "lightMapArtFinal": "skyline-colour",

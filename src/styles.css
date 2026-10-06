@@ -466,3 +466,82 @@ textarea:focus, input:focus, select:focus { outline: 1.5px solid var(--cream); }
 .habit-days .day.on { background: var(--lamp); border-color: var(--lamp); color: var(--black); }
 .source { margin: 10px 0 0; font-size: 0.8rem; }
 .habit .source { margin: -4px 0 10px; }
+
+/* Quotes, videos, the introduction, adding a habit */
+.quote { margin: 16px 0; padding: 0 0 0 14px; border-left: 2px solid var(--lamp); }
+.quote p { margin: 0; font-size: 1.35rem; }
+.quote cite { display: block; margin-top: 4px; font-style: normal; }
+.videos h3 { font-size: 1rem; color: var(--cream-dim); margin: 14px 0 6px; }
+.video { display: block; padding: 6px 0; overflow-wrap: anywhere; }
+.intro-dots { display: flex; gap: 6px; justify-content: center; margin: 4px auto 14px; }
+.intro-dots span { width: 7px; height: 7px; border-radius: 50%; background: var(--cream-faint); }
+.intro-dots span.on { background: var(--lamp); }
+.intro .sign { text-align: right; }
+.intro-nav .continue { width: auto; min-width: 130px; margin-top: 18px; }
+.intro-nav .continue:disabled { opacity: 0.4; }
+.tour, .facts { list-style: none; padding: 0; }
+.tour li { display: flex; gap: 12px; margin-bottom: 14px; line-height: 1.35; }
+.tour strong { font-weight: normal; color: var(--lamp); }
+.tour-icon { font-size: 1.4rem; }
+.facts li { margin-bottom: 12px; padding-left: 14px; border-left: 2px solid var(--cream-faint); line-height: 1.35; }
+.quote-choice { display: block; width: 100%; text-align: left; background: none; border: 1.5px solid var(--cream-faint); border-radius: 14px; padding: 4px 14px 12px; margin-top: 10px; }
+.quote-choice.selected { border-color: var(--lamp); box-shadow: 0 0 0 1px var(--lamp); }
+.add-habit input { width: 100%; padding: 10px 12px; background: var(--black); border: 1.5px solid var(--cream-faint); border-radius: 10px; }
+.add-habit select { padding: 8px 10px; background: var(--black); border: 1.5px solid var(--cream-faint); border-radius: 10px; }
+.add-habit h2 { margin-top: 0 !important; }
+
+/* ---------- Night stories ---------- */
+.night-btn { left: 112px; font-size: 1rem; color: var(--lamp); }
+.sheet.night { background: radial-gradient(circle at 50% 0%, rgba(255, 205, 90, 0.08), transparent 55%), var(--black); }
+.night h1 { font-size: 2.1rem; }
+.night-not-okay {
+  position: fixed; top: var(--top); right: 12px; z-index: 32;
+  background: rgba(0, 0, 0, 0.7); border: 1px solid var(--cream-faint); border-radius: 999px;
+  padding: 4px 12px; font-size: 0.85rem; color: var(--cream-dim);
+}
+.night .menu-top { justify-content: flex-start; gap: 10px; padding-right: 120px; }
+.night-feelings { display: flex; flex-direction: column; gap: 10px; margin-top: 16px; }
+.night-feeling {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 2px; width: 100%; text-align: left;
+  background: none; border: 1.5px solid var(--cream-faint); border-radius: 16px; padding: 14px 16px;
+}
+.night-feeling .hand { font-size: 1.6rem; }
+.night-feeling.empty .hand { color: var(--cream-dim); }
+.night-feeling.small { flex-direction: row; gap: 8px; align-items: baseline; padding: 10px 16px; margin-top: 8px; font-size: 1.1rem; }
+.story-pick { display: block; width: 100%; background: none; border: 0; padding: 0; margin-top: 16px; text-align: left; }
+.story-pick .hand { display: block; margin-top: 6px; font-size: 1.7rem; }
+.story-art { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border: 2px solid var(--cream); border-radius: 3px; }
+.glow-card { background: radial-gradient(circle at 50% 60%, rgba(255, 205, 90, 0.55), rgba(255, 205, 90, 0.08) 35%, transparent 60%), var(--black); }
+.story-card { border: 2px solid var(--cream-faint); border-radius: 3px; padding: 60px 20px; text-align: center; margin-top: 16px; }
+.story-player h1 { margin: 14px 0 6px; }
+.play-btn {
+  display: block; margin: 16px auto 10px; width: 84px; height: 84px; border-radius: 50%;
+  background: var(--cream); color: var(--black); border: 0; font-size: 1.8rem;
+  box-shadow: 0 0 34px 6px var(--lamp-glow);
+}
+.seek { width: 100%; accent-color: var(--lamp); }
+.seek-time { text-align: center; margin: 2px 0 12px; }
+.night-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 12px 0; }
+.story-text p { font-size: 1.15rem; line-height: 1.6; }
+.night-safety { border: 1.5px solid var(--lamp); border-radius: 16px; padding: 14px 16px; margin: 12px 0; }
+.night-dim {
+  position: fixed; inset: 0; z-index: 31; background: #000;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px;
+}
+.night-glow {
+  width: 46px; height: 46px; border-radius: 50%; background: var(--lamp); opacity: 0.55;
+  box-shadow: 0 0 60px 26px rgba(255, 205, 90, 0.25); animation: breathe 8s ease-in-out infinite;
+}
+@keyframes breathe { 0%, 100% { opacity: 0.35; transform: scale(0.9); } 50% { opacity: 0.6; transform: scale(1.05); } }
+.night-dim .note { color: rgba(243, 234, 211, 0.25); }
+
+/* ---------- Confession and notes ---------- */
+.confide textarea { width: 100%; padding: 12px; background: var(--ink); border: 1.5px solid var(--cream-faint); border-radius: 12px; font-family: var(--hand); font-size: 1.4rem; line-height: 1.25; }
+.confide textarea.burning { animation: burn 1.6s ease-in forwards; }
+@keyframes burn {
+  0% { color: var(--cream); border-color: var(--cream-faint); }
+  40% { color: #ffb347; border-color: #ff8c3a; box-shadow: 0 0 30px 6px rgba(255, 140, 58, 0.5); }
+  100% { color: transparent; border-color: transparent; box-shadow: none; filter: blur(4px); opacity: 0.2; }
+}
+.confide-actions .continue { margin-top: 10px; }
+.confide .page { border-bottom: 1px solid var(--cream-faint); padding: 10px 0; }

@@ -1,4 +1,8 @@
+import { useState } from 'react'
 import data from '../toolkit/habits.json'
+import { renameHero } from '../hero'
+
+renameHero(data)
 
 const U = data.ui
 
@@ -21,8 +25,26 @@ export default function Habits({ state, update }) {
     set(id, { log })
   }
 
-  const active = data.habits.filter((h) => mine[h.id]?.active)
-  const rest = data.habits.filter((h) => !mine[h.id]?.active)
+  // His own habits sit alongside the built-in ones.
+  const all = [...data.habits, ...(state.customHabits || []).map((h) => ({ ...h, custom: true }))]
+  const active = all.filter((h) => mine[h.id]?.active)
+  const rest = all.filter((h) => !mine[h.id]?.active)
+
+  const add = (title, every) => {
+    const id = `own-${Date.now()}`
+    update((st) => ({
+      customHabits: [...(st.customHabits || []), { id, title, every }],
+      habits: { ...st.habits, [id]: { active: true, track: true, log: {} } },
+    }))
+  }
+  const remove = (id) => {
+    if (!confirm(U.deleteConfirm)) return
+    update((st) => {
+      const habits = { ...st.habits }
+      delete habits[id]
+      return { customHabits: st.customHabits.filter((h) => h.id !== id), habits }
+    })
+  }
 
   return (
     <div className="tab-page habits">
@@ -42,7 +64,7 @@ export default function Habits({ state, update }) {
         return (
           <div key={h.id} className="habit active">
             <h3>{h.title} <span className="note">· {U[h.every]}</span></h3>
-            <p className="note">{h.how}</p>
+            {h.how && <p className="note">{h.how}</p>}
             <label className="switch-row">
               <input type="checkbox" checked={!!m.track} onChange={() => set(h.id, { track: !m.track })} />
               {U.track}
@@ -74,11 +96,39 @@ export default function Habits({ state, update }) {
       {rest.map((h) => (
         <div key={h.id} className="habit">
           <h3>{h.title} <span className="note">· {U[h.every]}</span></h3>
-          <p>{h.why}</p>
+          {h.why && <p>{h.why}</p>}
           {h.from && <p className="note source">{U.from.replace('{name}', h.from)}</p>}
           <button className="chip" onClick={() => set(h.id, { active: true })}>{U.start}</button>
+          {h.custom && <button className="link" onClick={() => remove(h.id)}>{U.delete}</button>}
         </div>
       ))}
+
+      <AddHabit add={add} />
     </div>
+  )
+}
+
+// "Add your own habit": a name and how often. It starts straight away, tracked.
+function AddHabit({ add }) {
+  const [title, setTitle] = useState('')
+  const [every, setEvery] = useState('day')
+  const submit = (e) => {
+    e.preventDefault()
+    if (!title.trim()) return
+    add(title.trim(), every)
+    setTitle('')
+  }
+  return (
+    <form className="habit add-habit" onSubmit={submit}>
+      <h2>{U.addTitle}</h2>
+      <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder={U.addPlaceholder} maxLength={80} />
+      <div className="row">
+        <select value={every} onChange={(e) => setEvery(e.target.value)} aria-label={U.addEvery}>
+          <option value="day">{U.day}</option>
+          <option value="week">{U.week}</option>
+        </select>
+        <button className="chip" type="submit" disabled={!title.trim()}>{U.add}</button>
+      </div>
+    </form>
   )
 }

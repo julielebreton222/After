@@ -2,7 +2,7 @@
 
 A tap-through illustrated storybook for phones. It's a Progressive Web App, so it opens from a link and can be added to the home screen. No app store, no accounts, no server: everything the player writes stays on their phone.
 
-**Status:** Chapter 1 is complete, with placeholder panels. Chapters 2 to 9 come next.
+**Status:** all 9 chapters are written. Paintings are done for Chapters 1 to 3; the rest show their scene description until their painting is made.
 
 ## Trying it on your phone
 
@@ -27,6 +27,49 @@ The app has two parts, switched with the tabs at the bottom: **Story**, and the 
 A card can also have a `group` (consecutive cards with the same group share a heading) and `from` (shown as "Idea from …"). The current cards and habits are a first draft by Claude, written in its own words from ideas by Joe Hudson and Dr. K (Alok Kanojia): no direct quotes. Rewrite anything. Add, remove or reorder cards and habits freely, but keep each `id` unique.
 
 **How habits work:** they're all off at first. He taps **Start this habit** to add one to his list. Then **Keep track** is his choice: if it's on, he gets a "Done today" (or "Done this week") button and the last 7 days (or 4 weeks) as dots he can tap to fix. If it's off, the habit just sits on his list as a reminder. There are no streaks and no scores.
+
+## Night stories
+
+The ☾ button at the top opens **Night stories**: "Tonight I feel…", a list of feelings, and short fairy tales read by Julie. Each story plays with a sleep timer (10, 20 or 30 minutes, or to the end, fading out), a "dim the screen" night mode, and its text for reading along. Favourites and the last story played stay on the phone. A feeling with no story yet shows "coming soon". The app's music stops while a story is open.
+
+**To add a story**, put its files in `stories/` and push. See `stories/HOW-TO-ADD-A-STORY.txt`. In short:
+
+- `alone-the-lighthouse.m4a` (or `.mp3`): the recording. Required.
+- `alone-the-lighthouse.png` (or `.jpg`): the illustration. Optional.
+- `alone-the-lighthouse.md`: the text, with `# The Lighthouse` as its first line. Optional.
+
+The feelings, their description lines and every Night stories text are in `src/night/night.json`. "Like nobody would notice if I disappeared" shows a prominent "I'm not okay" button when its story ends.
+
+## The introduction, the hero's name, and quotes
+
+On first launch, the introduction shows:
+
+1. Why the app exists.
+2. The hero's name.
+3. A tour of the app.
+4. Why this matters (suicide figures, with sources).
+5. The three quotes to choose from.
+6. The "before you start" note.
+
+It can be replayed from ☰ → **About this app**, which is also where the name and quote style can be changed. Its texts are under `intro` in `src/story/story.json`.
+
+- **Hero's name:** whatever name the player gives replaces "Théo" in every text, when the app loads. The story still uses "he".
+- **Quotes:** `src/toolkit/quotes.json` has three styles: *Let it hurt*, *It gets better* and *Keep walking*. The player picks the style that speaks to them, and the app then shows quotes in that style:
+  - at the top of "What to do when",
+  - inside each card,
+  - on the "I'm not okay" page.
+
+  `for` lists the cards a quote fits best. Each style needs one quote marked `"pick": true`, which is the one shown when choosing.
+- **Videos:** each toolkit card can list YouTube `videos`. Only the link is shown. Each video's `title` and `by` stay in the file so you can tell them apart.
+
+## Confession and notes to Julie
+
+In the ☰ menu:
+
+- **Confession:** write it, then let it go (it burns and is erased), keep it on the phone, or send it to Julie.
+- **Send Julie a note:** feedback for improving the app.
+
+There's no server, so sending opens the phone's email app, addressed to `email` in `src/contact.json`. That address is empty until Julie fills it in. Until then, the send buttons say it isn't set up yet.
 
 ## Editing the words
 

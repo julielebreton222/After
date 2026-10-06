@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { T } from '../text'
 import { crisisLines, detectCountry } from '../safety'
 import Timer from './interactions/Timer.jsx'
+import Quote from './Quote.jsx'
+import { quoteFor } from '../quotes'
 
 const t = T.notOkay
 const tel = (n) => `tel:${n.replace(/\s/g, '')}`
@@ -29,6 +31,7 @@ export default function NotOkay({ state, update, crisis, close }) {
       <h1>{t.title}</h1>
       {crisis && <p className="crisis-intro">{t.crisisIntro}</p>}
       <p>{t.intro}</p>
+      <Quote quote={quoteFor(state, 'too-much')} />
 
       <section className="help">
         <h2>1. {t.callLabel}</h2>
