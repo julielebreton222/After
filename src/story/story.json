@@ -1,0 +1,93 @@
+{
+  "title": "After",
+
+  "tokens": {
+    "chased": { "sport": "sport", "music": "music", "degree": "degree", "business": "business" },
+    "chasedObject": { "sport": "trophy", "music": "guitar", "degree": "diploma", "business": "shop sign" }
+  },
+
+  "people": {
+    "roux": { "name": "Madame Roux", "about": "Downstairs neighbour" },
+    "camille": { "name": "Camille", "about": "Théo's older sister" },
+    "ines": { "name": "Inès", "about": "Théo's therapist" }
+  },
+
+  "lights": {
+    "roux_door": { "person": "roux", "label": "Madame Roux's door", "x": 22, "y": 62 },
+    "camille_text": { "person": "camille", "label": "Camille's message", "x": 52, "y": 48 },
+    "ines_lamp": { "person": "ines", "label": "Inès's lamp", "x": 78, "y": 56 }
+  },
+
+  "chapters": [
+    { "number": 1, "title": "The Quiet Flat" },
+    { "number": 2, "title": "The Cry Room" },
+    { "number": 3, "title": "Who Is Théo?" },
+    { "number": 4, "title": "Familiar Faces" },
+    { "number": 5, "title": "The Ladder" },
+    { "number": 6, "title": "Sunday Soup" },
+    { "number": 7, "title": "Her Things" },
+    { "number": 8, "title": "The End of the World" },
+    { "number": 9, "title": "After" }
+  ],
+
+  "text": {
+    "firstLaunch": {
+      "title": "Before you start",
+      "body": [
+        "After is a story you read and play, one screen at a time, with small things to try in real life.",
+        "It's a companion for a hard time. It isn't therapy, and it doesn't replace a doctor, a therapist or the people who love you.",
+        "Everything you write stays on this phone. Nobody else can read it.",
+        "If things ever feel like too much, tap \"I'm not okay\" in the top corner of any screen."
+      ],
+      "personTitle": "One person you could message on a bad day",
+      "personHint": "Optional. You can change it later.",
+      "namePlaceholder": "Their name",
+      "phonePlaceholder": "Their phone number",
+      "start": "Start",
+      "skip": "Skip for now"
+    },
+    "notOkay": {
+      "button": "I'm not okay",
+      "title": "You don't have to be okay.",
+      "intro": "Here are three things you can do right now. Any one of them is enough.",
+      "callLabel": "Talk to someone now",
+      "emergencyLabel": "Emergency:",
+      "messageLabel": "Message {name}",
+      "messageBody": "Hey, I'm having a really hard time. Can you call me?",
+      "noPerson": "Save one person you could message",
+      "savePerson": "Save",
+      "breatheLabel": "Breathe with me",
+      "countryLabel": "Not in this country?",
+      "back": "Back to the story",
+      "crisisIntro": "Something you wrote sounded very heavy. Before you go on, here is help that's there right now."
+    },
+    "ui": {
+      "continue": "Continue",
+      "skip": "Skip",
+      "save": "Save",
+      "begin": "Begin",
+      "iDidIt": "I did it",
+      "notYet": "Not yet",
+      "notice": "What did you notice? (optional)",
+      "menu": "Menu",
+      "chapters": "Chapters",
+      "lightMap": "Light Map",
+      "notebook": "People",
+      "quests": "Quests",
+      "resume": "Back to the story",
+      "startOver": "Start over (erases everything)",
+      "startOverConfirm": "Erase everything you've written and start again from the beginning?",
+      "comingSoon": "Coming soon",
+      "locked": "Opens after the quest",
+      "chapterUnlocked": "Chapter {n} is unlocked.",
+      "questWaiting": "No rush. This card will wait for you.",
+      "sealTitle": "Open on",
+      "sealButton": "Seal it",
+      "sealDone": "Sealed until {date}.",
+      "notebookUnlocked": "New: the People notebook",
+      "lightMapUnlocked": "New: the Light Map",
+      "emptyNotebook": "Nobody yet. Each page will be someone else's life.",
+      "hours": "{n} hours together"
+    }
+  }
+}

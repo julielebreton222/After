@@ -1,0 +1,19 @@
+{
+  "_note": "Please double-check these numbers before sharing the app. 'default' is used when the phone's country can't be detected.",
+  "default": "FR",
+  "countries": {
+    "FR": { "country": "France", "name": "3114, national suicide prevention line", "number": "3114", "hours": "Free, 24/7", "emergency": "112" },
+    "BE": { "country": "Belgique", "name": "Centre de Prévention du Suicide", "number": "0800 32 123", "hours": "Free, 24/7", "emergency": "112" },
+    "CH": { "country": "Suisse", "name": "La Main Tendue", "number": "143", "hours": "24/7", "emergency": "144" },
+    "CA": { "country": "Canada", "name": "988 Suicide Crisis Helpline", "number": "988", "hours": "Free, 24/7", "emergency": "911" },
+    "US": { "country": "United States", "name": "988 Suicide & Crisis Lifeline", "number": "988", "hours": "Free, 24/7", "emergency": "911" },
+    "GB": { "country": "United Kingdom", "name": "Samaritans", "number": "116 123", "hours": "Free, 24/7", "emergency": "999" },
+    "IE": { "country": "Ireland", "name": "Samaritans", "number": "116 123", "hours": "Free, 24/7", "emergency": "112" },
+    "DE": { "country": "Deutschland", "name": "TelefonSeelsorge", "number": "0800 111 0 111", "hours": "Free, 24/7", "emergency": "112" },
+    "ES": { "country": "España", "name": "Línea 024", "number": "024", "hours": "Free, 24/7", "emergency": "112" },
+    "NL": { "country": "Nederland", "name": "113 Zelfmoordpreventie", "number": "0800 0113", "hours": "Free, 24/7", "emergency": "112" },
+    "AU": { "country": "Australia", "name": "Lifeline", "number": "13 11 14", "hours": "24/7", "emergency": "000" },
+    "NZ": { "country": "New Zealand", "name": "Need to talk? 1737", "number": "1737", "hours": "Free, 24/7", "emergency": "111" }
+  },
+  "elsewhere": { "text": "Somewhere else? Find a free helpline near you at findahelpline.com", "url": "https://findahelpline.com" }
+}
