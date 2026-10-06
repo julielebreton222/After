@@ -13,6 +13,9 @@ export default function Write({ cfg, screen, state, update, markDone, advance, o
     update((st) => ({
       writes: { ...st.writes, [key]: { text, date: todayISO() } },
       done: { ...st.done, [screen.id]: true },
+      ...(cfg.addToMap
+        ? { who_is_theo: [...st.who_is_theo.filter((e) => e.source !== key), { region: cfg.addToMap, text, source: key, date: todayISO() }] }
+        : {}),
     }))
     setSaved(true)
     if (soundsUnsafe(text)) openCrisis()

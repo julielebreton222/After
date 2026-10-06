@@ -163,7 +163,7 @@
       "prompt": "A narrow street in a French river city in early morning, everything in black ink: stone buildings, zinc roofs. {theo}, walking with his hood up and hands in pockets."
     },
     {
-      "key": "ines-office",
+      "key": "marieclo-office",
       "screens": [
         "1.28",
         "1.30"
@@ -171,16 +171,16 @@
       "prompt": "A small therapist's office: two armchairs facing each other, one leafy plant, a box of tissues on a low table, a clock on the wall. A small desk lamp gives a warm lamp-yellow glow; the rest is ink-black and cream."
     },
     {
-      "key": "ines",
+      "key": "marieclo",
       "screens": [
         "1.29",
         "1.31",
         "1.33"
       ],
-      "prompt": "Inès, a calm therapist in her forties with short dark hair and a cardigan, sitting in an armchair holding a cup of tea, with a dry, kind half-smile. A small desk lamp beside her gives a warm lamp-yellow glow."
+      "prompt": "Marie-Clo, a calm therapist in her forties with short dark hair and a cardigan, sitting in an armchair holding a cup of tea, with a dry, kind half-smile. A small desk lamp beside her gives a warm lamp-yellow glow."
     },
     {
-      "key": "ines-circle",
+      "key": "marieclo-circle",
       "screens": [
         "1.32"
       ],

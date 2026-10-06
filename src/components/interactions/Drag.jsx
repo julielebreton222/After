@@ -12,10 +12,13 @@ export default function Drag({ cfg, screen, state, update, markDone }) {
   const saved = state.choices[screen.id]
   const [placed, setPlaced] = useState(saved && typeof saved === 'object' ? saved : {})
   const [line, setLine] = useState(null)
+  const [selected, setSelected] = useState(null) // tap an item, then tap a zone
+  const zonesRef = useRef(null)
 
   const place = (itemId, zoneId) => {
     const next = { ...placed, [itemId]: zoneId }
     setPlaced(next)
+    setSelected(null)
     const finished = items.every((i) => next[i.id])
     update((st) => ({ choices: { ...st.choices, [screen.id]: next } }))
     if (finished) markDone()
@@ -28,14 +31,19 @@ export default function Drag({ cfg, screen, state, update, markDone }) {
       {cfg.prompt && <p className="prompt">{say(cfg.prompt, state)}</p>}
       <div className="drag-items">
         {loose.map((i) => (
-          <Draggable key={i.id} item={i} state={state} onPick={() => setLine(i.line ? say(i.line, state) : null)}
+          <Draggable key={i.id} item={i} state={state} selected={selected === i.id}
+            onPick={() => {
+              setLine(i.line ? say(i.line, state) : null)
+              setSelected(i.id)
+              zonesRef.current?.scrollIntoView({ block: 'nearest', behavior: 'smooth' })
+            }}
             onDrop={(z) => place(i.id, z)} flickTo={sort ? null : zones[0].id} />
         ))}
       </div>
       {line && <p className="narration drag-line">{line}</p>}
-      <div className="drag-zones">
+      <div className="drag-zones" ref={zonesRef}>
         {zones.map((z) => (
-          <div key={z.id} className="zone" data-zone={z.id}>
+          <div key={z.id} className={`zone ${selected ? 'ready' : ''}`} data-zone={z.id} onClick={() => selected && place(selected, z.id)}>
             <span className="zone-label">{say(z.label, state)}</span>
             <div className="zone-items">
               {items.filter((i) => placed[i.id] === z.id).map((i) => (
@@ -51,7 +59,7 @@ export default function Drag({ cfg, screen, state, update, markDone }) {
   )
 }
 
-function Draggable({ item, state, onPick, onDrop, flickTo }) {
+function Draggable({ item, state, selected, onPick, onDrop, flickTo }) {
   const [off, setOff] = useState(null)
   const start = useRef(null)
 
@@ -79,7 +87,7 @@ function Draggable({ item, state, onPick, onDrop, flickTo }) {
 
   return (
     <span
-      className={`chip draggable ${off ? 'dragging' : ''}`}
+      className={`chip draggable ${off ? 'dragging' : ''} ${selected ? 'selected' : ''}`}
       style={off ? { transform: `translate(${off.x}px, ${off.y}px)` } : undefined}
       onPointerDown={down} onPointerMove={move} onPointerUp={up} onPointerCancel={() => { start.current = null; setOff(null) }}
     >

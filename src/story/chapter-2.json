@@ -1,0 +1,334 @@
+{
+  "number": 2,
+  "title": "The Cry Room",
+  "summary": "The second week. Still almost all black. Théo holds it together in public and falls apart in private, and the game gives him full permission. Teaches the body tools. Ends with 4 lights.",
+  "screens": [
+    {
+      "id": "2.1",
+      "image": "Black. The three Chapter 1 lights glow small in the corners of the panel.",
+      "art": "black",
+      "dots": [
+        [10,10],
+        [90,12],
+        [86,88]
+      ],
+      "words": [
+        { "speaker": "narrator", "text": "Week two. People say the first week is the worst. People say a lot of things." }
+      ]
+    },
+    {
+      "id": "2.2",
+      "image": "The quest from Chapter 1 shown as a notebook page, the player's own entry in handwriting font.",
+      "art": "notebook",
+      "showNotebook": "q1",
+      "words": [
+        { "speaker": "narrator", "text": "Did Théo ask his real question?" },
+        {
+          "speaker": "narrator",
+          "text": { "by": "quest:q1", "done": "", "notyet": "Not yet. That's fine. The notebook will wait." }
+        }
+      ]
+    },
+    {
+      "id": "2.3",
+      "image": "A warehouse at dawn, tall shelves, Théo's outline scanning boxes. Black, grey only.",
+      "art": "warehouse",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Théo has a temp job this month: scanning boxes from six to two. It is the kind of job that leaves a lot of room for thinking. Too much room."
+        }
+      ]
+    },
+    {
+      "id": "2.4",
+      "image": "A colleague's back, saying something. Théo nodding, a stiff smile.",
+      "art": "warehouse-colleague",
+      "words": [
+        { "speaker": "narrator", "text": "He nods at the right moments. He laughs once, at the right moment. Nobody would know." }
+      ]
+    },
+    {
+      "id": "2.5",
+      "image": "A song lyric bubble drifting from a radio (no real lyrics: just musical notes and a heart shape).",
+      "art": "radio",
+      "words": [
+        { "speaker": "narrator", "text": "Then the radio plays their song." }
+      ]
+    },
+    {
+      "id": "2.6",
+      "image": "A stairwell, concrete, black. Théo sitting on the steps, folded over.",
+      "art": "stairwell",
+      "words": [
+        { "speaker": "narrator", "text": "Théo makes it to the stairwell before it happens." }
+      ]
+    },
+    {
+      "id": "2.7",
+      "image": "Close-up: his outlined hands over his face, shoulders shaking. Drawn in heavy wet ink strokes.",
+      "art": "crying-hands",
+      "words": [
+        { "speaker": "narrator", "text": "It is not a dignified cry. It is the kind of crying that comes from the stomach." }
+      ]
+    },
+    {
+      "id": "2.8",
+      "image": "The Critic peering round the stairwell corner.",
+      "art": "stairwell",
+      "words": [
+        { "speaker": "Critic", "text": "Pull yourself together. Men don't do this at work." }
+      ]
+    },
+    {
+      "id": "2.9",
+      "image": "Black page, cream letters, large.",
+      "art": "black",
+      "layout": "center",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Here is something nobody told Théo: crying is not falling apart. It's the grief moving. It is supposed to move."
+        }
+      ]
+    },
+    {
+      "id": "2.10",
+      "image": "The stairwell, Théo breathing, a little calmer.",
+      "art": "stairwell",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "It doesn't have to happen in front of anyone. Alone is allowed. A stairwell, a shower, a car, a walk in the woods. It just has to be allowed to happen."
+        }
+      ]
+    },
+    {
+      "id": "2.11",
+      "image": "Théo's flat at night. A door labelled in chalk: \"The cry room\" (it's his bathroom).",
+      "art": "cry-room-door",
+      "caption": "The cry room",
+      "words": [
+        { "speaker": "narrator", "text": "That night, Théo gives it a room. Ten minutes, door closed, nothing to fix." }
+      ],
+      "interaction": { "type": "timer", "style": "plain", "seconds": 600, "label": "Ten minutes for it. Close early whenever you want." }
+    },
+    {
+      "id": "2.12",
+      "image": "After: Théo sitting on the bathroom floor, lighter lines around him.",
+      "art": "bathroom-floor",
+      "words": [
+        { "speaker": "narrator", "text": "Afterwards, he feels emptier. Emptier is lighter than full." }
+      ]
+    },
+    {
+      "id": "2.13",
+      "image": "Black kitchen, a single candle on the table, unlit.",
+      "art": "candle-unlit",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Some nights the grief doesn't come out as tears. It comes out as a racing heart and a mind that won't stop. For those nights, there are tools."
+        }
+      ]
+    },
+    {
+      "id": "2.14",
+      "image": "Four cards fanned out: a candle, a cold tap, a shaking figure, a little creature.",
+      "art": "four-cards",
+      "words": [
+        { "speaker": "narrator", "text": "Four experiments. Try one tonight, or none. They're not tests." }
+      ],
+      "interaction": {
+        "type": "choice",
+        "continueTo": "2.20",
+        "options": [
+          { "id": "candle", "label": "The candle", "goto": "2.15" },
+          { "id": "cold", "label": "Cold water", "goto": "2.16" },
+          { "id": "shake", "label": "Shake it out", "goto": "2.17" },
+          { "id": "creature", "label": "Name the creature", "goto": "2.18" }
+        ]
+      }
+    },
+    {
+      "id": "2.15",
+      "image": "A candle flame in close-up, the only cream light on a black page. (Not a LIGHT+: things make no lasting light, only people.)",
+      "art": "candle-flame",
+      "next": "2.14",
+      "words": [
+        { "speaker": "narrator", "text": "Watch the flame. Just the flame. When your mind wanders, come back to the flame." }
+      ],
+      "interaction": { "type": "timer", "style": "candle", "seconds": 120, "doneText": "Back to the four cards." }
+    },
+    {
+      "id": "2.16",
+      "image": "A sink, a cold tap, water splashing a face.",
+      "art": "cold-tap",
+      "next": "2.14",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "When panic is high: cold water on the face, hold your breath for a few seconds. It tells your body to slow your heart down. It works because bodies are old and simple."
+        }
+      ],
+      "interaction": {
+        "type": "quest",
+        "id": "q2-cold",
+        "optional": true,
+        "title": "Cold water, once.",
+        "text": "Next time panic rises: cold water on your face, and hold your breath for a few seconds."
+      }
+    },
+    {
+      "id": "2.17",
+      "image": "Théo's outline shaking all over, motion lines.",
+      "art": "shaking",
+      "next": "2.14",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Animals shake after a fright. Stand up, shake your hands, arms, shoulders, legs, everything, for one minute. Feel silly. Keep going."
+        }
+      ],
+      "interaction": { "type": "timer", "style": "shake", "seconds": 60 }
+    },
+    {
+      "id": "2.18",
+      "image": "A blank shape on the page waiting to be named.",
+      "art": "black",
+      "words": [
+        { "speaker": "narrator", "text": "If the pain were a creature, what would it look like? How big? Where does it live in you?" }
+      ],
+      "interaction": [
+        {
+          "type": "choice",
+          "options": [
+            { "id": "bear", "label": "A heavy stone-bear" },
+            { "id": "cat", "label": "A cold fog-cat" },
+            { "id": "eel", "label": "A knotted eel" },
+            { "id": "bird", "label": "A tiny loud bird" }
+          ]
+        },
+        { "type": "write", "key": "creature", "prompt": "What is its name?", "placeholder": "Its name…", "max": 30, "rows": 1 }
+      ]
+    },
+    {
+      "id": "2.19",
+      "image": "The chosen creature, drawn small and sleepy on a shelf in Théo's flat.",
+      "art": { "by": "choice:2.18", "bear": "creature-bear", "cat": "creature-cat", "eel": "creature-eel", "bird": "creature-bird" },
+      "next": "2.14",
+      "words": [
+        { "speaker": "narrator", "text": "Hello, {w:creature}. You can stay. You don't get to run the flat." }
+      ]
+    },
+    {
+      "id": "2.20",
+      "image": "Théo in bed, black. A small \"Body\" checklist in cream on the side.",
+      "art": "black",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Grief lives in the body too. This week, the body's needs are small: water, something warm, the same wake-up time, a few minutes outside."
+        }
+      ],
+      "interaction": {
+        "type": "choice",
+        "prompt": "Tick the ones done today. Zero is allowed.",
+        "pick": "any",
+        "min": 0,
+        "options": [
+          { "id": "water", "label": "Water" },
+          { "id": "warm", "label": "Something warm" },
+          { "id": "wake", "label": "The same wake-up time" },
+          { "id": "outside", "label": "A few minutes outside" }
+        ]
+      }
+    },
+    {
+      "id": "2.21",
+      "image": "Madame Roux's empty container on Théo's counter, washed.",
+      "art": "container-washed",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "On Sunday, Théo looks at Madame Roux's container. You don't give back an empty container. That's not how Théo was raised."
+        }
+      ]
+    },
+    {
+      "id": "2.22",
+      "image": "The first time we see Théo cook: hands only, chopping, a pan. Still black and cream, but the steam is drawn warm.",
+      "art": "cooking-tart",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "So Théo cooks. Not for himself; he can't yet. For her. A small tarte aux pommes. His hands remember what to do even when the rest of him doesn't."
+        }
+      ],
+      "interaction": {
+        "type": "tap-objects",
+        "objects": [
+          { "id": "apples", "label": "Apples", "line": "Apples, sliced thin, laid like roof tiles." },
+          { "id": "butter", "label": "Butter", "line": "Cold butter, in little pieces." },
+          { "id": "dough", "label": "Dough", "line": "The dough, rolled out the way his grandmother did it." }
+        ]
+      }
+    },
+    {
+      "id": "2.23",
+      "image": "Madame Roux's doorway, warm light; she holds the tart, delighted.",
+      "art": "roux-tart",
+      "light": "roux_tart",
+      "haptic": true,
+      "words": [
+        { "speaker": "Madame Roux", "text": "Ah! So you are still alive in there." }
+      ]
+    },
+    {
+      "id": "2.24",
+      "image": "Madame Roux pointing at a photo on her wall: a man in a 1970s suit.",
+      "art": "roux-henri",
+      "words": [
+        {
+          "speaker": "Madame Roux",
+          "text": "My Henri left too. Not the same way. Forty years ago. I cried in the bathroom for a month. Then I learned to make soup for one, and then for many."
+        }
+      ]
+    },
+    {
+      "id": "2.25",
+      "image": "Théo on the stairs going back up, a warm glow on his face this time.",
+      "art": "stairs-up",
+      "words": [
+        { "speaker": "narrator", "text": "Théo has learned something about Madame Roux. He didn't even have to ask." }
+      ],
+      "interaction": {
+        "type": "notebook",
+        "book": "people",
+        "person": "roux",
+        "text": "Madame Roux: her Henri, forty years ago. She cried in the bathroom too."
+      }
+    },
+    {
+      "id": "2.26",
+      "image": "The Light Map, four lights now, Madame Roux's window brighter.",
+      "showLightMap": true,
+      "art": "black",
+      "words": [
+        { "speaker": "narrator", "text": "Notice: the light came back when Théo gave something. Remember that." }
+      ]
+    },
+    {
+      "id": "2.27",
+      "image": "Quest card.",
+      "words": [],
+      "interaction": {
+        "type": "quest",
+        "id": "q2",
+        "title": "The body week",
+        "text": "On three days this week, do one body thing: water, something warm to eat, a walk outside, or the same wake-up time.",
+        "unlocks": 3
+      }
+    }
+  ]
+}

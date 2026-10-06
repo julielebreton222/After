@@ -24,38 +24,27 @@
       "id": "1.3",
       "image": "A thin pale outline fades in: Théo sitting on a kitchen floor, back against the cupboards.",
       "art": "kitchen-floor",
-      "shots": [
-        { "x": 35, "y": 50, "zoom": 1 },
-        { "x": 28, "y": 66, "zoom": 1.7 }
-      ],
       "words": [
         { "speaker": "narrator", "text": "Théo is twenty-six. He is sitting on the kitchen floor, which is not where people usually sit." }
-      ]
+      ],
+      "anchor": { "x": 28, "y": 66 }
     },
     {
       "id": "1.4",
       "image": "Close-up: a door, closed. A blue suitcase wheel mark on the floor.",
       "art": "closed-door",
-      "shots": [
-        { "x": 50, "y": 45, "zoom": 1.05 },
-        { "x": 36, "y": 42, "zoom": 1.8 }
-      ],
       "words": [
         {
           "speaker": "narrator",
           "text": "An hour ago, Lisa took her blue suitcase and closed the door very gently. That was the worst part. The gentleness."
         }
-      ]
+      ],
+      "anchor": { "x": 36, "y": 42 }
     },
     {
       "id": "1.5",
       "image": "A faint outline of a trophy, a guitar, a diploma and a shop sign on a shelf, all in shadow.",
       "art": "shelf",
-      "shots": [
-        { "x": 50, "y": 50, "zoom": 1 },
-        { "x": 50, "y": 50, "zoom": 1.08 },
-        { "x": 50, "y": 50, "zoom": 1.14 }
-      ],
       "words": [
         {
           "speaker": "narrator",
@@ -93,25 +82,6 @@
       "id": "1.6",
       "image": "The shelf again, the {chasedObject} slightly clearer, the rest gone.",
       "art": "shelf",
-      "shots": {
-        "by": "chased",
-        "sport": [
-          { "x": 27, "y": 25, "zoom": 2.4 },
-          { "x": 50, "y": 50, "zoom": 1 }
-        ],
-        "degree": [
-          { "x": 73, "y": 23, "zoom": 2.4 },
-          { "x": 50, "y": 50, "zoom": 1 }
-        ],
-        "music": [
-          { "x": 24, "y": 68, "zoom": 2 },
-          { "x": 50, "y": 50, "zoom": 1 }
-        ],
-        "business": [
-          { "x": 70, "y": 70, "zoom": 2.4 },
-          { "x": 50, "y": 50, "zoom": 1 }
-        ]
-      },
       "words": [
         {
           "speaker": "narrator",
@@ -130,9 +100,6 @@
       "id": "1.7",
       "image": "The dark kitchen, outlines of: a mug, a plant, a note on the fridge, a pot on the stove.",
       "art": "kitchen-objects",
-      "shots": [
-        { "x": 50, "y": 50, "zoom": 1 }
-      ],
       "words": [
         {
           "speaker": "narrator",
@@ -142,30 +109,10 @@
       "interaction": {
         "type": "tap-objects",
         "objects": [
-          {
-            "id": "mug",
-            "label": "Mug",
-            "line": "Her mug. Théo leaves it exactly where it is.",
-            "focus": { "x": 22, "y": 63, "zoom": 2.1 }
-          },
-          {
-            "id": "plant",
-            "label": "Plant",
-            "line": "Her plant. He doesn't know how often it needs water. She always knew.",
-            "focus": { "x": 75, "y": 22, "zoom": 2.1 }
-          },
-          {
-            "id": "note",
-            "label": "Fridge note",
-            "line": "\"Buy oat milk.\" He will not be buying oat milk.",
-            "focus": { "x": 25, "y": 22, "zoom": 2.3 }
-          },
-          {
-            "id": "pot",
-            "label": "Pot",
-            "line": "Soup. The one she liked. Made for two.",
-            "focus": { "x": 70, "y": 63, "zoom": 2 }
-          }
+          { "id": "mug", "label": "Mug", "line": "Her mug. Théo leaves it exactly where it is." },
+          { "id": "plant", "label": "Plant", "line": "Her plant. He doesn't know how often it needs water. She always knew." },
+          { "id": "note", "label": "Fridge note", "line": "\"Buy oat milk.\" He will not be buying oat milk." },
+          { "id": "pot", "label": "Pot", "line": "Soup. The one she liked. Made for two." }
         ]
       }
     },
@@ -173,20 +120,15 @@
       "id": "1.8",
       "image": "The Critic appears for the first time in the corner, size 5.",
       "art": "kitchen-floor",
-      "shots": [
-        { "x": 62, "y": 66, "zoom": 1.3 }
-      ],
       "words": [
         { "speaker": "Critic", "text": "Of course she left. And the plan's gone too. What's left, exactly?" }
-      ]
+      ],
+      "anchor": { "x": 62, "y": 66 }
     },
     {
       "id": "1.9",
       "image": "Théo's outline, head on knees.",
       "art": "head-on-knees",
-      "shots": [
-        { "x": 50, "y": 55, "zoom": 1.15 }
-      ],
       "words": [
         { "speaker": "narrator", "text": "Nothing needs answering tonight. Tonight, Théo only has to get through the next hour." }
       ],
@@ -197,7 +139,8 @@
           { "id": "window", "label": "Open the window" },
           { "id": "floor", "label": "Lie on the floor and breathe" }
         ]
-      }
+      },
+      "anchor": { "x": 50, "y": 55 }
     },
     {
       "id": "1.10",
@@ -208,9 +151,6 @@
         "floor": "The chosen action in outline: Théo flat on the floor."
       },
       "art": { "by": "choice:1.9", "water": "glass-of-water", "window": "open-window", "floor": "lying-on-floor" },
-      "shots": [
-        { "x": 50, "y": 50, "zoom": 1.1 }
-      ],
       "words": [
         { "speaker": "narrator", "text": "That counts. That's all tonight asks." }
       ]
@@ -228,21 +168,15 @@
       "id": "1.12",
       "image": "The pot on the stove, a skin on the soup.",
       "art": "soup-pot",
-      "shots": [
-        { "x": 50, "y": 50, "zoom": 1 },
-        { "x": 45, "y": 40, "zoom": 1.5 }
-      ],
       "words": [
         { "speaker": "narrator", "text": "This happens in the first days of grief. Bodies go quiet. It passes." }
-      ]
+      ],
+      "anchor": { "x": 45, "y": 40 }
     },
     {
       "id": "1.13",
       "image": "Théo in bed in the dark, his face lit cold blue by his phone. Nothing else in the room is lit.",
       "art": "bed-phone",
-      "shots": [
-        { "x": 35, "y": 38, "zoom": 1.6 }
-      ],
       "words": [
         { "speaker": "narrator", "text": "He looks at her photos. The screen is very bright and lights nothing at all." }
       ],
@@ -252,15 +186,13 @@
           { "id": "scroll", "label": "Keep scrolling", "goto": "1.14a" },
           { "id": "facedown", "label": "Put the phone face down", "goto": "1.14b" }
         ]
-      }
+      },
+      "anchor": { "x": 35, "y": 38 }
     },
     {
       "id": "1.14a",
       "image": "Same, the blue glow larger, Théo smaller.",
       "art": "bed-phone",
-      "shots": [
-        { "x": 50, "y": 50, "zoom": 1 }
-      ],
       "words": [
         { "speaker": "narrator", "text": "Théo feels worse. He knew he would. That's not a crime." }
       ],
@@ -279,9 +211,6 @@
       "id": "1.15",
       "image": "Evening. Black flat. A sound-effect in cream letters: knock.",
       "art": "hallway-door",
-      "shots": [
-        { "x": 50, "y": 58, "zoom": 1.4 }
-      ],
       "sfx": "knock",
       "words": [
         { "speaker": "narrator", "text": "A knock. Théo doesn't move. A second knock." }
@@ -292,106 +221,86 @@
         "objects": [
           { "id": "door", "label": "Open the door" }
         ]
-      }
+      },
+      "anchor": { "x": 50, "y": 58 }
     },
     {
       "id": "1.16",
       "image": "Door open. Warm yellow light from the stairwell pours across the black floor. Madame Roux in slippers, holding a container.",
       "art": "roux-door",
-      "shots": [
-        { "x": 48, "y": 48, "zoom": 1.25 }
-      ],
       "light": "roux_door",
       "haptic": true,
       "words": [
         { "speaker": "Madame Roux", "text": "I saw her suitcase on the stairs." }
-      ]
+      ],
+      "anchor": { "x": 48, "y": 48 }
     },
     {
       "id": "1.17",
       "image": "Close on the container in her hands, glowing softly.",
       "art": "container",
-      "shots": [
-        { "x": 50, "y": 50, "zoom": 1.05 },
-        { "x": 50, "y": 48, "zoom": 1.3 }
-      ],
       "words": [
         {
           "speaker": "Madame Roux",
           "text": "Soupe de légumes, made this morning. You always bring me things. Three spoons. Not for you. For me."
         }
-      ]
+      ],
+      "anchor": { "x": 50, "y": 48 }
     },
     {
       "id": "1.18",
       "image": "The door closes, but the container in Théo's hands keeps a small glow.",
       "art": "container-glow",
-      "shots": [
-        { "x": 50, "y": 72, "zoom": 1.4 }
-      ],
       "words": [
         { "speaker": "narrator", "text": "She doesn't ask anything else. She just goes back downstairs." }
-      ]
+      ],
+      "anchor": { "x": 50, "y": 72 }
     },
     {
       "id": "1.19",
       "image": "Théo standing at the counter, eating from the container. The glow on his face now.",
       "art": "eating",
-      "shots": [
-        { "x": 50, "y": 50, "zoom": 1 },
-        { "x": 42, "y": 28, "zoom": 1.9 }
-      ],
       "words": [
         { "speaker": "narrator", "text": "Théo eats three spoons standing up. Then four. It's the first warm thing in two days." }
-      ]
+      ],
+      "anchor": { "x": 42, "y": 28 }
     },
     {
       "id": "1.20",
       "image": "Black page, one warm point: the container.",
       "art": "container-glow",
-      "shots": [
-        { "x": 50, "y": 72, "zoom": 1.6 },
-        { "x": 50, "y": 72, "zoom": 2 },
-        { "x": 50, "y": 72, "zoom": 2.4 }
-      ],
       "words": [
         {
           "speaker": "narrator",
           "text": "That was the first light. Notice it didn't come from inside Théo. Not yet. It came up the stairs in slippers."
         }
-      ]
+      ],
+      "anchor": { "x": 50, "y": 72 }
     },
     {
       "id": "1.21",
       "image": "Black. \"Day three\" in the corner. Phone buzzing on the counter.",
       "art": "phone-counter",
-      "shots": [
-        { "x": 50, "y": 62, "zoom": 1.4 }
-      ],
       "caption": "Day three",
       "words": [
         { "speaker": "narrator", "text": "Day three. His phone buzzes." }
-      ]
+      ],
+      "anchor": { "x": 50, "y": 62 }
     },
     {
       "id": "1.22",
       "image": "The phone screen, warm yellow this time: a message from Camille.",
       "art": "phone-warm",
-      "shots": [
-        { "x": 50, "y": 40, "zoom": 1.2 }
-      ],
       "light": "camille_text",
       "words": [
         { "speaker": "Camille", "text": "thinking of you. no need to answer." }
-      ]
+      ],
+      "anchor": { "x": 50, "y": 40 }
     },
     {
       "id": "1.23",
       "image": "Théo holding the warm phone.",
       "art": "holding-phone",
-      "shots": [
-        { "x": 36, "y": 40, "zoom": 1.6 }
-      ],
       "words": [],
       "interaction": {
         "type": "choice",
@@ -400,30 +309,25 @@
           { "id": "heart", "label": "Send a heart" },
           { "id": "honest", "label": "\"thanks. it's bad.\"" }
         ]
-      }
+      },
+      "anchor": { "x": 36, "y": 40 }
     },
     {
       "id": "1.24",
       "image": "A desk drawer opening: paper, an envelope, a stick of red wax.",
       "art": "drawer",
-      "shots": [
-        { "x": 50, "y": 50, "zoom": 1 },
-        { "x": 55, "y": 40, "zoom": 1.3 }
-      ],
       "words": [
         {
           "speaker": "narrator",
           "text": "Before his appointment, Théo does something odd. He writes to someone who doesn't exist yet: the Théo of later."
         }
-      ]
+      ],
+      "anchor": { "x": 55, "y": 40 }
     },
     {
       "id": "1.25",
       "image": "Paper on the table, a pen.",
       "art": "paper-pen",
-      "shots": [
-        { "x": 50, "y": 50, "zoom": 1.05 }
-      ],
       "words": [
         { "speaker": "narrator", "text": "What does today's Théo want later's Théo to know?" }
       ],
@@ -433,73 +337,59 @@
       "id": "1.26",
       "image": "The sealed envelope in a drawer, the drawer closing.",
       "art": "sealed-envelope",
-      "shots": [
-        { "x": 50, "y": 50, "zoom": 1 },
-        { "x": 55, "y": 42, "zoom": 1.5 }
-      ],
       "words": [
         { "speaker": "narrator", "text": "Sealed. Later's Théo will read it. Today's Théo just has to get there." }
-      ]
+      ],
+      "anchor": { "x": 55, "y": 42 }
     },
     {
       "id": "1.27",
       "image": "A street at morning, everything black, Théo's outline walking with his hood up.",
       "art": "street-hood",
-      "shots": [
-        { "x": 50, "y": 50, "zoom": 1 },
-        { "x": 40, "y": 60, "zoom": 1.4 },
-        { "x": 38, "y": 62, "zoom": 1.8 }
-      ],
       "words": [
         {
           "speaker": "narrator",
           "text": "He almost cancels his appointment. He types the message twice and deletes it twice. Cancelling would mean explaining."
         }
-      ]
+      ],
+      "anchor": { "x": 38, "y": 62 }
     },
     {
       "id": "1.28",
-      "image": "Inès's office: two chairs, one plant, a box of tissues on a low table. A small desk lamp gives a warm glow.",
-      "art": "ines-office",
-      "shots": [
-        { "x": 50, "y": 50, "zoom": 1 }
-      ],
-      "light": "ines_lamp",
+      "image": "Marie-Clo's office: two chairs, one plant, a box of tissues on a low table. A small desk lamp gives a warm glow.",
+      "art": "marieclo-office",
+      "light": "marieclo_lamp",
       "words": [
-        { "speaker": "narrator", "text": "Inès's office has one plant, two chairs, and a box of tissues Théo is determined not to touch." }
+        {
+          "speaker": "narrator",
+          "text": "Marie-Clo's office has one plant, two chairs, and a box of tissues Théo is determined not to touch."
+        }
       ]
     },
     {
       "id": "1.29",
-      "image": "Inès in her chair, cup of tea.",
-      "art": "ines",
-      "shots": [
-        { "x": 50, "y": 35, "zoom": 1.3 }
-      ],
+      "image": "Marie-Clo in her chair, cup of tea.",
+      "art": "marieclo",
       "words": [
-        { "speaker": "Inès", "text": "So. Tell me about the week." }
-      ]
+        { "speaker": "Marie-Clo", "text": "So. Tell me about the week." }
+      ],
+      "anchor": { "x": 50, "y": 35 }
     },
     {
       "id": "1.30",
       "image": "A clock on the wall: four minutes.",
-      "art": "ines-office",
-      "shots": [
-        { "x": 77, "y": 12, "zoom": 2.6 }
-      ],
+      "art": "marieclo-office",
       "words": [
         { "speaker": "narrator", "text": "Théo tells her. It takes four minutes. It felt like it should take longer." }
-      ]
+      ],
+      "anchor": { "x": 77, "y": 12 }
     },
     {
       "id": "1.31",
-      "image": "Inès leaning forward slightly.",
-      "art": "ines",
-      "shots": [
-        { "x": 50, "y": 40, "zoom": 1.6 }
-      ],
+      "image": "Marie-Clo leaning forward slightly.",
+      "art": "marieclo",
       "words": [
-        { "speaker": "Inès", "text": "Can I give you some homework you'll probably hate?" }
+        { "speaker": "Marie-Clo", "text": "Can I give you some homework you'll probably hate?" }
       ],
       "interaction": {
         "type": "choice",
@@ -508,69 +398,55 @@
           { "id": "choice", "label": "\"Do I have a choice?\"" },
           { "id": "shrug", "label": "Shrug" }
         ]
-      }
+      },
+      "anchor": { "x": 50, "y": 40 }
     },
     {
       "id": "1.32",
-      "image": "Inès's hands drawing a small circle in the air; inside it, a tiny Théo in a tiny flat.",
-      "art": "ines-circle",
-      "shots": [
-        { "x": 50, "y": 50, "zoom": 1 },
-        { "x": 33, "y": 30, "zoom": 1.7 },
-        { "x": 33, "y": 30, "zoom": 2.2 }
-      ],
+      "image": "Marie-Clo's hands drawing a small circle in the air; inside it, a tiny Théo in a tiny flat.",
+      "art": "marieclo-circle",
       "words": [
         {
-          "speaker": "Inès",
+          "speaker": "Marie-Clo",
           "text": "Right now your whole world is the size of your flat and your head. Be interested in other people. Not to fix yourself. Just to see what's out there."
         }
-      ]
+      ],
+      "anchor": { "x": 33, "y": 30 }
     },
     {
       "id": "1.33",
-      "image": "Inès smiling slightly.",
-      "art": "ines",
-      "shots": [
-        { "x": 50, "y": 30, "zoom": 1.5 },
-        { "x": 50, "y": 30, "zoom": 1.9 }
-      ],
+      "image": "Marie-Clo smiling slightly.",
+      "art": "marieclo",
       "words": [
         {
-          "speaker": "Inès",
+          "speaker": "Marie-Clo",
           "text": "One person. One real question. Then come back and tell me what you learned about them. Not about you."
         }
-      ]
+      ],
+      "anchor": { "x": 50, "y": 30 }
     },
     {
       "id": "1.34",
       "image": "Théo looking unconvinced.",
       "art": "theo-chair",
-      "shots": [
-        { "x": 30, "y": 35, "zoom": 1.4 }
-      ],
       "words": [
         { "speaker": "narrator", "text": "Théo thinks this is a bit simple. He doesn't say so." }
-      ]
+      ],
+      "anchor": { "x": 30, "y": 35 }
     },
     {
       "id": "1.35",
-      "image": "Théo on the street again; the street still black, but the lamp glow from Inès's window behind him.",
+      "image": "Théo on the street again; the street still black, but the lamp glow from Marie-Clo's window behind him.",
       "art": "street-lamp-window",
-      "shots": [
-        { "x": 50, "y": 50, "zoom": 1 },
-        { "x": 30, "y": 25, "zoom": 1.8 }
-      ],
       "words": [
         { "speaker": "narrator", "text": "It was simple. Simple and easy aren't the same thing." }
-      ]
+      ],
+      "anchor": { "x": 30, "y": 25 }
     },
     {
       "id": "1.36",
       "image": "A small notebook appears, cream cover, title \"People\".",
       "art": "notebook",
-      "shots": [
-        { "x": 50, "y": 50, "zoom": 1.2 }
-      ],
       "unlock": "notebook",
       "words": [
         { "speaker": "narrator", "text": "The curiosity notebook. Each page is for someone else's life." }
@@ -578,36 +454,29 @@
     },
     {
       "id": "1.37",
-      "image": "Black skyline from Théo's window. Three tiny warm points: Madame Roux's window, his phone, Inès's window.",
+      "image": "Black skyline from Théo's window. Three tiny warm points: Madame Roux's window, his phone, Marie-Clo's window.",
       "art": "skyline",
-      "shots": [
-        { "x": 50, "y": 62, "zoom": 1.15 }
-      ],
       "unlock": "lightMap",
-      "points": ["roux_door", "camille_text", "ines_lamp"],
+      "points": ["roux_door", "camille_text", "marieclo_lamp"],
       "words": [
         { "speaker": "narrator", "text": "Three lights. It doesn't sound like much. A few days ago, there were none." }
-      ]
+      ],
+      "anchor": { "x": 50, "y": 62 }
     },
     {
       "id": "1.38",
       "image": "The Critic, still big, sitting on the windowsill.",
       "art": "skyline",
-      "shots": [
-        { "x": 50, "y": 80, "zoom": 1.2 }
-      ],
       "words": [
         { "speaker": "Critic", "text": "Three lights. Pathetic." },
         { "speaker": "narrator", "text": "The Critic will talk a lot in this story. Théo doesn't have to believe it." }
-      ]
+      ],
+      "anchor": { "x": 50, "y": 80 }
     },
     {
       "id": "1.39",
       "image": "End-of-chapter card: a hand-drawn soup bowl.",
       "art": "soup-bowl",
-      "shots": [
-        { "x": 50, "y": 50, "zoom": 1 }
-      ],
       "layout": "title",
       "words": [
         { "speaker": "narrator", "text": "End of Chapter 1." }

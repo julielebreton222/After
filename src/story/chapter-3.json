@@ -1,0 +1,392 @@
+{
+  "number": 3,
+  "title": "Who Is Théo?",
+  "summary": "Weeks three and four. Learning to be alone without being lonely, and finding the man underneath \"we\". The second half unlocks after a real walk somewhere new. Ends with 5 lights.",
+  "screens": [
+    {
+      "id": "3.1",
+      "image": "Théo's kitchen, black, with the warm lights from earlier chapters glowing in the background. Two plates on the counter.",
+      "art": "kitchen-two-plates",
+      "words": [
+        { "speaker": "narrator", "text": "Week three. Théo cooks dinner, sets out two plates, and only then notices." }
+      ]
+    },
+    {
+      "id": "3.2",
+      "image": "Close-up: the two plates, one of them slowly fading out.",
+      "art": "kitchen-two-plates",
+      "anchor": { "x": 50, "y": 70 },
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "For two years, Théo cooked for two. And only what Lisa liked: no coriander, no spice, nothing with a bone in it."
+        }
+      ]
+    },
+    {
+      "id": "3.3",
+      "image": "Théo standing alone, holding a pan.",
+      "art": "theo-pan",
+      "words": [
+        { "speaker": "narrator", "text": "He realises he doesn't know what he likes to cook anymore. Or what he likes at all." }
+      ]
+    },
+    {
+      "id": "3.4",
+      "image": "The Critic sitting on the counter, size 5.",
+      "art": "kitchen-two-plates",
+      "words": [
+        { "speaker": "Critic", "text": "You didn't have a personality. You had a girlfriend." }
+      ]
+    },
+    {
+      "id": "3.5",
+      "image": "Théo looking at the Critic.",
+      "art": "theo-pan",
+      "critic": true,
+      "words": [
+        { "speaker": "narrator", "text": "That isn't true. It's just loud." }
+      ],
+      "interaction": {
+        "type": "critic-reply",
+        "explainer": "You can't argue the Critic away. But you can answer it.",
+        "options": [
+          { "id": "critic", "label": "\"That's the Critic talking.\"" },
+          { "id": "scared", "label": "\"You're scared. Me too.\"" },
+          { "id": "true", "label": "\"Is that actually true?\"" }
+        ]
+      }
+    },
+    {
+      "id": "3.6",
+      "image": "The Critic one size smaller.",
+      "art": "theo-pan",
+      "critic": true,
+      "words": [
+        { "speaker": "narrator", "text": "Smaller. Not gone. Smaller." }
+      ]
+    },
+    {
+      "id": "3.7",
+      "image": "Marie-Clo's office, the warm lamp.",
+      "art": "marieclo",
+      "words": [
+        { "speaker": "Marie-Clo", "text": "Who were you before her? Not your job. Not the {chased}. You." }
+      ]
+    },
+    {
+      "id": "3.8",
+      "image": "Théo shrugging, a speech bubble with a question mark.",
+      "art": "theo-chair",
+      "words": [
+        { "speaker": "Théo", "text": "I don't know. I used to cook a lot. I used to... I don't know." }
+      ]
+    },
+    {
+      "id": "3.9",
+      "image": "Marie-Clo handing him a big sheet of paper: a hand-drawn map with an empty centre labelled \"Théo\".",
+      "art": "map-handover",
+      "words": [
+        { "speaker": "Marie-Clo", "text": "Then let's find out. A little each week." }
+      ]
+    },
+    {
+      "id": "3.10",
+      "image": "The Who Is Théo? map: a hand-drawn island with four regions: Things I love / Things I used to love / Things I'm curious about / Things I'm good at.",
+      "art": "who-map",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "The Who Is Théo? map. It starts almost empty. That's normal. Lisa's face isn't on it. This one is only his."
+        }
+      ],
+      "interaction": {
+        "type": "map",
+        "prompt": "Add at least one thing, to any region.",
+        "chips": ["cooking", "long walks", "football", "old films", "markets", "music", "being there for people"]
+      }
+    },
+    {
+      "id": "3.11",
+      "image": "The map with the player's items drawn as little landmarks (a pan, a tree, a ball).",
+      "art": "who-map",
+      "showMap": true,
+      "words": [
+        { "speaker": "narrator", "text": "It will grow. Every chapter adds to it." }
+      ]
+    },
+    {
+      "id": "3.12",
+      "image": "A page of lined paper, a pen.",
+      "art": "paper-pen",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Marie-Clo gave him one more experiment. Write five sentences about this month, but not with \"I\". With his own name."
+        }
+      ]
+    },
+    {
+      "id": "3.13",
+      "image": "Same paper, an example in cream handwriting.",
+      "art": "paper-pen",
+      "words": [
+        { "speaker": "narrator", "text": "\"Théo is having a hard month. Théo is sad, and he's also still cooking. Théo is...\"" }
+      ],
+      "interaction": {
+        "type": "write",
+        "prompt": "Write five sentences about your own week, using your own name.",
+        "placeholder": "[Your name] is...",
+        "max": 800,
+        "rows": 6
+      }
+    },
+    {
+      "id": "3.14",
+      "image": "The paper folded into a paper boat.",
+      "art": "paper-boat",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "It's a strange trick. Talking about yourself by name puts a little distance between you and the pain, like looking at your life from across the street. Scientists have measured it: it calms the part of the brain that loops."
+        }
+      ]
+    },
+    {
+      "id": "3.15",
+      "image": "Night. Théo in bed, the phone glowing cold blue. A wave shape rising over the bed.",
+      "art": "bed-phone",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "At 1am, the wanting comes. To check her profile. To see if she's okay. To see if she's not okay."
+        }
+      ]
+    },
+    {
+      "id": "3.16",
+      "image": "A big hand-drawn wave rising and falling.",
+      "art": "wave",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "This feeling is like a wave. It rises, peaks, and falls on its own, in about a minute and a half. You don't have to fight it. Just ride it."
+        }
+      ],
+      "interaction": { "type": "timer", "style": "wave", "seconds": 90, "label": "Urge wave", "doneText": "It passed." }
+    },
+    {
+      "id": "3.17",
+      "image": "The wave flat. The phone dark.",
+      "art": "black",
+      "words": [
+        { "speaker": "narrator", "text": "Did the wave pass?" }
+      ],
+      "interaction": {
+        "type": "choice",
+        "options": [
+          { "id": "check", "label": "Check anyway", "goto": "3.18a" },
+          { "id": "kitchen", "label": "Put the phone in the kitchen", "goto": "3.18b" }
+        ]
+      }
+    },
+    {
+      "id": "3.18a",
+      "image": "Phone screen, cold blue, Théo small.",
+      "art": "bed-phone",
+      "next": "3.19",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "He checks. She looks fine. That's the worst and best news at once. Théo feels worse. That's allowed. Tomorrow is a new night."
+        }
+      ]
+    },
+    {
+      "id": "3.18b",
+      "image": "Phone on the kitchen counter, Théo asleep.",
+      "art": "phone-counter",
+      "words": [
+        { "speaker": "narrator", "text": "He sleeps badly. But he sleeps." }
+      ]
+    },
+    {
+      "id": "3.19",
+      "image": "A small box with a clock on it.",
+      "art": "worry-box",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Some worries come at all hours. Marie-Clo's trick: give them an appointment. Write them down, and save them for one fixed time of day. Fifteen minutes. Then the box closes."
+        }
+      ],
+      "interaction": {
+        "type": "write",
+        "key": "worry-box",
+        "prompt": "Worry box: put today's worries in here. They'll keep until their appointment.",
+        "placeholder": "I'm worried that…",
+        "max": 600
+      }
+    },
+    {
+      "id": "3.20",
+      "image": "A city map with one part of town in shadow, never visited.",
+      "art": "city-map",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Last thing. Théo has lived here two years and only ever walked Lisa's routes. Her café, her market, her friends' street."
+        }
+      ]
+    },
+    {
+      "id": "3.21",
+      "image": "Quest card, with a small drawn path into the unknown.",
+      "words": [],
+      "interaction": {
+        "type": "quest",
+        "id": "q3-walk",
+        "title": "Somewhere new",
+        "text": "Go for a walk somewhere you've never walked, alone, on purpose. Twenty minutes is enough. Look up at least once."
+      }
+    },
+    {
+      "id": "3.22",
+      "image": "A park with huge plane trees, early morning fog. The trees drawn in pencil grey, not black. The first grey that isn't darkness.",
+      "art": "park-fog",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Théo walks to the park on the other side of the river. He has never been here. Nobody here has ever seen him with Lisa."
+        }
+      ]
+    },
+    {
+      "id": "3.23",
+      "image": "Looking up through the plane tree branches; a big pale sky.",
+      "art": "park-up",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "He looks up. The trees are two hundred years old. They have seen a lot of people walk under them with a broken heart. They are still here."
+        }
+      ]
+    },
+    {
+      "id": "3.24",
+      "image": "A scruffy three-legged dog running at Théo, tongue out.",
+      "art": "dog-running",
+      "words": [
+        { "speaker": "narrator", "text": "Then a dog arrives. A dog with three legs and no shame." }
+      ]
+    },
+    {
+      "id": "3.25",
+      "image": "Sophie in a yellow raincoat, running after the dog, laughing. The yellow raincoat glows.",
+      "art": "sophie",
+      "light": "sophie_park",
+      "haptic": true,
+      "words": [
+        { "speaker": "Sophie", "text": "Trois-Pattes! Sorry, sorry. He thinks everyone is his friend." }
+      ]
+    },
+    {
+      "id": "3.26",
+      "image": "Théo kneeling, scratching the dog's ears.",
+      "art": "theo-dog",
+      "words": [],
+      "interaction": {
+        "type": "choice",
+        "options": [
+          { "id": "right", "label": "\"He's right.\"" },
+          { "id": "leg", "label": "\"What happened to his leg?\"" },
+          { "id": "smile", "label": "Just smile" }
+        ]
+      }
+    },
+    {
+      "id": "3.27",
+      "image": "Sophie talking, Trois-Pattes rolling on his back.",
+      "art": "sophie",
+      "words": [
+        {
+          "speaker": "Sophie",
+          "text": "A car, when he was a puppy. He never noticed he was missing one. He's the happiest one in the park."
+        }
+      ],
+      "interaction": {
+        "type": "notebook",
+        "book": "people",
+        "person": "sophie",
+        "text": "Sophie: walks Trois-Pattes here every morning. He lost his leg as a puppy and never noticed."
+      }
+    },
+    {
+      "id": "3.28",
+      "image": "Sophie and the dog walking away into fog, the yellow coat glowing.",
+      "art": "sophie-leaving",
+      "addHours": { "sophie": 1 },
+      "words": [
+        { "speaker": "Sophie", "text": "Same time every day, if you want to meet him again." }
+      ]
+    },
+    {
+      "id": "3.29",
+      "image": "The map from 3.20, the park now drawn in, a small yellow light in it.",
+      "art": "city-map",
+      "dots": [
+        [70,40]
+      ],
+      "words": [
+        { "speaker": "narrator", "text": "Théo didn't plan to talk to anyone. The world sent a dog." }
+      ]
+    },
+    {
+      "id": "3.30",
+      "image": "Théo at his window that night. Two questions in cream letters float over the dark city.",
+      "art": "theo-window",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Marie-Clo asks him to choose one place to go back to, again and again. Two questions help: How much energy does Théo have? And does he want to talk, or just be near people?"
+        }
+      ],
+      "interaction": [
+        {
+          "type": "choice",
+          "prompt": "Energy:",
+          "options": [
+            { "id": "low", "label": "Low" },
+            { "id": "some", "label": "Some" },
+            { "id": "high", "label": "A lot" }
+          ]
+        },
+        {
+          "type": "choice",
+          "prompt": "And:",
+          "options": [
+            { "id": "near", "label": "Just be near people" },
+            { "id": "little", "label": "Talk a little" },
+            { "id": "talk", "label": "Talk" }
+          ]
+        },
+        { "type": "places", "prompt": "Places that might fit:" }
+      ]
+    },
+    {
+      "id": "3.31",
+      "image": "Quest card.",
+      "words": [],
+      "interaction": [
+        {
+          "type": "quest",
+          "id": "q3",
+          "title": "Pick your place",
+          "text": "Choose one real place you could go to every week: a café, library, park, club, class. Write its name.",
+          "unlocks": 4
+        },
+        { "type": "write", "key": "my-place", "prompt": "Write its name.", "placeholder": "My place is…", "max": 80, "rows": 1 }
+      ]
+    }
+  ]
+}

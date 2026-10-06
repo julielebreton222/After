@@ -12,11 +12,19 @@ export default function Choice({ cfg, screen, state, update, advance }) {
   const [own, setOwn] = useState('')
 
   const choose = (o) => {
-    update((st) => ({
-      ...(o.set || {}),
-      choices: { ...st.choices, [screen.id]: o.id },
-      done: { ...st.done, [screen.id]: true },
-    }))
+    update((st) => {
+      const patch = {
+        ...(o.set || {}),
+        choices: { ...st.choices, [screen.id]: o.id },
+        done: { ...st.done, [screen.id]: true },
+      }
+      // Hours together, counted the first time only.
+      if (o.hours && !st.done[screen.id]) {
+        patch.hours = { ...st.hours }
+        for (const [p, h] of Object.entries(o.hours)) patch.hours[p] = (patch.hours[p] || 0) + h
+      }
+      return patch
+    })
     advance(o.goto)
   }
 
@@ -24,7 +32,12 @@ export default function Choice({ cfg, screen, state, update, advance }) {
     setSel((s) => (s.includes(id) ? s.filter((x) => x !== id) : s.length < max ? [...s, id] : s))
 
   const confirm = () => {
-    update((st) => ({ choices: { ...st.choices, [screen.id]: sel }, done: { ...st.done, [screen.id]: true } }))
+    const labels = sel.map((id) => cfg.options.find((o) => o.id === id)?.label || id)
+    update((st) => ({
+      choices: { ...st.choices, [screen.id]: sel },
+      done: { ...st.done, [screen.id]: true },
+      ...(cfg.saveAs ? { [cfg.saveAs]: labels } : {}),
+    }))
     advance(cfg.continueTo)
   }
 

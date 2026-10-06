@@ -1,48 +1,282 @@
 {
   "title": "After",
-
   "beatChars": 80,
-
   "voices": {
-    "narrator": { "rate": 0.9, "pitch": 1 },
-    "Critic": { "rate": 0.95, "pitch": 0.6 },
-    "Madame Roux": { "rate": 0.85, "pitch": 1.3 },
-    "Camille": { "rate": 0.95, "pitch": 1.2 },
-    "Inès": { "rate": 0.88, "pitch": 1.15 }
+    "narrator": {
+      "rate": 0.9,
+      "pitch": 1
+    },
+    "Critic": {
+      "rate": 0.95,
+      "pitch": 0.6
+    },
+    "Madame Roux": {
+      "rate": 0.85,
+      "pitch": 1.3
+    },
+    "Camille": {
+      "rate": 0.95,
+      "pitch": 1.2
+    },
+    "Marie-Clo": {
+      "rate": 0.88,
+      "pitch": 1.15
+    },
+    "Théo": {
+      "rate": 0.95,
+      "pitch": 0.9
+    },
+    "Nadia": {
+      "rate": 1,
+      "pitch": 1.15
+    },
+    "Lucien": {
+      "rate": 0.8,
+      "pitch": 0.75
+    },
+    "Sophie": {
+      "rate": 1,
+      "pitch": 1.2
+    },
+    "Béa": {
+      "rate": 1.05,
+      "pitch": 1.1
+    },
+    "Hugo": {
+      "rate": 0.85,
+      "pitch": 0.8
+    },
+    "Yann": {
+      "rate": 0.85,
+      "pitch": 0.9
+    },
+    "Karim": {
+      "rate": 1.05,
+      "pitch": 1
+    },
+    "Lisa": {
+      "rate": 0.9,
+      "pitch": 1.15
+    }
   },
-  "voicePreference": ["Daniel", "Google UK English Male", "Arthur", "Serena", "Samantha"],
-
-  "tokens": {
-    "chased": { "sport": "sport", "music": "music", "degree": "degree", "business": "business" },
-    "chasedObject": { "sport": "trophy", "music": "guitar", "degree": "diploma", "business": "shop sign" }
-  },
-
-  "people": {
-    "roux": { "name": "Madame Roux", "about": "Downstairs neighbour" },
-    "camille": { "name": "Camille", "about": "Théo's older sister" },
-    "ines": { "name": "Inès", "about": "Théo's therapist" }
-  },
-
-  "lightMapArt": "skyline",
-
-  "lights": {
-    "roux_door": { "person": "roux", "label": "Madame Roux's door", "x": 27, "y": 76 },
-    "camille_text": { "person": "camille", "label": "Camille's message", "x": 42, "y": 53 },
-    "ines_lamp": { "person": "ines", "label": "Inès's lamp", "x": 63, "y": 69 }
-  },
-
-  "chapters": [
-    { "number": 1, "title": "The Quiet Flat" },
-    { "number": 2, "title": "The Cry Room" },
-    { "number": 3, "title": "Who Is Théo?" },
-    { "number": 4, "title": "Familiar Faces" },
-    { "number": 5, "title": "The Ladder" },
-    { "number": 6, "title": "Sunday Soup" },
-    { "number": 7, "title": "Her Things" },
-    { "number": 8, "title": "The End of the World" },
-    { "number": 9, "title": "After" }
+  "voicePreference": [
+    "Daniel",
+    "Google UK English Male",
+    "Arthur",
+    "Serena",
+    "Samantha"
   ],
-
+  "tokens": {
+    "chased": {
+      "sport": "sport",
+      "music": "music",
+      "degree": "degree",
+      "business": "business",
+      "default": "plan"
+    },
+    "chasedObject": {
+      "sport": "trophy",
+      "music": "guitar",
+      "degree": "diploma",
+      "business": "shop sign",
+      "default": "plan"
+    },
+    "chasedVerb": {
+      "sport": "train",
+      "music": "play music",
+      "degree": "study",
+      "business": "run my own business",
+      "default": "have a plan"
+    },
+    "pocketDefault": "First time here. How does this work?"
+  },
+  "people": {
+    "roux": {
+      "name": "Madame Roux",
+      "about": "Downstairs neighbour",
+      "window": {
+        "x": 27,
+        "y": 76
+      }
+    },
+    "camille": {
+      "name": "Camille",
+      "about": "Théo's older sister",
+      "window": {
+        "x": 42,
+        "y": 53
+      }
+    },
+    "marieclo": {
+      "name": "Marie-Clo",
+      "about": "Théo's therapist",
+      "window": {
+        "x": 63,
+        "y": 69
+      }
+    },
+    "sophie": {
+      "name": "Sophie",
+      "about": "Walks Trois-Pattes in the park",
+      "window": {
+        "x": 80,
+        "y": 52
+      }
+    },
+    "lucien": {
+      "name": "Lucien",
+      "about": "Café regular, Thursday crosswords",
+      "window": {
+        "x": 70,
+        "y": 48
+      }
+    },
+    "nadia": {
+      "name": "Nadia",
+      "about": "Barista at Café du Pont",
+      "window": {
+        "x": 48,
+        "y": 60
+      }
+    },
+    "bea": {
+      "name": "Béa",
+      "about": "Runs Tuesday board games",
+      "window": {
+        "x": 16,
+        "y": 57
+      }
+    },
+    "hugo": {
+      "name": "Hugo",
+      "about": "Board games. Does not trade sheep.",
+      "window": {
+        "x": 35,
+        "y": 58
+      }
+    },
+    "yann": {
+      "name": "Yann",
+      "about": "Second floor. Brings bread.",
+      "window": {
+        "x": 63,
+        "y": 80
+      }
+    },
+    "karim": {
+      "name": "Karim",
+      "about": "Student, new in town",
+      "window": {
+        "x": 88,
+        "y": 62
+      }
+    },
+    "theo": {
+      "name": "Théo",
+      "about": "His own window",
+      "window": {
+        "x": 50,
+        "y": 88
+      }
+    }
+  },
+  "lightMapArt": "skyline",
+  "lights": {
+    "roux_door": {
+      "person": "roux",
+      "label": "Madame Roux's door"
+    },
+    "camille_text": {
+      "person": "camille",
+      "label": "Camille's message"
+    },
+    "marieclo_lamp": {
+      "person": "marieclo",
+      "label": "Marie-Clo's lamp"
+    },
+    "roux_tart": {
+      "person": "roux",
+      "label": "The tart"
+    },
+    "sophie_park": {
+      "person": "sophie",
+      "label": "The yellow raincoat"
+    },
+    "lucien_corner": {
+      "person": "lucien",
+      "label": "Lucien's corner"
+    },
+    "nadia_window": {
+      "person": "nadia",
+      "label": "The café window"
+    },
+    "bea_table": {
+      "person": "bea",
+      "label": "Béa's table"
+    },
+    "hugo_sheep": {
+      "person": "hugo",
+      "label": "Hugo's sheep"
+    },
+    "roux_soup": {
+      "person": "roux",
+      "label": "Sunday soup"
+    },
+    "yann_bread": {
+      "person": "yann",
+      "label": "Yann's bread"
+    },
+    "theo_glow": {
+      "person": "theo",
+      "label": "Théo"
+    },
+    "camille_call": {
+      "person": "camille",
+      "label": "The call"
+    },
+    "karim_corner": {
+      "person": "karim",
+      "label": "Karim's corner"
+    }
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "title": "The Quiet Flat"
+    },
+    {
+      "number": 2,
+      "title": "The Cry Room"
+    },
+    {
+      "number": 3,
+      "title": "Who Is Théo?"
+    },
+    {
+      "number": 4,
+      "title": "Familiar Faces"
+    },
+    {
+      "number": 5,
+      "title": "The Ladder"
+    },
+    {
+      "number": 6,
+      "title": "Sunday Soup"
+    },
+    {
+      "number": 7,
+      "title": "Her Things"
+    },
+    {
+      "number": 8,
+      "title": "The End of the World"
+    },
+    {
+      "number": 9,
+      "title": "After"
+    }
+  ],
   "text": {
     "firstLaunch": {
       "title": "Before you start",
@@ -105,7 +339,170 @@
       "music": "Music: rain and piano",
       "voice": "Read aloud",
       "voiceUnsupported": "This phone can't read aloud.",
-      "silentNote": "On iPhone, switch off silent mode to hear the music."
+      "silentNote": "On iPhone, switch off silent mode to hear the music.",
+      "friendsUnlocked": "New: friendship cards",
+      "quest": "Quest",
+      "optionalQuest": "Optional quest",
+      "iWent": "I went",
+      "realPersonPrompt": "Someone you saw there (optional)",
+      "realPeople": "Your real people",
+      "noPredictions": "No predictions yet.",
+      "guessed": "guessed",
+      "really": "really",
+      "mapPlaceholder": "Something of your own…",
+      "letterFrom": "Written on {date}."
     }
-  }
+  },
+  "lightMapArtFinal": "skyline-colour",
+  "ladder": [
+    "Decide to go",
+    "Walk to the door",
+    "Go in, stay 10 minutes",
+    "Eye contact and a nod",
+    "One simple question",
+    "Swap names",
+    "Say one true thing about yourself",
+    "Come back next time",
+    "Use their name",
+    "Suggest something outside the place"
+  ],
+  "friendLevels": [
+    {
+      "name": "stranger",
+      "hours": 0
+    },
+    {
+      "name": "familiar face",
+      "hours": 1
+    },
+    {
+      "name": "acquaintance",
+      "hours": 10
+    },
+    {
+      "name": "casual friend",
+      "hours": 50
+    },
+    {
+      "name": "friend",
+      "hours": 200
+    }
+  ],
+  "mapRegions": [
+    "Things I love",
+    "Things I used to love",
+    "Things I'm curious about",
+    "Things I'm good at"
+  ],
+  "predictionLabels": {
+    "film": "Film night",
+    "ladder": "Board games",
+    "ladder-quest": "Your ladder"
+  },
+  "places": {
+    "_note": "DRAFT, please edit: suggestions shown at 3.30, by energy (low/some/high) and talk (near/little/talk).",
+    "low-near": [
+      {
+        "name": "A library reading room",
+        "why": "People around you, no one expects you to talk."
+      },
+      {
+        "name": "The same café, same table",
+        "why": "Being seen counts. Bring a book."
+      },
+      {
+        "name": "A park bench at the same hour",
+        "why": "The regulars will start to recognise you."
+      }
+    ],
+    "low-little": [
+      {
+        "name": "A café counter",
+        "why": "Small talk with the barista, and you can leave any time."
+      },
+      {
+        "name": "A museum's free evening",
+        "why": "Something to look at together, and to talk about if you want."
+      }
+    ],
+    "low-talk": [
+      {
+        "name": "A support or grief group",
+        "why": "Everyone there knows why you came."
+      },
+      {
+        "name": "A small evening class",
+        "why": "Same people every week, with a task to share."
+      }
+    ],
+    "some-near": [
+      {
+        "name": "A yoga or stretching class",
+        "why": "Side by side, no talking needed."
+      },
+      {
+        "name": "A swimming pool",
+        "why": "Same lane, same time, same faces."
+      },
+      {
+        "name": "A Saturday market",
+        "why": "Busy and friendly, at your own pace."
+      }
+    ],
+    "some-little": [
+      {
+        "name": "A volunteering shift",
+        "why": "Working side by side makes talking easy."
+      },
+      {
+        "name": "A climbing or bouldering gym",
+        "why": "People chat between climbs, and help each other."
+      },
+      {
+        "name": "A cooking or pottery class",
+        "why": "Hands busy, words come by themselves."
+      }
+    ],
+    "some-talk": [
+      {
+        "name": "A language exchange",
+        "why": "Everyone is there to talk, and everyone is a bit awkward."
+      },
+      {
+        "name": "A book club",
+        "why": "The book gives you something to say."
+      }
+    ],
+    "high-near": [
+      {
+        "name": "A running club",
+        "why": "Run together, coffee after if you like."
+      },
+      {
+        "name": "A choir",
+        "why": "Singing with others, no small talk required."
+      }
+    ],
+    "high-little": [
+      {
+        "name": "A board game night",
+        "why": "The game does the talking."
+      },
+      {
+        "name": "A five-a-side or team sport",
+        "why": "Same team every week."
+      }
+    ],
+    "high-talk": [
+      {
+        "name": "A community kitchen or supper club",
+        "why": "Cooking and eating with strangers."
+      },
+      {
+        "name": "Start something yourself",
+        "why": "A walk, a game night, a soup. Ask one person to come."
+      }
+    ]
+  },
+  "dedication": "Made for my brother, with love. — Julie"
 }

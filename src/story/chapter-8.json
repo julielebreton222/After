@@ -1,0 +1,364 @@
+{
+  "number": 8,
+  "title": "The End of the World",
+  "summary": "Week thirteen. A huge storm, the whole city loses power, and the narrator tells it like the apocalypse. Everything goes black again, exactly like Chapter 1. But this time the darkness finds Théo with skills and with people. Ends with 12 lights, and the city glowing without electricity.",
+  "screens": [
+    {
+      "id": "8.1",
+      "image": "The city skyline at dusk, a vast bruised sky, clouds like mountains. All of Théo's lights glowing in their windows.",
+      "art": "skyline-dusk",
+      "words": [
+        { "speaker": "narrator", "text": "Week thirteen. On Thursday evening, the sky turns a colour nobody has a name for." }
+      ]
+    },
+    {
+      "id": "8.2",
+      "image": "Wind tearing at trees, rain sideways, a shutter flying. Big ink storm strokes.",
+      "art": "storm-wind",
+      "words": [
+        { "speaker": "narrator", "text": "The radio says storm. The wind says something older." }
+      ]
+    },
+    {
+      "id": "8.3",
+      "image": "Théo's kitchen. A flicker. Then fully black.",
+      "art": "black",
+      "blackout": 2000,
+      "words": [
+        { "speaker": "narrator", "text": "At 8:14pm, the world ends." }
+      ]
+    },
+    {
+      "id": "8.4",
+      "image": "Black. A tiny cream line: Théo's phone, \"No service\", battery 3%.",
+      "art": "black",
+      "caption": "No service · 3%",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "The lights. The phones. The trams. The whole city, gone at once. Sirens somewhere. Then not even sirens."
+        }
+      ]
+    },
+    {
+      "id": "8.5",
+      "image": "Black, the same composition as screen 1.3: Théo on the kitchen floor, back to the cupboards.",
+      "art": "kitchen-floor",
+      "anchor": { "x": 28, "y": 66 },
+      "words": [
+        { "speaker": "narrator", "text": "Théo is on the kitchen floor. Exactly where he was, thirteen weeks ago." }
+      ]
+    },
+    {
+      "id": "8.6",
+      "image": "The Critic, back to full size 5, huge in the dark, eyes glowing grey.",
+      "art": "kitchen-floor",
+      "criticSet": 5,
+      "words": [
+        { "speaker": "Critic", "text": "This is it. The end of the world. And nobody even knows you're here." }
+      ]
+    },
+    {
+      "id": "8.7",
+      "image": "Théo looking at the Critic, calm.",
+      "art": "kitchen-floor",
+      "critic": true,
+      "words": [
+        { "speaker": "narrator", "text": "Théo has heard this voice a lot. He knows it now. It's frightened. It always was." }
+      ],
+      "interaction": {
+        "type": "critic-reply",
+        "options": [
+          { "id": "gotus", "label": "\"I know you're scared. I've got us.\"" },
+          { "id": "thanks", "label": "\"Thank you for trying to protect me. I'll take it from here.\"" },
+          { "id": "knows", "label": "\"Théo is scared. And Théo knows what to do.\"" }
+        ]
+      }
+    },
+    {
+      "id": "8.8",
+      "image": "Théo standing up in the dark. The pain creature from Chapter 2 appears tiny on the shelf, asleep.",
+      "art": { "by": "choice:2.18", "bear": "creature-bear", "cat": "creature-cat", "eel": "creature-eel", "bird": "creature-bird" },
+      "words": [
+        { "speaker": "narrator", "text": "Old Théo would have stayed on the floor. Théo does three things he learned." }
+      ]
+    },
+    {
+      "id": "8.9",
+      "image": "Three small cream icons in sequence: a glass of water, cold water on a face, feet on the floor.",
+      "art": "black",
+      "words": [
+        { "speaker": "narrator", "text": "Cold water on the face. Five things he can see, even in the dark. Feet on the floor." }
+      ],
+      "interaction": {
+        "type": "timer",
+        "style": "grounding",
+        "seconds": 30,
+        "steps": ["5 things you can see", "4 things you can hear", "3 things you can feel"],
+        "doneText": "Feet on the floor."
+      }
+    },
+    {
+      "id": "8.10",
+      "image": "Théo in the stairwell with a candle stub, going down.",
+      "art": "stairwell-candle",
+      "words": [
+        { "speaker": "narrator", "text": "Then he does the fourth thing. He goes to check on people." }
+      ],
+      "interaction": {
+        "type": "choice",
+        "options": [
+          { "id": "roux", "label": "Madame Roux first", "goto": "8.11" },
+          { "id": "yann", "label": "Yann first", "goto": "8.12" }
+        ]
+      }
+    },
+    {
+      "id": "8.11",
+      "image": "Madame Roux at her door with a torch, fully dressed, scarf on. Her light flares.",
+      "art": "roux-torch",
+      "next": { "by": "choice:8.10", "roux": "8.12", "yann": "8.13" },
+      "words": [
+        {
+          "speaker": "Madame Roux",
+          "text": "Finally! I was coming up to check on YOU. I lived through 1999, young man. I have candles for a whole war."
+        }
+      ]
+    },
+    {
+      "id": "8.12",
+      "image": "Yann opening his door, pale, holding a radio that only hisses. Yann's light flares.",
+      "art": "yann-radio",
+      "next": { "by": "choice:8.10", "roux": "8.13", "yann": "8.11" },
+      "words": [
+        { "speaker": "Yann", "text": "I don't... I don't like being alone in the dark. Since the divorce. Sorry. It's stupid." },
+        { "speaker": "Théo", "text": "It's not stupid. Come with us." }
+      ]
+    },
+    {
+      "id": "8.13",
+      "image": "The three of them in the street. The whole city black. Rain. Just one warm square, far down the street: Café du Pont's window, candlelit.",
+      "art": "street-one-window",
+      "words": [
+        { "speaker": "narrator", "text": "The whole city is dark. Except one window." }
+      ]
+    },
+    {
+      "id": "8.14",
+      "image": "Inside the café: dozens of candles, faint watercolour on everything inside the glow. Nadia, Lucien, Sophie with Trois-Pattes, Béa, Hugo, strangers.",
+      "art": "cafe-candles",
+      "showPeople": true,
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "It turns out that when the world ends, people go to the places where they're known. And Théo has some now."
+        }
+      ]
+    },
+    {
+      "id": "8.15",
+      "image": "Lucien raising a cup.",
+      "art": "cafe-candles",
+      "anchor": { "x": 30, "y": 50 },
+      "words": [
+        { "speaker": "Lucien", "text": "Ah, the cook! Forty years on the trains, I have seen three ends of the world. They never last." }
+      ]
+    },
+    {
+      "id": "8.16",
+      "image": "Nadia behind the counter, looking at a dark fridge, worried.",
+      "art": "cafe-candles",
+      "anchor": { "x": 70, "y": 45 },
+      "words": [
+        { "speaker": "Nadia", "text": "The fridge is dying. Everything in there goes in the bin by morning." }
+      ]
+    },
+    {
+      "id": "8.17",
+      "image": "Théo already rolling up his sleeves, the gas hob lit, pans out. His outline glowing.",
+      "art": "theo-cooking-gas",
+      "words": [
+        { "speaker": "narrator", "text": "Théo knows what to do with a dying fridge and a gas hob." }
+      ],
+      "interaction": {
+        "type": "tap-objects",
+        "objects": [
+          { "id": "eggs", "label": "Eggs", "line": "Twenty eggs, cracked one-handed." },
+          { "id": "cheese", "label": "Cheese", "line": "The end of a comté, grated fast." },
+          { "id": "onions", "label": "Onions", "line": "Onions, slow, until the café smells like a home." },
+          { "id": "butter", "label": "Butter", "line": "Butter in every pan." },
+          { "id": "bread", "label": "Bread", "line": "Yesterday's bread, soaked for pain perdu." },
+          { "id": "cream", "label": "Leftover cream", "line": "The last of the cream. Nothing wasted." }
+        ]
+      }
+    },
+    {
+      "id": "8.18",
+      "image": "Théo handing out plates of omelette and pain perdu by candlelight; the whole room glowing; colour stronger.",
+      "art": "plates-candlelight",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "By nine o'clock, everybody in Café du Pont has a hot plate in their hands. Nobody asked him to. It's just what Théo is."
+        }
+      ]
+    },
+    {
+      "id": "8.19",
+      "image": "A young man (Karim) in a corner, headphones around his neck, breathing fast, hands shaking, phone dead.",
+      "art": "karim-panic",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "In the corner, a student nobody knows is breathing too fast. His phone is dead. His hands won't stop."
+        }
+      ]
+    },
+    {
+      "id": "8.20",
+      "image": "Théo crouching beside Karim.",
+      "art": "theo-karim",
+      "words": [
+        { "speaker": "narrator", "text": "Théo knows this. He knows it from the kitchen floor." }
+      ],
+      "interaction": {
+        "type": "choice",
+        "prompt": "Help Karim with a tool you've learned:",
+        "options": [
+          { "id": "cold", "label": "Cold water on the face" },
+          { "id": "five", "label": "Five things you can see" },
+          { "id": "breathe", "label": "Breathe with me, in for 4, out for 6" }
+        ]
+      }
+    },
+    {
+      "id": "8.21",
+      "image": "Théo and Karim breathing together, a breathing-circle shape around them.",
+      "art": "theo-karim",
+      "words": [
+        { "speaker": "Théo", "text": "It's okay. It feels like the end of the world. It isn't. Look at me. Breathe with me." }
+      ],
+      "interaction": { "type": "timer", "style": "breath", "seconds": 30, "inhale": 4, "exhale": 6, "label": "Three slow breaths, together." }
+    },
+    {
+      "id": "8.22",
+      "image": "Karim calmer, holding a plate.",
+      "art": "theo-karim",
+      "anchor": { "x": 60, "y": 50 },
+      "light": "karim_corner",
+      "haptic": true,
+      "words": [
+        { "speaker": "Karim", "text": "I just moved here. I don't know anyone. I thought... I don't know what I thought." },
+        { "speaker": "Théo", "text": "You know some people now. Eat. Then I'll introduce you to a man who never trades his sheep." }
+      ],
+      "interaction": { "type": "notebook", "book": "people", "person": "karim", "text": "Karim: just moved here. Panicked in the blackout. Knows us now." }
+    },
+    {
+      "id": "8.23",
+      "image": "Everyone around the candles, late. Béa with her whistle, raising a question.",
+      "art": "cafe-candles",
+      "words": [
+        { "speaker": "Béa", "text": "Okay. Game. If this really were the last night on Earth, what would you do with it?" }
+      ]
+    },
+    {
+      "id": "8.24",
+      "image": "Faces in candlelight answering one by one.",
+      "art": "cafe-candles",
+      "words": [
+        { "speaker": "Lucien", "text": "Finish the crossword." },
+        { "speaker": "Sophie", "text": "Walk him one more time." },
+        { "speaker": "Yann", "text": "Exactly this, I think." }
+      ]
+    },
+    {
+      "id": "8.25",
+      "image": "Everyone turning to Théo.",
+      "art": "cafe-candles",
+      "words": [
+        { "speaker": "narrator", "text": "Everyone looks at Théo." }
+      ],
+      "interaction": {
+        "type": "write",
+        "key": "last-night",
+        "prompt": "Théo's answer (change it if you like, then say it):",
+        "prefill": "Cook for everyone I love, then {map1}, then {map2}.",
+        "max": 200,
+        "rows": 3
+      }
+    },
+    {
+      "id": "8.26",
+      "image": "A single candle on the table between Théo and the others. Callback to the Chapter 2 candle, but surrounded by faces.",
+      "art": "candle-faces",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Théo watches a candle flame, like he did on the worst nights. This time, he isn't alone with it."
+        }
+      ]
+    },
+    {
+      "id": "8.27",
+      "image": "The prediction chart from the RATE screens, drawn in chalk on the café's blackboard.",
+      "art": "black",
+      "showChart": "all",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Somewhere in the night, Théo notices something. Every time, he predicted the worst. Every time, it was better than he thought. Every single time."
+        }
+      ]
+    },
+    {
+      "id": "8.28",
+      "image": "Dawn. The storm gone, pale gold sky. The café door open, people stepping out blinking. Power returning: streetlights flicker on.",
+      "art": "dawn-cafe",
+      "words": [
+        { "speaker": "narrator", "text": "At dawn, the power comes back. The world, it turns out, did not end." }
+      ]
+    },
+    {
+      "id": "8.29",
+      "image": "Théo walking home through wet, shining streets, the first hint of real morning colour.",
+      "art": "morning-streets",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Or rather: it already had. Months ago, in a quiet flat, on a kitchen floor. This is the world Théo built afterwards. Last night, it held."
+        }
+      ]
+    },
+    {
+      "id": "8.30",
+      "image": "Black page, cream lettering.",
+      "art": "black",
+      "layout": "center",
+      "words": [
+        { "speaker": "narrator", "text": "If you've ever felt your world end: you are still here. You already survived an ending once." }
+      ]
+    },
+    {
+      "id": "8.31",
+      "image": "Quest card, drawn as a candle.",
+      "words": [],
+      "interaction": [
+        {
+          "type": "quest",
+          "id": "q8",
+          "title": "Lights out list",
+          "text": "Write three people you could knock on, call or walk to if everything stopped tonight. If the list is short, that's not failure. It's information. Add one name you'd like to be on it.",
+          "unlocks": 9
+        },
+        {
+          "type": "write",
+          "key": "lights-out",
+          "prompt": "Your lights out list:",
+          "placeholder": "1.\n2.\n3.\nOne name I'd like on it:",
+          "max": 400,
+          "rows": 5
+        }
+      ]
+    }
+  ]
+}

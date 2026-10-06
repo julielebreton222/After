@@ -9,6 +9,9 @@ import CriticReply from './CriticReply.jsx'
 import Quest from './Quest.jsx'
 import NotebookEntry from './NotebookEntry.jsx'
 import Seal from './Seal.jsx'
+import MapAdd from './MapAdd.jsx'
+import Places from './Places.jsx'
+import NotebookBrowse from './NotebookBrowse.jsx'
 
 // The interaction types from the build spec, by the "type" used in the story files.
 const TYPES = {
@@ -23,6 +26,9 @@ const TYPES = {
   quest: Quest,
   notebook: NotebookEntry,
   seal: Seal,
+  map: MapAdd,
+  places: Places,
+  'notebook-browse': NotebookBrowse,
 }
 
 export default function Interaction(props) {

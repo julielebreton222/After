@@ -1,0 +1,343 @@
+{
+  "number": 7,
+  "title": "Her Things",
+  "summary": "Weeks eleven and twelve. Lisa asks for her things back. Théo grieves on purpose, with rituals: a box, a letter, a fire, a stone. He doesn't get over her; he gets through. No new lights; the existing ones hold him up.",
+  "screens": [
+    {
+      "id": "7.1",
+      "image": "Théo's phone on the counter, a message preview, the screen cold blue.",
+      "art": "phone-message-lisa",
+      "words": [
+        { "speaker": "narrator", "text": "Week eleven. A message from Lisa." }
+      ]
+    },
+    {
+      "id": "7.2",
+      "image": "The message on screen.",
+      "art": "phone-message-lisa",
+      "anchor": { "x": 50, "y": 40 },
+      "words": [
+        {
+          "speaker": "Lisa",
+          "text": "Hi. Hope you're ok. Could I come get the rest of my things Saturday? I can just pick up a box at the door."
+        }
+      ]
+    },
+    {
+      "id": "7.3",
+      "image": "Théo sitting very still, the warm lights in the background dimming slightly.",
+      "art": "theo-still-dim",
+      "words": [
+        { "speaker": "narrator", "text": "Twelve weeks of light, and one message turns the flat dark again." }
+      ]
+    },
+    {
+      "id": "7.4",
+      "image": "The Critic, suddenly bigger again by one size.",
+      "art": "theo-still-dim",
+      "criticChange": 1,
+      "words": [
+        { "speaker": "Critic", "text": "Answer something clever. Make her miss you. Make her sorry." }
+      ],
+      "interaction": {
+        "type": "critic-reply",
+        "options": [
+          { "id": "critic", "label": "\"That's the Critic talking.\"" },
+          { "id": "back", "label": "\"You want her back. I know. Me too.\"" },
+          { "id": "win", "label": "\"I don't need to win this.\"" }
+        ]
+      }
+    },
+    {
+      "id": "7.5",
+      "image": "Théo typing.",
+      "art": "phone-message-lisa",
+      "words": [],
+      "interaction": {
+        "type": "choice",
+        "prompt": "His reply:",
+        "options": [
+          { "id": "door", "label": "\"Sure. Saturday at 11, I'll leave it at the door.\"" },
+          { "id": "fine", "label": "\"Sure. Saturday's fine.\"" }
+        ]
+      }
+    },
+    {
+      "id": "7.6",
+      "image": "An empty cardboard box in the middle of the floor. Objects around it: her mug, her plant, a scarf, a framed photo, a book, a hoodie of hers, a concert ticket, a drawing she made him.",
+      "art": "box-objects",
+      "words": [
+        { "speaker": "narrator", "text": "Packing a box sounds simple. It isn't. Every object is a small door." }
+      ],
+      "interaction": {
+        "type": "drag",
+        "mode": "sort",
+        "prompt": "Tap a thing, then tap where it goes (or drag it there).",
+        "items": [
+          { "id": "mug", "label": "Her mug", "line": "She drank from this every morning for two years." },
+          { "id": "plant", "label": "Her plant", "line": "He kept it alive. Just about." },
+          { "id": "scarf", "label": "A scarf", "line": "It still smells a little of her." },
+          { "id": "photo", "label": "A framed photo", "line": "The two of them, squinting into the sun." },
+          { "id": "book", "label": "A book", "line": "She never finished it. Neither did he." },
+          { "id": "hoodie", "label": "Her hoodie", "line": "Technically it was his first." },
+          { "id": "ticket", "label": "A concert ticket", "line": "The night they missed the last train and walked home." },
+          { "id": "drawing", "label": "A drawing she made him", "line": "A bad drawing of a good day." }
+        ],
+        "zones": [
+          { "id": "give", "label": "Give back" },
+          { "id": "keep", "label": "Keep" },
+          { "id": "let", "label": "Let go" }
+        ]
+      }
+    },
+    {
+      "id": "7.7",
+      "image": "The box, taped. The keep shelf with whatever the player kept.",
+      "art": "box-taped",
+      "showKept": "7.6",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Nothing is the right answer. Keeping a memory isn't holding on. Giving one away isn't forgetting."
+        }
+      ]
+    },
+    {
+      "id": "7.8",
+      "image": "Marie-Clo's office, warm lamp.",
+      "art": "marieclo",
+      "words": [
+        {
+          "speaker": "Marie-Clo",
+          "text": "You don't have to get over her. You have to grieve her. They're different. Grief is a kind of thank-you for what you had."
+        }
+      ]
+    },
+    {
+      "id": "7.9",
+      "image": "Marie-Clo handing him three small cards.",
+      "art": "marieclo",
+      "anchor": { "x": 50, "y": 60 },
+      "words": [
+        { "speaker": "Marie-Clo", "text": "Write to her. You won't send it. Three short parts. Short, Théo. This is not a novel." }
+      ]
+    },
+    {
+      "id": "7.10",
+      "image": "Théo at the kitchen table at night with paper and pen. Black, one candle.",
+      "art": "letter-candle",
+      "words": [
+        { "speaker": "narrator", "text": "He is going to write to Lisa. He is not going to send it." }
+      ]
+    },
+    {
+      "id": "7.11",
+      "image": "The letter, part one, with a heading in cream.",
+      "art": "letter-candle",
+      "anchor": { "x": 50, "y": 65 },
+      "words": [
+        { "speaker": "narrator", "text": "Part one: three things you gave me that I get to keep." }
+      ],
+      "interaction": { "type": "write", "key": "letter-1", "placeholder": "You taught me to slow down on Sundays.", "max": 300, "rows": 3 }
+    },
+    {
+      "id": "7.12",
+      "image": "The letter, part two.",
+      "art": "letter-candle",
+      "anchor": { "x": 50, "y": 65 },
+      "words": [
+        { "speaker": "narrator", "text": "Part two: one thing that hurt. One sentence. It doesn't have to be fair." }
+      ],
+      "interaction": { "type": "write", "key": "letter-2", "max": 200, "rows": 2 }
+    },
+    {
+      "id": "7.13",
+      "image": "The letter, part three.",
+      "art": "letter-candle",
+      "anchor": { "x": 50, "y": 65 },
+      "words": [
+        { "speaker": "narrator", "text": "Part three: goodbye. One line that closes the door gently. The way she did." }
+      ],
+      "interaction": { "type": "write", "key": "letter-3", "max": 150, "rows": 2 }
+    },
+    {
+      "id": "7.14",
+      "image": "The letter folded, Théo holding it over the kitchen sink, a match in his other hand.",
+      "art": "letter-sink",
+      "words": [
+        { "speaker": "narrator", "text": "Some things are said by saying them. Some things are said by letting them go." }
+      ],
+      "interaction": {
+        "type": "choice",
+        "options": [
+          { "id": "burn", "label": "Burn it (in the sink)", "goto": "7.15a" },
+          { "id": "keep", "label": "Keep it in a box", "goto": "7.15b" },
+          { "id": "tear", "label": "Tear it up", "goto": "7.15c" }
+        ]
+      }
+    },
+    {
+      "id": "7.15a",
+      "image": "The paper burning in the sink: flames, curling edges, the words going first.",
+      "art": "burning-letter",
+      "next": "7.16",
+      "words": [
+        { "speaker": "narrator", "text": "The words go first. Then the paper. Then just a little smoke, and a smell like autumn." }
+      ],
+      "interaction": {
+        "type": "hold",
+        "seconds": 3,
+        "button": "Hold to burn",
+        "note": "If you do this for real: in a sink, away from anything that can catch fire."
+      }
+    },
+    {
+      "id": "7.15b",
+      "image": "A small tin box, the letter going in, lid closing.",
+      "art": "tin-box",
+      "next": "7.16",
+      "words": [
+        { "speaker": "narrator", "text": "Some letters want to be kept. That's allowed too." }
+      ]
+    },
+    {
+      "id": "7.15c",
+      "image": "Paper pieces falling like snow.",
+      "art": "torn-paper",
+      "words": [
+        { "speaker": "narrator", "text": "Small enough that the words can't find each other anymore." }
+      ]
+    },
+    {
+      "id": "7.16",
+      "image": "Saturday. Théo's door, the box outside it. Théo inside, back against the door.",
+      "art": "door-box",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Saturday, 11am. Théo sits on the floor on his side of the door. Like the first night. But not like the first night."
+        }
+      ]
+    },
+    {
+      "id": "7.17",
+      "image": "Under the door: a shadow of feet, a hand lifting the box (we never see her face).",
+      "art": "under-door",
+      "words": [
+        { "speaker": "narrator", "text": "Footsteps. The box lifts. A pause, as if she might knock." }
+      ]
+    },
+    {
+      "id": "7.18",
+      "image": "The door, unopened. Footsteps going down.",
+      "art": "door-box",
+      "anchor": { "x": 50, "y": 40 },
+      "words": [
+        { "speaker": "narrator", "text": "She doesn't. He doesn't. That's right, for both of them." }
+      ]
+    },
+    {
+      "id": "7.19",
+      "image": "Théo crying quietly, but drawn with soft lines this time, light around him from the earlier lights.",
+      "art": "theo-crying-soft",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Théo is sad. Properly sad. And he notices something new: he isn't desperate. Sad and desperate are different. Sad is just love with nowhere to go for a while."
+        }
+      ]
+    },
+    {
+      "id": "7.20",
+      "image": "Théo walking out of town, a flat stone in his hand. The edge of the city, then a small lake with reeds. Watercolour grey-green.",
+      "art": "lake-walk",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "In the afternoon, he walks to the lake at the edge of town. Marie-Clo's idea. He finds a flat stone."
+        }
+      ]
+    },
+    {
+      "id": "7.21",
+      "image": "Close on the stone and a marker pen.",
+      "art": "lake-walk",
+      "anchor": { "x": 50, "y": 75 },
+      "words": [
+        { "speaker": "narrator", "text": "What's the heaviest thing he's carrying? One word." }
+      ],
+      "interaction": { "type": "write", "key": "stone-word", "placeholder": "One word", "max": 24, "rows": 1 }
+    },
+    {
+      "id": "7.22",
+      "image": "Théo at the water's edge, arm back.",
+      "art": "lake-throw",
+      "words": [],
+      "interaction": {
+        "type": "drag",
+        "mode": "target",
+        "prompt": "Throw the stone: drag it to the lake, or flick it upwards.",
+        "item": { "id": "stone", "label": "🪨 {w:stone-word}" },
+        "target": { "id": "lake", "label": "The lake" }
+      }
+    },
+    {
+      "id": "7.23",
+      "image": "The stone skipping once, twice, sinking. Rings spreading on the water.",
+      "art": "lake-rings",
+      "words": [
+        { "speaker": "narrator", "text": "Two skips. Then gone. The rings take a long time to settle. That's fine. Rings do." }
+      ]
+    },
+    {
+      "id": "7.24",
+      "image": "Walking back, the city lights coming on: every one of his lit windows on the skyline.",
+      "art": "city-lights-evening",
+      "words": [
+        { "speaker": "narrator", "text": "On the way home, the city lights come on one by one. Théo knows which windows are his people." }
+      ]
+    },
+    {
+      "id": "7.25",
+      "image": "Café du Pont. Nadia sliding him a cup; on the foam, a little latte-art octopus. Nadia's light glows brighter.",
+      "art": "octopus-latte",
+      "words": [
+        { "speaker": "Nadia", "text": "Rough day?" },
+        { "speaker": "Théo", "text": "Rough day." },
+        { "speaker": "Nadia", "text": "On the house. Don't comment on the octopus." }
+      ]
+    },
+    {
+      "id": "7.26",
+      "image": "The Who Is Théo? map. A sentence at the bottom: \"We were going to...\"",
+      "art": "who-map",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "One last thing. Théo has a habit of sentences that start with \"we\". Rewrite one so it starts with \"I\"."
+        }
+      ],
+      "interaction": {
+        "type": "write",
+        "key": "i-want",
+        "prompt": "\"We were going to...\" becomes:",
+        "prefill": "I want to ",
+        "max": 140,
+        "rows": 2,
+        "addToMap": "Things I'm curious about"
+      }
+    },
+    {
+      "id": "7.27",
+      "image": "Quest card.",
+      "words": [],
+      "interaction": {
+        "type": "quest",
+        "id": "q7",
+        "title": "Let go of one thing",
+        "text": "Choose one ritual: write a short unsent letter (three parts, one goodbye line), throw a stone in water, or give away one object you've been keeping for the wrong reasons.",
+        "unlocks": 8
+      }
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "number": 5,
+  "title": "The Ladder",
+  "summary": "Weeks seven and eight. A board game night with total strangers: the Critic at its loudest, the courage ladder, opening lines, and the first look behind the curtain at what others really thought. Ends with 9 lights.",
+  "screens": [
+    {
+      "id": "5.1",
+      "image": "Café du Pont, warm and lightly coloured now. Nadia handing Théo a flyer: dice and meeples, \"JEUX DE SOCIÉTÉ, MARDI, TOUT LE MONDE BIENVENU\".",
+      "art": "nadia-flyer",
+      "words": [
+        { "speaker": "Nadia", "text": "My friend Béa runs this. You'd like it. Nobody is good at it." }
+      ]
+    },
+    {
+      "id": "5.2",
+      "image": "Théo looking at the flyer, the Critic peering over his shoulder.",
+      "art": "nadia-flyer",
+      "anchor": { "x": 35, "y": 50 },
+      "words": [
+        { "speaker": "Critic", "text": "A room full of strangers who all know each other. Great idea." }
+      ]
+    },
+    {
+      "id": "5.3",
+      "image": "A tall hand-drawn ladder appears beside the page, ten rungs, labelled.",
+      "art": "black",
+      "ladder": [],
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Marie-Clo calls this the courage ladder. Every rung is a win. You can stop at any rung and still win."
+        }
+      ]
+    },
+    {
+      "id": "5.4",
+      "image": "Théo writing on small cards and putting them in his pocket.",
+      "art": "theo-pocket-cards",
+      "words": [
+        { "speaker": "narrator", "text": "Théo prepares three lines to carry in his pocket, just in case his brain empties." }
+      ],
+      "interaction": {
+        "type": "choice",
+        "prompt": "Pick three for the pocket, or write your own.",
+        "pick": 3,
+        "min": 1,
+        "allowWrite": true,
+        "writePlaceholder": "Your own line…",
+        "saveAs": "pocket",
+        "options": [
+          { "id": "first", "label": "First time here. How does this work?" },
+          { "id": "favourite", "label": "What's your favourite game here?" },
+          { "id": "join", "label": "Mind if I join?" },
+          { "id": "howlong", "label": "How long have you been coming?" },
+          { "id": "bye", "label": "Nice to meet you. See you next time?" }
+        ]
+      }
+    },
+    {
+      "id": "5.5",
+      "image": "Ladder: rung 1 lights up.",
+      "art": "black",
+      "ladder": [1],
+      "words": [
+        { "speaker": "narrator", "text": "Rung one: decide to go. Done. That one counts." }
+      ],
+      "interaction": { "type": "rate", "key": "ladder", "kind": "before", "prompt": "How awkward will Tuesday be, 1 to 10?" }
+    },
+    {
+      "id": "5.6",
+      "image": "Tuesday night. A bright window across a dark street: a community hall with people at tables. Théo's outline on the opposite pavement, under a streetlight that is NOT lit (things don't light; people do).",
+      "art": "community-hall-street",
+      "words": [
+        { "speaker": "narrator", "text": "Théo has been standing across the street for nine minutes." }
+      ]
+    },
+    {
+      "id": "5.7",
+      "image": "The Critic, now big again, looming.",
+      "art": "community-hall-street",
+      "criticChange": 1,
+      "words": [
+        { "speaker": "Critic", "text": "They'll all look up when you walk in. You'll stand there like a lamp. Go home. Nobody will know." }
+      ]
+    },
+    {
+      "id": "5.8",
+      "image": "Théo facing the Critic.",
+      "art": "community-hall-street",
+      "critic": true,
+      "words": [
+        { "speaker": "narrator", "text": "The Critic is always loudest right before the door. That's how you know you're at the door." }
+      ],
+      "interaction": {
+        "type": "critic-reply",
+        "options": [
+          { "id": "critic", "label": "\"That's the Critic talking.\"" },
+          { "id": "protect", "label": "\"You're trying to protect me. Thanks.\"" },
+          { "id": "nervous", "label": "\"Théo is nervous. That's allowed.\"" },
+          { "id": "evidence", "label": "\"What's the evidence?\"" }
+        ]
+      }
+    },
+    {
+      "id": "5.9",
+      "image": "The Critic one size smaller, sulking.",
+      "art": "community-hall-street",
+      "critic": true,
+      "words": [
+        { "speaker": "narrator", "text": "Smaller." }
+      ]
+    },
+    {
+      "id": "5.10",
+      "image": "Théo crossing the street to the door. Ladder: rung 2 lights.",
+      "art": "community-hall-street",
+      "anchor": { "x": 60, "y": 50 },
+      "ladder": [2],
+      "words": [
+        { "speaker": "narrator", "text": "Rung two." }
+      ],
+      "interaction": {
+        "type": "choice",
+        "options": [
+          { "id": "in", "label": "Go in", "goto": "5.12" },
+          { "id": "home", "label": "Go home. Rung two is enough for tonight.", "goto": "5.11a" }
+        ]
+      }
+    },
+    {
+      "id": "5.11a",
+      "image": "Théo walking home along the river.",
+      "art": "walking-river",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Théo goes home. He walked to the door of a room full of strangers. A month ago he couldn't eat. Rung two counts."
+        }
+      ]
+    },
+    {
+      "id": "5.11b",
+      "image": "A calendar page: next Tuesday. Théo across the street again, for one minute this time.",
+      "art": "community-hall-street",
+      "caption": "Next Tuesday",
+      "words": [
+        { "speaker": "narrator", "text": "The next Tuesday, he stands across the street for one minute. Then he goes in." }
+      ]
+    },
+    {
+      "id": "5.12",
+      "image": "Inside: four tables covered in tiny wooden pieces, cards, dice. Noise lines. A big woman with round glasses and a whistle turns around.",
+      "art": "board-game-hall",
+      "ladder": [3],
+      "addHours": { "bea": 3, "hugo": 3 },
+      "words": [
+        { "speaker": "narrator", "text": "Inside: four tables, a lot of tiny wooden pieces, and a woman with a whistle." }
+      ]
+    },
+    {
+      "id": "5.13",
+      "image": "Théo reaching into his pocket; one of his pocket cards glows.",
+      "art": "theo-pocket-cards",
+      "words": [
+        { "speaker": "narrator", "text": "Théo's brain empties, exactly as predicted. He reaches into his pocket." },
+        { "speaker": "Théo", "text": "{pocket1}" }
+      ]
+    },
+    {
+      "id": "5.14",
+      "image": "Béa beaming, pulling out a chair.",
+      "art": "bea-chair",
+      "light": "bea_table",
+      "haptic": true,
+      "ladder": [4,5],
+      "words": [
+        { "speaker": "Béa", "text": "PERFECT. We need a fifth. Do you like trading sheep?" }
+      ]
+    },
+    {
+      "id": "5.15",
+      "image": "Close-up of a board game with sheep, wheat, bricks.",
+      "art": "sheep-board",
+      "words": [
+        { "speaker": "narrator", "text": "Théo does not know if he likes trading sheep. It turns out he does." }
+      ]
+    },
+    {
+      "id": "5.16",
+      "image": "A quiet guy across the table (Hugo, 30s, glasses, cardigan) hoarding sheep, deadpan.",
+      "art": "hugo-sheep",
+      "words": [
+        { "speaker": "Hugo", "text": "I will not be trading my sheep. I want that understood." }
+      ]
+    },
+    {
+      "id": "5.17",
+      "image": "Théo laughing out loud, surprised at himself. A warm glow at the table, faint colour.",
+      "art": "theo-laughing",
+      "words": [
+        { "speaker": "narrator", "text": "Théo laughs. Out loud. He's surprised by the sound. It's been a while." }
+      ]
+    },
+    {
+      "id": "5.18",
+      "image": "Béa leaning over the table toward Théo.",
+      "art": "bea-chair",
+      "words": [
+        { "speaker": "Béa", "text": "So, what do you do, Théo?" }
+      ]
+    },
+    {
+      "id": "5.19",
+      "image": "Théo frozen, the {chasedObject} faintly drawn behind him.",
+      "art": "theo-frozen",
+      "words": [
+        { "speaker": "narrator", "text": "The question he has been dreading." }
+      ],
+      "interaction": {
+        "type": "choice",
+        "options": [
+          { "id": "temp", "label": "\"Temp work for now. I'm figuring it out.\"" },
+          { "id": "used", "label": "\"I used to {chasedVerb}. It didn't work out.\"" },
+          { "id": "cook", "label": "\"Honestly? I cook. I love cooking.\"" }
+        ]
+      }
+    },
+    {
+      "id": "5.20",
+      "image": "Béa nodding warmly.",
+      "art": "bea-chair",
+      "ladder": [7],
+      "words": [
+        { "speaker": "Béa", "text": "Ha. Join the club. Half this table is figuring it out. Hugo's on his third career." },
+        { "speaker": "Hugo", "text": "Fourth." }
+      ]
+    },
+    {
+      "id": "5.21",
+      "image": "Hugo and Théo shaking hands across the sheep.",
+      "art": "hugo-handshake",
+      "light": "hugo_sheep",
+      "haptic": true,
+      "ladder": [6,7],
+      "words": [
+        { "speaker": "Hugo", "text": "Hugo. Sheep enthusiast." },
+        { "speaker": "Théo", "text": "Théo." }
+      ],
+      "interaction": [
+        { "type": "notebook", "book": "people", "person": "hugo", "text": "Hugo: fourth career. Does not trade sheep." },
+        { "type": "notebook", "book": "people", "person": "bea", "text": "Béa: runs Tuesdays. Has a whistle and uses it." }
+      ]
+    },
+    {
+      "id": "5.22",
+      "image": "A clock: three hours later. Théo putting on his coat at the door.",
+      "art": "board-game-hall",
+      "caption": "Three hours later",
+      "words": [
+        { "speaker": "narrator", "text": "Three hours. Théo didn't check his phone once." }
+      ]
+    },
+    {
+      "id": "5.23",
+      "image": "Théo walking home in the dark, the Critic trotting beside him.",
+      "art": "walking-river",
+      "words": [
+        { "speaker": "Critic", "text": "They were just being polite. Nobody actually liked you." }
+      ]
+    },
+    {
+      "id": "5.24",
+      "image": "THE REVEAL. The page folds back like a curtain; behind it, the hall after Théo has gone, drawn warm. Béa and Hugo packing up.",
+      "art": "hall-after",
+      "reveal": true,
+      "words": [
+        { "speaker": "narrator", "text": "Here's something Théo will never hear." }
+      ]
+    },
+    {
+      "id": "5.25",
+      "image": "Béa and Hugo talking, putting away sheep.",
+      "art": "hall-after",
+      "words": [
+        { "speaker": "Béa", "text": "The new one was funny. The cook. I hope he comes back." },
+        { "speaker": "Hugo", "text": "He let me keep my sheep. I respect him." }
+      ]
+    },
+    {
+      "id": "5.26",
+      "image": "Page folds back to Théo walking home.",
+      "art": "walking-river",
+      "reveal": true,
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Most of us never hear this part. After meeting someone, people almost always underestimate how much the other person liked them. Shy people most of all."
+        }
+      ]
+    },
+    {
+      "id": "5.27",
+      "image": "Théo at home, writing a number on a sticky note.",
+      "art": "black",
+      "showChart": "all",
+      "words": [],
+      "interaction": { "type": "rate", "key": "ladder", "kind": "after", "compare": true, "prompt": "How awkward was it really?" }
+    },
+    {
+      "id": "5.28",
+      "image": "The ladder, rungs 1 to 7 lit.",
+      "art": "black",
+      "ladder": [1,2,3,4,5,6,7],
+      "words": [
+        { "speaker": "narrator", "text": "Seven rungs in one night. Rung eight is next Tuesday: come back." }
+      ]
+    },
+    {
+      "id": "5.29",
+      "image": "Light Map: two new lights near the river, from the community hall.",
+      "art": "black",
+      "showLightMap": true,
+      "words": [
+        { "speaker": "narrator", "text": "Nine lights." }
+      ]
+    },
+    {
+      "id": "5.30",
+      "image": "Quest card.",
+      "words": [],
+      "interaction": [
+        { "type": "rate", "key": "ladder-quest", "kind": "before", "prompt": "Before you go: how awkward do you think it'll be?" },
+        {
+          "type": "quest",
+          "id": "q5",
+          "title": "The ladder",
+          "text": "At your place (or a new one), climb one rung higher than last time. Before you go, rate how awkward you think it'll be. After, rate how it really was.",
+          "unlocks": 6
+        },
+        { "type": "rate", "key": "ladder-quest", "kind": "after", "compare": true, "prompt": "And how was it really?" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "number": 9,
+  "title": "After",
+  "summary": "Spring, some months later. Sunday soup has become a long table. The sealed letter opens. The Critic sits beside Théo, small and quiet. The story hands itself to the player. The only chapter in full colour.",
+  "screens": [
+    {
+      "id": "9.1",
+      "image": "FIRST FULL-COLOUR PAGE. The courtyard in spring: wisteria, sun, a long table made of three tables pushed together, mismatched chairs, bunting.",
+      "art": "courtyard-spring",
+      "bloom": true,
+      "words": [
+        { "speaker": "narrator", "text": "Spring." }
+      ]
+    },
+    {
+      "id": "9.2",
+      "image": "Wide view: everyone at the long table. Madame Roux at the head, Yann with bread, Sophie and Trois-Pattes, Lucien with a crossword, Nadia, Béa, Hugo, Karim.",
+      "art": "long-table",
+      "words": [
+        { "speaker": "narrator", "text": "Sunday soup has grown a bit." }
+      ],
+      "interaction": {
+        "type": "tap-objects",
+        "objects": [
+          { "id": "roux", "label": "Madame Roux", "line": "Has started teaching Karim her soup." },
+          { "id": "yann", "label": "Yann", "line": "Now brings two kinds of bread. He's showing off." },
+          { "id": "lucien", "label": "Lucien", "line": "Has finished every crossword since Christmas, with help." },
+          { "id": "nadia", "label": "Nadia", "line": "Signed the lease on her tattoo studio. The octopus is in the window." },
+          { "id": "hugo", "label": "Hugo", "line": "Fifth career. Still has his sheep." },
+          { "id": "karim", "label": "Karim", "line": "Comes every week. Brought a friend." }
+        ]
+      }
+    },
+    {
+      "id": "9.3",
+      "image": "Camille arriving through the archway with a bottle of wine and a big scarf.",
+      "art": "camille-arrives",
+      "words": [
+        { "speaker": "Camille", "text": "So THIS is the famous soup." }
+      ]
+    },
+    {
+      "id": "9.4",
+      "image": "Théo and Camille hugging, everyone watching, smiling.",
+      "art": "camille-hug",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Théo introduces his sister to everyone. It takes a while. He has a lot of people to introduce now."
+        }
+      ]
+    },
+    {
+      "id": "9.5",
+      "image": "Théo at the big pot, ladling, glowing; Camille watching him, proud.",
+      "art": "theo-ladle-spring",
+      "words": [
+        { "speaker": "Camille", "text": "You look like you again." },
+        { "speaker": "Théo", "text": "I think I look like a new me. The old one didn't know how to do this." }
+      ]
+    },
+    {
+      "id": "9.6",
+      "image": "Madame Roux pulling Théo aside, finger raised as usual.",
+      "art": "roux-spring",
+      "words": [
+        {
+          "speaker": "Madame Roux",
+          "text": "You know, the bakery on the corner is looking for someone in the kitchen. Early mornings. I told them about you. Don't be angry."
+        }
+      ],
+      "interaction": {
+        "type": "choice",
+        "options": [
+          { "id": "go", "label": "\"I'll go and see them.\"" },
+          { "id": "unsure", "label": "\"I'm not sure yet.\"" },
+          { "id": "thanks", "label": "\"Why would I be angry? Thank you.\"" }
+        ]
+      }
+    },
+    {
+      "id": "9.7",
+      "image": "Théo looking at the long table, thoughtful.",
+      "art": "long-table",
+      "anchor": { "x": 50, "y": 40 },
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Théo doesn't know yet what he'll do with his life. The {chased} was a plan. This isn't a plan. It's a direction: toward people, with food."
+        }
+      ]
+    },
+    {
+      "id": "9.8",
+      "image": "Marie-Clo's office, the window open, spring light.",
+      "art": "marieclo-spring",
+      "words": [
+        { "speaker": "Marie-Clo", "text": "Shall we try once a month instead of every two weeks?" }
+      ]
+    },
+    {
+      "id": "9.9",
+      "image": "Théo in the chair, relaxed.",
+      "art": "theo-chair-spring",
+      "words": [
+        { "speaker": "Théo", "text": "Yeah. I think so." },
+        { "speaker": "Marie-Clo", "text": "Tell me what you've learned about people this month." },
+        { "speaker": "Théo", "text": "How long have you got?" }
+      ]
+    },
+    {
+      "id": "9.10",
+      "image": "The curiosity notebook, now fat, pages bristling with tabs.",
+      "art": "notebook-full",
+      "words": [
+        { "speaker": "narrator", "text": "The curiosity notebook is full. Not of Théo's pain. Of other people's lives." }
+      ],
+      "interaction": { "type": "notebook-browse" }
+    },
+    {
+      "id": "9.11",
+      "image": "Théo's desk drawer, the sealed envelope with red wax.",
+      "art": "sealed-envelope",
+      "next": { "by": "letter", "ready": "9.12", "waiting": "9.15" },
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": {
+            "by": "letter",
+            "ready": "And then, one evening, the date arrives.",
+            "waiting": "The letter isn't ready yet. Théo will open it on {letterDate}. So will you."
+          }
+        }
+      ]
+    },
+    {
+      "id": "9.12",
+      "image": "The wax seal cracking.",
+      "art": "sealed-envelope",
+      "anchor": { "x": 55, "y": 42 },
+      "words": [],
+      "interaction": { "type": "hold", "seconds": 3, "button": "Hold to break the seal" }
+    },
+    {
+      "id": "9.13",
+      "image": "The letter in the player's own words, in handwriting font, on cream paper.",
+      "art": "paper-pen",
+      "showLetter": true,
+      "words": []
+    },
+    {
+      "id": "9.14",
+      "image": "Théo reading at the window, the sunset over the full-colour city.",
+      "art": "window-sunset",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "The Théo who wrote this was on a kitchen floor. He couldn't eat. He didn't know if there would be a later. There was. He's reading it."
+        }
+      ],
+      "interaction": {
+        "type": "write",
+        "key": "write-back",
+        "prompt": "Write back to the Théo of then. What would you tell him? (optional)",
+        "max": 1500,
+        "rows": 5
+      }
+    },
+    {
+      "id": "9.15",
+      "image": "The park bench under the plane trees. Théo sitting. The Critic sitting beside him, pebble-sized, in a tiny scarf.",
+      "art": "park-bench-spring",
+      "criticSet": 1,
+      "critic": true,
+      "words": [
+        { "speaker": "narrator", "text": "The Critic is still around. It probably always will be." }
+      ]
+    },
+    {
+      "id": "9.16",
+      "image": "Close: the Critic looking up at Théo, worried eyes.",
+      "art": "park-bench-spring",
+      "anchor": { "x": 60, "y": 60 },
+      "words": [
+        { "speaker": "Critic", "text": "What if it all falls apart again?" }
+      ]
+    },
+    {
+      "id": "9.17",
+      "image": "Théo patting the bench beside the Critic.",
+      "art": "park-bench-spring",
+      "critic": true,
+      "words": [
+        { "speaker": "Théo", "text": "It might. Then I'll know what to do. And I'll know who to call." }
+      ]
+    },
+    {
+      "id": "9.18",
+      "image": "The Critic leaning on Théo's leg, eyes closing. The pain creature from Chapter 2, tiny, curled up on the other side.",
+      "art": "park-bench-spring",
+      "critic": true,
+      "words": [
+        { "speaker": "narrator", "text": "The Critic doesn't say anything else. For once, it doesn't need to." }
+      ]
+    },
+    {
+      "id": "9.19",
+      "image": "The Light Map in full colour: the whole city at dusk, dozens of lit windows, Théo's own window glowing brightest.",
+      "art": "black",
+      "showLightMap": true,
+      "words": [
+        { "speaker": "narrator", "text": "Théo's map. Every window, a person. Most of them were strangers once." }
+      ]
+    },
+    {
+      "id": "9.20",
+      "image": "The narrator turning to face out: a full-page hand-drawn frame around an empty space where the player's phone camera would see them (no camera used; just an empty warm frame).",
+      "art": "empty-frame",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "This was Théo's story. But you've been doing the quests too. The questions, the walks, the doors you stood outside."
+        }
+      ]
+    },
+    {
+      "id": "9.21",
+      "image": "The empty frame, warm light spilling out.",
+      "art": "empty-frame",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "So here's the last thing. This is your story now. Keep lighting the lamp. The boats are out there, even when you can't see them."
+        }
+      ]
+    },
+    {
+      "id": "9.22",
+      "image": "A long table in a courtyard, an empty chair at the end with a bowl in front of it.",
+      "art": "empty-chair",
+      "words": [
+        { "speaker": "narrator", "text": "There's a place for you at the table." }
+      ]
+    },
+    {
+      "id": "9.23",
+      "image": "End card: hand-lettered \"After\", a soup bowl, steam drawn as a little heart.",
+      "art": "end-card",
+      "layout": "title",
+      "words": [
+        { "speaker": "narrator", "text": "The end. Or rather: the beginning of the after." },
+        { "speaker": "narrator", "text": "{dedication}" }
+      ]
+    },
+    {
+      "id": "9.24",
+      "image": "Ongoing card, drawn as a small lamp.",
+      "words": [],
+      "interaction": {
+        "type": "quest",
+        "id": "q-lamp",
+        "weekly": true,
+        "title": "Keep the lamp lit",
+        "text": "One small weekly quest from now on: go back somewhere, ask someone a real question, cook for someone, or check on someone. All chapters stay open to reread."
+      }
+    }
+  ]
+}

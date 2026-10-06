@@ -26,13 +26,22 @@ export const initialState = {
   savedPerson: null,
   country: null,
   tonight: {},
+  pocket: [],
+  realPeople: {},
+  applied: {},
   settings: { music: false, voice: false },
+}
+
+// Older saves: the therapist used to be called Inès.
+function migrate(s) {
+  s.lights = (s.lights || []).map((l) => (l === 'ines_lamp' ? 'marieclo_lamp' : l))
+  return s
 }
 
 function load() {
   try {
     const saved = JSON.parse(localStorage.getItem(KEY))
-    return saved ? { ...initialState, ...saved } : initialState
+    return saved ? migrate({ ...initialState, ...saved }) : initialState
   } catch {
     return initialState
   }

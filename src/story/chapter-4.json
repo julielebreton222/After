@@ -1,0 +1,386 @@
+{
+  "number": 4,
+  "title": "Familiar Faces",
+  "summary": "Weeks five and six. Friendship is mostly time: Théo goes back to the same café three times, and strangers become familiar faces. Includes the film night and the film-within-the-story. From this chapter on, faint watercolour appears inside lit areas only. Ends with 7 lights.",
+  "screens": [
+    {
+      "id": "4.1",
+      "image": "A small corner café on a cobbled street, \"Café du Pont\" painted on the window. The street black; the café interior grey.",
+      "art": "cafe-exterior",
+      "caption": "Café du Pont",
+      "words": [
+        { "speaker": "narrator", "text": "Café du Pont. It's not Lisa's café. That's the main thing Théo likes about it." }
+      ]
+    },
+    {
+      "id": "4.2",
+      "image": "Inside: a zinc counter, a barista with tattooed forearms (Nadia), an old man in a beret doing a crossword (Lucien).",
+      "art": "cafe-interior",
+      "words": [
+        { "speaker": "narrator", "text": "Visit one. Théo orders, sits by the window, and looks at his phone the whole time." }
+      ],
+      "interaction": {
+        "type": "choice",
+        "options": [
+          {
+            "id": "window",
+            "label": "Sit at the window",
+            "hours": { "nadia": 1 }
+          },
+          {
+            "id": "counter",
+            "label": "Sit at the counter",
+            "hours": { "nadia": 1 }
+          }
+        ]
+      }
+    },
+    {
+      "id": "4.3",
+      "image": "Théo walking home, the café behind him.",
+      "art": "walking-river",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": { "by": "choice:4.2", "counter": "Nadia says \"bonne journée\" when he leaves.", "window": "" }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Nobody talked to him. That's fine. That's not what visit one is for. Visit one is for being seen once."
+        }
+      ]
+    },
+    {
+      "id": "4.4",
+      "image": "A friendship card slides in: Nadia's outline, a meter with marks: stranger / familiar face / acquaintance / casual friend / friend.",
+      "art": "cafe-interior",
+      "unlock": "friends",
+      "showFriend": "nadia",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Here's a secret about friendship that nobody tells you: it's mostly hours. Around fifty hours together to become casual friends. Around two hundred to become close. Not magic. Not charm. Time."
+        }
+      ]
+    },
+    {
+      "id": "4.5",
+      "image": "Calendar page flipping. Visit two. The café a little lighter.",
+      "art": "cafe-interior",
+      "addHours": { "nadia": 1, "lucien": 1 },
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Visit two, three days later. Same café. Same time. Lucien is in the same seat, doing the same crossword, swearing quietly at it."
+        }
+      ]
+    },
+    {
+      "id": "4.6",
+      "image": "Lucien holding up his newspaper, pointing at a clue with a pencil.",
+      "art": "lucien-crossword",
+      "words": [
+        { "speaker": "Lucien", "text": "Young man. Seven letters. 'What remains after the fire.' I have been stuck since Tuesday." }
+      ]
+    },
+    {
+      "id": "4.7",
+      "image": "Théo thinking.",
+      "art": "lucien-crossword",
+      "words": [],
+      "interaction": {
+        "type": "choice",
+        "options": [
+          { "id": "embers", "label": "\"Embers.\"", "goto": "4.8b" },
+          { "id": "cinders", "label": "\"Cinders.\"", "goto": "4.8a" },
+          { "id": "noidea", "label": "\"Sorry, no idea.\"", "goto": "4.8b" }
+        ]
+      }
+    },
+    {
+      "id": "4.8a",
+      "image": "Lucien delighted, writing.",
+      "art": "lucien-delighted",
+      "light": "lucien_corner",
+      "haptic": true,
+      "next": "4.9",
+      "words": [
+        { "speaker": "Lucien", "text": "Cinders! Bravo. You may sit here on Thursdays." }
+      ]
+    },
+    {
+      "id": "4.8b",
+      "image": "Lucien grumbling, then softening.",
+      "art": "lucien-delighted",
+      "light": "lucien_corner",
+      "haptic": true,
+      "words": [
+        {
+          "speaker": "Lucien",
+          "text": {
+            "by": "choice:4.7",
+            "embers": "Six letters. Hm. Never mind. Sit, sit, help me with the next one.",
+            "noidea": "Hm. Never mind. Sit, sit, help me with the next one."
+          }
+        }
+      ]
+    },
+    {
+      "id": "4.9",
+      "image": "Lucien and Théo bent over the crossword, a warm glow over the table; faint watercolour on the cups.",
+      "art": "crossword-together",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "They get four more clues. Lucien was a train driver for forty years. He has never once taken a holiday."
+        }
+      ],
+      "interaction": {
+        "type": "notebook",
+        "book": "people",
+        "person": "lucien",
+        "text": "Lucien: train driver for forty years, never took a holiday. Thursday crosswords."
+      }
+    },
+    {
+      "id": "4.10",
+      "image": "Visit three. Théo at the door. Nadia looking up.",
+      "art": "cafe-interior",
+      "addHours": { "nadia": 1, "lucien": 1 },
+      "words": [
+        { "speaker": "narrator", "text": "Visit three." }
+      ]
+    },
+    {
+      "id": "4.11",
+      "image": "Nadia smiling, already reaching for a cup. The café window glows.",
+      "art": "nadia-cup",
+      "light": "nadia_window",
+      "haptic": true,
+      "words": [
+        { "speaker": "Nadia", "text": "Allongé, no sugar?" }
+      ]
+    },
+    {
+      "id": "4.12",
+      "image": "Close on Théo's face, surprised, the warm light on it.",
+      "art": "theo-surprised",
+      "words": [
+        { "speaker": "narrator", "text": "She remembered. Something small and stupid in Théo's chest lifts." }
+      ]
+    },
+    {
+      "id": "4.13",
+      "image": "Marie-Clo's notebook advice in a cream bubble: \"Be interested in them.\"",
+      "art": "cafe-interior",
+      "caption": "\"Be interested in them.\"",
+      "words": [
+        { "speaker": "narrator", "text": "Marie-Clo's homework. One real question." }
+      ],
+      "interaction": {
+        "type": "choice",
+        "options": [
+          { "id": "how", "label": "\"How did you end up working here?\"", "goto": "4.14" },
+          { "id": "drawing", "label": "\"What are you drawing?\"", "goto": "4.14" },
+          { "id": "thanks", "label": "\"Thanks\" and sit down", "goto": "4.15" }
+        ]
+      }
+    },
+    {
+      "id": "4.14",
+      "image": "Nadia leaning on the counter, showing a sketchbook of tattoo designs.",
+      "art": "nadia-sketchbook",
+      "words": [
+        { "speaker": "Nadia", "text": "I'm saving to open a tattoo studio. These are my designs. Don't laugh at the octopus." }
+      ]
+    },
+    {
+      "id": "4.15",
+      "image": "Théo laughing at the octopus. Nadia mock-offended.",
+      "art": "nadia-sketchbook",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": {
+            "by": "choice:4.13",
+            "how": "He laughs at the octopus.",
+            "drawing": "He laughs at the octopus.",
+            "thanks": "Nadia smiles. Théo smiles back, and sits down."
+          }
+        }
+      ],
+      "interaction": {
+        "type": "notebook",
+        "book": "people",
+        "person": "nadia",
+        "text": "Nadia: saving for her own tattoo studio. Sensitive about the octopus.",
+        "when": {
+          "by": "choice:4.13",
+          "in": ["how", "drawing"]
+        }
+      }
+    },
+    {
+      "id": "4.16",
+      "image": "Nadia pointing at a hand-drawn poster on the wall: a film reel, \"CINÉ JEUDI\".",
+      "art": "cine-poster",
+      "words": [
+        { "speaker": "Nadia", "text": "We do a film night Thursday. Old projector, bad chairs. Free. You should come." }
+      ],
+      "interaction": { "type": "rate", "key": "film", "kind": "before", "prompt": "How awkward do you think it'd be, 1 to 10?" }
+    },
+    {
+      "id": "4.17",
+      "image": "Thursday evening. The café dark except for a projector beam. A dozen people on mismatched chairs.",
+      "art": "film-night-cafe",
+      "addHours": { "nadia": 2, "lucien": 2 },
+      "words": [
+        { "speaker": "narrator", "text": "Thursday. Théo goes. He sits at the back, near the door, in case." }
+      ]
+    },
+    {
+      "id": "4.18",
+      "image": "The projector beam hitting a screen. The film begins (film panels have a different style: black-and-white, rounded corners like old film).",
+      "art": "projector-beam",
+      "words": [
+        { "speaker": "narrator", "text": "Tonight's film is called The Keeper." }
+      ]
+    },
+    {
+      "id": "4.19",
+      "image": "FILM: a lighthouse on a rock, an old keeper climbing the spiral stairs.",
+      "art": "film-lighthouse",
+      "frame": "film",
+      "words": [
+        { "speaker": "narrator", "text": "An old keeper lives alone on a lighthouse. Every night for thirty years, he lights the lamp." }
+      ]
+    },
+    {
+      "id": "4.20",
+      "image": "FILM: the keeper staring at an empty, dark sea.",
+      "art": "film-dark-sea",
+      "frame": "film",
+      "words": [
+        { "speaker": "narrator", "text": "One winter, no ships come. Not one. He waits a week. A month." }
+      ]
+    },
+    {
+      "id": "4.21",
+      "image": "FILM: the keeper sitting in the dark, the lamp unlit, a bottle on the table.",
+      "art": "film-unlit",
+      "frame": "film",
+      "words": [
+        { "speaker": "narrator", "text": "\"Nobody is out there,\" he says. So he stops lighting the lamp." }
+      ]
+    },
+    {
+      "id": "4.22",
+      "image": "FILM: the sea in total darkness, then tiny lights far away: small boats, fishermen, lost in the dark.",
+      "art": "film-boats",
+      "frame": "film",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "But the boats were there all along. Small ones, too small to see. They had been steering by his light for thirty years. Without it, they can't find their way home."
+        }
+      ]
+    },
+    {
+      "id": "4.23",
+      "image": "FILM: the keeper climbing the stairs, lighting the lamp. The beam sweeps out. One by one, the little boats turn toward it.",
+      "art": "film-relit",
+      "frame": "film",
+      "words": [
+        { "speaker": "narrator", "text": "He climbs the stairs. He lights the lamp. One by one, the boats turn home." }
+      ]
+    },
+    {
+      "id": "4.24",
+      "image": "FILM: morning. Fishermen climbing up the rock with bread, fish, wine. The keeper at a full table.",
+      "art": "film-table",
+      "frame": "film",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "In the morning, they climb the rock to thank him. He had never once met them. They had always known him."
+        }
+      ]
+    },
+    {
+      "id": "4.25",
+      "image": "Back in the café. Théo wiping his eyes. Two rows ahead, Lucien wiping his too.",
+      "art": "cafe-crying",
+      "words": [
+        { "speaker": "narrator", "text": "Théo cries at the part with the boats. So does Lucien. Neither mentions it." }
+      ]
+    },
+    {
+      "id": "4.26",
+      "image": "After the film, people chatting in small groups; Théo standing at the edge holding a cup.",
+      "art": "after-film-groups",
+      "words": [
+        { "speaker": "narrator", "text": "Afterwards, people talk in little groups. Théo stands at the edge, holding a cup like a shield." }
+      ],
+      "interaction": {
+        "type": "choice",
+        "options": [
+          { "id": "home", "label": "Go home now", "goto": "4.28" },
+          { "id": "stay", "label": "Stay five more minutes", "goto": "4.27" },
+          { "id": "join", "label": "Join Nadia and Lucien", "goto": "4.27" }
+        ]
+      }
+    },
+    {
+      "id": "4.27",
+      "image": "Nadia, Lucien and Théo by the counter.",
+      "art": "after-film-groups",
+      "anchor": { "x": 70, "y": 50 },
+      "words": [
+        { "speaker": "Lucien", "text": "The keeper was an idiot. You don't stop lighting the lamp because you can't see anyone." },
+        { "speaker": "Nadia", "text": "That's the whole film, Lucien." }
+      ]
+    },
+    {
+      "id": "4.28",
+      "image": "Théo walking home along the river. Two small warm lights behind him in the café window.",
+      "art": "walking-river",
+      "words": [],
+      "interaction": { "type": "rate", "key": "film", "kind": "after", "compare": true, "prompt": "How awkward was it really?" }
+    },
+    {
+      "id": "4.29",
+      "image": "A small chart drawn like a pencil sketch: prediction vs reality.",
+      "art": "black",
+      "showChart": "film",
+      "words": [
+        {
+          "speaker": "narrator",
+          "text": "Théo guessed {before:film}. It was really {after:film}. Our brains are terrible at predicting this. They nearly always guess worse than it is."
+        }
+      ]
+    },
+    {
+      "id": "4.30",
+      "image": "Light Map: the café window now glowing on the skyline, with faint watercolour.",
+      "art": "black",
+      "showLightMap": true,
+      "words": [
+        { "speaker": "narrator", "text": "Seven lights. One of them is a whole café." }
+      ]
+    },
+    {
+      "id": "4.31",
+      "image": "Quest card.",
+      "words": [],
+      "interaction": {
+        "type": "quest",
+        "id": "q4",
+        "title": "Three times",
+        "text": "Go to your place three times in the next two weeks, same day and time if you can. You don't have to talk to anyone. Being seen counts.",
+        "checkins": 3,
+        "hoursPerVisit": 1,
+        "unlocks": 5
+      }
+    }
+  ]
+}

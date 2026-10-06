@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { story, chapterData, isChapterUnlocked, questScreens, screens } from '../story'
 import { T, formatDate } from '../text'
 import Quest from './interactions/Quest.jsx'
-import ArtFrame from './ArtFrame.jsx'
+import LightMap from './LightMap.jsx'
 
 // The menu: back to the story, chapters to reread, the Light Map and the
 // People notebook (once unlocked), quests, and start over.
@@ -45,7 +45,7 @@ export default function Menu({ state, update, reset, close }) {
         </nav>
       )}
 
-      {view === 'map' && <LightMap state={state} />}
+      {view === 'map' && (<><h2>{T.ui.lightMap}</h2><LightMap state={state} /></>)}
       {view === 'people' && <People state={state} />}
 
       {view === 'quests' && (
@@ -68,44 +68,6 @@ function seen(s, state) {
   const idx = screens.findIndex((x) => x.id === s.id)
   const here = screens.findIndex((x) => x.id === state.position)
   return here >= idx
-}
-
-// The Light Map: the city at night, one lit window per light earned.
-// Tap a window for that person's card.
-function LightMap({ state }) {
-  const [open, setOpen] = useState(null)
-  const person = open && story.people[story.lights[open]?.person]
-  const entries = person
-    ? state.notebook.filter((e) => e.person === story.lights[open].person || (e.name && e.name.toLowerCase() === person.name.toLowerCase()))
-    : []
-
-  return (
-    <div className="light-map">
-      <h2>{T.ui.lightMap}</h2>
-      <div className="skyline">
-        <ArtFrame art={story.lightMapArt} camera={{ x: 50, y: 66, zoom: 1.25 }}>
-          {state.lights.map((id) => {
-            const l = story.lights[id]
-            if (!l) return null
-            return (
-              <button key={id} className={`window ${open === id ? 'open' : ''}`} style={{ left: `${l.x}%`, top: `${l.y}%` }}
-                onClick={() => setOpen(open === id ? null : id)} aria-label={l.label} />
-            )
-          })}
-        </ArtFrame>
-      </div>
-      {person && (
-        <div className="person-card">
-          <h3>{person.name}</h3>
-          <p className="note">{person.about}</p>
-          {state.hours[story.lights[open].person] > 0 && (
-            <p>{T.ui.hours.replace('{n}', state.hours[story.lights[open].person])}</p>
-          )}
-          {entries.map((e, i) => <p key={i} className="hand">{e.text}</p>)}
-        </div>
-      )}
-    </div>
-  )
 }
 
 // The curiosity notebook: "Each page is for someone else's life."

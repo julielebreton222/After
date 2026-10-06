@@ -5,6 +5,7 @@ let master = null
 let reverb = null
 let noteTimer = null
 let playing = false
+let chapter = 1
 const VOLUME = 0.55
 
 // A minor pentatonic, low and middle registers.
@@ -102,13 +103,34 @@ function note(freq, when, velocity = 0.12) {
   f.connect(reverb)
 }
 
+// The theme grows with the story: each chapter adds a little more.
+//   ch 2+: a second, answering note more often
+//   ch 4+: a soft high bell an octave up
+//   ch 6+: a warm low bass note
+//   ch 9 : notes come a bit closer together
 function loop() {
   if (!playing) return
   const t = ctx.currentTime + 0.05
   const i = Math.floor(Math.random() * SCALE.length)
   note(SCALE[i], t, 0.09 + Math.random() * 0.05)
-  if (Math.random() < 0.3) note(SCALE[Math.max(0, i - 2)], t + 0.35 + Math.random() * 0.4, 0.07)
-  noteTimer = setTimeout(loop, 2600 + Math.random() * 4200)
+  if (Math.random() < 0.2 + Math.min(chapter, 6) * 0.05) note(SCALE[Math.max(0, i - 2)], t + 0.35 + Math.random() * 0.4, 0.07)
+  if (chapter >= 4 && Math.random() < 0.35) note(SCALE[(i + 3) % SCALE.length] * 2, t + 0.9, 0.035)
+  if (chapter >= 6 && Math.random() < 0.4) note(SCALE[0] / 2, t, 0.06)
+  const gap = chapter >= 9 ? 2000 : 2600
+  noteTimer = setTimeout(loop, gap + Math.random() * 4200)
+}
+
+export function setChapter(n) {
+  chapter = n || 1
+}
+
+// Silence for a moment (the blackout in Chapter 8), then come back slowly.
+export function hush(ms) {
+  if (!ctx || !playing) return
+  const t = ctx.currentTime
+  master.gain.cancelScheduledValues(t)
+  master.gain.setValueAtTime(0, t)
+  master.gain.setTargetAtTime(VOLUME, t + ms / 1000 + 1.5, 2)
 }
 
 export function startMusic() {
