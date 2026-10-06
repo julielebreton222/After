@@ -545,3 +545,9 @@ textarea:focus, input:focus, select:focus { outline: 1.5px solid var(--cream); }
 }
 .confide-actions .continue { margin-top: 10px; }
 .confide .page { border-bottom: 1px solid var(--cream-faint); padding: 10px 0; }
+
+/* A pop-up that must be clicked through */
+.popup-backdrop { position: fixed; inset: 0; z-index: 26; background: rgba(0, 0, 0, 0.78); display: flex; align-items: center; justify-content: center; padding: 20px; animation: fadeIn 0.3s ease; }
+.popup { width: 100%; max-width: 380px; background: var(--ink); border: 1.5px solid var(--lamp); border-radius: 18px; padding: 20px; box-shadow: 0 0 40px 4px rgba(255, 205, 90, 0.2); }
+.popup h2 { margin: 0 0 8px; font-size: 1.35rem; font-weight: normal; color: var(--lamp); }
+.popup p { line-height: 1.4; }

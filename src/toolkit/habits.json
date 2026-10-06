@@ -18,7 +18,11 @@
     "addEvery": "How often",
     "add": "Add",
     "delete": "Delete this habit",
-    "deleteConfirm": "Delete this habit and its history?"
+    "deleteConfirm": "Delete this habit and its history?",
+    "tipTitle": "You can create your own habits",
+    "tipText": "Pick any of the habits here, or make one of your own: something small that helps you. Scroll to the bottom, give it a name, and choose every day or every week.",
+    "tipCreate": "Create a habit now",
+    "tipOk": "Got it"
   },
   "habits": [
     {

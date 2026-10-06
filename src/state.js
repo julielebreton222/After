@@ -36,6 +36,7 @@ export const initialState = {
   quoteStyle: null,
   night: {},
   confessions: [],
+  habitsTipSeen: false,
   settings: { music: false, voice: false },
 }
 

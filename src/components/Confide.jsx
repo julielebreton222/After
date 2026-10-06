@@ -14,7 +14,7 @@ export function Feedback({ openCrisis }) {
   const send = () => {
     if (soundsUnsafe(text)) openCrisis()
     if (!contact.email) return setWarn(true)
-    location.href = mailto(t.subject, text)
+    location.href = mailto(t.subject, t.bodyStart + text)
   }
   return (
     <div className="confide">
@@ -51,7 +51,7 @@ export function Confession({ state, update, openCrisis }) {
   const send = () => {
     check()
     if (!contact.email) return setWarn(true)
-    location.href = mailto(t.subject, text)
+    location.href = mailto(t.subject, t.bodyStart + text)
   }
   const remove = (i) => {
     if (confirm(t.deleteConfirm)) update((st) => ({ confessions: st.confessions.filter((_, n) => n !== i) }))

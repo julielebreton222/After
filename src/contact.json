@@ -1,6 +1,6 @@
 {
-  "_note": "Where notes and confessions are sent. 'email' is left empty until Julie chooses an address; until then the send buttons explain that it isn't set up yet.",
-  "email": "",
+  "_note": "Where notes and confessions are sent. Sending opens the phone's email app with this address and subject; the body starts with what kind of message it is.",
+  "email": "julie.motvivant@gmail.com",
   "feedback": {
     "menu": "Send Julie a note",
     "title": "Help make this better",
@@ -8,8 +8,9 @@
     "placeholder": "What would make this better?",
     "send": "Send to Julie",
     "how": "This opens your email app with your note in it. Julie will see your email address.",
-    "subject": "After: a note",
-    "notSetUp": "Sending isn't set up yet. Your note is still here; try again after the next update."
+    "subject": "['after' app]",
+    "notSetUp": "Sending isn't set up yet. Your note is still here; try again after the next update.",
+    "bodyStart": "Note to make the app better:\n\n"
   },
   "confession": {
     "menu": "Confession",
@@ -22,8 +23,9 @@
     "kept": "Kept on this phone",
     "send": "Send it to Julie",
     "how": "Sending opens your email app. Julie will see your email address, so it isn't anonymous.",
-    "subject": "After: a confession",
+    "subject": "['after' app]",
     "delete": "Delete",
-    "deleteConfirm": "Delete this for good?"
+    "deleteConfirm": "Delete this for good?",
+    "bodyStart": "Confession:\n\n"
   }
 }

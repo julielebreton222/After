@@ -46,8 +46,28 @@ export default function Habits({ state, update }) {
     })
   }
 
+  // The first time here, a pop-up to click through: you can create your own.
+  const seenTip = (create) => {
+    update({ habitsTipSeen: true })
+    if (create) setTimeout(() => {
+      const input = document.querySelector('.add-habit input')
+      input?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+      input?.focus({ preventScroll: true })
+    }, 50)
+  }
+
   return (
     <div className="tab-page habits">
+      {!state.habitsTipSeen && (
+        <div className="popup-backdrop" role="dialog" aria-modal="true" aria-labelledby="habits-tip">
+          <div className="popup">
+            <h2 id="habits-tip">{U.tipTitle}</h2>
+            <p>{U.tipText}</p>
+            <button className="continue" onClick={() => seenTip(true)}>{U.tipCreate}</button>
+            <button className="continue subtle" onClick={() => seenTip(false)}>{U.tipOk}</button>
+          </div>
+        </div>
+      )}
       <h1>{data.title}</h1>
       {data.intro && <p className="note">{data.intro}</p>}
 

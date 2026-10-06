@@ -69,7 +69,9 @@ In the ☰ menu:
 - **Confession:** write it, then let it go (it burns and is erased), keep it on the phone, or send it to Julie.
 - **Send Julie a note:** feedback for improving the app.
 
-There's no server, so sending opens the phone's email app, addressed to `email` in `src/contact.json`. That address is empty until Julie fills it in. Until then, the send buttons say it isn't set up yet.
+There's no server, so sending opens the phone's email app with a message to julie.motvivant@gmail.com and the subject `['after' app]`. The message starts with "Confession:" or "Note to make the app better:". The address, subject and texts are in `src/contact.json`.
+
+The first time the Habits tab opens, a pop-up says he can create his own habits. He has to tap "Create a habit now" (which jumps to the form) or "Got it" to close it.
 
 ## Editing the words
 
