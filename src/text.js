@@ -1,4 +1,5 @@
 import { story } from './data'
+import { LANG } from './locale'
 
 // Story values can depend on what happened earlier:
 //   { "by": "chased", "sport": "...", "music": "..." }       the plan Théo chased
@@ -61,7 +62,7 @@ export const say = (value, state, vars) => fill(pick(value, state), state, vars)
 export const T = story.text
 
 export function formatDate(iso) {
-  return new Date(iso + (iso.length === 10 ? 'T12:00:00' : '')).toLocaleDateString(undefined, {
+  return new Date(iso + (iso.length === 10 ? 'T12:00:00' : '')).toLocaleDateString(LANG === 'fr' ? 'fr-FR' : undefined, {
     day: 'numeric', month: 'long', year: 'numeric',
   })
 }

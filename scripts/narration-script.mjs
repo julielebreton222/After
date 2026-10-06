@@ -28,6 +28,8 @@ function lineId(text) {
 }
 const PLAYER = /\{(w:|pocket1|map1|map2|before:|after:|letterDate)/
 function variants(text) {
+  // The recordings are of the default version: "he", in English.
+  text = text.replace(/\{([^{}|]*)\|[^{}|]*\|[^{}|]*\}/g, '$1')
   // Expand the plan Théo chased into its four versions.
   if (!/\{chased/.test(text)) return [[null, text.replace('{dedication}', story.dedication || '')]]
   return ['sport', 'music', 'degree', 'business'].map((c) => [c, text.replace(/\{(chased\w*)\}/g, (m, k) => story.tokens[k]?.[c] ?? m)])

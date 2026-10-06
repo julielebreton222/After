@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import { habits as data } from '../data'
+import { LANG } from '../locale'
+
+const LOCALE = LANG === 'fr' ? 'fr-FR' : undefined
 
 const U = data.ui
 
@@ -96,8 +99,8 @@ export default function Habits({ state, update }) {
                     const key = iso(d)
                     return (
                       <button key={key} className={`day ${m.log?.[key] ? 'on' : ''}`} onClick={() => toggleDay(h.id, key)}
-                        aria-pressed={!!m.log?.[key]} aria-label={d.toLocaleDateString()}>
-                        {weekly ? d.getDate() : d.toLocaleDateString(undefined, { weekday: 'narrow' })}
+                        aria-pressed={!!m.log?.[key]} aria-label={d.toLocaleDateString(LOCALE)}>
+                        {weekly ? d.getDate() : d.toLocaleDateString(LOCALE, { weekday: 'narrow' })}
                       </button>
                     )
                   })}

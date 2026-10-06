@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { T } from '../text'
-import { DEFAULT_HERO } from '../locale'
+import { DEFAULT_HERO, LANG, PRONOUNS } from '../locale'
 import { crisisLines, detectCountry } from '../safety'
 import { quoteStyles, quoteUi, sampleQuotes } from '../quotes'
 import Quote from './Quote.jsx'
@@ -9,14 +9,17 @@ const t = T.intro
 const f = T.firstLaunch
 
 // The introduction, shown on first launch (and from the menu, "About this
-// app"): why the app exists, the hero's name, a tour of the app, why this
-// matters, which quotes speak to you, and the first-launch note.
+// app"): the language, why the app exists, the hero's name and pronouns, a
+// tour of the app, why this matters, which quotes speak to you, and the
+// first-launch note. Choosing another language reloads the app in it, and the
+// introduction carries on after the language step.
 export default function Intro({ state, update }) {
   const firstTime = !state.firstLaunchDone
-  const steps = ['why', 'name', 'tour', 'facts', 'quotes', ...(firstTime ? ['start'] : [])]
+  const steps = [...(state.introSkipLang ? [] : ['lang']), 'why', 'name', 'pronoun', 'tour', 'facts', 'quotes', ...(firstTime ? ['start'] : [])]
   const [i, setI] = useState(0)
   const [hero, setHero] = useState(state.heroName || '')
   const [style, setStyle] = useState(state.quoteStyle || null)
+  const [pronoun, setPronoun] = useState(state.pronoun || null)
   const [person, setPerson] = useState({ name: '', phone: '' })
   const step = steps[i]
   const code = state.country || detectCountry()
@@ -24,7 +27,10 @@ export default function Intro({ state, update }) {
   const def = (s) => s.replace('{default}', DEFAULT_HERO)
 
   const finish = (withPerson) => {
-    const patch = { introDone: true, firstLaunchDone: true, heroName: hero.trim(), quoteStyle: style || 'hope' }
+    const patch = {
+      introDone: true, introSkipLang: false, firstLaunchDone: true,
+      heroName: hero.trim(), pronoun: pronoun || 'he', quoteStyle: style || 'hope',
+    }
     if (firstTime) {
       patch.savedPerson = withPerson && person.phone.trim()
         ? { name: person.name.trim() || person.phone.trim(), phone: person.phone.trim() }
@@ -33,12 +39,21 @@ export default function Intro({ state, update }) {
     update(patch)
   }
   const next = () => (i < steps.length - 1 ? setI(i + 1) : finish(false))
+  const chooseLang = (lang) => (lang === LANG ? next() : update({ lang, introSkipLang: true }))
 
   return (
     <div className="sheet intro">
       <div className="intro-dots" aria-hidden="true">
         {steps.map((s, n) => <span key={s} className={n === i ? 'on' : ''} />)}
       </div>
+
+      {step === 'lang' && (
+        <>
+          <h1>Language · Langue</h1>
+          <button className="continue" onClick={() => chooseLang('en')}>English</button>
+          <button className="continue" onClick={() => chooseLang('fr')}>Français</button>
+        </>
+      )}
 
       {step === 'why' && (
         <>
@@ -56,6 +71,19 @@ export default function Intro({ state, update }) {
             <input value={hero} onChange={(e) => setHero(e.target.value)} placeholder={def(t.name.placeholder)} maxLength={24} autoComplete="given-name" />
             <p className="note">{t.name.hint}</p>
           </div>
+        </>
+      )}
+
+      {step === 'pronoun' && (
+        <>
+          <h1>{t.pronoun.title}</h1>
+          <p>{t.pronoun.body}</p>
+          {t.pronoun.options.filter((o) => PRONOUNS.includes(o.id)).map((o) => (
+            <button key={o.id} className={`quote-choice ${pronoun === o.id ? 'selected' : ''}`} onClick={() => setPronoun(o.id)} aria-pressed={pronoun === o.id}>
+              <strong className="pronoun-label">{o.label}</strong>
+              <span className="note">{o.example}</span>
+            </button>
+          ))}
         </>
       )}
 
@@ -118,10 +146,10 @@ export default function Intro({ state, update }) {
         </>
       )}
 
-      {step !== 'start' && (
+      {step !== 'start' && step !== 'lang' && (
         <div className="row intro-nav">
           {i > 0 ? <button className="link" onClick={() => setI(i - 1)}>{t.back}</button> : <span />}
-          <button className="continue" onClick={next} disabled={step === 'quotes' && !style}>
+          <button className="continue" onClick={next} disabled={(step === 'quotes' && !style) || (step === 'pronoun' && !pronoun)}>
             {i === steps.length - 1 ? t.done : t.next}
           </button>
         </div>

@@ -1,3 +1,4 @@
+import { LANG } from '../../locale'
 import { useEffect, useState } from 'react'
 import { say, T } from '../../text'
 
@@ -45,7 +46,7 @@ export default function Timer({ cfg, state, markDone }) {
         {cfg.style === 'wave' && <div className="wave" />}
       </div>
       {phase === 'running' && cfg.style === 'breath' && (
-        <p className="timer-cue">{breathingIn ? cfg.inLabel || 'Breathe in' : cfg.outLabel || 'Breathe out'}</p>
+        <p className="timer-cue">{breathingIn ? cfg.inLabel || (LANG === 'fr' ? 'Inspire' : 'Breathe in') : cfg.outLabel || (LANG === 'fr' ? 'Expire' : 'Breathe out')}</p>
       )}
       {phase === 'running' && step && <p className="timer-cue">{say(step, state)}</p>}
       {phase !== 'ready' && <p className="clock">{phase === 'finished' ? say(cfg.doneText || '✓', state) : clock}</p>}

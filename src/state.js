@@ -37,6 +37,9 @@ export const initialState = {
   night: {},
   confessions: [],
   habitsTipSeen: false,
+  lang: null,
+  pronoun: null,
+  introSkipLang: false,
   settings: { music: false, voice: false },
 }
 

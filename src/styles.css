@@ -551,3 +551,5 @@ textarea:focus, input:focus, select:focus { outline: 1.5px solid var(--cream); }
 .popup { width: 100%; max-width: 380px; background: var(--ink); border: 1.5px solid var(--lamp); border-radius: 18px; padding: 20px; box-shadow: 0 0 40px 4px rgba(255, 205, 90, 0.2); }
 .popup h2 { margin: 0 0 8px; font-size: 1.35rem; font-weight: normal; color: var(--lamp); }
 .popup p { line-height: 1.4; }
+.intro .continue + .continue { margin-top: 10px; }
+.pronoun-label { display: block; font-weight: normal; font-size: 1.3rem; margin: 10px 0 2px; }
