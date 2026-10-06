@@ -25,6 +25,7 @@ export default function Menu({ state, update, reset, close }) {
           {state.unlocked.notebook && <button onClick={() => setView('people')}>{T.ui.notebook}</button>}
           <button onClick={() => setView('quests')}>{T.ui.quests}</button>
           <button className="danger" onClick={() => { if (confirm(T.ui.startOverConfirm)) { reset(); close() } }}>{T.ui.startOver}</button>
+          <p className="note version">Version {__BUILD__}</p>
         </nav>
       )}
 

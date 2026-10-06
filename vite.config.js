@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
+  define: { __BUILD__: JSON.stringify(new Date().toISOString().slice(0, 16).replace('T', ' ')) },
   // Relative paths so the app works from any address (e.g. GitHub Pages /After/).
   base: './',
   plugins: [
@@ -27,9 +28,12 @@ export default defineConfig({
         ],
       },
       workbox: {
-        // The app and all its paintings are saved for offline use when it's first opened.
-        globPatterns: ['**/*.{js,css,html,woff2}', 'icons/*.png', 'images/*.jpg'],
-        maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
+        // The app itself is saved for offline use right away (small, so updates are quick).
+        // Paintings are saved as they're fetched; the app fetches them in the background.
+        globPatterns: ['**/*.{js,css,html,woff2}', 'icons/*.png'],
+        cleanupOutdatedCaches: true,
+        clientsClaim: true,
+        skipWaiting: true,
         runtimeCaching: [
           {
             urlPattern: /\/images\/.*\.(png|jpg)$/,
