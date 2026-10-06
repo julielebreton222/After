@@ -235,7 +235,7 @@
       "art": "film-night-cafe",
       "addHours": { "nadia": 2, "lucien": 2 },
       "words": [
-        { "speaker": "narrator", "text": "Thursday. Théo goes. He sits at the back, near the door, in case." }
+        { "speaker": "narrator", "text": "Thursday. Théo goes. {He|She|They} {sits|sits|sit} at the back, near the door, in case." }
       ]
     },
     {

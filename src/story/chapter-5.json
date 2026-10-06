@@ -159,7 +159,7 @@
     },
     {
       "id": "5.13",
-      "image": "Théo reaching into his pocket; one of {his|her|their} pocket cards glows.",
+      "image": "Théo reaching into {his|her|their} pocket; one of {his|her|their} pocket cards glows.",
       "art": "theo-pocket-cards",
       "words": [
         { "speaker": "narrator", "text": "Théo's brain empties, exactly as predicted. {He|She|They} {reaches|reaches|reach} into {his|her|their} pocket." },
@@ -182,7 +182,7 @@
       "image": "Close-up of a board game with sheep, wheat, bricks.",
       "art": "sheep-board",
       "words": [
-        { "speaker": "narrator", "text": "Théo does not know if he likes trading sheep. It turns out {he|she|they} {does|does|do}." }
+        { "speaker": "narrator", "text": "Théo does not know if {he|she|they} {likes|likes|like} trading sheep. It turns out {he|she|they} {does|does|do}." }
       ]
     },
     {

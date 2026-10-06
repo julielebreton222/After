@@ -46,7 +46,7 @@
       "art": "kitchen-floor",
       "anchor": { "x": 28, "y": 66 },
       "words": [
-        { "speaker": "narrator", "text": "Théo is on the kitchen floor. Exactly where he was, thirteen weeks ago." }
+        { "speaker": "narrator", "text": "Théo is on the kitchen floor. Exactly where {he|she|they} {was|was|were}, thirteen weeks ago." }
       ]
     },
     {
@@ -64,7 +64,7 @@
       "art": "kitchen-floor",
       "critic": true,
       "words": [
-        { "speaker": "narrator", "text": "Théo has heard this voice a lot. He knows it now. It's frightened. It always was." }
+        { "speaker": "narrator", "text": "Théo has heard this voice a lot. {He|She|They} {knows|knows|know} it now. It's frightened. It always was." }
       ],
       "interaction": {
         "type": "critic-reply",
@@ -80,7 +80,7 @@
       "image": "Théo standing up in the dark. The pain creature from Chapter 2 appears tiny on the shelf, asleep.",
       "art": { "by": "choice:2.18", "bear": "creature-bear", "cat": "creature-cat", "eel": "creature-eel", "bird": "creature-bird" },
       "words": [
-        { "speaker": "narrator", "text": "Old Théo would have stayed on the floor. Théo does three things he learned." }
+        { "speaker": "narrator", "text": "Old Théo would have stayed on the floor. Théo does three things {he|she|they} learned." }
       ]
     },
     {
@@ -88,7 +88,7 @@
       "image": "Three small cream icons in sequence: a glass of water, cold water on a face, feet on the floor.",
       "art": "black",
       "words": [
-        { "speaker": "narrator", "text": "Cold water on the face. Five things he can see, even in the dark. Feet on the floor." }
+        { "speaker": "narrator", "text": "Cold water on the face. Five things {he|she|they} can see, even in the dark. Feet on the floor." }
       ],
       "interaction": {
         "type": "timer",
@@ -103,7 +103,7 @@
       "image": "Théo in the stairwell with a candle stub, going down.",
       "art": "stairwell-candle",
       "words": [
-        { "speaker": "narrator", "text": "Then he does the fourth thing. He goes to check on people." }
+        { "speaker": "narrator", "text": "Then {he|she|they} {does|does|do} the fourth thing. {He|She|They} {goes|goes|go} to check on people." }
       ],
       "interaction": {
         "type": "choice",
@@ -121,7 +121,7 @@
       "words": [
         {
           "speaker": "Madame Roux",
-          "text": "Finally! I was coming up to check on YOU. I lived through 1999, young man. I have candles for a whole war."
+          "text": "Finally! I was coming up to check on YOU. I lived through 1999, {young man|young lady|young one}. I have candles for a whole war."
         }
       ]
     },
@@ -175,7 +175,7 @@
     },
     {
       "id": "8.17",
-      "image": "Théo already rolling up his sleeves, the gas hob lit, pans out. His outline glowing.",
+      "image": "Théo already rolling up {his|her|their} sleeves, the gas hob lit, pans out. {His|Her|Their} outline glowing.",
       "art": "theo-cooking-gas",
       "words": [
         { "speaker": "narrator", "text": "Théo knows what to do with a dying fridge and a gas hob." }
@@ -199,7 +199,7 @@
       "words": [
         {
           "speaker": "narrator",
-          "text": "By nine o'clock, everybody in Café du Pont has a hot plate in their hands. Nobody asked him to. It's just what Théo is."
+          "text": "By nine o'clock, everybody in Café du Pont has a hot plate in their hands. Nobody asked {him|her|them} to. It's just what Théo is."
         }
       ]
     },
@@ -219,7 +219,7 @@
       "image": "Théo crouching beside Karim.",
       "art": "theo-karim",
       "words": [
-        { "speaker": "narrator", "text": "Théo knows this. He knows it from the kitchen floor." }
+        { "speaker": "narrator", "text": "Théo knows this. {He|She|They} {knows|knows|know} it from the kitchen floor." }
       ],
       "interaction": {
         "type": "choice",
@@ -294,7 +294,7 @@
       "words": [
         {
           "speaker": "narrator",
-          "text": "Théo watches a candle flame, like he did on the worst nights. This time, he isn't alone with it."
+          "text": "Théo watches a candle flame, like {he|she|they} did on the worst nights. This time, {he|she|they} {isn't|isn't|aren't} alone with it."
         }
       ]
     },
@@ -306,7 +306,7 @@
       "words": [
         {
           "speaker": "narrator",
-          "text": "Somewhere in the night, Théo notices something. Every time, he predicted the worst. Every time, it was better than he thought. Every single time."
+          "text": "Somewhere in the night, Théo notices something. Every time, {he|she|they} predicted the worst. Every time, it was better than {he|she|they} thought. Every single time."
         }
       ]
     },

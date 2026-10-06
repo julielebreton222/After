@@ -46,13 +46,13 @@
       "words": [
         {
           "speaker": "narrator",
-          "text": "Théo introduces his sister to everyone. It takes a while. He has a lot of people to introduce now."
+          "text": "Théo introduces {his|her|their} sister to everyone. It takes a while. {He|She|They} {has|has|have} a lot of people to introduce now."
         }
       ]
     },
     {
       "id": "9.5",
-      "image": "Théo at the big pot, ladling, glowing; Camille watching him, proud.",
+      "image": "Théo at the big pot, ladling, glowing; Camille watching {him|her|them}, proud.",
       "art": "theo-ladle-spring",
       "words": [
         { "speaker": "Camille", "text": "You look like you again." },
@@ -86,7 +86,7 @@
       "words": [
         {
           "speaker": "narrator",
-          "text": "Théo doesn't know yet what he'll do with his life. The {chased} was a plan. This isn't a plan. It's a direction: toward people, with food."
+          "text": "Théo doesn't know yet what {he'll|she'll|they'll} do with {his|her|their} life. The {chased} was a plan. This isn't a plan. It's a direction: toward people, with food."
         }
       ]
     },
@@ -155,20 +155,20 @@
       "words": [
         {
           "speaker": "narrator",
-          "text": "The Théo who wrote this was on a kitchen floor. He couldn't eat. He didn't know if there would be a later. There was. He's reading it."
+          "text": "The Théo who wrote this was on a kitchen floor. {He|She|They} couldn't eat. {He|She|They} didn't know if there would be a later. There was. {He's|She's|They're} reading it."
         }
       ],
       "interaction": {
         "type": "write",
         "key": "write-back",
-        "prompt": "Write back to the Théo of then. What would you tell him? (optional)",
+        "prompt": "Write back to the Théo of then. What would you tell {him|her|them}? (optional)",
         "max": 1500,
         "rows": 5
       }
     },
     {
       "id": "9.15",
-      "image": "The park bench under the plane trees. Théo sitting. The Critic sitting beside him, pebble-sized, in a tiny scarf.",
+      "image": "The park bench under the plane trees. Théo sitting. The Critic sitting beside {him|her|them}, pebble-sized, in a tiny scarf.",
       "art": "park-bench-spring",
       "criticSet": 1,
       "critic": true,

@@ -66,7 +66,7 @@
     },
     {
       "id": "2.7",
-      "image": "Close-up: {his|her|their} outlined hands over his face, shoulders shaking. Drawn in heavy wet ink strokes.",
+      "image": "Close-up: {his|her|their} outlined hands over {his|her|their} face, shoulders shaking. Drawn in heavy wet ink strokes.",
       "art": "crying-hands",
       "words": [
         { "speaker": "narrator", "text": "It is not a dignified cry. It is the kind of crying that comes from the stomach." }
