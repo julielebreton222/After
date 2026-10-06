@@ -1,4 +1,5 @@
 import { story } from '../story'
+import { LANG } from '../locale'
 
 // Reads lines aloud with the phone's built-in voice (Web Speech API).
 // Per-speaker pitch and rate come from story.json "voices".
@@ -10,7 +11,7 @@ export const voiceSupported = !!synth
 
 function pickVoice() {
   if (chosen || !synth) return chosen
-  const voices = synth.getVoices().filter((v) => v.lang?.toLowerCase().startsWith('en'))
+  const voices = synth.getVoices().filter((v) => v.lang?.toLowerCase().startsWith(LANG))
   const prefer = story.voicePreference || []
   chosen =
     prefer.map((name) => voices.find((v) => v.name.includes(name))).find(Boolean) ||
@@ -26,7 +27,7 @@ export function speak(text, speaker, { onStart, onEnd } = {}) {
   synth.cancel()
   const u = new SpeechSynthesisUtterance(text)
   const v = pickVoice()
-  if (v) { u.voice = v; u.lang = v.lang } else u.lang = 'en-GB'
+  if (v) { u.voice = v; u.lang = v.lang } else u.lang = LANG === 'fr' ? 'fr-FR' : 'en-GB'
   const style = story.voices?.[speaker] || story.voices?.narrator || {}
   u.rate = style.rate ?? 0.92
   u.pitch = style.pitch ?? 1

@@ -371,7 +371,7 @@
       },
       "name": {
         "title": "Who is the hero?",
-        "body": "The story follows a young man in a new city, the week after his girlfriend leaves. In the story he's called {default}, but you can give him your own name, or any name you like.",
+        "body": "The story follows someone new in a city, the week after their girlfriend leaves. In the story, the hero is called {default}, but you can give them your own name, or any name you like.",
         "placeholder": "{default}",
         "hint": "You can change it later from the menu."
       },
@@ -426,6 +426,27 @@
           "Suicide can be prevented. Talking helps, and help is there, any time:"
         ],
         "line": "{number}: {name}. {hours}."
+      },
+      "pronoun": {
+        "title": "And their pronouns?",
+        "body": "How should the story talk about the hero?",
+        "options": [
+          {
+            "id": "he",
+            "label": "he / him",
+            "example": "He opens the window."
+          },
+          {
+            "id": "she",
+            "label": "she / her",
+            "example": "She opens the window."
+          },
+          {
+            "id": "they",
+            "label": "they / them",
+            "example": "They open the window."
+          }
+        ]
       }
     }
   },
@@ -580,5 +601,8 @@
       }
     ]
   },
-  "dedication": "Made for my brother, with love. — Julie"
+  "dedication": "Made for my brother, with love. — Julie",
+  "speakerNames": {
+    "Critic": "Critic"
+  }
 }

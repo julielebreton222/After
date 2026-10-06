@@ -1,8 +1,5 @@
 import { useState } from 'react'
-import data from '../toolkit/habits.json'
-import { renameHero } from '../hero'
-
-renameHero(data)
+import { habits as data } from '../data'
 
 const U = data.ui
 

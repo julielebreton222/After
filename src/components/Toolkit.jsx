@@ -1,11 +1,9 @@
 import { useState } from 'react'
-import toolkit from '../toolkit/toolkit.json'
+import { toolkit } from '../data'
 import { byId, screens } from '../story'
-import { renameHero } from '../hero'
 import { quoteFor } from '../quotes'
 import Quote from './Quote.jsx'
 
-renameHero(toolkit)
 const order = Object.fromEntries(screens.map((s, i) => [s.id, i]))
 
 // "What to do when…": practical cards, all open from day one. A card whose

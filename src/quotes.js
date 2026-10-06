@@ -1,4 +1,4 @@
-import data from './toolkit/quotes.json'
+import { quotes as data } from './data'
 
 // Quotes in three grieving styles (feel / hope / strength). The player picks
 // a style on first launch; the app then shows quotes in that style.

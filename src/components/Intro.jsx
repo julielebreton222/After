@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { T } from '../text'
-import { DEFAULT_HERO } from '../hero'
+import { DEFAULT_HERO } from '../locale'
 import { crisisLines, detectCountry } from '../safety'
 import { quoteStyles, quoteUi, sampleQuotes } from '../quotes'
 import Quote from './Quote.jsx'

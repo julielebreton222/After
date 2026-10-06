@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import contact from '../contact.json'
+import { contact } from '../data'
 import { soundsUnsafe } from '../safety'
 import { formatDate, todayISO } from '../text'
 

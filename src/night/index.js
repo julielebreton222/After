@@ -3,7 +3,7 @@
 //   <feeling>-<title>.png (or .jpg)   an illustration, optional
 //   <feeling>-<title>.md              the text, optional ("# Title" on line 1)
 // Dropping new files in the folder and pushing is enough to add a story.
-import night from './night.json'
+import { night } from '../data'
 
 const audio = import.meta.glob('/stories/*.{m4a,mp3}', { eager: true, query: '?url', import: 'default' })
 const images = import.meta.glob('/stories/*.{png,jpg}', { eager: true, query: '?url', import: 'default' })

@@ -1,4 +1,4 @@
-import story from './story/story.json'
+import { story } from './data'
 
 // Story values can depend on what happened earlier:
 //   { "by": "chased", "sport": "...", "music": "..." }       the plan Théo chased

@@ -1,13 +1,8 @@
 // Loads the story data. Each chapter is one file: chapter-1.json ... chapter-9.json.
-import story from './story.json'
+import { story, chapters } from '../data'
 import { resolve } from '../text'
-import { renameHero } from '../hero'
 
-const files = import.meta.glob('./chapter-*.json', { eager: true, import: 'default' })
-export const chapters = Object.values(files).sort((a, b) => a.number - b.number)
-chapters.forEach(renameHero)
-renameHero(story)
-export { story }
+export { story, chapters }
 
 export const screens = chapters.flatMap((ch) =>
   ch.screens.map((s) => ({ ...s, chapter: ch.number }))

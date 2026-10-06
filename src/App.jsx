@@ -11,7 +11,7 @@ import NightStories from './components/NightStories.jsx'
 import { night } from './night'
 import { startMusic, stopMusic } from './audio/music'
 import { T } from './text'
-import { HERO, DEFAULT_HERO } from './hero'
+import { HERO, DEFAULT_HERO, LANG, PRONOUN } from './locale'
 
 export default function App() {
   const [state, update, reset] = useGame()
@@ -40,8 +40,10 @@ export default function App() {
 
   // A new hero name is swapped into the texts when the app loads: reload.
   useEffect(() => {
-    if ((state.heroName?.trim() || DEFAULT_HERO) !== HERO) location.reload()
-  }, [state.heroName])
+    const changed = (state.heroName?.trim() || DEFAULT_HERO) !== HERO
+      || (state.lang || 'en') !== LANG || (state.pronoun || 'he') !== PRONOUN
+    if (changed) location.reload()
+  }, [state.heroName, state.lang, state.pronoun])
 
   if (!state.introDone) return <Intro state={state} update={update} />
 

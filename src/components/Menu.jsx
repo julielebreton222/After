@@ -3,7 +3,7 @@ import { story, chapterData, isChapterUnlocked, questScreens, screens } from '..
 import { T, formatDate } from '../text'
 import Quest from './interactions/Quest.jsx'
 import LightMap from './LightMap.jsx'
-import contact from '../contact.json'
+import { contact } from '../data'
 import { Feedback, Confession } from './Confide.jsx'
 
 // The menu: back to the story, chapters to reread, the Light Map and the
