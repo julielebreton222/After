@@ -27,11 +27,12 @@ export default defineConfig({
         ],
       },
       workbox: {
-        // The app itself works offline. Illustrations are cached the first time they're seen.
-        globPatterns: ['**/*.{js,css,html,woff2}', 'icons/*.png'],
+        // The app and all its paintings are saved for offline use when it's first opened.
+        globPatterns: ['**/*.{js,css,html,woff2}', 'icons/*.png', 'images/*.jpg'],
+        maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
         runtimeCaching: [
           {
-            urlPattern: /\/images\/.*\.png$/,
+            urlPattern: /\/images\/.*\.(png|jpg)$/,
             handler: 'CacheFirst',
             options: { cacheName: 'illustrations', expiration: { maxEntries: 400 } },
           },

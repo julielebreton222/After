@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { story, chapterData, isChapterUnlocked, questScreens, screens } from '../story'
 import { T, formatDate } from '../text'
 import Quest from './interactions/Quest.jsx'
+import ArtFrame from './ArtFrame.jsx'
 
 // The menu: back to the story, chapters to reread, the Light Map and the
 // People notebook (once unlocked), quests, and start over.
@@ -81,15 +82,16 @@ function LightMap({ state }) {
     <div className="light-map">
       <h2>{T.ui.lightMap}</h2>
       <div className="skyline">
-        <div className="roofs" />
-        {state.lights.map((id) => {
-          const l = story.lights[id]
-          if (!l) return null
-          return (
-            <button key={id} className={`window ${open === id ? 'open' : ''}`} style={{ left: `${l.x}%`, top: `${l.y}%` }}
-              onClick={() => setOpen(open === id ? null : id)} aria-label={l.label} />
-          )
-        })}
+        <ArtFrame art={story.lightMapArt} camera={{ x: 50, y: 66, zoom: 1.25 }}>
+          {state.lights.map((id) => {
+            const l = story.lights[id]
+            if (!l) return null
+            return (
+              <button key={id} className={`window ${open === id ? 'open' : ''}`} style={{ left: `${l.x}%`, top: `${l.y}%` }}
+                onClick={() => setOpen(open === id ? null : id)} aria-label={l.label} />
+            )
+          })}
+        </ArtFrame>
       </div>
       {person && (
         <div className="person-card">

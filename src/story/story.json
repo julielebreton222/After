@@ -23,10 +23,12 @@
     "ines": { "name": "Inès", "about": "Théo's therapist" }
   },
 
+  "lightMapArt": "skyline",
+
   "lights": {
-    "roux_door": { "person": "roux", "label": "Madame Roux's door", "x": 22, "y": 62 },
-    "camille_text": { "person": "camille", "label": "Camille's message", "x": 52, "y": 48 },
-    "ines_lamp": { "person": "ines", "label": "Inès's lamp", "x": 78, "y": 56 }
+    "roux_door": { "person": "roux", "label": "Madame Roux's door", "x": 27, "y": 76 },
+    "camille_text": { "person": "camille", "label": "Camille's message", "x": 42, "y": 53 },
+    "ines_lamp": { "person": "ines", "label": "Inès's lamp", "x": 63, "y": 69 }
   },
 
   "chapters": [

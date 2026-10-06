@@ -54,9 +54,15 @@ Interaction `type`s: `choice`, `tap-objects`, `write`, `timer`, `hold`, `drag`, 
 
 After editing, run `npm run check-story`. It catches typos such as a duplicate id, a branch pointing nowhere, or a light that isn't listed. The website build also runs this check and stops if anything is wrong.
 
-## Illustrations
+## Paintings and camera moves
 
-Put each image in `public/images/`, named after its screen id: `1.16.png`, `1.14a.png`, and so on. A screen with an image shows the image; a screen without one shows the placeholder panel. Portrait images work best, since the panel is tall.
+Each screen names its painting with `"art"`, a file in `public/images/` (for example `"art": "roux-door"` for `public/images/roux-door.jpg`). Several screens can share one painting. `"art": "black"` means a page that is black on purpose. Screens without `art` show a placeholder with the image description.
+
+`"shots"` moves the camera inside the painting, one shot per line of text: `{ "x": 30, "y": 66, "zoom": 1.7 }` points at a spot (in percent from the left and from the top of the painting) and zooms in. Every screen starts wide and glides to its first shot. Shots can depend on a choice, just like text (see screen 1.6, which zooms to whatever Théo chased). Tappable objects can have a `"focus"` shot too (screen 1.7).
+
+`"caption"` puts small handwritten words in the corner ("Day two"), and `"sfx"` a big sound word ("knock").
+
+The Chapter 1 paintings were made with Canva's AI image generator. The prompts are in `art/chapter-1-prompts.json`, and the originals are in the Canva design "After: Chapter 1 art".
 
 ## Publishing (GitHub Pages)
 

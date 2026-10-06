@@ -1,7 +1,7 @@
 // Checks the story files for mistakes after editing: duplicate ids, branches
 // that point nowhere, unknown interaction types, lights missing from story.json.
 // Run with: npm run check-story
-import { readFileSync, readdirSync } from 'node:fs'
+import { readFileSync, readdirSync, existsSync } from 'node:fs'
 
 const dir = new URL('../src/story/', import.meta.url)
 const story = JSON.parse(readFileSync(new URL('story.json', dir)))
@@ -23,6 +23,10 @@ for (const s of screens) {
   if (!s.image) problems.push(`${at}: no image description`)
   if (s.light && !story.lights[s.light]) problems.push(`${at}: light "${s.light}" is not listed in story.json "lights"`)
   for (const p of s.points || []) if (!story.lights[p]) problems.push(`${at}: point "${p}" is not listed in story.json "lights"`)
+  const arts = s.art && typeof s.art === 'object' ? Object.entries(s.art).filter(([k]) => k !== 'by').map(([, v]) => v) : [s.art]
+  for (const a of arts) {
+    if (a && a !== 'black' && !existsSync(new URL(`../public/images/${a}.jpg`, import.meta.url))) problems.push(`${at}: painting "${a}" not found (public/images/${a}.jpg)`)
+  }
   const i = s.interaction
   if (i && !TYPES.includes(i.type)) problems.push(`${at}: unknown interaction type "${i.type}"`)
 }

@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { byId, screens, nextId, chapterData, isChapterUnlocked } from '../story'
-import { T } from '../text'
+import { T, resolve } from '../text'
 import Panel from './Panel.jsx'
+import { artSrc } from './ArtFrame.jsx'
 import Line from './Line.jsx'
 import Interaction from './interactions/Interaction.jsx'
 import { buildBeats } from '../beats'
@@ -16,6 +17,7 @@ export default function Player({ state, update, openCrisis }) {
   const cfg = screen.interaction
   const done = !!state.done[screen.id]
   const [toast, setToast] = useState(null)
+  const [focus, setFocus] = useState(null) // camera target set by tapping an object
   const touch = useRef(null)
 
   // The screen's words, split into beats: one line per tap, typed out.
@@ -44,6 +46,11 @@ export default function Player({ state, update, openCrisis }) {
   // Things that happen on arriving at a screen: lights, haptics, unlocks.
   useEffect(() => {
     setToast(null)
+    setFocus(null)
+    // Load the next screen's painting in the background so it appears instantly.
+    const next = byId[nextId(screen.id)]
+    const art = next && resolve(next.art, state)
+    if (art && art !== 'black') new Image().src = artSrc(art)
     if (screen.light) {
       navigator.vibrate?.(80)
       update((st) => (st.lights.includes(screen.light) ? {} : { lights: [...st.lights, screen.light] }))
@@ -138,7 +145,7 @@ export default function Player({ state, update, openCrisis }) {
   return (
     <div className={`player ch-${screen.chapter}`} onClick={onClick} onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
       <div className="stage" key={screen.id}>
-        <Panel screen={screen} state={state}>
+        <Panel screen={screen} state={state} beat={cur.beat} focus={focus}>
           {screen.layout === 'title' && line}
         </Panel>
         <div className="below">
@@ -147,7 +154,7 @@ export default function Player({ state, update, openCrisis }) {
             <div className="interaction">
               <Interaction
                 cfg={cfg} screen={screen} state={state} update={update}
-                done={done} markDone={markDone} advance={advance} openCrisis={openCrisis}
+                done={done} markDone={markDone} advance={advance} openCrisis={openCrisis} onFocus={setFocus}
               />
             </div>
           )}

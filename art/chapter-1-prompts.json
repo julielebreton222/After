@@ -1,0 +1,229 @@
+{
+  "_about": "Prompts used to paint Chapter 1 (Canva AI image generation, portrait 2:3). 'style' is added to every prompt. Each image is saved as public/images/<key>.jpg and used by the screens listed.",
+  "style": "Hand-drawn comic panel in black ink with loose watercolour, paper-cream texture, thick ink outlines, a picture book for adults. Palette: almost entirely deep black ink and cream paper; warm lamp-yellow only where described. Moody, quiet, cinematic, lots of negative space. No text, no lettering, no photorealism.",
+  "theo": "Théo, a tall slightly hunched man of 26 with dark messy hair and a three-day beard in an oversized hoodie, drawn ONLY as a thin pale cream outline with no fill, as if he is fading",
+  "images": [
+    {
+      "key": "kitchen-floor",
+      "screens": [
+        "1.3",
+        "1.8"
+      ],
+      "prompt": "A small dark Parisian flat kitchen at night. {theo} sits on the kitchen floor, back against the lower cupboards, knees drawn up, on the left side of the picture. Everything else is deep black with faint cream line details of cupboards and floor tiles. Empty floor space on the right."
+    },
+    {
+      "key": "closed-door",
+      "screens": [
+        "1.4"
+      ],
+      "prompt": "Close-up of an apartment front door, closed, in darkness, faint cream lines. On the wooden floor, faint wheel marks of a suitcase lead to the door."
+    },
+    {
+      "key": "shelf",
+      "screens": [
+        "1.5",
+        "1.6"
+      ],
+      "prompt": "A long wall shelf in darkness holding, spaced out from left to right: a small sports trophy, an acoustic guitar, a framed diploma, and a small hand-painted shop sign. All in deep shadow, only faint cream outlines."
+    },
+    {
+      "key": "kitchen-objects",
+      "screens": [
+        "1.7"
+      ],
+      "prompt": "A dark kitchen: on the counter a mug and a potted plant, a handwritten note stuck on a fridge, a pot on the stove. Only faint cream outlines in black."
+    },
+    {
+      "key": "head-on-knees",
+      "screens": [
+        "1.9"
+      ],
+      "prompt": "Close view of {theo}, sitting on a dark kitchen floor with his head resting on his knees, arms around his legs."
+    },
+    {
+      "key": "glass-of-water",
+      "screens": [
+        "1.10"
+      ],
+      "prompt": "A glass of water standing on a dark kitchen floor, a pale cream outlined hand reaching for it."
+    },
+    {
+      "key": "open-window",
+      "screens": [
+        "1.10"
+      ],
+      "prompt": "An open window at night in a dark room, cold night air drawn as flowing cream lines, a curtain lifting."
+    },
+    {
+      "key": "lying-on-floor",
+      "screens": [
+        "1.10"
+      ],
+      "prompt": "Seen from above, {theo}, resting peacefully on his back on a kitchen rug like someone doing a calm breathing exercise, both hands resting on his belly, a few soft curved lines rising from his chest to show slow breaths. Peaceful and safe.",
+      "note": "The first wording (lying flat on the floor, eyes closed) was blocked by Canva's safety filter."
+    },
+    {
+      "key": "soup-pot",
+      "screens": [
+        "1.12"
+      ],
+      "prompt": "Close-up of a pot of soup on a cold stove in the dark, a skin formed on the surface of the soup."
+    },
+    {
+      "key": "bed-phone",
+      "screens": [
+        "1.13",
+        "1.14a"
+      ],
+      "prompt": "{theo}, lying in bed in a dark bedroom holding a phone above his face. The phone casts a cold pale blue light on his face; nothing else in the room is lit."
+    },
+    {
+      "key": "hallway-door",
+      "screens": [
+        "1.15"
+      ],
+      "prompt": "A dark flat seen down a narrow hallway towards the closed front door. Everything black; a thin line of warm yellow light under the door."
+    },
+    {
+      "key": "roux-door",
+      "screens": [
+        "1.16"
+      ],
+      "prompt": "A dark apartment doorway at night seen from inside. The door is open; warm lamp-yellow light from the stairwell pours across a black wooden floor. In the doorway stands a tiny elderly French woman in slippers and a cardigan, reading glasses on a chain, holding a small food container with both hands."
+    },
+    {
+      "key": "container",
+      "screens": [
+        "1.17"
+      ],
+      "prompt": "Close-up of an elderly woman's wrinkled hands in cardigan sleeves holding a small food container of vegetable soup that glows softly warm lamp-yellow in the darkness."
+    },
+    {
+      "key": "container-glow",
+      "screens": [
+        "1.18",
+        "1.20"
+      ],
+      "prompt": "A dark hallway, the front door just closed. In the foreground, pale cream outlined hands hold a small food container that keeps a soft warm lamp-yellow glow, the only light."
+    },
+    {
+      "key": "eating",
+      "screens": [
+        "1.19"
+      ],
+      "prompt": "{theo}, standing at a dark kitchen counter eating soup from a small container with a spoon. A warm lamp-yellow glow from the container lights his face."
+    },
+    {
+      "key": "phone-counter",
+      "screens": [
+        "1.21"
+      ],
+      "prompt": "A phone lying on a dark kitchen counter, vibrating, drawn with small ink motion lines. No light."
+    },
+    {
+      "key": "phone-warm",
+      "screens": [
+        "1.22"
+      ],
+      "prompt": "Close-up of a phone screen in the dark glowing warm lamp-yellow, showing a single blank message bubble shape."
+    },
+    {
+      "key": "holding-phone",
+      "screens": [
+        "1.23"
+      ],
+      "prompt": "{theo}, sitting in the dark holding a phone in both hands; the phone glows warm lamp-yellow and lights his face softly."
+    },
+    {
+      "key": "drawer",
+      "screens": [
+        "1.24"
+      ],
+      "prompt": "A wooden desk drawer sliding open in the dark: sheets of paper, an envelope, and a stick of sealing wax inside."
+    },
+    {
+      "key": "paper-pen",
+      "screens": [
+        "1.25"
+      ],
+      "prompt": "A blank sheet of paper on a dark wooden table, a pen lying beside it."
+    },
+    {
+      "key": "sealed-envelope",
+      "screens": [
+        "1.26"
+      ],
+      "prompt": "A sealed envelope with a round wax seal lying in a wooden drawer that is sliding shut, in the dark."
+    },
+    {
+      "key": "street-hood",
+      "screens": [
+        "1.27"
+      ],
+      "prompt": "A narrow street in a French river city in early morning, everything in black ink: stone buildings, zinc roofs. {theo}, walking with his hood up and hands in pockets."
+    },
+    {
+      "key": "ines-office",
+      "screens": [
+        "1.28",
+        "1.30"
+      ],
+      "prompt": "A small therapist's office: two armchairs facing each other, one leafy plant, a box of tissues on a low table, a clock on the wall. A small desk lamp gives a warm lamp-yellow glow; the rest is ink-black and cream."
+    },
+    {
+      "key": "ines",
+      "screens": [
+        "1.29",
+        "1.31",
+        "1.33"
+      ],
+      "prompt": "Inès, a calm therapist in her forties with short dark hair and a cardigan, sitting in an armchair holding a cup of tea, with a dry, kind half-smile. A small desk lamp beside her gives a warm lamp-yellow glow."
+    },
+    {
+      "key": "ines-circle",
+      "screens": [
+        "1.32"
+      ],
+      "prompt": "A woman's hands in cardigan sleeves drawing a small circle in the air; inside the circle, a tiny pale outlined man sitting in a tiny flat. Warm lamp glow from the side."
+    },
+    {
+      "key": "theo-chair",
+      "screens": [
+        "1.34"
+      ],
+      "prompt": "{theo}, sitting in an armchair in a therapist's office, arms crossed, looking unconvinced. A warm lamp glow from the side of the frame."
+    },
+    {
+      "key": "street-lamp-window",
+      "screens": [
+        "1.35"
+      ],
+      "prompt": "{theo}, standing on a dark street at night; behind him, one window on the first floor glows warm lamp-yellow."
+    },
+    {
+      "key": "notebook",
+      "screens": [
+        "1.36"
+      ],
+      "prompt": "A small notebook with a plain cream cover lying on a black table, a pencil beside it."
+    },
+    {
+      "key": "skyline",
+      "screens": [
+        "1.37",
+        "1.38"
+      ],
+      "prompt": "An ordinary small French river town at night seen from a dark window: grey zinc rooftops, chimney pots and little dormer windows against a slightly lighter dark sky, a windowsill in the foreground. All windows dark. No famous landmarks.",
+      "note": "Repainted without the Eiffel Tower: the city is never named."
+    },
+    {
+      "key": "soup-bowl",
+      "screens": [
+        "1.39"
+      ],
+      "prompt": "A single hand-drawn bowl of soup with steam curling up, centred on a black background.",
+      "note": "Colour removed afterwards to keep Chapter 1 black and cream."
+    }
+  ],
+  "_canva": "All paintings live in the Canva design 'After: Chapter 1 art' (one page each). media-ids.json lists each painting's Canva media id."
+}

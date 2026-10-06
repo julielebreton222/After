@@ -35,3 +35,13 @@ export function formatDate(iso) {
 }
 
 export const todayISO = () => new Date().toISOString().slice(0, 10)
+
+// Like pick(), for any value (arrays, objects): { "by": ..., "<option>": value }.
+export function resolve(value, state) {
+  if (!value || typeof value !== 'object' || Array.isArray(value) || !value.by) return value
+  const by = value.by
+  const key = by.startsWith('choice:') ? state.choices[by.slice(7)] : state[by]
+  if (key != null && value[key] != null) return value[key]
+  const first = Object.keys(value).find((k) => k !== 'by')
+  return first ? value[first] : null
+}
