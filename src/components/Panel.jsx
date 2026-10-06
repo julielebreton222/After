@@ -4,7 +4,7 @@ import { say } from '../text'
 
 // One illustrated panel. Loads /images/<screen-id>.png when it exists;
 // otherwise shows a placeholder with the image description.
-export default function Panel({ screen, state }) {
+export default function Panel({ screen, state, children }) {
   const [art, setArt] = useState('loading')
   const description = say(screen.image, state)
   const glow = screen.light ? 'spill' : screen.glow || 'none'
@@ -26,11 +26,7 @@ export default function Panel({ screen, state }) {
           <div className="placeholder"><p>{description}</p></div>
         </>
       )}
-      {screen.layout === 'title' && (
-        <div className="title-words">
-          {(screen.words || []).map((w, i) => <p key={i}>{say(w.text, state)}</p>)}
-        </div>
-      )}
+      {children && <div className="title-words">{children}</div>}
       {(screen.points || []).map((id) => {
         const l = story.lights[id]
         return l ? <span key={id} className="point" style={{ left: `${l.x}%`, top: `${l.y}%` }} /> : null

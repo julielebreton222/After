@@ -1,6 +1,17 @@
 {
   "title": "After",
 
+  "beatChars": 80,
+
+  "voices": {
+    "narrator": { "rate": 0.9, "pitch": 1 },
+    "Critic": { "rate": 0.95, "pitch": 0.6 },
+    "Madame Roux": { "rate": 0.85, "pitch": 1.3 },
+    "Camille": { "rate": 0.95, "pitch": 1.2 },
+    "Inès": { "rate": 0.88, "pitch": 1.15 }
+  },
+  "voicePreference": ["Daniel", "Google UK English Male", "Arthur", "Serena", "Samantha"],
+
   "tokens": {
     "chased": { "sport": "sport", "music": "music", "degree": "degree", "business": "business" },
     "chasedObject": { "sport": "trophy", "music": "guitar", "degree": "diploma", "business": "shop sign" }
@@ -87,7 +98,12 @@
       "notebookUnlocked": "New: the People notebook",
       "lightMapUnlocked": "New: the Light Map",
       "emptyNotebook": "Nobody yet. Each page will be someone else's life.",
-      "hours": "{n} hours together"
+      "hours": "{n} hours together",
+      "sound": "Sound",
+      "music": "Music: rain and piano",
+      "voice": "Read aloud",
+      "voiceUnsupported": "This phone can't read aloud.",
+      "silentNote": "On iPhone, switch off silent mode to hear the music."
     }
   }
 }

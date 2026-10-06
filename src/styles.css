@@ -296,3 +296,15 @@ textarea:focus, input:focus, select:focus { outline: 1.5px solid var(--cream); }
 .people .page { border-bottom: 1px solid var(--cream-faint); padding: 10px 0; }
 .people h3 { margin: 0; font-weight: normal; }
 .people .hand { margin: 4px 0; }
+
+/* ---------- One line at a time ---------- */
+.typewriter .unrevealed { opacity: 0; }
+.line-in { animation: fadeIn 0.35s ease; }
+.below .narration, .below .bubble { font-size: 1.3rem; }
+.sound-btn { left: 62px; font-size: 1rem; }
+.sound-menu {
+  position: fixed; z-index: 21; top: calc(var(--top) + 40px); left: 12px; right: 12px; max-width: 340px;
+  background: var(--ink); border: 1px solid var(--cream-faint); border-radius: 14px; padding: 10px 14px;
+  animation: fadeIn 0.2s ease;
+}
+.sound-menu .note { margin: 6px 0 0; }

@@ -26,6 +26,7 @@ export const initialState = {
   savedPerson: null,
   country: null,
   tonight: {},
+  settings: { music: false, voice: false },
 }
 
 function load() {

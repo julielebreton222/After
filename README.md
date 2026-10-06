@@ -46,6 +46,10 @@ A screen looks like this:
 - `{chased}` and `{chasedObject}` inside any text become "music" / "guitar", and so on.
 - Branches: a choice option with `"goto": "1.14a"`, and a branch screen with `"next": "1.15"` to rejoin.
 
+**Text pacing:** each tap shows one line, typed out letter by letter (a tap mid-line shows it all). Sentences are grouped into lines of up to `beatChars` characters (80, set in `story.json`). To force a break in a particular spot, put `\n` in the text.
+
+**Sound:** the 🔈 button turns on the music (rain, a low drone and sparse piano, generated in the app) and read-aloud (the phone's own voice). Both start off. The pitch and speed of each character's voice are under `voices` in `story.json`.
+
 Interaction `type`s: `choice`, `tap-objects`, `write`, `timer`, `hold`, `drag`, `rate`, `critic-reply`, `quest`, `notebook`, `seal`. The Chapter 1 file shows examples of most of them.
 
 After editing, run `npm run check-story`. It catches typos such as a duplicate id, a branch pointing nowhere, or a light that isn't listed. The website build also runs this check and stops if anything is wrong.
